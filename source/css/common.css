@@ -219,9 +219,7 @@ pre {
              transition:width .4s;
              background: #B3B3B3;margin-top: 10px;
          }
-         .navbar-header{
-           background:#D3D3D3;
-         }
+  
          .side-collapse.in {
              width:0;
          }
