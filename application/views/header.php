@@ -120,4 +120,4 @@
 
       </div>
     </header>
-    <div id="root_container" class="container side-collapse-container" style="overflow-x:hidden; overflow-y:hidden;">
+    <div id="root_container" class="container " style="overflow-x:hidden; overflow-y:hidden;">
