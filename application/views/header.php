@@ -42,7 +42,7 @@
 
         <div class="navbar-header">
           <button data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".side-collapse-container" type="button" class="navbar-toggle pull-left"
-          style="margin-left: 10px;">
+          style="margin-left: 10px; z-index: 9999;">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -79,9 +79,9 @@
           ?>
         </div>
         <div class="side-collapse in" style="    ">
-        <nav role="navigation" class="navbar-collapse">
+        <nav role="navigation" style="margin-top: 50px;" class="navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a class="nav-color navbar-left" href="/aboutus">about us</a></li>
+            <li><a class="nav-color navbar-left" href="/aboutus" style="    width: 100px;">about us</a></li>
             <li><a class="nav-color navbar-left" href="/artist">artist</a></li>
             <li class="dropdown">
               <a href="#" id="store_menu" class="nav-color dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">funding</span></a>
@@ -109,7 +109,7 @@
           	?>
 
             <li><a style="" class="navbar-right main-page-navbar-right" href="/help">help</a></li>
-            <li><a style="margin-right:40px;" class="navbar-right" href="/submit"><div class="YourButton" style="margin-top: -5px;">내 작품 판매하기</div></a></li>
+            <li><a style="margin-right:40px;" class="navbar-right" href="/submit"><div class="YourButton" style="margin-top: -5px; width: 130px;">내 작품 판매하기</div></a></li>
           </ul>
         </nav>
       </div>
