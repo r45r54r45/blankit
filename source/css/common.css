@@ -200,6 +200,9 @@ pre {
          tab-size: 8;
      }
 @media screen and (max-width: 768px) {
+        .navbar-brand{
+          padding-left: 0px;
+        }
          .side-collapse-container{
              width:100%;
              position:relative;

@@ -55,7 +55,7 @@
             <span class="icon-bar"></span>
           </button> -->
 
-          <a class="navbar-brand" style="padding-left: 0px;" href="/">
+          <a class="navbar-brand" href="/">
             <img id="logo" alt="blankit" src="
 	<?
 	/*** 스토어 상품의 시간만료 체크 ***/
