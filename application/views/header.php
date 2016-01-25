@@ -77,7 +77,7 @@
 
           ?>
         </div>
-        <div class="side-collapse in" style="    background: #B3B3B3;margin-top: 10px;">
+        <div class="side-collapse in" style="    ">
         <nav role="navigation" class="navbar-collapse">
           <ul class="nav navbar-nav">
             <li><a class="nav-color navbar-left" href="/aboutus">about us</a></li>

@@ -211,6 +211,7 @@ a, a:hover, a:visited, a:link, a:active{
              position:fixed;
              overflow:hidden;
              transition:width .4s;
+             background: #B3B3B3;margin-top: 10px;
          }
          .side-collapse.in {
              width:0;
