@@ -60,7 +60,7 @@ $(function(){
       <div class="col-xs-1">
       </div>
     <div class="col-xs-10">
-      <img src="/source/image/submit_guide.png" class="img img-responsive">
+      <img src="/source/image/submit_guide.png" class="img img-responsive" style="margin-top: 30px;">
     </div>
     <div class="col-xs-1">
     </div>
