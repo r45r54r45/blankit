@@ -36,26 +36,31 @@
     <![endif]-->
   </head>
   <body style="  display: none;">
-
-    <nav class="navbar navbar-default">
+<header role="banner" class="navbar navbar-fixed-top ">
+    <!-- <nav class="navbar navbar-default"> -->
       <div class="container-fluid">
 
         <div class="navbar-header" style="padding-top: 10px;">
-
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only"></span>
+          <button data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".side-collapse-container" type="button" class="navbar-toggle pull-left">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
 
+          <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button> -->
+
           <a class="navbar-brand" href="/">
             <img id="logo" alt="blankit" src="
 	<?
 	/*** 스토어 상품의 시간만료 체크 ***/
-	
-	
-	
+
+
+
 	/*** 여기까지, 스토어 상품의 시간만료 체크 ***/
   	$actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
     	if($actual_link=="http://blankit.kr/")
@@ -72,7 +77,8 @@
 
           ?>
         </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="    padding-top: 10px;">
+        <div class="side-collapse in">
+        <nav role="navigation" class="navbar-collapse">
           <ul class="nav navbar-nav">
             <li><a class="nav-color navbar-left" href="/aboutus">about us</a></li>
             <li><a class="nav-color navbar-left" href="/artist">artist</a></li>
@@ -104,8 +110,13 @@
             <li><a style="" class="navbar-right main-page-navbar-right" href="/help">help</a></li>
             <li><a style="margin-right:40px;" class="navbar-right" href="/submit"><div class="YourButton" style="margin-top: -5px;">내 작품 판매하기</div></a></li>
           </ul>
+        </nav>
+      </div>
+
+
+      <!-- 지워진 부분 -->
     </div>
 
       </div>
-    </nav>
+    </header>
     <div id="root_container" class="container" style="overflow-x:hidden; overflow-y:hidden;">

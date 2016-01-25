@@ -339,10 +339,10 @@ function makePrice(option){
                 <option value="default">선택</option>
                 <option value="1">토트&크로스</option>
                 <option value="2">크로스</option>
-				<option value="3">토트(아이보리)</option>
-				<option value="4">토트(카키)</option>
-				<option value="5">토트(네이비)</option>
-				<option value="6">토트(쁠랙)</option>
+				        <option value="3">숄더(아이보리)</option>
+				        <option value="4">숄더(카키)</option>
+				        <option value="5">숄더(네이비)</option>
+				        <option value="6">숄더(쁠랙)</option>
               </select>
             </div>
             <div style="clear: both;"></div>

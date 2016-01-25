@@ -185,6 +185,7 @@ function slanted_banner_generator(){
   $("#banner_3").css("margin-left","-"+($("#banner_1").width()-banner_width)/2+"px");
 }
 $(function(){
+
   $(".banner").css("display","none");
   slanted_banner_generator();
   $( "#banner_3" ).load(function() {
@@ -247,7 +248,7 @@ $(window).resize(function(){
 </div>
 </div>
 <div class="banner-wrap ">
-<div class="banner-roll">
+<div class="banner-roll" class="hidden-xs">
   <div id="banner-roll-circle-1"  class="banner-roll-circle"></div>
   <div id="banner-roll-circle-2"  class="banner-roll-circle" style="background:#687C87;"></div>
   <div id="banner-roll-circle-3"  class="banner-roll-circle"></div>
@@ -276,7 +277,7 @@ $(window).resize(function(){
 	        $totalGoal = $row->store_goal;
 	        $nowGoal = $row->store_goal_now;
 	        $percGoal = $nowGoal / $totalGoal * 100;
-	        
+
 	        //"앞으로 # 일 계산"
 	        $curDate = date('Y-m-d H:i:s');
 	        $dueDate = $row->store_day;

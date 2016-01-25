@@ -157,10 +157,10 @@
     <div class="col-md-12" style="position:relative; height:25px; padding-bottom:40px; border-bottom: 1.5px solid #D3D3D3;">
 <div class="menu">
   <div class="menu_item" >
-    <a href="">컬러</a>
+    <a href="">숄더(아이보리)</a>
   </div>
   <div class="menu_item">
-    <a href="">숄더</a>
+    <a href="">숄더(컬러)</a>
   </div>
   <div class="menu_item">
     <a href="">토트/크로스</a>
