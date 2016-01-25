@@ -11,6 +11,9 @@ a, a:hover, a:visited, a:link, a:active{
   color:inherit;
   text-decoration: none !important;
 }
+.navbar{
+  position: absolute !important;
+}
 .navbar-default{
   /*pointer-events: none;*/
   background: none !important;
@@ -18,6 +21,7 @@ a, a:hover, a:visited, a:link, a:active{
   border: none;
   z-index: 9000;
   margin-bottom: 0px;
+  width:100%;
 }
 .dropdown-toggle{
   color: white !important;
