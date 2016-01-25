@@ -64,7 +64,7 @@
 </div>
 <div class="container" >
   <div class="row" style="margin-bottom:40px;">
-    <div class="col-md-12" style="position:relative; height:25px; border-bottom: 1.5px solid #D3D3D3;">
+    <div class="col-md-12" style="  margin-top: 30px;position:relative; height:25px; border-bottom: 1.5px solid #D3D3D3;">
       <div class="menu">
         <a href="/store"><div class="menu_item">전체</div></a>
         <a href="/store/cloth"><div class="menu_item" >의류</div></a>
