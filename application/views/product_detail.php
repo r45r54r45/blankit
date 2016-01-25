@@ -200,7 +200,7 @@
   <div class="col-xs-12" style="padding-bottom:40px; border-bottom:1px solid #D3D3D3;">
     <div class="t1-grey">제품 사이즈</div>
     <div class="t2" style="margin-top:10px;">*눕혀서 잰 치수이니 참고 바랍니다.</div>
-    <img src="<?echo $itemSizeImg;?>" class="img img-responsive">
+    <img src="<?echo $itemSizeImg;?>" style="margin: 0 auto;" class="img img-responsive">
   </div>
 </div>
 
