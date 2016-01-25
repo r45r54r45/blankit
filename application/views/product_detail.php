@@ -195,7 +195,7 @@
       <img src="<?echo $itemDetail;?>" class="img img-responsive">
     </div>
   </div>
-</div>
+
 <div class="row row_padding-xs" style="margin-top:20px;">
   <div class="col-xs-12" style="padding-bottom:40px; border-bottom:1px solid #D3D3D3;">
     <div class="t1-grey">제품 사이즈</div>
@@ -219,6 +219,7 @@
       기간 내에 목표치 미도달시, 전액이 환불됩니다.<br/><br/>
     </div>
   </div>
+</div>
 </div>
 <!-- 주의사항 끝 -->
 </div>
