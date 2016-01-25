@@ -1,7 +1,6 @@
 body{
   overflow-x: hidden;
-
-     position: relative;
+  position: relative;
 }
 #logo{
   margin-top: 3px;
@@ -193,6 +192,9 @@ a, a:hover, a:visited, a:link, a:active{
   display:block;
   margin:0 auto;
 }
+pre {
+         tab-size: 8;
+     }
 @media screen and (max-width: 768px) {
          .side-collapse-container{
              width:100%;
