@@ -45,12 +45,12 @@
   z-index:2;
   }
   .menu{
-    width:350px;
+    width:360px;
     height:100%;
     position: absolute;
     left:50%;
     bottom:0;
-    margin-left: -175px;
+    margin-left: -180px;
     background: white;
   }
   .menu_item{
