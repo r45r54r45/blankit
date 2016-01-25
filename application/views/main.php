@@ -175,7 +175,7 @@ function slanted_banner_generator(){
   $(".banner").css("top","0px");
   $(".banner").css("width",banner_width+"px");
   $(".banner").css("height",banner_height+"px");
-  $(".banner-wrap").css("height",banner_height-50+"px");
+  $(".banner-wrap").css("height",banner_height+"px");
 
   $("#banner_cut").css("width",width+"px");
   $("#banner_cut").css("height",$(window).height()*0.8+"px");
