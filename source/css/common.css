@@ -209,6 +209,9 @@ pre {
          .side-collapse-container.out{
              left:250px;
          }
+         .navigation{
+  margin-top: 50px;
+         }
          .side-collapse {
              top:-11px;
              bottom:0;
