@@ -72,11 +72,6 @@
 
             ">
           </a>
-          <?php echo "Welcome" . $this->session->userdata('user_name');
-          // echo $_SESSION['facebook_access_token'];
-
-
-          ?>
         </div>
         <div class="side-collapse in" style="    ">
         <nav role="navigation" style="margin-top: 50px;" class="navbar-collapse">
