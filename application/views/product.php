@@ -298,7 +298,7 @@ function makePrice(option){
           <div class="options">
             <span class="options_left">컬러</span>
             <div id="color" class="options_right">
-              
+
               <div name="color" id="2" class="round" style="background:#7b1719; "></div>
               <div name="color" id="3" class="round" style="background:#efeee9; "></div>
               <div name="color" id="4" class="round" style="background:#14130f; "></div>
@@ -405,24 +405,15 @@ function makePrice(option){
       <span>share</span>
       <div></div>
     </div>
-    <div class="col-xs-12" style=" padding-left:0;  padding-right:0; margin-top:30px;">
-      <div style="width:100%; background:#F7F7F7; height:700px;">
-        <span style="padding-top: 350px;display:block; text-align:center;">
-          (제품 상세 이미지)
-        </span>
-      </div>
-    </div>
   </div>
-<div class="row row_padding-xs" style="margin-top:20px;">
-
-</div>
 
 
-</div>
+
+
 <form id="formHidden" action="/store/func_toCart" method="post" style="display:none">
   <input type="text" name="type" value="default">
   <input type="text" name="color" value="default">
-  <input type="text" name="size" value="default"> 
+  <input type="text" name="size" value="default">
   <input type="text" name="amount" value="1">
   <input type="text" name="storeId" value="<?echo $numPath;?>">
   <input type="text" name="storeType" value="<?echo $GlobalStoreType;?>">
