@@ -400,15 +400,6 @@ function makePrice(option){
     </div>
   </div>
 
-  <div class="row row_padding-xs" style="margin-top:20px;">
-    <div class="col-xs-12" style=" padding-left:0;  padding-right:0; padding-bottom:30px;border-bottom:1px solid #D3D3D3;">
-      <span>share</span>
-      <div></div>
-    </div>
-  </div>
-
-
-
 
 <form id="formHidden" action="/store/func_toCart" method="post" style="display:none">
   <input type="text" name="type" value="default">

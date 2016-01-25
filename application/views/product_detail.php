@@ -16,6 +16,7 @@
   color:#676464;
   text-align: center;
   font-weight: 300;
+  margin-top: 15px;
 }
 .product_area{
   height:auto;
@@ -44,12 +45,12 @@
   z-index:2;
   }
   .menu{
-    width:320px;
+    width:350px;
     height:100%;
     position: absolute;
     left:50%;
     bottom:0;
-    margin-left: -160px;
+    margin-left: -175px;
     background: white;
   }
   .menu_item{
@@ -139,7 +140,7 @@
   <div class="col-xs-12" style="padding-bottom:40px; border-bottom:1px solid #D3D3D3;">
   <div class="t1-gal" style="margin-bottom:20px;">제품에 들어간 작품 이름</div>
   <div class="artwork">
-    <img src="<?echo $itemImage;?>" class="img thumbnail img-responsive" >
+    <img style="margin: 0 auto;" src="<?echo $itemImage;?>" class="img thumbnail img-responsive" >
   </div>
   <div class="t2">
     작품 설명 텍스트 입니다. 작품 설명 텍스트 입니다.<br>
