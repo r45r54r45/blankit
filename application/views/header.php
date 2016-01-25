@@ -74,7 +74,7 @@
           </a>
         </div>
         <div class="side-collapse in" style="    ">
-        <nav role="navigation" style="margin-top: 50px;" class="navbar-collapse">
+        <nav role="navigation" style="" class="navbar-collapse">
           <ul class="nav navbar-nav">
             <li><a class="nav-color navbar-left" href="/aboutus" style="    width: 100px;">about us</a></li>
             <li><a class="nav-color navbar-left" href="/artist">artist</a></li>
