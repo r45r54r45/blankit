@@ -210,9 +210,9 @@ pre {
              left:250px;
          }
          .navbar-collapse{
-            margin-top: 50px !important;
          }
          .side-collapse {
+               padding-top: 50px;
              top:-11px;
              bottom:0;
              left:0;
