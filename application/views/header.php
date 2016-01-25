@@ -36,7 +36,7 @@
     <![endif]-->
   </head>
   <body style="  display: none;">
-<header role="banner" class="navbar navbar-fixed-top ">
+<header role="banner" class="navbar  navbar-default">
     <!-- <nav class="navbar navbar-default"> -->
       <div class="container-fluid">
 
@@ -119,4 +119,4 @@
 
       </div>
     </header>
-    <div id="root_container" class="container" style="overflow-x:hidden; overflow-y:hidden;">
+    <div id="root_container" class="container side-collapse-container" style="overflow-x:hidden; overflow-y:hidden;">

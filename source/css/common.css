@@ -200,13 +200,13 @@ a, a:hover, a:visited, a:link, a:active{
              transition:left .4s;
          }
          .side-collapse-container.out{
-             left:200px;
+             left:250px;
          }
          .side-collapse {
              top:50px;
              bottom:0;
              left:0;
-             width:200px;
+             width:250px;
              position:fixed;
              overflow:hidden;
              transition:width .4s;
