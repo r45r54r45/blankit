@@ -210,7 +210,7 @@ pre {
              left:250px;
          }
          .side-collapse {
-             top:50px;
+             top:40px;
              bottom:0;
              left:0;
              width:250px;
@@ -218,6 +218,9 @@ pre {
              overflow:hidden;
              transition:width .4s;
              background: #B3B3B3;margin-top: 10px;
+         }
+         .navbar-header{
+           background:#D3D3D3;
          }
          .side-collapse.in {
              width:0;
