@@ -36,12 +36,13 @@
     <![endif]-->
   </head>
   <body style="  display: none;">
-<header role="banner" class="navbar  navbar-default">
+<header role="banner" class="navbar  navbar-default" >
     <!-- <nav class="navbar navbar-default"> -->
       <div class="container-fluid">
 
-        <div class="navbar-header" style="padding-top: 10px;">
-          <button data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".side-collapse-container" type="button" class="navbar-toggle pull-left">
+        <div class="navbar-header">
+          <button data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".side-collapse-container" type="button" class="navbar-toggle pull-left"
+          style="margin-left: 10px;">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
