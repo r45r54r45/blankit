@@ -187,7 +187,7 @@
 
 <?php
 if ($itemType == "E_1" || $itemType == "E_2" || $itemType == "E_3" || $itemType == "E_4"){ 
-	echo '?>
+	echo '
 	
 <div class="row row_padding-xs" style="margin-top:20px;">
     <div class="col-md-12" id="E-location" style="position:relative; height:25px; padding-bottom:40px; border-bottom: 1.5px solid #D3D3D3;">
@@ -207,7 +207,7 @@ if ($itemType == "E_1" || $itemType == "E_2" || $itemType == "E_3" || $itemType 
 </div>
 </div>
 </div>
-<?php '}?>
+'}?>
 <!-- 에코백일경우에만 뜨는 메뉴 끝 -->
 <!-- 제품 정보 시작 -->
 <div class="row row_padding-xs" style="margin-top:20px;">
