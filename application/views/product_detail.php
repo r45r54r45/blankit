@@ -172,24 +172,24 @@
 <!-- style="border-bottom:2px solid #96AFB5; color:#96AFB5;" -->
 
 <!-- 진우 시작 -->
-<?php if ($itemTypeRecog == 2){
-	echo '
+<?php if ($itemTypeRecog == 2){ ?>
+	
 <div class="row row_padding-xs" style="margin-top:20px;">
     <div class="col-md-12" id="E-location" style="position:relative; height:25px; padding-bottom:40px; border-bottom: 1.5px solid #D3D3D3;">
 <div class="menu">
   <div class="menu_item" >
-    <a href="/store/product/' . $itemNum?E_2 . '">숄더(아이보리)</a>
+    <a href="/store/product/<?php echo $itemNum . '?E_2'?>">숄더(아이보리)</a>
   </div>
   <div class="menu_item">
-    <a href="/store/product/' . $itemNum?E_1 . '">숄더(컬러)</a>
+    <a href="/store/product/$itemNum?E_1">숄더(컬러)</a> 
   </div>
   <div class="menu_item">
-    <a href="/store/product/' . $itemNum?E_3 . '">토트/크로스</a>
+    <a href="/store/product/$itemNum?E_3">토트/크로스</a>
   </div>
   <div class="menu_item">
-    <a href="/store/product/' . $itemNum?E_4 . '">크로스</a>
+    <a href="/store/product/$itemNum?E_4">크로스</a>
   </div>
-  ';}?>
+  <?php } ?>
 <!-- 진우 끝 -->
 
 </div>
