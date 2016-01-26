@@ -69,16 +69,31 @@
 </style>
   <?php
   //-----------진우파트 시작--------------
-  echo $this->uri->segment(3);
+  $curPage =  $this->uri->segment(3); // 현재 아이템 번호
   
-  /* foreach ($contents->result() as $row){
-  	
-  } */
+  foreach ($contents->result() as $row){
+  	if ($row->store_id == $curPage){
+  		$itemTypeRecog = $row->store_type;
+  		switch ($itemTypeRecog){
+  			case 1:
+  				$itemType="M_1";
+  				break;
+  			case 2:
+  				$itemType="E_1";
+  				break;
+  			case 3:
+  				$itemType="P_1";
+  				break;
+  		}
+  		$itemNum = $curPage;
+  		break;
+  	}
+  }
   
   
-  $itemType="E_1"; //아이템 종류..(string) 이것에 따라 작품들이 제품의 어느 위치에 삽입될 지 결정됨.
+  //$itemType="E_1"; //아이템 종류..(string) 이것에 따라 작품들이 제품의 어느 위치에 삽입될 지 결정됨.
   //**여기에 아이템 종류 넣어주삼.**
-  $itemNum; //작품의 고유번호 넣어주삼. 작품 이미지 주소 가져오는데 사용
+  //$itemNum; //작품의 고유번호 넣어주삼. 작품 이미지 주소 가져오는데 사용
   //-----------진우파트 끝--------------
   $itemImage="/source/image/ecobag_test.png";//작품이미지
   $itemPos; //아이템이 삽입될 위치
