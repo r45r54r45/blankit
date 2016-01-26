@@ -6,7 +6,7 @@ var image=encodeURIComponent("http://blankit.kr/source/image/ecobag_test.png");
 function cl(){
   FB.ui({
   method: 'share',
-  href: 'http://blankit.kr/test/share?url='+url+'&title='+title+'&description='++description'&image='+image,
+  href: 'http://blankit.kr/test/share?url='+url+'&title='+title+'&description='+description+'&image='+image,
 }, function(response){});
 }
 </script>
