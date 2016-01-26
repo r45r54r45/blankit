@@ -11,12 +11,11 @@ class Join extends CI_Controller {
 		$this->load->view('header');
 		$this->load->view('join');
 		$this->load->view('footer');
-		$this->session->set_flashdata('joinCheck', 'ok');
 	}
 
 	public function func_join_ok()
 	{
-		if ($this->session->flashdata('joinCheck') == "ok" && $this->input->post('id') !== ""){
+		if ($this->input->post('id') !== ""){
 			$id = $this->input->post('id');
 			$pw = $this->input->post('pw');
 			$name = $this->input->post('name');
