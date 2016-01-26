@@ -52,9 +52,10 @@ class Store extends CI_Controller {
 	{
 		$this->load->model('store_model');
 		$data['details']=$this->store_model->details();
+		
 		$this->load->view('header');
 		$this->load->view('product',$data);
-		$this->load->view('product_detail');
+		$this->load->view('product_detail', $data);
 		$this->load->view('footer');
 	}
 	public function product_detail() // 제품 상세보기
