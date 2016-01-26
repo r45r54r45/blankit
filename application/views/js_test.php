@@ -1,5 +1,5 @@
 <script>
-var url=encodeURIComponent("http://blankit.kr/store");
+var url=encodeURIComponent("http://blankit.kr/store?url=http%3A%2F%2Fblankit.kr%2Fstore&title=테스트타이틀&description=테스트설명&image=http%3A%2F%2Fblankit.kr%2Fsource%2Fimage%2Fecobag_test.png");
 var title='테스트타이틀';
 var description='테스트설명';
 var image=encodeURIComponent("http://blankit.kr/source/image/ecobag_test.png");
