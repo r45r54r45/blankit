@@ -14,6 +14,7 @@
   <meta property="og:description"        content="<?echo $_GET['description'];?>" />
   <meta property="og:image"              content="<?echo $_GET['image'];?>" />
   <!-- 스토어 세부페이지와 submit 페이지에서만 출력 끝-->
+  <script src="/source/js/common.js" ></script>
 </head>
 <body>
 </body>
