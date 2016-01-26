@@ -154,14 +154,16 @@ function makePrice(option){
 </div>
 
 <?php
-	$urlPath = "$_SERVER[REQUEST_URI]";
+/* 	$urlPath = "$_SERVER[REQUEST_URI]";
 	$explodePath = explode('/', $urlPath);
 
 	$numPath = $explodePath[3]; // 현재 URL 상품번호
 	
-	/*** 물음표 제거기 ***/
+	/*** 물음표 제거기 **
 	$testQ = explode('?', $numPath);
-	$numPath = $testQ[0];
+	$numPath = $testQ[0]; */
+	
+	$numPath =  $this->uri->segment(3);
 	
   	$GlobalStoreName;
   	$GlobalUserName;
