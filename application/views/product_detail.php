@@ -78,9 +78,6 @@
   $nowPage = $testQ[0]; //현재 아이템 번호
   $itemNum = $nowPage; //작품의 고유번호 넣어주삼. 작품 이미지 주소 가져오는데 사용
   
-  echo $curPage;
-  echo $nowPage;
-  
   if ($curPage == $nowPage){
 	  foreach ($contents->result() as $row){
 	  	if ($row->store_id == $curPage){
@@ -96,17 +93,16 @@
 	  				$itemType="P_1";
 	  				break;
 	  		}
-	  		echo "I was here at 1";
+	  		//echo "I was here at 1";
 	  		break;
 	  	}
 	  }
   }
   else { //물음표가 있을 시
   	$itemType = $testQ[1];
-  	echo "I was here at 2";
+  	//echo "I was here at 2";
   }
   
-  echo $itemType . '/////////';
   //-----------진우파트 끝--------------
   
   $itemImage="/source/image/ecobag_test.png";//작품이미지
