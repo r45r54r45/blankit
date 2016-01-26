@@ -9,4 +9,8 @@ class Test extends CI_Controller {
 		$this->load->view('js_test');
 		$this->load->view('footer');
 	}
+	public function share()
+	{
+		$this->load->view('facebook_share');
+	}
 }
