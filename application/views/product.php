@@ -161,6 +161,7 @@ function makePrice(option){
 	
 	$testQ = explode('?', $numPath);
 	echo $testQ[0];
+	echo $testQ[1];
 	
   	$GlobalStoreName;
   	$GlobalUserName;
