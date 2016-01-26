@@ -13,6 +13,10 @@
 <button type="submit">ddd</button>
 </form> -->
 <div style="height:300px;"></div>
-<iframe id="frame" style="overflow:scroll;width:500px; height:500px" src="/test/t2">
+<form name="frmLogin" action="http://ysweb.yonsei.ac.kr/ysbus_main.jsp" method="post">
 
-</iframe>
+  <input type="text" id="id" name="userid" value="2014198024">
+  <input type="password" id="password" name="password"  value="1852512">
+<button type="submit">ddd</button>
+
+</form>
