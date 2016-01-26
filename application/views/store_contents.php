@@ -116,14 +116,14 @@ $(function(){
 		$storeType = $row->store_type;
 	
 		//현재 URL에 맞는 타입이 아니면 패쓰
-		if ($urlNum == 4){
+/* 		if ($urlNum == 4){
 			if ($row->store_status == 3){
 				
 			}
 			else{
 				continue;
 			}
-		}
+		} */
 		
 		if ($urlNum == 0){
 	
