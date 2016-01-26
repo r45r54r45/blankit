@@ -2,9 +2,9 @@
 function cl(){
   FB.ui({
   method: 'share',
-  href: 'https://www.facebook.com/dialog/share?app_id=145634995501895&amp;display=popup&amp;href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2F&amp;redirect_uri=https%3A%2F%2Fdevelopers.facebook.com%2Ftools%2Fexplorer',
+  href: 'https://developers.facebook.com/docs/',
 }, function(response){});
 }
 </script>
-<div style="height:400px;"></div>
+<div style="height:400px;">
 <button onclick="cl()">dd</button>
