@@ -71,7 +71,8 @@
   //-----------진우파트 시작--------------
   //$curPage =  $this->uri->segment(3); //현재 아이템 번호 & ?
   $urlPath = "$_SERVER[REQUEST_URI]";
-  $curPage = explode('/', $urlPath);
+  $explodePath = explode('/', $urlPath);
+  $curPage = $explodePath[3]; 
   /*** 물음표 제거기 ***/
   $testQ = explode('?', $curPage);
   $nowPage = $testQ[0]; //현재 아이템 번호
