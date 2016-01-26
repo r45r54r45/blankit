@@ -15,26 +15,30 @@ class Join extends CI_Controller {
 
 	public function func_join_ok()
 	{
-		$id = $this->input->post('id');
-		$pw = $this->input->post('pw');
-		$name = $this->input->post('name');
-			$phone1 = $this->input->post('phone1');
-			$phone2 = $this->input->post('phone2');
-			$phone3 = $this->input->post('phone3');
-		$phone = $phone1 . $phone2 . $phone3;
-		$type = $this->input->post('type'); // 1일반 2아티스트
-		$job = $this->input->post('job');
-		$introduction = $this->input->post('introduction');
-		
-		/* $this->load->model('join_model');
-		if ($type == 1){
-			$this->join_model->func_join_ok1($id, $pw, $name, $phone, $type);
+		if ($this->input->post('id') !== ""){
+			$id = $this->input->post('id');
+			$pw = $this->input->post('pw');
+			$name = $this->input->post('name');
+				$phone1 = $this->input->post('phone1');
+				$phone2 = $this->input->post('phone2');
+				$phone3 = $this->input->post('phone3');
+			$phone = $phone1 . $phone2 . $phone3;
+			$type = $this->input->post('type'); // 1일반 2아티스트
+			$job = $this->input->post('job');
+			$introduction = $this->input->post('introduction');
+			
+			$this->load->model('join_model');
+			if ($type == 1){
+				$this->join_model->func_join_ok1($id, $pw, $name, $phone, $type);
+			}
+			else {
+				$this->join_model->func_join_ok2($id, $pw, $name, $phone, $type, $job, $introduction);
+			}
 		}
-		else {
-			$this->join_model->func_join_ok2($id, $pw, $name, $phone, $type, $job, $introduction);
-		} */
 		
-		$this->load->view('test_result');
+		$mainUrl = "http://blankit.kr";
+		$this->load->helper('url');
+		redirect($mainUrl);
 	}
 	public function id_check()
 	{
