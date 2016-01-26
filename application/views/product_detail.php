@@ -211,7 +211,7 @@ if ($itemType == "E_1" || $itemType == "E_2" || $itemType == "E_3" || $itemType 
 <!-- 에코백일경우에만 뜨는 메뉴 끝 -->
 <!-- 맨투맨/후드에만 뜨는 메뉴 시작 -->
 <?php
-if ($itemType == "E_1" || $itemType == "E_2" || $itemType == "E_3" || $itemType == "E_4"){ 
+if ($itemType == "M_1" || $itemType == "H_1"){ 
 	echo '
 	
 <div class="row row_padding-xs" style="margin-top:20px;">
