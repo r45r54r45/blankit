@@ -10,13 +10,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
     <!-- 스토어 세부페이지와 submit 페이지에서만 출력 시작-->
-    <?if(isset($_GET['url'])){?>
+    <?if(true){?>
     <meta property="fb:app_id" content="214340015575657"/>
-    <meta property="og:url"                content="<?echo $_GET['url'];?>" />
+    <meta property="og:url"                content="<?echo $actual_link; ?>" />
     <meta property="og:type"               content="website" />
-    <meta property="og:title"              content="<?echo $_GET['title'];?>" />
-    <meta property="og:description"        content="<?echo $_GET['description'];?>" />
-    <meta property="og:image"              content="<?echo $_GET['image'];?>" />
+    <meta property="og:title"              content="<?echo "천진우"?>" />
+    <meta property="og:description"        content="<?echo "천진우설명";?>" />
+    <meta property="og:image"              content="<?echo "http://blankit.kr/source/image/ecobag_test.png" ?>" />
     <?}?>
     <!-- 스토어 세부페이지와 submit 페이지에서만 출력 끝-->
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
