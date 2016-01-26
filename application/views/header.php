@@ -15,9 +15,9 @@
     <meta property="fb:app_id" content="214340015575657"/>
     <meta property="og:url"                content="<?echo $actual_link; ?>" />
     <meta property="og:type"               content="website" />
-    <meta property="og:title"              content="<?echo "천진우"?>" />
-    <meta property="og:description"        content="<?echo "천진우설명";?>" />
-    <meta property="og:image"              content="<?echo "http://blankit.kr/source/image/ecobag_test.png" ?>" />
+    <meta property="og:title"              content="<?echo "작품 제목"?>" />
+    <meta property="og:description"        content="<?echo "작품 설명";?>" />
+    <meta property="og:image"              content="<?echo "http://blankit.kr/source/image/facebook_share_image.png" ?>" />
     <?}?>
     <!-- 스토어 세부페이지와 submit 페이지에서만 출력 끝-->
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
