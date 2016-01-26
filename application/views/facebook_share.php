@@ -1,11 +1,19 @@
-<html>
+<!DOCTYPE html>
+<html lang="ko">
 <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+
+  <!-- 스토어 세부페이지와 submit 페이지에서만 출력 시작-->
   <meta property="fb:app_id" content="214340015575657"/>
   <meta property="og:url"                content="http://blankit.kr/test/share" />
   <meta property="og:type"               content="article" />
   <meta property="og:title"              content="jinwoo" />
   <meta property="og:description"        content="cheon" />
   <meta property="og:image"              content="http://blankit.kr/source/image/ecobag_test.png" />
+  <!-- 스토어 세부페이지와 submit 페이지에서만 출력 끝-->
 </head>
 <body>
 </body>

@@ -1,5 +1,6 @@
 <?php
   defined('BASEPATH') OR exit('No direct script access allowed');
+  $actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 ?>
 <!DOCTYPE html>
 <html lang="ko">
@@ -8,14 +9,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
-    <meta property="fb:app_id" content="214340015575657"/>
-    <meta property="og:url"                content="http://blankit.kr/test/share" />
-    <meta property="og:type"               content="article" />
-    <meta property="og:title"              content="jinwoo" />
-    <meta property="og:description"        content="cheon" />
-    <meta property="og:image"              content="http://blankit.kr/source/image/ecobag_test.png" />
+
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Blank.It</title>
+    <title>blank it</title>
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" crossorigin="anonymous" ></script>
     <script src="/source/js/common.js" ></script>
     <script src="/source/js/dropzone.js" ></script>
@@ -69,7 +65,7 @@
 
 
 	/*** 여기까지, 스토어 상품의 시간만료 체크 ***/
-  	$actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+
     	if($actual_link=="http://blankit.kr/"||$actual_link=="http://blankit.kr/artist"||$actual_link=="http://blankit.kr/store"||$actual_link=="http://blankit.kr/store/cloth"||$actual_link=="http://blankit.kr/store/ecobag"||$actual_link=="http://blankit.kr/store/pouch"||$actual_link=="http://blankit.kr/store/done"||$actual_link=="http://blankit.kr/submit")
       		echo "/source/image/logo_white.png";
     	else
