@@ -2,7 +2,7 @@
 function cl(){
   FB.ui({
   method: 'share',
-  href: 'http://blankit.kr/test?app_id=145634995501895',
+  href: 'http://blankit.kr/test/share',
 }, function(response){});
 }
 </script>
