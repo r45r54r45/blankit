@@ -97,6 +97,8 @@
   else { //물음표가 있을 시
   	$itemType = $testQ[1];
   }
+  
+  echo $itemType . '/////////';
   //-----------진우파트 끝--------------
   
   $itemImage="/source/image/ecobag_test.png";//작품이미지
