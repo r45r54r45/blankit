@@ -158,13 +158,13 @@ function makePrice(option){
 	$explodePath = explode('/', $urlPath);
 
 	$numPath = $explodePath[3]; // 현재 URL 상품번호
-	
+
 	/*** 물음표 제거기 **
 	$testQ = explode('?', $numPath);
 	$numPath = $testQ[0]; */
-	
+
 	$numPath =  $this->uri->segment(3);
-	
+
   	$GlobalStoreName;
   	$GlobalUserName;
     $GlobalStoreType;
@@ -416,3 +416,13 @@ function makePrice(option){
   <input type="text" name="storeId" value="<?echo $numPath;?>">
   <input type="text" name="storeType" value="<?echo $GlobalStoreType;?>">
 </form>
+<script>
+function cl(){
+  FB.ui({
+  method: 'share',
+  href: 'http://blankit.kr/store/product/5',
+}, function(response){});
+}
+</script>
+<div style="height:400px;"></div>
+<button onclick="cl()">dd</button>

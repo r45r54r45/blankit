@@ -1,12 +1,8 @@
 <script>
-var url=encodeURIComponent("http://blankit.kr/store/product/5");
-var title='테스트타이틀';
-var description='테스트설명';
-var image=encodeURIComponent("http://blankit.kr/source/image/ecobag_test.png");
 function cl(){
   FB.ui({
   method: 'share',
-  href: 'http://blankit.kr/store/product/5?url='+url+'&title='+title+'&description='+description+'&image='+image,
+  href: 'http://blankit.kr/store/product/5',
 }, function(response){});
 }
 </script>
