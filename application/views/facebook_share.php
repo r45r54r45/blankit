@@ -5,7 +5,7 @@
   <meta property="og:type"               content="article" />
   <meta property="og:title"              content="jinwoo" />
   <meta property="og:description"        content="cheon" />
-  <meta property="og:image"              content="http://blankit.kr/source/image/store-page-banner.jpg" />
+  <meta property="og:image"              content="http://blankit.kr/source/image/ecobag_test.png" />
 </head>
 <body>
 </body>
