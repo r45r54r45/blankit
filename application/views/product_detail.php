@@ -207,7 +207,7 @@ if ($itemType == "E_1" || $itemType == "E_2" || $itemType == "E_3" || $itemType 
 </div>
 </div>
 </div>
-'}?>
+;'}?>
 <!-- 에코백일경우에만 뜨는 메뉴 끝 -->
 <!-- 제품 정보 시작 -->
 <div class="row row_padding-xs" style="margin-top:20px;">
