@@ -9,8 +9,8 @@ class Store_model extends CI_Model{
 	public function contents(){
 		return $this->db->query("
 		select store_image, store_day, store_goal, store_goal_now, artist_type, user_name, artist_profile, store_type, store_status, s.store_id
-		from MDPICK m, STORE s, USER u
-		where m.store_id = s.store_id and s.user_id = u.user_id;
+		from STORE s, USER u
+		where s.user_id = u.user_id;
 		");
 	}
 	
