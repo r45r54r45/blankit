@@ -5,7 +5,7 @@
   <meta property="og:type"               content="article" />
   <meta property="og:title"              content="jinwoo" />
   <meta property="og:description"        content="cheon" />
-  <meta property="og:image"              content="http://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg" />
+  <meta property="og:image"              content="http://blankit.kr/source/image/store-page-banner.jpg" />
 </head>
 <body>
 </body>
