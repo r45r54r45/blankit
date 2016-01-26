@@ -69,6 +69,13 @@
 </style>
   <?php
   //-----------진우파트 시작--------------
+  echo $this->uri->segment(3);
+  
+  /* foreach ($contents->result() as $row){
+  	
+  } */
+  
+  
   $itemType="E_1"; //아이템 종류..(string) 이것에 따라 작품들이 제품의 어느 위치에 삽입될 지 결정됨.
   //**여기에 아이템 종류 넣어주삼.**
   $itemNum; //작품의 고유번호 넣어주삼. 작품 이미지 주소 가져오는데 사용
@@ -152,6 +159,7 @@
 <!-- 제품에 들어간 작품부분 끝 -->
 <!-- 에코백일경우에만 뜨는 메뉴 시작 -->
 <!-- style="border-bottom:2px solid #96AFB5; color:#96AFB5;" -->
+
 <!-- 진우 시작 -->
 <!-- 이건 에코백일 경우에만 뜨는 메뉴인데, 기본 메뉴는 처음꺼 컬러이고 클릭하면 다른 메뉴로 이동해야함. -->
 <div class="row row_padding-xs" style="margin-top:20px;">
