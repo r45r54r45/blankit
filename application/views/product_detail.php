@@ -75,6 +75,9 @@
   $nowPage = $testQ[0]; //현재 아이템 번호
   $itemNum = $nowPage; //작품의 고유번호 넣어주삼. 작품 이미지 주소 가져오는데 사용
   
+  echo $curPage;
+  echo $nowPage;
+  
   if ($curPage == $nowPage){
 	  foreach ($contents->result() as $row){
 	  	if ($row->store_id == $curPage){
