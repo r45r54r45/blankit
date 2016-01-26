@@ -156,6 +156,10 @@ function submitCheck(){
   }
   $("#formformform").submit();
 }
+
+function noCheck(){
+	alert("점검중입니다. 문의는 옐로우ID blankit으로 해주세요.");
+}
 </script>
 
 
@@ -247,7 +251,7 @@ if ($explodePath = explode('?', $urlPath)){
             <a href="/join" style=""><div style="border-radius:5px; width:100%; height:25px; line-height:25px; border: 1px solid #B7B7B7; font-size:11px; text-align:center;"><span style="vertical-align:middle;">회원가입</span></div></a>
           </div>
           <div class="col-xs-8 padding-left-0 padding-right-0">
-            <a href="" style=""><div style="border-radius:5px; width:100%; height:25px; line-height:25px; border: 1px solid #B7B7B7; font-size:11px; text-align:center;"><span style="vertical-align:middle;">아이디/비밀번호 찾기</span></div></a>
+            <a onclick="noCheck();" href="" style=""><div style="border-radius:5px; width:100%; height:25px; line-height:25px; border: 1px solid #B7B7B7; font-size:11px; text-align:center;"><span style="vertical-align:middle;">아이디/비밀번호 찾기</span></div></a>
           </div>
         </div>
       </div>
