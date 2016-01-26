@@ -182,9 +182,9 @@
   </div>
 </div>
 <!-- 제품에 들어간 작품부분 끝 -->
-<!-- 에코백일경우에만 뜨는 메뉴 시작 -->
 <!-- style="border-bottom:2px solid #96AFB5; color:#96AFB5;" -->
 
+<!-- 에코백일경우에만 뜨는 메뉴 시작 -->
 <?php
 if ($itemType == "E_1" || $itemType == "E_2" || $itemType == "E_3" || $itemType == "E_4"){ 
 	echo '
@@ -209,6 +209,27 @@ if ($itemType == "E_1" || $itemType == "E_2" || $itemType == "E_3" || $itemType 
 </div>
 ';}?>
 <!-- 에코백일경우에만 뜨는 메뉴 끝 -->
+<!-- 맨투맨/후드에만 뜨는 메뉴 시작 -->
+<?php
+if ($itemType == "E_1" || $itemType == "E_2" || $itemType == "E_3" || $itemType == "E_4"){ 
+	echo '
+	
+<div class="row row_padding-xs" style="margin-top:20px;">
+    <div class="col-md-12" id="E-location" style="position:relative; height:25px; padding-bottom:40px; border-bottom: 1.5px solid #D3D3D3;">
+<div class="menu">
+  <div class="menu_item">
+    <a href="/store/product/' . $itemNum . '?M_1' . '">맨투맨</a> 
+  </div>
+  <div class="menu_item" >
+    <a href="/store/product/' . $itemNum . '?H_1' . '">후드</a>
+  </div>
+</div>
+</div>
+</div>
+';}?>
+<!-- 맨투맨/후드에만 뜨는 메뉴 끝 -->
+
+
 <!-- 제품 정보 시작 -->
 <div class="row row_padding-xs" style="margin-top:20px;">
   <div class="col-xs-12" style="padding-bottom:40px; border-bottom:1px solid #D3D3D3;">
