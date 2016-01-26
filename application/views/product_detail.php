@@ -90,12 +90,14 @@
 	  				$itemType="P_1";
 	  				break;
 	  		}
+	  		echo "I was here at 1";
 	  		break;
 	  	}
 	  }
   }
   else { //물음표가 있을 시
   	$itemType = $testQ[1];
+  	echo "I was here at 2";
   }
   
   echo $itemType . '/////////';
