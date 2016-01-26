@@ -84,7 +84,7 @@
 	  		$itemTypeRecog = $row->store_type;
 	  		switch ($itemTypeRecog){
 	  			case 1:
-	  				$itemType="M_1"; //아이템 종류..(string) 이것에 따라 작품들이 제품의 어느 위치에 삽입될 지 결정됨.
+	  				$itemType="M_1";
 	  				break;
 	  			case 2:
 	  				$itemType="E_1";
@@ -185,30 +185,29 @@
 <!-- 에코백일경우에만 뜨는 메뉴 시작 -->
 <!-- style="border-bottom:2px solid #96AFB5; color:#96AFB5;" -->
 
-<!-- 진우 시작 -->
-<?php// if ($itemTypeRecog == 2){ ?>
+<?php
+if ($itemType == "E_1" || $itemType == "E_2" || $itemType == "E_3" || $itemType == "E_4"){ 
+	echo '?>
 	
 <div class="row row_padding-xs" style="margin-top:20px;">
     <div class="col-md-12" id="E-location" style="position:relative; height:25px; padding-bottom:40px; border-bottom: 1.5px solid #D3D3D3;">
 <div class="menu">
   <div class="menu_item">
-    <a href="/store/product/<?php echo $itemNum . '?E_1';?>">숄더(컬러)</a> 
+    <a href="/store/product/' . $itemNum . '?E_1' . '">숄더(컬러)</a> 
   </div>
   <div class="menu_item" >
-    <a href="/store/product/<?php echo $itemNum . '?E_2';?>">숄더(아이보리)</a>
+    <a href="/store/product/' . $itemNum . '?E_2' . '">숄더(아이보리)</a>
   </div>
   <div class="menu_item">
-    <a href="/store/product/<?php echo $itemNum . '?E_3';?>">토트/크로스</a>
+    <a href="/store/product/' . $itemNum . '?E_3' . '">토트/크로스</a>
   </div>
   <div class="menu_item">
-    <a href="/store/product/<?php echo $itemNum . '?E_4';?>">크로스</a>
+    <a href="/store/product/' . $itemNum . '?E_4' . '">크로스</a>
   </div>
-  
-<!-- 진우 끝 -->
-
 </div>
 </div>
 </div>
+<?php '}?>
 <!-- 에코백일경우에만 뜨는 메뉴 끝 -->
 <!-- 제품 정보 시작 -->
 <div class="row row_padding-xs" style="margin-top:20px;">
