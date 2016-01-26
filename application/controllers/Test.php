@@ -15,6 +15,18 @@ class Test extends CI_Controller {
 		$this->load->view('js_test2');
 		$this->load->view('footer');
 	}
+	public function t3()
+	{
+		$this->load->view('header');
+		$this->load->view('js_test3');
+		$this->load->view('footer');
+	}
+	public function t4()
+	{
+		$this->load->view('header');
+		$this->load->view('js_test4');
+		$this->load->view('footer');
+	}
 	public function share()
 	{
 		$this->load->view('facebook_share');
