@@ -69,7 +69,10 @@
 </style>
   <?php
   //-----------진우파트 시작--------------
-  $curPage =  $this->uri->segment(3); //현재 아이템 번호 & ?
+  //$curPage =  $this->uri->segment(3); //현재 아이템 번호 & ?
+  $urlPath = "$_SERVER[REQUEST_URI]";
+  $explodePath = explode('/', $urlPath);
+  $curPage = $explodePath[3]; 
   /*** 물음표 제거기 ***/
   $testQ = explode('?', $curPage);
   $nowPage = $testQ[0]; //현재 아이템 번호
@@ -90,13 +93,16 @@
 	  				$itemType="P_1";
 	  				break;
 	  		}
+	  		//echo "I was here at 1";
 	  		break;
 	  	}
 	  }
   }
   else { //물음표가 있을 시
   	$itemType = $testQ[1];
+  	//echo "I was here at 2";
   }
+  
   //-----------진우파트 끝--------------
   
   $itemImage="/source/image/ecobag_test.png";//작품이미지
