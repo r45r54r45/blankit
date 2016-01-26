@@ -159,12 +159,6 @@ function makePrice(option){
 
 	$numPath = $explodePath[3]; // 현재 URL 상품번호
 	
-	/*** product_detail을 위함 ***/
-	$checkQ = explode('?', $numPath)
-	if ($checkQ[1] !== ""){
-		$numPath = $checkQ[0];
-	}
-	
   	$GlobalStoreName;
   	$GlobalUserName;
     $GlobalStoreType;
