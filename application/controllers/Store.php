@@ -59,12 +59,6 @@ class Store extends CI_Controller {
 		$this->load->view('product_detail', $data);
 		$this->load->view('footer');
 	}
-	public function product_detail() // 제품 상세보기
-	{
-		$this->load->view('header');
-		$this->load->view('product_detail');
-		$this->load->view('footer');
-	}
 	public function func_toCart() // 상품페이지->장바구니
 	{
 		if ($this->input->post('storeId')){ // POST값이 존재하면 진행
