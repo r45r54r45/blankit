@@ -161,7 +161,7 @@ function makePrice(option){
 	
 	/*** product_detail을 위함 ***/
 	$checkQ = explode('?', $numPath)
-	if ($checkQ[1]){
+	if ($checkQ[1] !== ""){
 		$numPath = $checkQ[0];
 	}
 	
