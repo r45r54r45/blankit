@@ -69,25 +69,33 @@
 </style>
   <?php
   //-----------진우파트 시작--------------
-  $curPage =  $this->uri->segment(3); // 현재 아이템 번호
+  $curPage =  $this->uri->segment(3); //현재 아이템 번호 & ?
+  /*** 물음표 제거기 ***/
+  $testQ = explode('?', $curPage);
+  $nowPage = $testQ[0]; //현재 아이템 번호
+  $itemNum = $nowPage; //작품의 고유번호 넣어주삼. 작품 이미지 주소 가져오는데 사용
   
-  foreach ($contents->result() as $row){
-  	if ($row->store_id == $curPage){
-  		$itemTypeRecog = $row->store_type;
-  		switch ($itemTypeRecog){
-  			case 1:
-  				$itemType="M_1"; //아이템 종류..(string) 이것에 따라 작품들이 제품의 어느 위치에 삽입될 지 결정됨.
-  				break;
-  			case 2:
-  				$itemType="E_2";
-  				break;
-  			case 3:
-  				$itemType="P_1";
-  				break;
-  		}
-  		$itemNum = $curPage; //작품의 고유번호 넣어주삼. 작품 이미지 주소 가져오는데 사용
-  		break;
-  	}
+  if ($curPage == $nowPage){
+	  foreach ($contents->result() as $row){
+	  	if ($row->store_id == $curPage){
+	  		$itemTypeRecog = $row->store_type;
+	  		switch ($itemTypeRecog){
+	  			case 1:
+	  				$itemType="M_1"; //아이템 종류..(string) 이것에 따라 작품들이 제품의 어느 위치에 삽입될 지 결정됨.
+	  				break;
+	  			case 2:
+	  				$itemType="E_1";
+	  				break;
+	  			case 3:
+	  				$itemType="P_1";
+	  				break;
+	  		}
+	  		break;
+	  	}
+	  }
+  }
+  else { //물음표가 있을 시
+  	$itemType = $testQ[1];
   }
   //-----------진우파트 끝--------------
   
@@ -177,17 +185,17 @@
 <div class="row row_padding-xs" style="margin-top:20px;">
     <div class="col-md-12" id="E-location" style="position:relative; height:25px; padding-bottom:40px; border-bottom: 1.5px solid #D3D3D3;">
 <div class="menu">
+  <div class="menu_item">
+    <a href="/store/product/<?php echo $itemNum . '?E_1';?>">숄더(컬러)</a> 
+  </div>
   <div class="menu_item" >
     <a href="/store/product/<?php echo $itemNum . '?E_2';?>">숄더(아이보리)</a>
   </div>
   <div class="menu_item">
-    <a href="/store/product/">숄더(컬러)</a> 
+    <a href="/store/product/<?php echo $itemNum . '?E_3';?>">토트/크로스</a>
   </div>
   <div class="menu_item">
-    <a href="/store/product/">토트/크로스</a>
-  </div>
-  <div class="menu_item">
-    <a href="/store/product/">크로스</a>
+    <a href="/store/product/<?php echo $itemNum . '?E_4';?>">크로스</a>
   </div>
   
 <!-- 진우 끝 -->
