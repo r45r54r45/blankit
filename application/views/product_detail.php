@@ -76,25 +76,21 @@
   		$itemTypeRecog = $row->store_type;
   		switch ($itemTypeRecog){
   			case 1:
-  				$itemType="M_1";
+  				$itemType="M_1"; //아이템 종류..(string) 이것에 따라 작품들이 제품의 어느 위치에 삽입될 지 결정됨.
   				break;
   			case 2:
-  				$itemType="E_1";
+  				$itemType="E_2";
   				break;
   			case 3:
   				$itemType="P_1";
   				break;
   		}
-  		$itemNum = $curPage;
+  		$itemNum = $curPage; //작품의 고유번호 넣어주삼. 작품 이미지 주소 가져오는데 사용
   		break;
   	}
   }
-  
-  
-  //$itemType="E_1"; //아이템 종류..(string) 이것에 따라 작품들이 제품의 어느 위치에 삽입될 지 결정됨.
-  //**여기에 아이템 종류 넣어주삼.**
-  //$itemNum; //작품의 고유번호 넣어주삼. 작품 이미지 주소 가져오는데 사용
   //-----------진우파트 끝--------------
+  
   $itemImage="/source/image/ecobag_test.png";//작품이미지
   $itemPos; //아이템이 삽입될 위치
   $itemSizeImg; //제품 사이즈 이미지 주소
@@ -176,23 +172,26 @@
 <!-- style="border-bottom:2px solid #96AFB5; color:#96AFB5;" -->
 
 <!-- 진우 시작 -->
-<!-- 이건 에코백일 경우에만 뜨는 메뉴인데, 기본 메뉴는 처음꺼 컬러이고 클릭하면 다른 메뉴로 이동해야함. -->
+<?php// if ($itemTypeRecog == 2){ ?>
+	
 <div class="row row_padding-xs" style="margin-top:20px;">
-    <div class="col-md-12" style="position:relative; height:25px; padding-bottom:40px; border-bottom: 1.5px solid #D3D3D3;">
+    <div class="col-md-12" id="E-location" style="position:relative; height:25px; padding-bottom:40px; border-bottom: 1.5px solid #D3D3D3;">
 <div class="menu">
   <div class="menu_item" >
-    <a href="">숄더(아이보리)</a>
+    <a href="/store/product/<?php echo $itemNum . '?E_2';?>">숄더(아이보리)</a>
   </div>
   <div class="menu_item">
-    <a href="">숄더(컬러)</a>
+    <a href="/store/product/">숄더(컬러)</a> 
   </div>
   <div class="menu_item">
-    <a href="">토트/크로스</a>
+    <a href="/store/product/">토트/크로스</a>
   </div>
   <div class="menu_item">
-    <a href="">크로스</a>
+    <a href="/store/product/">크로스</a>
   </div>
+  
 <!-- 진우 끝 -->
+
 </div>
 </div>
 </div>
