@@ -172,7 +172,8 @@
 <!-- style="border-bottom:2px solid #96AFB5; color:#96AFB5;" -->
 
 <!-- 진우 시작 -->
-<?php if ($itemTypeRecog == 2) { echo '
+<?php if ($itemTypeRecog == 2){
+	echo '
 <!-- 이건 에코백일 경우에만 뜨는 메뉴인데, 기본 메뉴는 처음꺼 컬러이고 클릭하면 다른 메뉴로 이동해야함. -->
 <div class="row row_padding-xs" style="margin-top:20px;">
     <div class="col-md-12" id="E-location" style="position:relative; height:25px; padding-bottom:40px; border-bottom: 1.5px solid #D3D3D3;">
@@ -189,7 +190,7 @@
   <div class="menu_item">
     <a href="/store/product/' . $itemNum?E_4 . '">크로스</a>
   </div>
-  '; }?>
+  ' }?>
 <!-- 진우 끝 -->
 
 </div>
