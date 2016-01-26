@@ -79,7 +79,7 @@
   				$itemType="M_1"; //아이템 종류..(string) 이것에 따라 작품들이 제품의 어느 위치에 삽입될 지 결정됨.
   				break;
   			case 2:
-  				$itemType="E_1";
+  				$itemType="E_2";
   				break;
   			case 3:
   				$itemType="P_1";
@@ -178,16 +178,16 @@
     <div class="col-md-12" id="E-location" style="position:relative; height:25px; padding-bottom:40px; border-bottom: 1.5px solid #D3D3D3;">
 <div class="menu">
   <div class="menu_item" >
-    <a href="">숄더(아이보리)</a>
+    <a href="/store/product/' . $itemNum?E_2 . '">숄더(아이보리)</a>
   </div>
   <div class="menu_item">
-    <a href="">숄더(컬러)</a>
+    <a href="/store/product/' . $itemNum?E_1 . '">숄더(컬러)</a>
   </div>
   <div class="menu_item">
-    <a href="">토트/크로스</a>
+    <a href="/store/product/' . $itemNum?E_3 . '">토트/크로스</a>
   </div>
   <div class="menu_item">
-    <a href="">크로스</a>
+    <a href="/store/product/' . $itemNum?E_4 . '">크로스</a>
   </div>
   '; }?>
 <!-- 진우 끝 -->
