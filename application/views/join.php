@@ -64,7 +64,7 @@ input[type="radio"] + label{
   font-size: 13px;
   color:#443333;
 }
-.navbar-left{
+.navbar-color{
   color: #777 !important;
 }
 </style>
@@ -446,7 +446,7 @@ function submitCheck(){
   <div class="row row-padding-xs-100 " style="margin-top:10px;">
     <div style="float:right">
       <input type="checkbox" id="usage_checkbox">
-      <label for="usage_checkbox" style="margin-left:5px;">(필수) 약관에 동의합니 </label>
+      <label for="usage_checkbox" style="margin-left:5px;">(필수) 약관에 동의합니다 </label>
     </div>
   </div>
   <div class="row row-padding-xs-100 " style="margin-top:30px;">
