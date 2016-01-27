@@ -12,7 +12,7 @@ class Submit_model extends CI_Model{
 			
 			$seed = $this->db->query("
 				select max(store_id) from `STORE`;
-			")
+			");
 			$randomID = $seed + 1;
 			
 			$date = date('Y-m-d 0:0:0');
