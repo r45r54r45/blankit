@@ -188,7 +188,7 @@ if ($explodePath = explode('?', $urlPath)){
     </div>
   </div>
   <div class="row row-padding-xs-100 row_padding-xs" style="margin-top:50px; text-align:center">
-    <div class="col-xs-6  padding-left-0 padding-xs-right-100 " style="margin:0 auto;">
+    <div class="col-xs-12  padding-left-0" style="margin:0 auto;">
       <div class="col-xs-12 grey padding-left-0">
         <span style="font-size:20px;">회원 로그인</span>
       </div>
