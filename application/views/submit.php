@@ -114,6 +114,7 @@ $(function(){
       </div>
   </div>
   <!-- 진우의 임시 틀 -->
+  <!--  -->
 <form action="/submit/func_checkSubmit" method="post" id="formform">
   <div class="row row-padding-xs-100 " style="margin-top:10px;">
   	<div class="menu">블랭킷 X 아티스트 작품명</div>
@@ -146,6 +147,8 @@ $(function(){
         </select>
   </div>
   </div>
+  <button>제출</button>
 </form>
+<!-- 진우의 임시 틀  여기까지-->
   
 </div>
