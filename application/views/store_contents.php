@@ -118,29 +118,29 @@ $(function(){
 		//현재 URL에 맞는 타입이 아니면 패쓰
 /* 		if ($urlNum == 4){
 			if ($row->store_status == 3){
-				
+
 			}
 			else{
 				continue;
 			}
 		} */
-		
+
 		if ($urlNum == 0){
-	
+
 		} else if ($storeType == $urlNum){
 			if ($row->store_status == 3){
 				continue;
 			}
 		} else if ($urlNum == 4 && $row->store_status == 3){
-			
+
 		} else {
 			continue;
 		}
-	
+
 		$totalGoal = $row->store_goal;
 		$nowGoal = $row->store_goal_now;
 		$percGoal = $nowGoal / $totalGoal * 100;
-	
+
 		//"앞으로 # 일 계산"
 		$curDate = date('Y-m-d H:i:s');
 		$dueDate = $row->store_day;
@@ -161,7 +161,7 @@ $(function(){
 
     <div class="col-xs-6 col-sm-4 col-md-3 col-lg-15">
       <div class="box radius-4">
-      <div><a href="/store/product/<?php echo $row->store_id?>">
+      <div><a href="/funding/product/<?php echo $row->store_id?>">
       	<img src="<?php echo $row->store_image;?>" class="img_rounded">
       </a></div>
       <div class="status_bar" style="background: linear-gradient(to right, #687C87 <?php echo ceil($percGoal)?>%,#D3D3D3 <?php echo ceil($percGoal)?>% );"></div>
