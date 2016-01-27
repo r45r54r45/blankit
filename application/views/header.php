@@ -68,7 +68,7 @@
 
 	/*** 여기까지, 스토어 상품의 시간만료 체크 ***/
 
-    	if($actual_link=="http://blankit.kr/"||$actual_link=="http://blankit.kr/artist"||$actual_link=="http://blankit.kr/store"||$actual_link=="http://blankit.kr/store/cloth"||$actual_link=="http://blankit.kr/store/ecobag"||$actual_link=="http://blankit.kr/store/pouch"||$actual_link=="http://blankit.kr/store/done"||$actual_link=="http://blankit.kr/submit")
+    	if($actual_link=="http://blankit.kr/"||$actual_link=="http://blankit.kr/artist"||$actual_link=="http://blankit.kr/funding"||$actual_link=="http://blankit.kr/funding/cloth"||$actual_link=="http://blankit.kr/funding/ecobag"||$actual_link=="http://blankit.kr/funding/pouch"||$actual_link=="http://blankit.kr/funding/done"||$actual_link=="http://blankit.kr/submit")
       		echo "/source/image/logo_white.png";
     	else
       		echo "/source/image/logo.png";
