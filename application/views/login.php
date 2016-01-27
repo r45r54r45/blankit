@@ -158,7 +158,7 @@ function submitCheck(){
 }
 
 function noCheck(){
-	alert("점검중입니다. 문의는 옐로우ID blankit으로 해주세요.");
+	alert("점검 중입니다! 문의는 옐로우ID blankit으로 해주세요:>");
 }
 </script>
 
