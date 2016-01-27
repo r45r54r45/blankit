@@ -31,6 +31,9 @@ background-size: contain;
 .banner>img{
   min-height: 300px;
 }
+.navbar-right{
+  color:white !important;
+}
 </style>
 <script>
 function banner_generator(){

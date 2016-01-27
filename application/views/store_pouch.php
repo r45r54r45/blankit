@@ -1,6 +1,11 @@
 <style>
-
-
+.navbar-right{
+  color:white !important;
+}
+.YourButton{
+      border: 2px solid white;
+          color: white;
+}
 .col-md-five{
   width:19.7%;
   padding: 15px 15px;
