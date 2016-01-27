@@ -80,7 +80,7 @@
         <div class="side-collapse in" style="    ">
         <nav role="navigation" style="" class="navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a class="nav-color navbar-left" href="/aboutus" style="    width: 90px;">about us</a></li>
+            <li><a class="nav-color navbar-left" href="/aboutus" style="    width: 100px;">about us</a></li>
             <li><a class="nav-color navbar-left" href="/artist">artist</a></li>
             <li class="dropdown">
               <a href="/funding" id="store_menu" class="nav-color navbar-left dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">funding</span></a>
@@ -108,7 +108,7 @@
           	?>
 
             <li><a style="" class="navbar-right main-page-navbar-right" href="/help">help</a></li>
-            <li><a style="margin-right:40px;" class="navbar-right" href="/submit"><div class="YourButton" style="margin-top: -5px; width: 130px;">내 작품 판매하기</div></a></li>
+            <li><a style="margin-right:40px;" class="navbar-right" href="/submit"><div class="YourButton" style="margin-top: -5px; width: 140px;">내 작품 판매하기</div></a></li>
           </ul>
         </nav>
       </div>
