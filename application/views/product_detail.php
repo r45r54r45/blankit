@@ -170,7 +170,7 @@
 <!-- 제품에 들어간 작품 부분 시작-->
 <div class="row row_padding-xs" style="margin-top:40px;">
   <div class="col-xs-12" style="padding-bottom:40px; border-bottom:1px solid #D3D3D3;">
-  <div class="t1-gal" style="margin-bottom:20px;"><?php echo $storeName;?></div>
+  <div class="t1-gal" style="margin-bottom:20px;"><?php echo "작품 이름";?></div>
   <div class="artwork">
     <img style="margin: 0 auto;" src="<?echo $itemImage;?>" class="img thumbnail img-responsive" >
   </div>
