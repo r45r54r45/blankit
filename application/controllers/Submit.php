@@ -10,7 +10,7 @@ class Submit extends CI_Controller {
 		$this->load->view('footer');
 	}
 	
-	public function func_checkSubmit{
+	public function func_checkSubmit(){
 		$artwork = $this->input->post('artwork');
 		$explain = $this->input->post('explain');
 		$storeType = $this->input->post('storeType');
