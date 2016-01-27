@@ -67,6 +67,9 @@ input[type="radio"] + label{
 .navbar-left{
   color: #777 !important;
 }
+.navbar-left:hover{
+  color: #5D787A !important;
+}
 </style>
 <script>
 function id_check(){
