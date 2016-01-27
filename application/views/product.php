@@ -425,7 +425,8 @@ $PRICE =  number_format($storePrice, 0, '.', ','); // 가격 천 단위 콤마 �
         }
         </script>
         <div class="row row_padding-xs" style="margin-top:20px;">
-          <div class="col-xs-12 col-sm-6 visible-xs">
+          <div class="col-xs-12 col-sm-6 visible-xs" style="border-bottom: 1px solid #D3D3D3;
+    padding-bottom: 20px;">
         <a onclick="facebook_for_artist()" style="cursor:pointer;">
           <div class="col-xs-12" style="
           background-color: #3a5795;
@@ -434,7 +435,9 @@ $PRICE =  number_format($storePrice, 0, '.', ','); // 가격 천 단위 콤마 �
         </div>
       </a>
 </div>
-        <div class="col-xs-12 col-sm-6">
+        <div class="col-xs-12 col-sm-6" style="border-bottom: 1px solid #D3D3D3;
+    padding-bottom: 20px;
+    padding-top: 20px;">
           <img src="/source/image/profile_placeholder.png" class="img img-circle img-responsive"
           style="width:100px; display:inline-block;">
           <div style="display:inline-block">
@@ -446,7 +449,9 @@ $PRICE =  number_format($storePrice, 0, '.', ','); // 가격 천 단위 콤마 �
             </div>
           </div>
         </div>
-        <div class="col-xs-12 col-sm-6 hidden-xs">
+        <div class="col-xs-12 col-sm-6 hidden-xs" style="border-bottom: 1px solid #D3D3D3;
+    padding-bottom: 20px;
+    padding-top: 20px;">
       <a onclick="facebook_for_artist()" style="cursor:pointer;">
         <div class="col-xs-12" style="
         background-color: #3a5795;
