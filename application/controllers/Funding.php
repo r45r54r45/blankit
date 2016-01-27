@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Store extends CI_Controller {
+class Funding extends CI_Controller {
 
 	public function index()
 	{
@@ -53,7 +53,7 @@ class Store extends CI_Controller {
 		$this->load->model('store_model');
 		$data['details']=$this->store_model->details();
 		$data['contents']=$this->store_model->contents();
-		
+
 		$this->load->view('header');
 		$this->load->view('product',$data);
 		$this->load->view('product_detail', $data);

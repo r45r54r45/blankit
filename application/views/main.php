@@ -258,7 +258,7 @@ $(window).resize(function(){
   <div class="col-md-12">
   <p class="row_title">STORE</p>
   <p class="row_desc">오로지 블랭킷에서만, 오로지 이 기간 동안에만 만나볼 수 있는<br>
-독립 아티스트들의 아트워크를 확인해 보세요.</p>
+아티스트들의 아트워크를 확인해 보세요.</p>
 </div>
 </div>
 <div class="row">
@@ -399,8 +399,8 @@ $(window).resize(function(){
 <div class="row" style="margin-top: 40px;">
   <div class="row-md-12" style="background: #F5F6F7; padding:30px 5px 40px 5px;">
     <p class="gal" style="font-size:21px; font-weight:bold; text-align:center; margin-top:15px; margin-bottom:15px;">당신도 함께해주세요!</p>
-    <p class="gal" style="font-size:13px; font-weight:regular; text-align:center; margin-bottom:15px; ">포트폴리오에 묵혀둔 작품이 있나요?<br class="visible-xs"> 제작비용 0원에 당신만의 제품을 선보이세요.<br>
-블랭킷은 신진 아티스트를 응원합니다.</p>
+    <p class="gal" style="font-size:13px; font-weight:regular; text-align:center; margin-bottom:15px; ">혼자 간직해온 작품이 있나요?
+<br class="visible-xs"> 제작비용 0원에 당신만의 제품을 선보이세요.</p>
     <div class="submit_button"><a href="/submit" class="myButton" style="padding: 8px 35px; color:#687C87;">내 작품 판매하기</a></div>
 
   </div>
@@ -410,7 +410,8 @@ $(window).resize(function(){
   <div class="row" style="margin-top:40px;">
     <div class="col-md-12">
     <p class="row_title">ARTIST</p>
-    <p class="row_desc">블랭킷에서 활동 중인 신진 아티스트들입니다.<br>
+    <p class="row_desc">블랭킷에서는 누구나 아티스트입니다
+<br>
 그들의 특별한 작품들을 확인해 보세요.</p>
   </div>
   </div>

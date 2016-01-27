@@ -186,8 +186,8 @@ a, a:hover, a:visited, a:link, a:active{
 .banner-text p{
   text-align: center;
   color: white;
-  font-weight: bold;
-  font-size: 17px;
+  font-weight: 400;
+  font-size: 18px;
 }
 .banner-text{
   width:100%;

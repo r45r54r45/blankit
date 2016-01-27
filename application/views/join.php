@@ -321,11 +321,6 @@ function submitCheck(){
         <div id="artist_content" style="display:none;">
           <div class="row row-padding-xs-100 " style="margin-top:10px; line-height:35px;">
             <div class="menu title2" style="vertical-align:middle;">현재 직업</div>
-            <!-- <select id="artist_type">
-              <option value="1">아티스트</option>
-              <option value="2">아티스트</option>
-              <option value="3">아티스트</option>
-            </select> -->
             <input class="menu_input" name="job" type="text">
           </div>
           <div class="row row-padding-xs-100 " style="margin-top:10px;">

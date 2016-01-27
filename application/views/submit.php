@@ -49,9 +49,8 @@ $(function(){
   <div class="banner">
     <img src="/source/image/submit-page-banner.jpg">
     <div class="banner-text">
-    <p>포트폴리오에 묵혀둔 작품이 있나요?</p>
+    <p>혼자 간직해온 작품이 있나요?</p>
     <p>제작비용 0원에 당신만의 제품을 선보이세요.</p>
-    <p>블랭킷은 신진 아티스트를 응원합니다.</p>
     </div>
   </div>
 </div>
@@ -60,7 +59,7 @@ $(function(){
       <div class="col-xs-1">
       </div>
     <div class="col-xs-10">
-      <img src="/source/image/submit_guide.png" class="img img-responsive" style="margin-top: 30px;">
+      <img src="/source/image/submit_guide.png" class="img img-responsive" style="margin-top: 30px;d">
     </div>
     <div class="col-xs-1">
     </div>
