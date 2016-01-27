@@ -94,7 +94,7 @@ $(function(){
     for(var i=1;i<7;i++){
     $("div[id='"+i+"']").css("border","none");
     }
-    $("div[id='"+event.target.id+"']").css("border","3px solid red");
+    $("div[id='"+event.target.id+"']").css("border","3px solid skyblue");
     moveInfo("color",event.target.id);
   });
   makePrice("default");
@@ -349,7 +349,7 @@ function makePrice(option){
 				        <option value="3">숄더(아이보리)</option>
 				        <option value="4">숄더(카키)</option>
 				        <option value="5">숄더(네이비)</option>
-				        <option value="6">숄더(쁠랙)</option>
+				        <option value="6">숄더(블랙)</option>
               </select>
             </div>
             <div style="clear: both;"></div>

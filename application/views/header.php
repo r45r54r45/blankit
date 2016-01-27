@@ -59,14 +59,6 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-
-          <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button> -->
-
           <a class="navbar-brand" href="/">
             <img id="logo" alt="blankit" src="
 	<?
@@ -91,11 +83,11 @@
             <li><a class="nav-color navbar-left" href="/aboutus" style="    width: 100px;">about us</a></li>
             <li><a class="nav-color navbar-left" href="/artist">artist</a></li>
             <li class="dropdown">
-              <a href="#" id="store_menu" class="nav-color dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">funding</span></a>
+              <a href="/funding" id="store_menu" class="nav-color dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">funding</span></a>
                 <ul class="dropdown-menu" role="menu">
-                  <li><a href="/store/cloth">의류</a></li>
-                  <li><a href="/store/ecobag">에코백</a></li>
-                  <li><a href="/store/pouch">파우치</a></li>
+                  <li><a href="/funding/cloth">의류</a></li>
+                  <li><a href="/funding/ecobag">에코백</a></li>
+                  <li><a href="/funding/pouch">파우치</a></li>
                 </ul>
             </li>
           </ul>

@@ -61,9 +61,8 @@ $(function(){
   <div class="banner">
     <img src="/source/image/artist-page-banner.jpg">
     <div class="banner-text">
-    <p>포트폴리오에 묵혀둔 작품이 있나요?</p>
+    <p>혼자 간직해온 작품이 있나요?</p>
     <p>제작비용 0원에 당신만의 제품을 선보이세요.</p>
-    <p>블랭킷은 신진 아티스트를 응원합니다.</p>
     </div>
   </div>
 </div>
@@ -76,7 +75,7 @@ $(function(){
   <div class="row" style="margin-top:40px;">
     <div class="col-md-12">
     <p class="row_title">ARTIST</p>
-    <p class="row_desc">블랭킷의 디자이너들이다. 봐라</p>
+    <p class="row_desc">블랭킷에서는 누구나 아티스트입니다</p>
     </div>
   </div>
     <!-- 컨텐츠 시작-->
