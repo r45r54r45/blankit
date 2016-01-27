@@ -12,6 +12,10 @@ class Submit extends CI_Controller {
 
 	public function complete()
 	{
+		$this->input->post('artwork');
+		$this->input->post('explain');
+		$this->load->model('');
+		
 		$this->load->view('header');
 		$this->load->view('submit_complete');
 		$this->load->view('footer');
