@@ -4,6 +4,7 @@
    z-index: 100;
    background: #96AFB5;
    width:100%;
+     box-shadow: 0 2px 20px -2px rgba(0, 0, 0, .52);
 }
 .img_hover {
   z-index: 50;
@@ -14,6 +15,7 @@
   z-index: 50;
   width: 100%;
   opacity: 0.5;
+
 }
 .artist_name{
   margin-bottom:5px;
