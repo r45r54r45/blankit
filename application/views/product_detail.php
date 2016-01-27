@@ -193,16 +193,16 @@ if ($itemType == "E_1" || $itemType == "E_2" || $itemType == "E_3" || $itemType 
     <div class="col-md-12" id="E-location" style="position:relative; height:25px; padding-bottom:40px; border-bottom: 1.5px solid #D3D3D3;">
 <div class="menu">
   <div class="menu_item">
-    <a href="/funding/product/#here' . $itemNum . '?E_1' . '">숄더(컬러)</a>
+    <a href="/funding/product/' . $itemNum . '?E_1#here' . '">숄더(컬러)</a>
   </div>
   <div class="menu_item" >
-    <a href="/funding/product/#here' . $itemNum . '?E_2' . '">숄더(아이보리)</a>
+    <a href="/funding/product/' . $itemNum . '?E_2#here' . '">숄더(아이보리)</a>
   </div>
   <div class="menu_item">
-    <a href="/funding/product/#here' . $itemNum . '?E_3' . '">토트/크로스</a>
+    <a href="/funding/product/' . $itemNum . '?E_3#here' . '">토트/크로스</a>
   </div>
   <div class="menu_item">
-    <a href="/funding/product/#here' . $itemNum . '?E_4' . '">크로스</a>
+    <a href="/funding/product/' . $itemNum . '?E_4#here' . '">크로스</a>
   </div>
 </div>
 </div>
@@ -218,10 +218,10 @@ if ($itemType == "M_1" || $itemType == "H_1"){
     <div class="col-md-12" id="E-location" style="position:relative; height:25px; padding-bottom:40px; border-bottom: 1.5px solid #D3D3D3;">
 <div class="menu" style="width: 80px;margin-left: -40px;">
   <div class="menu_item" style="width:47%">
-    <a href="/funding/product/#here' . $itemNum . '?M_1' . '">맨투맨</a>
+    <a href="/funding/product/' . $itemNum . '?M_1#here' . '">맨투맨</a>
   </div>
   <div class="menu_item" style="width:47%">
-    <a href="/funding/product/#here' . $itemNum . '?H_1' . '">후드</a>
+    <a href="/funding/product/' . $itemNum . '?H_1#here' . '">후드</a>
   </div>
 </div>
 </div>
