@@ -64,7 +64,7 @@
   margin-top: 5px;
   height:20px;width:20px;
   display:inline-block;
-    cursor:pointer;
+  cursor:pointer;
 }
 </style>
 <script>
@@ -92,7 +92,7 @@ $(function(){
   $("#amount").css("width","30px");
   $("div[name='color']").on("click",function(event){
     for(var i=1;i<7;i++){
-    $("div[id='"+i+"']").css("border","none");
+      $("div[id='"+i+"']").css("border","none");
     }
     $("div[id='"+event.target.id+"']").css("border","3px solid skyblue");
     moveInfo("color",event.target.id);
@@ -127,87 +127,87 @@ function makePrice(option){
   var actual;
   switch($("#storeType").val()){
     case "1 ":
-      init=30000;
-      if(option=="2")actual=init+7000;
-      else if(option=="3")actual=init+8000;
-      else if(option=="4")actual=init+16000;
-      else actual=init;
-      $("#priceSpan").text(actual+"원");
+    init=30000;
+    if(option=="2")actual=init+7000;
+    else if(option=="3")actual=init+8000;
+    else if(option=="4")actual=init+16000;
+    else actual=init;
+    $("#priceSpan").text(actual+"원");
     break;
     case "2 ":
-      init=21000;
-      actual=init;
-      $("#priceSpan").text(actual+"원");
+    init=21000;
+    actual=init;
+    $("#priceSpan").text(actual+"원");
     break;
     case "3 ":
-      init=19000;
-      if(option=="2")actual=init+1000;
-      else actual=init;
-      $("#priceSpan").text(actual+"원");
+    init=19000;
+    if(option=="2")actual=init+1000;
+    else actual=init;
+    $("#priceSpan").text(actual+"원");
     break;
   }
 }
 </script>
-  <div class="banner">
+<div class="banner">
 
-  </div>
+</div>
 </div>
 
 <?php
 /* 	$urlPath = "$_SERVER[REQUEST_URI]";
-	$explodePath = explode('/', $urlPath);
+$explodePath = explode('/', $urlPath);
 
-	$numPath = $explodePath[3]; // 현재 URL 상품번호
+$numPath = $explodePath[3]; // 현재 URL 상품번호
 
-	/*** 물음표 제거기 **
-	$testQ = explode('?', $numPath);
-	$numPath = $testQ[0]; */
+/*** 물음표 제거기 **
+$testQ = explode('?', $numPath);
+$numPath = $testQ[0]; */
 
-	$numPath =  $this->uri->segment(3);
+$numPath =  $this->uri->segment(3);
 
-  	$GlobalStoreName;
-  	$GlobalUserName;
-    $GlobalStoreType;
-	foreach ($details->result() as $row)
-	{
-		if($row->store_id == $numPath){
-			$storeImage = $row->store_image;
-			$storeDay = $row->store_day;
-			$storeGoal = $row->store_goal;
-			$storeGoalNow = $row->store_goal_now;
-			$userName = $row->user_name;
-      		$GlobalUserName=$userName;
-			$storeType = $row->store_type;
-      		$GlobalStoreType=$storeType;
-			$storeStatus = $row->store_status;
-			$storeId = $row->store_id;
-			$storeName = $row->store_name;
-      		$GlobalStoreName=$storeName;
-			$storePrice = $row->store_price;
-			break;
-		}
-	}
+$GlobalStoreName;
+$GlobalUserName;
+$GlobalStoreType;
+foreach ($details->result() as $row)
+{
+  if($row->store_id == $numPath){
+    $storeImage = $row->store_image;
+    $storeDay = $row->store_day;
+    $storeGoal = $row->store_goal;
+    $storeGoalNow = $row->store_goal_now;
+    $userName = $row->user_name;
+    $GlobalUserName=$userName;
+    $storeType = $row->store_type;
+    $GlobalStoreType=$storeType;
+    $storeStatus = $row->store_status;
+    $storeId = $row->store_id;
+    $storeName = $row->store_name;
+    $GlobalStoreName=$storeName;
+    $storePrice = $row->store_price;
+    break;
+  }
+}
 
-	$percGoal = $storeGoalNow / $storeGoal * 100;
+$percGoal = $storeGoalNow / $storeGoal * 100;
 
-	//"앞으로 # 일 계산"
-	$curDate = date('Y-m-d H:i:s');
-	$dueDate = $storeDay;
-	$curDateNum = strtotime($curDate);
-	$dueDateNum = strtotime($dueDate);
-	$remainSecs = $dueDateNum - $curDateNum;
-	$remainDays = $remainSecs / 86400;
-	if($remainDays<=0){
-		$remainDays = "마감";
-		$dayStatus = 0;
-	}
-	else{
-		$remainDays=floor($remainDays);
-		$dayStatus = 1;
-	}
-	//여기까지 "앞으로 # 일 계산"
+//"앞으로 # 일 계산"
+$curDate = date('Y-m-d H:i:s');
+$dueDate = $storeDay;
+$curDateNum = strtotime($curDate);
+$dueDateNum = strtotime($dueDate);
+$remainSecs = $dueDateNum - $curDateNum;
+$remainDays = $remainSecs / 86400;
+if($remainDays<=0){
+  $remainDays = "마감";
+  $dayStatus = 0;
+}
+else{
+  $remainDays=floor($remainDays);
+  $dayStatus = 1;
+}
+//여기까지 "앞으로 # 일 계산"
 
-	$PRICE =  number_format($storePrice, 0, '.', ','); // 가격 천 단위 콤마 넣어주기
+$PRICE =  number_format($storePrice, 0, '.', ','); // 가격 천 단위 콤마 넣어주기
 ?>
 
 
@@ -223,43 +223,43 @@ function makePrice(option){
 <div class="container" style="margin-top:20px;">
   <div class="row row_padding-xs">
     <div class="col-md-8" style="">
-		<img style="width:100%;" src="<?php echo $storeImage;?>" class="img img-responsive">
+      <img style="width:100%;" src="<?php echo $storeImage;?>" class="img img-responsive">
     </div>
     <div class="col-md-4" style="padding-left:20px; height:100%; ">
-    <div class="row">
-      <div class="col-xs-6 col-sm-12">
-        <div class="col-xs-12">
-          <span class="option_title">남은 일자</span>
+      <div class="row">
+        <div class="col-xs-6 col-sm-12">
+          <div class="col-xs-12">
+            <span class="option_title">남은 일자</span>
+          </div>
+          <div class="col-xs-12">
+            <span style="font-size:50px; font-weight:300; "><?php echo $remainDays;?></span>
+            <?php if ($dayStatus == 1){
+              echo "<span>일</span>";
+            }?>
+          </div>
         </div>
-        <div class="col-xs-12">
-          <span style="font-size:50px; font-weight:300; "><?php echo $remainDays;?></span>
-          <?php if ($dayStatus == 1){
-          	echo "<span>일</span>";
-          }?>
+
+        <div class="col-xs-6 col-sm-12">
+          <div class="col-xs-12">
+            <span class="option_title">모인 인원</span>
+          </div>
+          <div class="col-xs-12">
+            <div style="display:inline-block; float:left;">
+              <span style="font-size:50px; font-weight:300; "><?php echo $storeGoalNow;?></span>
+              <span>명</span>
+            </div>
+            <div style="position: absolute; bottom: 12px; right: 15px; ">
+              <span style="color:#687C87; font-weight:bold;"><?php echo ceil($percGoal);?>%</span>
+            </div>
+          </div>
         </div>
       </div>
-
-      <div class="col-xs-6 col-sm-12">
-        <div class="col-xs-12">
-          <span class="option_title">모인 인원</span>
-        </div>
-        <div class="col-xs-12">
-          <div style="display:inline-block; float:left;">
-            <span style="font-size:50px; font-weight:300; "><?php echo $storeGoalNow;?></span>
-            <span>명</span>
-          </div>
-          <div style="position: absolute; bottom: 12px; right: 15px; ">
-            <span style="color:#687C87; font-weight:bold;"><?php echo ceil($percGoal);?>%</span>
-          </div>
-        </div>
-    </div>
-  </div>
       <div class="row">
         <div class="col-xs-12">
           <div class="status_bar" style="background: linear-gradient(to right, #687C87 <?php echo ceil($percGoal)?>%,#D3D3D3 <?php echo ceil($percGoal)?>% );">
           </div>
+        </div>
       </div>
-    </div>
       <div class="row options_row" style="margin-top:20px;" >
         <div class="col-xs-12">
           <div class="options">
@@ -281,159 +281,183 @@ function makePrice(option){
       <?php
       // 여긴 의류
       if ($storeType == 1){
-      echo '
-      <div class="row options_row">
+        echo '
+        <div class="row options_row">
         <div class="col-xs-12">
+        <div class="options">
+        <span class="options_left">타입</span>
+        <div class="options_right">
+        <select id="type">
+        <option value="default">선택</option>
+        <option value="1">맨투맨</option>
+        <option value="2">후드</option>
+        <option value="3">맨투맨 (고급형)</option>
+        <option value="4">후드 (고급형)</option>
+        </select>
+        </div>
+        <div style="clear: both;"></div>
+        </div>
+        </div>
+        </div>
+
+        <div class="row options_row">
+        <div class="col-xs-12">
+        <div class="options">
+        <span class="options_left">컬러</span>
+        <div id="color" class="options_right">
+
+        <div name="color" id="2" class="round" style="background:#7b1719; "></div>
+        <div name="color" id="3" class="round" style="background:#efeee9; "></div>
+        <div name="color" id="4" class="round" style="background:#14130f; "></div>
+        <div name="color" id="5" class="round" style="background:#bfc0c5; "></div>
+        <div name="color" id="6" class="round" style="background:#1f233c; "></div>
+        </div>
+        <div style="clear: both;"></div>
+        </div>
+        </div>
+        </div>
+
+        <div class="row options_row">
+        <div class="col-xs-12">
+        <div class="options">
+        <span class="options_left">사이즈</span>
+        <div class="options_right">
+        <select id="size">
+        <option value="default">선택</option>
+        <option value="1">여성</option>
+        <option value="2">남성</option>
+        </select>
+        </div>
+        <div style="clear: both;"></div>
+        </div>
+        </div>
+        </div>
+        ';}
+
+        // 여긴 에코백
+        else if ($storeType == 2){
+          echo '
+          <div class="row options_row">
+          <div class="col-xs-12">
           <div class="options">
+          <span class="options_left">타입</span>
+          <div class="options_right">
+          <select id="type">
+          <option value="default">선택</option>
+          <option value="1">토트&크로스</option>
+          <option value="2">크로스</option>
+          <option value="3">숄더(아이보리)</option>
+          <option value="4">숄더(카키)</option>
+          <option value="5">숄더(네이비)</option>
+          <option value="6">숄더(블랙)</option>
+          </select>
+          </div>
+          <div style="clear: both;"></div>
+          </div>
+          </div>
+          </div>
+          ';}
+
+          // 여긴 파우치
+          else if ($storeType == 3){
+            echo '
+            <div class="row options_row">
+            <div class="col-xs-12">
+            <div class="options">
             <span class="options_left">타입</span>
             <div class="options_right">
-              <select id="type">
-                <option value="default">선택</option>
-                <option value="1">맨투맨</option>
-                <option value="2">후드</option>
-  				<option value="3">맨투맨 (고급형)</option>
-  				<option value="4">후드 (고급형)</option>
-              </select>
+            <select id="type">
+            <option value="default">선택</option>
+            <option value="1">중형</option>
+            <option value="2">대형</option>
+            </select>
             </div>
             <div style="clear: both;"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row options_row">
-        <div class="col-xs-12">
-          <div class="options">
-            <span class="options_left">컬러</span>
-            <div id="color" class="options_right">
-
-              <div name="color" id="2" class="round" style="background:#7b1719; "></div>
-              <div name="color" id="3" class="round" style="background:#efeee9; "></div>
-              <div name="color" id="4" class="round" style="background:#14130f; "></div>
-  			  <div name="color" id="5" class="round" style="background:#bfc0c5; "></div>
-  			  <div name="color" id="6" class="round" style="background:#1f233c; "></div>
             </div>
-            <div style="clear: both;"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row options_row">
-        <div class="col-xs-12">
-          <div class="options">
-            <span class="options_left">사이즈</span>
-            <div class="options_right">
-              <select id="size">
-                <option value="default">선택</option>
-                <option value="1">여성</option>
-                <option value="2">남성</option>
-              </select>
             </div>
-            <div style="clear: both;"></div>
-          </div>
-        </div>
-      </div>
-      ';}
-
-      // 여긴 에코백
-      else if ($storeType == 2){
-      	echo '
-      <div class="row options_row">
-        <div class="col-xs-12">
-          <div class="options">
-            <span class="options_left">타입</span>
-            <div class="options_right">
-              <select id="type">
-                <option value="default">선택</option>
-                <option value="1">토트&크로스</option>
-                <option value="2">크로스</option>
-				        <option value="3">숄더(아이보리)</option>
-				        <option value="4">숄더(카키)</option>
-				        <option value="5">숄더(네이비)</option>
-				        <option value="6">숄더(블랙)</option>
-              </select>
             </div>
-            <div style="clear: both;"></div>
-          </div>
-        </div>
-      </div>
-      ';}
+            ';}
 
-      // 여긴 파우치
-      else if ($storeType == 3){
-      	echo '
-      <div class="row options_row">
-        <div class="col-xs-12">
-          <div class="options">
-            <span class="options_left">타입</span>
-            <div class="options_right">
-              <select id="type">
-                <option value="default">선택</option>
-                <option value="1">중형</option>
-                <option value="2">대형</option>
-              </select>
+            else {
+              echo 'Error';
+            }
+            ?>
+            <!-- 옵션 3가지를 상품군 따라 다르게 표시 // 여기까지 -->
+
+            <div class="row options_row">
+              <div class="col-xs-12">
+                <div class="options">
+                  <span class="options_left">수량</span>
+                  <span class="options_right">
+                    <input id="amount" name="amount">
+                  </span>
+                  <div style="clear: both;"></div>
+                </div>
+              </div>
             </div>
-            <div style="clear: both;"></div>
+            <div class="row options_row" style="margin-top:20px;">
+              <?php if ($dayStatus == 1)
+              echo '
+              <div class="col-xs-12">
+              <div class="submit_button"><a onclick="checkSubmit();"
+              class="myButton">구매하기</a></div>
+              </div>'
+              ?>
+            </div>
           </div>
         </div>
-      </div>
-      ';}
 
-      else {
-      	echo 'Error';
-      }
-      ?>
-      <!-- 옵션 3가지를 상품군 따라 다르게 표시 // 여기까지 -->
 
-      <div class="row options_row">
-        <div class="col-xs-12">
-          <div class="options">
-            <span class="options_left">수량</span>
-            <span class="options_right">
-              <input id="amount" name="amount">
-            </span>
-            <div style="clear: both;"></div>
-          </div>
+        <form id="formHidden" action="/funding/func_toCart" method="post" style="display:none">
+          <input type="text" name="type" value="default">
+          <input type="text" name="color" value="default">
+          <input type="text" name="size" value="default">
+          <input type="text" name="amount" value="1">
+          <input type="text" name="storeId" value="<?echo $numPath;?>">
+          <input type="text" name="storeType" value="<?echo $GlobalStoreType;?>">
+        </form>
+        <script>
+        function facebook_for_artist(){
+          FB.ui({
+            method: 'share',
+            href: 'http://blankit.kr/funding/product/5',
+          }, function(response){});
+        }
+        </script>
+        <div class="row row_padding-xs" style="margin-top:20px;">
+          <div class="col-xs-12 col-sm-6 visible-xs" style="border-bottom: 1px solid #D3D3D3;
+    padding-bottom: 20px;">
+        <a onclick="facebook_for_artist()" style="cursor:pointer;">
+          <div class="col-xs-12" style="
+          background-color: #3a5795;
+          box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .52); height:100px; border-radius:20px; text-align:center; ">
+          <span style="font-size:30px; line-height: 100px; vertical-align:middle; font-weight:500; color:white; ">페이스북에 공유하기 (클릭)</span>
         </div>
-      </div>
-      <div class="row options_row" style="margin-top:20px;">
-      <?php if ($dayStatus == 1)
-      	echo '
-        <div class="col-xs-12">
-          <div class="submit_button"><a onclick="checkSubmit();"
-  			class="myButton">구매하기</a></div>
-        </div>'
-        ?>
-      </div>
-    </div>
-  </div>
-
-
-<form id="formHidden" action="/funding/func_toCart" method="post" style="display:none">
-  <input type="text" name="type" value="default">
-  <input type="text" name="color" value="default">
-  <input type="text" name="size" value="default">
-  <input type="text" name="amount" value="1">
-  <input type="text" name="storeId" value="<?echo $numPath;?>">
-  <input type="text" name="storeType" value="<?echo $GlobalStoreType;?>">
-</form>
-<script>
-function cl(){
-  FB.ui({
-  method: 'share',
-  href: 'http://blankit.kr/store/product/5',
-}, function(response){});
-}
-</script>
-<div class="row row_padding-xs" style="margin-top:20px;">
-  <div class="col-xs-12" style="background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAqCAMAAABFoMFOAAAAWlBMV…8/UxBxQDQuFwlpqgBZBq6+P+unVY1GnDgwqbD2zGz5e1lBdwvGGPE6OgAAAABJRU5ErkJggg==);
-    background-repeat: repeat-x;
-    background-size: auto;
-    background-position: 0 0;
-    background-color: #3a5795;
-    border: 0;
-    border-bottom: 1px solid #133783;
-    box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .52); height:200px; border-radius:20px;">
-    <span style="font-size:30; font-weight:500; color:white; margin-top:30px;">페이스북에 공유하기 (클릭)</span>
-  </div>
+      </a>
 </div>
-<button onclick="cl()">dd</button>
+        <div class="col-xs-12 col-sm-6" style="border-bottom: 1px solid #D3D3D3;
+    padding-bottom: 20px;
+    padding-top: 20px;">
+          <img src="/source/image/profile_placeholder.png" class="img img-circle img-responsive"
+          style="width:100px; padding-left: 20px;display:inline-block;">
+          <div style="display:inline-block">
+            <div >
+              <span style="font-size:16px; font-weight:400;"><?php echo $userName;?> (직업)</span>
+            </div>
+            <div>
+              <span style="font-size:13px; font-weight:300;">유저 자기소개</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 hidden-xs" style="border-bottom: 1px solid #D3D3D3;
+    padding-bottom: 20px;
+    padding-top: 20px;">
+      <a onclick="facebook_for_artist()" style="cursor:pointer;">
+        <div class="col-xs-12" style="
+        background-color: #3a5795;
+        box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .52); height:100px; border-radius:20px; text-align:center; ">
+        <span style="font-size:30px; line-height: 100px; vertical-align:middle; font-weight:500; color:white; ">페이스북에 공유하기 (클릭)</span>
+      </div>
+    </a>
+</div>
+      </div>
