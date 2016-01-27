@@ -97,8 +97,17 @@ input[type="radio"] + label{
 }
 </style>
 <script>
+function banner_generator(){
+  var width = document.documentElement.clientWidth;
+  $(".banner>img").css("margin-left","-"+($(".banner>img").width()-width)/2+"px");
+}
 $(function(){
-
+  $("#root_container").css("height",$(".banner").height()+"px");
+  banner_generator();
+  $(window).on("resize",function(){
+      $("#root_container").css("height",$(".banner").height()+"px");
+      banner_generator();
+  });
 });
 </script>
 <div class="banner">
