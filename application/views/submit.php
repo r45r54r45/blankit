@@ -113,4 +113,16 @@ $(function(){
         </span>
       </div>
   </div>
+  <!-- 진우의 임시 틀 -->
+<form action="" method="post" id="formform">
+  <div class="row row-padding-xs-100 " style="margin-top:10px;">
+  	<div class="menu">블랭킷 X 아티스트 작품명</div>
+    	<input class="menu_input" name="artwork" type="text" id="artwork">
+    </div>
+    <div class="menu">블랭킷 X 아티스트 작품설명</div>
+    	<input class="menu_input" name="explain" type="text" id="explain">
+    </div>
+  </div>
+</form>
+  
 </div>
