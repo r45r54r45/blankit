@@ -114,7 +114,7 @@ $(function(){
       </div>
   </div>
   <!-- 진우의 임시 틀 -->
-<form action="" method="post" id="formform">
+<form action="/submit/func_checkSubmit" method="post" id="formform">
   <div class="row row-padding-xs-100 " style="margin-top:10px;">
   	<div class="menu">블랭킷 X 아티스트 작품명</div>
     	<input class="menu_input" name="artwork" type="text" id="artwork">
@@ -136,6 +136,15 @@ $(function(){
   	<div class="menu_input_radio">
   		<input type="radio" name="storeType" id="type3" value="3"><label for="type3">파우치</label>
   	</div>
+    <div class="options_right">
+        <select id="goalNum">
+    	    <option value="default">선택</option>
+	        <option value="5">5개</option>
+        	<option value="10">10개</option>
+        	<option value="20">20개</option>
+        	<option value="40">40개</option>
+        </select>
+  </div>
   </div>
 </form>
   
