@@ -424,5 +424,16 @@ function cl(){
 }, function(response){});
 }
 </script>
-<div style="height:400px;"></div>
+<div class="row row_padding-xs" style="margin-top:20px;">
+  <div class="col-xs-12" style="background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAqCAMAAABFoMFOAAAAWlBMV…8/UxBxQDQuFwlpqgBZBq6+P+unVY1GnDgwqbD2zGz5e1lBdwvGGPE6OgAAAABJRU5ErkJggg==);
+    background-repeat: repeat-x;
+    background-size: auto;
+    background-position: 0 0;
+    background-color: #3a5795;
+    border: 0;
+    border-bottom: 1px solid #133783;
+    box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .52); height:200px;">
+
+  </div>
+</div>
 <button onclick="cl()">dd</button>
