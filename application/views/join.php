@@ -81,7 +81,7 @@ function id_check(){
         $("input[name='id']").attr("readonly",true);
         $("#uuu").css("display","none");
         if ($('#profile').length) {
-          var nameValue = document.getElementById("id").value;
+          var nameValue = $("input[name='id']").val();
           myDropzone1 = new Dropzone("#profile", { url: "/file/profile?file=" + nameValue, paramName: "userfile",maxFiles:1,addRemoveLinks:true,autoProcessQueue: false,dictRemoveFile:"파일 삭제",dictMaxFilesExceeded:"1개만 업로드할 수 있습니다."});
         };
         alert('사용할 수 있는 아이디입니다.');
