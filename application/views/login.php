@@ -209,7 +209,7 @@ if ($explodePath = explode('?', $urlPath)){
               <span style="font-size:15px;">비밀번호</span>
             </div>
             <div class="col-xs-8">
-              <input type="text" name="user_pw" style="width:100%;">
+              <input type="password" name="user_pw" style="width:100%;">
             </div>
           </div>
 
