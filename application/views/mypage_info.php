@@ -1,6 +1,6 @@
 <style>
 .banner{
-  height:70px;
+  height:50px;
   width:100%;
   background: white;
   position:absolute;
@@ -132,7 +132,7 @@ $(function(){
 </div>
 </div>
 <div class="container" >
-  <div class="row row-padding-xs-100 " style="margin:40px 0px;;">
+  <div class="row row-padding-xs-100 " style="margin:70px 0px 40px;">
     <div class="col-xs-12 gal" style="text-align:center;display:block;">
       <span style="font-size:32px; font-weight:500;">MY BLANKIT</span>
     </div>
