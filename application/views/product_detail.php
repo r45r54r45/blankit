@@ -189,7 +189,7 @@
 if ($itemType == "E_1" || $itemType == "E_2" || $itemType == "E_3" || $itemType == "E_4"){
 	echo '
 
-<div class="row row_padding-xs" style="margin-top:20px;">
+<div class="row row_padding-xs" style="margin-top:20px;" id="here">
     <div class="col-md-12" id="E-location" style="position:relative; height:25px; padding-bottom:40px; border-bottom: 1.5px solid #D3D3D3;">
 <div class="menu">
   <div class="menu_item">
@@ -214,7 +214,7 @@ if ($itemType == "E_1" || $itemType == "E_2" || $itemType == "E_3" || $itemType 
 if ($itemType == "M_1" || $itemType == "H_1"){
 	echo '
 
-<div class="row row_padding-xs" style="margin-top:20px;">
+<div class="row row_padding-xs" style="margin-top:20px;" id="here">
     <div class="col-md-12" id="E-location" style="position:relative; height:25px; padding-bottom:40px; border-bottom: 1.5px solid #D3D3D3;">
 <div class="menu" style="width: 80px;margin-left: -40px;">
   <div class="menu_item" style="width:47%">
@@ -231,7 +231,7 @@ if ($itemType == "M_1" || $itemType == "H_1"){
 
 
 <!-- 제품 정보 시작 -->
-<div class="row row_padding-xs" id="here" style="margin-top:20px;">
+<div class="row row_padding-xs"  style="margin-top:20px;">
   <div class="col-xs-12" style="padding-bottom:40px; border-bottom:1px solid #D3D3D3;">
     <div class="t1-grey">제품 이미지</div>
     <!-- 반복되는 부분 시작-->
