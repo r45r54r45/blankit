@@ -175,6 +175,7 @@ a, a:hover, a:visited, a:link, a:active{
   border-radius:16px;
   color:#687C87;
   font-weight:bold;
+  text-align: center;
   background: transparent;
   padding:3px 10px;
 }

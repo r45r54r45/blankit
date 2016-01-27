@@ -425,11 +425,24 @@ function facebook_for_artist(){
 }
 </script>
 <div class="row row_padding-xs" style="margin-top:20px;">
-  <a onclick="facebook_for_artist()">
+  <a onclick="facebook_for_artist()" style="cursor:pointer;">
   <div class="col-xs-12" style="
     background-color: #3a5795;
     box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .52); height:100px; border-radius:20px; text-align:center; ">
     <span style="font-size:30px; line-height: 100px; vertical-align:middle; font-weight:500; color:white; ">페이스북에 공유하기 (클릭)</span>
   </div>
 </a>
+</div>
+<div class="row row_padding-xs" style="margin-top:20px;">
+  <div class="col-xs-12 col-sm-6">
+    <img src="source/image/profile_placeholder.png" class="img img-circle img-responsive">
+  </div>
+  <div class="col-xs-12 col-sm-6">
+    <div>
+      <span style="font-size:16px; font-weight:400;"><?php echo $userName;?></span>
+    </div>
+    <div>
+      <span style="font-size:13px; font-weight:300;">유저 자기소개</span>
+    </div>
+  </div>
 </div>
