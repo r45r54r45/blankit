@@ -432,8 +432,8 @@ function cl(){
     background-color: #3a5795;
     border: 0;
     border-bottom: 1px solid #133783;
-    box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .52); height:200px;">
-
+    box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .52); height:200px; border-radius:20px;">
+    <span style="font-size:30; font-weight:500; color:white; margin-top:30px;">페이스북에 공유하기 (클릭)</span>
   </div>
 </div>
 <button onclick="cl()">dd</button>
