@@ -5,8 +5,9 @@ class File extends CI_Controller {
 
 	public function profile()
 	{
+		
 		if (!empty($_FILES)) {
-		  move_uploaded_file($_FILES['userfile']['tmp_name'],SITE_ROOT."/files/profile/". "test.jpg" );
+		  move_uploaded_file($_FILES['userfile']['tmp_name'],SITE_ROOT."/files/profile/". "test2.jpg");
 		}
 
 		// $config['upload_path'] = "/files/profile/";
