@@ -13,14 +13,11 @@ class Submit_model extends CI_Model{
 			$seed = $this->db->query("
 				select max(store_id) as seed from `STORE`;
 			");
-			foreach($seed->result as $row){
+			foreach($seed->result() as $row){
 				$randomID = $row->seed + 1;
 			}
-			
-			
+						
 			$date =  date('Y-m-d 0:0:0', strtotime("+7 days"));
-			//$dateSeed = "Y-m-" . d 0:0:0';
-			//$date = date();
 			
 			$this->db->query("
 				insert into `STORE` (user_id, store_name, store_random_id, store_day, store_type, store_goal, store_status)
