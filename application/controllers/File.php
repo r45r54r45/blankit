@@ -7,13 +7,17 @@ class File extends CI_Controller {
 	{
 		$uriPath = $this->uri->segment(2);
 		$idName = explode("=", $uriPath);
-		$fileName = $idName[1] . "_profile.jpg";
-/* 		$filename  = basename($_FILES['file']['name']);
+/*		$fileName = $idName[1] . "_profile.jpg";
+ 		$filename  = basename($_FILES['file']['name']);
 		$extension = pathinfo($filename, PATHINFO_EXTENSION);
 		$new       = $idName[1].'.'.$extension; */
 		
 		if (!empty($_FILES)) {
-		  move_uploaded_file($_FILES['userfile']['tmp_name'],SITE_ROOT."/files/profile/". $_FILES['userfile']['name']);
+			$filename  = basename($_FILES['userfile']['name']);
+			$extension = pathinfo($filename, PATHINFO_EXTENSION);
+			$new       = $idName[1].'_profile.'.$extension;
+			
+			move_uploaded_file($_FILES['userfile']['tmp_name'],SITE_ROOT."/files/profile/". $new);
 		}
 
 		// $config['upload_path'] = "/files/profile/";
