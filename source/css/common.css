@@ -1,7 +1,9 @@
 body{
   overflow-x: hidden;
   position: relative;
+  font-family: 'Nanum Brush Script', serif;
 }
+@import url(http://fonts.googleapis.com/earlyaccess/nanumbrushscript.css);
 #logo{
   margin-top: 3px;
   pointer-events: auto;
