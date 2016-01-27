@@ -135,11 +135,6 @@ $(function(){
       break;
     }
   });
-  //  $("#portfolio").dropzone({ url: "/file/post",maxFilesize:1 });
-  // var myDropzone = new Dropzone("div#portfolio", { url: "/main",maxFilesize:1,maxFiles:1});
-  // $("#sibal").on("click",function(){
-  //   myDropzone.processQueue();
-  // });
   if ($('#profile').length) {
 	var nameValue = document.getElementById("id").value;
  	myDropzone1 = new Dropzone("#profile", { url: "/file/profile?file=" + nameValue, paramName: "userfile",maxFiles:1,addRemoveLinks:true,autoProcessQueue: false,dictRemoveFile:"파일 삭제",dictMaxFilesExceeded:"1개만 업로드할 수 있습니다."});
@@ -149,26 +144,7 @@ $(function(){
 $(document).on("load",function(){
 
 });
-// $(window).on("load",function(){
-//   var myDropzone1 = new Dropzone("#profile", { url: "/file/profile", paramName: "userfile",maxFiles:1,addRemoveLinks:true,autoProcessQueue: false,dictRemoveFile:"파일 삭제",dictMaxFilesExceeded:"1개만 업로드할 수 있습니다."});
-//   myDropzone1.on("addedfile", function(file) {
-//   });
-//
-//   var myDropzone2 = new Dropzone("#portfolio", { url: "/main", paramName: "portfolio",autoProcessQueue: false,maxFiles:0});
-//   myDropzone2.on("addedfile", function(file) {
-//   });
-// });
 Dropzone.autoDiscover = false;
-// Dropzone.options.portfolio = {
-//         url : '/main',
-//         paramName: "file", // The name that will be used to transfer the file
-//         maxFiles:1,
-//         autoProcessQueue: false,
-//         maxFilesize: 5, // MB
-//         acceptedFiles: ".jpg, .png, .jpeg",
-//         createImageThumbnails: true,
-//         maxThumbnailFilesize: 15, // MB,
-//     };
 
 function submitCheck(){
 	if($("input[id='info_checkbox']:checked").length==0){

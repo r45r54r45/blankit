@@ -5,7 +5,7 @@ class File extends CI_Controller {
 
 	public function profile()
 	{
-		$uriPath = $this->uri->segment(3);
+		$uriPath = $this->uri->segment(2);
 		$idName = end(explode("=", $uriPath));
 /*		$fileName = $idName[1] . "_profile.jpg";
  		$filename  = basename($_FILES['file']['name']);
