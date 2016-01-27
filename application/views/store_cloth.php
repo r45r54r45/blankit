@@ -55,7 +55,13 @@
 .box:hover p{
   color: white;
 }
-
+.navbar-right{
+  color:white !important;
+}
+.YourButton{
+      border: 2px solid white;
+          color: white;
+}
 </style>
 <script>
 
