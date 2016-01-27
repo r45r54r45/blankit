@@ -79,11 +79,11 @@
   <div class="row" style="margin-bottom:40px;">
     <div class="col-md-12" style="    margin-top: 30px; position:relative; height:25px; border-bottom: 1.5px solid #D3D3D3;">
       <div class="menu">
-        <a href="/store"><div class="menu_item" style="border-bottom:2px solid #96AFB5; color:#96AFB5;">전체</div></a>
+        <a href="/funding"><div class="menu_item" style="border-bottom:2px solid #96AFB5; color:#96AFB5;">전체</div></a>
         <a href="/store/cloth"><div class="menu_item" >의류</div></a>
-        <a href="/store/ecobag"><div class="menu_item">에코백</div></a>
-      <a href="/store/pouch">  <div class="menu_item">파우치</div></a>
-        <a href="/store/done"><div class="menu_item">마감</div></a>
+        <a href="/funding/ecobag"><div class="menu_item">에코백</div></a>
+      <a href="/funding/pouch">  <div class="menu_item">파우치</div></a>
+        <a href="/funding/done"><div class="menu_item">마감</div></a>
       </div>
     </div>
   </div>
