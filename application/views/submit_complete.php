@@ -102,24 +102,17 @@ $(function(){
 });
 </script>
 <div class="banner">
-
-<?php 
-	$urlPath = "$_SERVER[REQUEST_URI]";
-	$explodePath = explode('/', $urlPath);
-	$backPath = $explodePath[2];
-	
-	$explodeBackPath =  explode('&', $backPath);
-	$codeNum = explode('=', $explodeBackPath[0]);
-	$bank = explode('=', $explodeBackPath[1]);
-	$account = explode('=', $explodeBackPath[2]);
-?>
-
+  <img src="/source/image/submit-page-banner.jpg">
+  <div class="banner-text">
+  <p>혼자 간직해온 작품이 있나요?</p>
+  <p>제작비용 0원에 당신만의 제품을 선보이세요.</p>
+  </div>
 </div>
 </div>
 <div class="container" >
-  <div class="row row-padding-xs-100 " style="margin-top:30px;">
+  <div class="row row-padding-xs-100 " style="margin-top:70px;">
     <div class="col-xs-12 gal  row_padding-xs" style="border-bottom:1px solid #D3D3D3; padding-bottom:5px; padding-left:0px;">
-      <span style="font-size:25px; font-weight:500;">Order</span>
+      <span style="font-size:25px; font-weight:500;">작품 업로드 완료</span>
     </div>
   </div>
   <div class="row row-padding-xs-100 " style="margin:30px 0px; text-align:center;  display:block;">
@@ -127,12 +120,11 @@ $(function(){
   </div>
 </div>
 <div class="container-fluid" style="background:#F5F6F7; padding:40px 0px; text-align:center;  display:block;">
-  <p class="title2">주문번호: <?php echo $codeNum[1];?></p>
-  <p class="title2">입금계좌: <?php echo URLDecode($bank[1]);?> <?php echo $account[1];?></p>
+  <p class="title2">주문번호: </p>
+  <p class="title2">입금계좌: </p>
 </div>
 <div class="container" >
   <div class="row row-padding-xs-100 " style="margin-top:30px; text-align:center;  display:block;">
-    <span class="title2" >주문 내역 확인은 마이블랭킷-주문배송조회에서 가능합니다.<br>
-입금확인 시점 기준으로 펀딩 결과에 반영이 됩니다.</span>
+    <span class="title2" ></span>
   </div>
 </div>
