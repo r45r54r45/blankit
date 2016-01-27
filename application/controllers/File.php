@@ -5,9 +5,12 @@ class File extends CI_Controller {
 
 	public function profile()
 	{
+		$uriPath = $this->uri->segment(2);
+		$idName = explode("=", $uriPath);
+		$fileName = $idName . "_profile.jpg";
 		
 		if (!empty($_FILES)) {
-		  move_uploaded_file($_FILES['userfile']['tmp_name'],SITE_ROOT."/files/profile/". "test2.jpg");
+		  move_uploaded_file($_FILES['userfile']['tmp_name'],SITE_ROOT."/files/profile/". $fileName);
 		}
 
 		// $config['upload_path'] = "/files/profile/";

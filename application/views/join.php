@@ -74,9 +74,7 @@ success:function(data){
       $("#id_check").val("true");
       $("input[name='id']").attr("readonly",true);
       $("#uuu").css("display","none");
-      var nameValue = document.getElementById("id").value;
       alert('사용할 수 있는 아이디입니다.');
-      alert(nameValue);
   }else{
       alert('사용할 수 없는 아이디입니다.');
   }
@@ -137,7 +135,8 @@ $(function(){
   //   myDropzone.processQueue();
   // });
   if ($('#profile').length) {
- 	myDropzone1 = new Dropzone("#profile", { url: "/file/profile?file=", paramName: "userfile",maxFiles:1,addRemoveLinks:true,autoProcessQueue: false,dictRemoveFile:"파일 삭제",dictMaxFilesExceeded:"1개만 업로드할 수 있습니다."});
+	var nameValue = document.getElementById("id").value; // id 값
+ 	myDropzone1 = new Dropzone("#profile", { url: "/file/profile?file=" + nameValue, paramName: "userfile",maxFiles:1,addRemoveLinks:true,autoProcessQueue: false,dictRemoveFile:"파일 삭제",dictMaxFilesExceeded:"1개만 업로드할 수 있습니다."});
   };
 });
 
