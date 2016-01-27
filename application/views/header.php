@@ -14,7 +14,6 @@
     <?
   	if($this->uri->segment(1) == "funding" && $this->uri->segment(2) == "product"){
   	?>
-  	<script>alert("Yay!");</script>
     <meta property="fb:app_id" content="214340015575657"/>
     <meta property="og:url"                content="<?echo $actual_link; ?>" />
     <meta property="og:type"               content="website" />
