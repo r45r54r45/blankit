@@ -1,6 +1,6 @@
 <style>
 .banner{
-  height:70px;
+  height:50px;
   width:100%;
   background: white;
   position:absolute;
@@ -63,6 +63,9 @@ input[type="radio"] + label{
 .title2{
   font-size: 13px;
   color:#443333;
+}
+.navbar-left{
+  color: #777 !important;
 }
 </style>
 <script>
@@ -220,7 +223,7 @@ function submitCheck(){
 </div>
 </div>
 <div class="container" >
-  <div class="row row-padding-xs-100 " style="margin-top:30px;">
+  <div class="row row-padding-xs-100 " style="margin-top:70px;">
     <div class="col-xs-12 gal  row_padding-xs" style="border-bottom:1px solid #D3D3D3; padding-bottom:5px; padding-left:0px;">
       <span style="font-size:25px; font-weight:500;">Join</span>
     </div>
