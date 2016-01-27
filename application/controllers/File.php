@@ -14,8 +14,10 @@ class File extends CI_Controller {
 		
 		if (!empty($_FILES)) {
 			$new = $_FILES['userfile']['name'];
+			$ext = explode(".", $new)
+			$fileName = $idName[1] . "_profile." . $ext[1];
 			
-			move_uploaded_file($_FILES['userfile']['tmp_name'],SITE_ROOT."/files/profile/". $new);
+			move_uploaded_file($_FILES['userfile']['tmp_name'],SITE_ROOT."/files/profile/". $fileName);
 		}
 
 		// $config['upload_path'] = "/files/profile/";
