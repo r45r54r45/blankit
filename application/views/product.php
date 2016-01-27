@@ -439,7 +439,7 @@ $PRICE =  number_format($storePrice, 0, '.', ','); // 가격 천 단위 콤마 �
     padding-bottom: 20px;
     padding-top: 20px;">
           <img src="/source/image/profile_placeholder.png" class="img img-circle img-responsive"
-          style="width:100px; display:inline-block;">
+          style="width:100px; padding-left: 20px;display:inline-block;">
           <div style="display:inline-block">
             <div >
               <span style="font-size:16px; font-weight:400;"><?php echo $userName;?> (직업)</span>
