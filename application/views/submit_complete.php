@@ -1,99 +1,35 @@
 <style>
+
+
+.arrow{
+  padding: 0 30px 0 30px;
+  margin:0 auto; display:block;
+}
+.download_cover{
+  background-image: url("/source/image/download_hover.png");
+  z-index: 100;
+background-size: contain;
+ background-position:15px;
+ background-repeat: no-repeat;
+}
+ .download_img{
+     z-index: 50;
+   opacity:1;
+ }
+.download_cover:hover .download_img{
+     z-index: 50;
+  opacity:0.5;
+}
 .banner{
-  height:50px;
   width:100%;
-  background: white;
+  height:300px;
   position:absolute;
   left:0;
   top:0;
-  border-bottom: 1px solid #D3D3D3;
+  overflow:hidden;
 }
-.myButton {
-  background-color:#687c87;
-  border-radius:12px;
-  border:2px solid #687c87;
-  display:inline-block ;
-  cursor:pointer;
-  color:white !important;
-  font-family:"Noto Sans", "Noto Sans CJK KR", sans-serif;
-  font-size:12px;
-  font-weight:regular;
-  padding:3px 12px;
-}
-.myButton:hover {
-  background-color: white;
-  color: #687c87 !important;
-}
-.myButton:active {
-  position:relative;
-  top:1px;
-}
-.submit_button{
-  display: block;
-  text-align: center;
-}
-.menu{
-  width:90px;
-  display:inline-block;
-}
-.menu_input{
-  width:150px;
-}
-.menu_input_radio{
-  width:130px;
-  display: inline-block;
-}
-.menu_button{
-  margin-left: 10px;
-}
-.menu_input_phone_1{
-  width:40px;
-}
-.menu_input_phone_2{
-  width:50px;
-}
-.margin-bottom-5{
-  margin-bottom: 5px;
-
-}
-input[type="radio"] + label{
-  margin-left: 7px;
-  font-size:13px;
-}
-.title1{
-  font-size: 20px;
-  color:#868686;
-}
-.title2{
-  font-size: 15px;
-  color:#443333;
-}
-.order_border{
-  border:1px solid #B7B7B7;
-  border-radius: 6px;
-  padding: 5px;
-}
-.order_border:hover{
-  background: #D3D3D3;
-}
-.order_result_1{
-  font-size:10px;
-  color:#D3D3D3;
-  float:right;
-}
-.order_result_2{
-  margin-left: 10px;
-  font-size:12px;
-  color:#443333;
-  float:right;
-}
-.order_title{
-  color:#868686;
-  margin: 0px 0px 0px 3px;
-}
-.order_content{
-  color:#443333;
-  margin: 0px 0px 0px 3px;
+.banner>img{
+  min-height: 300px;
 }
 </style>
 <script>
@@ -110,30 +46,64 @@ $(function(){
   });
 });
 </script>
-<div class="banner">
-  <img src="/source/image/submit-page-banner.jpg">
-  <div class="banner-text">
-  <p>혼자 간직해온 작품이 있나요?</p>
-  <p>제작비용 0원에 당신만의 제품을 선보이세요.</p>
-  </div>
-</div>
-</div>
-<div class="container" >
-  <div class="row row-padding-xs-100 " style="margin-top:70px;">
-    <div class="col-xs-12 gal  row_padding-xs" style="border-bottom:1px solid #D3D3D3; padding-bottom:5px; padding-left:0px;">
-      <span style="font-size:25px; font-weight:500;">작품 업로드 완료</span>
+  <div class="banner">
+    <img src="/source/image/submit-page-banner.jpg">
+    <div class="banner-text">
+    <p>혼자 간직해온 작품이 있나요?</p>
+    <p>제작비용 0원에 당신만의 제품을 선보이세요.</p>
     </div>
   </div>
-  <div class="row row-padding-xs-100 " style="margin:30px 0px; text-align:center;  display:block;">
-    <span class="title1">주문이 정상적으로 완료되었습니다</span>
-  </div>
-</div>
-<div class="container-fluid" style="background:#F5F6F7; padding:40px 0px; text-align:center;  display:block;">
-  <p class="title2">주문번호: </p>
-  <p class="title2">입금계좌: </p>
 </div>
 <div class="container" >
-  <div class="row row-padding-xs-100 " style="margin-top:30px; text-align:center;  display:block;">
-    <span class="title2" ></span>
+  <div class="row">
+      <div class="col-xs-1">
+      </div>
+    <div class="col-xs-10">
+      <img src="/source/image/submit_guide.png" class="img img-responsive" style="margin-top: 30px;d">
+    </div>
+    <div class="col-xs-1">
+    </div>
+  </div>
+  <div class="row">
+      <div class="col-xs-12" style="margin-top:30px; border-top: 1px solid #D3D3D3;">
+        <span style="margin-top:30px; text-align:center; display:block; font-size: 25px; color:#655453; font-weight:bold;">
+          작업 파일 다운로드
+        </span>
+      </div>
+  </div>
+  <div class="row hidden-sm hidden-md hidden-lg" style="margin-top:30px; margin-bottom:30px; ">
+    <span style="display:block; text-align:center;">작업 파일 다운로드는 PC에서만 제공합니다.</span>
+  </div>
+  <div class="row hidden-xs" style="margin-top:30px; margin-bottom:30px; ">
+    <div class="col-xs-2">
+    </div>
+    <div class="col-xs-2 download_cover">
+      <a href="">
+        <img src="/source/image/download_1.png" class="download_img img img-responsive">
+      </a>
+    </div>
+    <div class="col-xs-1">
+    </div>
+    <div class="col-xs-2 download_cover">
+      <a href="">
+      <img src="/source/image/download_2.png" class="download_img img img-responsive">
+    </a>
+    </div>
+    <div class="col-xs-1">
+    </div>
+    <div class="col-xs-2 download_cover">
+      <a href="">
+      <img src="/source/image/download_3.png" class="download_img img img-responsive">
+    </a>
+    </div>
+    <div class="col-xs-2">
+    </div>
+  </div>
+  <div class="row">
+      <div class="col-xs-12" style="margin-top:30px; border-top: 1px solid #D3D3D3;">
+        <span style="margin-top:30px; text-align:center; display:block; font-size: 25px; color:#655453; font-weight:bold;">
+          제품 파일 업로드
+        </span>
+      </div>
   </div>
 </div>
