@@ -12,10 +12,13 @@ class Submit extends CI_Controller {
 
 	public function complete()
 	{
-		$artwork = $this->input->post('artwork');
-		$explain = $this->input->post('explain');
+		/* $artwork = $this->input->post('artwork');
+		$explain = $this->input->post('explain'); */
 		//$storeType = $this->input->post('storeType');
 		//$storeGoal = $this->input->post('storeGoal');
+		
+		$artwork = "this";
+		$explain = "this";
 		$storeType = 1;
 		$storeGoal = 1;
 		
