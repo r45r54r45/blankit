@@ -426,15 +426,10 @@ function facebook_for_artist(){
 </script>
 <div class="row row_padding-xs" style="margin-top:20px;">
   <a onclick="facebook_for_artist()">
-  <div class="col-xs-12" style="background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAqCAMAAABFoMFOAAAAWlBMV…8/UxBxQDQuFwlpqgBZBq6+P+unVY1GnDgwqbD2zGz5e1lBdwvGGPE6OgAAAABJRU5ErkJggg==);
-    background-repeat: repeat-x;
-    background-size: auto;
-    background-position: 0 0;
+  <div class="col-xs-12" style="
     background-color: #3a5795;
-    border: 0;
-    border-bottom: 1px solid #133783;
-    box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .52); height:200px; border-radius:20px; text-align:center; ">
-    <span style="font-size:30px; font-weight:500; color:white; ">페이스북에 공유하기 (클릭)</span>
+    box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .52); height:100px; border-radius:20px; text-align:center; ">
+    <span style="font-size:30px; line-height: 100px; vertical-align:middle; font-weight:500; color:white; ">페이스북에 공유하기 (클릭)</span>
   </div>
 </a>
 </div>
