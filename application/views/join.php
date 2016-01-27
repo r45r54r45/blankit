@@ -74,8 +74,9 @@ success:function(data){
       $("#id_check").val("true");
       $("input[name='id']").attr("readonly",true);
       $("#uuu").css("display","none");
+      var nameValue = document.getElementById("id").value;
       alert('사용할 수 있는 아이디입니다.');
-      alert($("#id_check").val());
+      alert(nameValue);
   }else{
       alert('사용할 수 없는 아이디입니다.');
   }
@@ -277,7 +278,7 @@ function submitCheck(){
   <form action="/join/func_join_ok" method="post" id="formform">
   <div class="row row-padding-xs-100 " style="margin-top:10px;">
     <div class="menu">아이디</div>
-    <input class="menu_input" name="id" type="text">
+    <input class="menu_input" name="id" type="text" id="id">
     <a onclick="id_check()"><div id="uuu" class="menu_button myButton" style="border-radius:5px;">중복확인</div><a>
       <input type="text" style="display:none;" id="id_check">
     </div>
