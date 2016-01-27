@@ -234,14 +234,28 @@ function submitCheck(){
   </div>
   <div id="info_see_content" class="row row-padding-xs-100 " style="display:none; margin-top:10px;">
     <div style="background:#F5F6F7; width:100%; height:130px; overflow-y:auto;  padding:5px;">
-      Hello my name is Jinjin. Nice to meet you.<br>
-      Hello my name is Jinjin. Nice to meet you.<br>
-      Hello my name is Jinjin. Nice to meet you.<br>
-      Hello my name is Jinjin. Nice to meet you.<br>
-      Hello my name is Jinjin. Nice to meet you.<br>
-      Hello my name is Jinjin. Nice to meet you.<br>
-      Hello my name is Jinjin. Nice to meet you.<br>
-      Hello my name is Jinjin. Nice to meet you.<br>
+      <p>'블랭킷'은 (이하 '회사'는) 고객님의 개인정보를 중요시하며, "정보통신망 이용촉진 및 정보보호"에 관한 법률을 준수하고 있습니다. 회사는 개인정보취급방침을 통하여 고객님께서 제공하시는 개인정보가 어떠한 용도와 방식으로 이용되고 있으며, 개인정보보호를 위해 어떠한 조치가 취해지고 있는지 알려드립니다.
+회사는 개인정보취급방침을 개정하는 경우 웹사이트 공지사항(또는 개별공지)을 통하여 공지할 것입니다.
+본 방침은 2015.02.01 부터 시행됩니다.</p>
+
+<p><b>수집하는 개인정보 항목</b></p>
+<p>회사는 회원가입, 상담, 서비스 신청 등등을 위해 아래와 같은 개인정보를 수집하고 있습니다.</p>
+<p>수집항목</p>
+<p>이름 , 로그인ID , 비밀번호 , 자택 전화번호 , 자택 주소 , 휴대전화번호 , 이메일 , 계좌번호, 서비스 이용기록 , 접속 로그 , 접속 IP 정보 , 결제기록</p>
+<p>개인정보 수집방법</p>
+<p>홈페이지(회원가입)</p>
+
+<p>개인정보의 수집 및 이용목적</p>
+<p>회사는 수집한 개인정보를 다음의 목적을 위해 활용합니다.</p>
+<p>서비스 제공에 관한 계약 이행 및 서비스 제공에 따른 요금정산</p>
+<p>콘텐츠 제공 , 구매 및 요금 결제 , 물품배송 또는 청구지 등 발송</p>
+<p>회원 관리</p>
+<p>회원제 서비스 이용에 따른 본인확인 , 개인 식별 , 불량회원의 부정 이용 방지와 비인가 사용 방지 , 가입 의사 확인 , 불만처리 등 민원처리 , 고지사항 전달</p>
+<p>마케팅 및 광고에 활용</p>
+<p>이벤트 등 광고성 정보 전달</p>
+
+<p>개인정보의 보유 및 이용기간</p>
+<p>회사는 개인정보 수집 및 이용목적이 달성된 후에는 예외 없이 해당 정보를 지체 없이 파기합니다.</p>
     </div>
   </div>
   <div class="row row-padding-xs-100 " style="margin-top:10px;">
