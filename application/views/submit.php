@@ -125,6 +125,18 @@ $(function(){
     	<input class="menu_input" name="explain" type="text" id="explain">
     </div>
   </div>
+  <div class="row row-padding-xs-100 " style="margin-top:10px;">
+  	<div class="menu title2">회원구분</div>
+  	<div class="menu_input_radio">
+  		<input type="radio" name="storeType" id="type1" value="1"><label for="type1">의류</label>
+  	</div>
+  	<div class="menu_input_radio">
+  		<input type="radio" name="storeType" id="type2" value="2"><label for="type2">에코백</label>
+  	</div>
+  	<div class="menu_input_radio">
+  		<input type="radio" name="storeType" id="type3" value="3"><label for="type3">파우치</label>
+  	</div>
+  </div>
 </form>
   
 </div>
