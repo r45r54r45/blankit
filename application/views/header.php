@@ -80,7 +80,7 @@
         <div class="side-collapse in" style="    ">
         <nav role="navigation" style="" class="navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a class="nav-color navbar-left" href="/aboutus" style="    width: 88px;">about us</a></li>
+            <li><a class="nav-color navbar-left" href="/aboutus" style="    width: 90px;">about us</a></li>
             <li><a class="nav-color navbar-left" href="/artist">artist</a></li>
             <li class="dropdown">
               <a href="/funding" id="store_menu" class="nav-color navbar-left dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">funding</span></a>
