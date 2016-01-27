@@ -182,13 +182,13 @@ if ($explodePath = explode('?', $urlPath)){
 </div>
 </div>
 <div class="container" >
-  <div class="row row-padding-xs-100 " style="margin-top:30px;">
+  <div class="row row-padding-xs-100 " style="margin-top:70px;">
     <div class="col-xs-12 gal  row_padding-xs" style="border-bottom:1px solid #D3D3D3; padding-bottom:5px; padding-left:0px;">
       <span style="font-size:25px; font-weight:500;">Login</span>
     </div>
   </div>
   <div class="row row-padding-xs-100 row_padding-xs" style="margin-top:50px;">
-    <div class="col-sm-12 col-md-6 padding-left-0 padding-xs-right-100 " style="">
+    <div class="col-xs-12  padding-left-0 padding-xs-right-100 " style="">
       <div class="col-xs-12 grey padding-left-0">
         <span style="font-size:20px;">회원 로그인</span>
       </div>
@@ -266,7 +266,8 @@ if ($explodePath = explode('?', $urlPath)){
 
 
   </div>
-  <div class="col-sm-12 col-md-6 padding-left-0 margin-xs-top-20 padding-xs-right-100">
+  <!-- 비회원 삭제 -->
+  <!-- <div class="col-sm-12 col-md-6 padding-left-0 margin-xs-top-20 padding-xs-right-100">
     <div class="col-xs-12 grey padding-left-0">
       <span style="font-size:20px;">비회원 로그인</span>
     </div>
@@ -295,6 +296,6 @@ if ($explodePath = explode('?', $urlPath)){
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 </div>
 </div>
