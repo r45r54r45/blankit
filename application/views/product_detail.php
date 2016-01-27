@@ -217,10 +217,10 @@ if ($itemType == "M_1" || $itemType == "H_1"){
 <div class="row row_padding-xs" style="margin-top:20px;">
     <div class="col-md-12" id="E-location" style="position:relative; height:25px; padding-bottom:40px; border-bottom: 1.5px solid #D3D3D3;">
 <div class="menu" style="width: 80px;margin-left: -40px;">
-  <div class="menu_item" style="width:49%">
+  <div class="menu_item" style="width:47%">
     <a href="/store/product/' . $itemNum . '?M_1' . '">맨투맨</a>
   </div>
-  <div class="menu_item" style="width:49%">
+  <div class="menu_item" style="width:47%">
     <a href="/store/product/' . $itemNum . '?H_1' . '">후드</a>
   </div>
 </div>
