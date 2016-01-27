@@ -1,6 +1,6 @@
 <style>
 .banner{
-  height:70px;
+  height:50px;
   width:100%;
   background: white;
   position:absolute;
@@ -173,7 +173,7 @@ function allOrderProduct(){
 </div>
 </div>
 <div class="container" >
-  <div class="row row-padding-xs-100 " style="margin-top:30px;">
+  <div class="row row-padding-xs-100 " style="margin-top:70px;">
     <div class="col-xs-12 gal  row_padding-xs" style="border-bottom:1px solid #D3D3D3; padding-bottom:5px; padding-left:0px;">
       <span style="font-size:25px; font-weight:500;">Cart</span>
     </div>
@@ -194,16 +194,16 @@ function allOrderProduct(){
 		$cartType = $row->cart_type;
 		$cartSize = $row->cart_size;
 		$cartColor = $row->cart_color;
-		
+
 		$cartDETAILS = $cartType;
-		
+
 		if($cartColor !== "default"){
 			$cartDETAILS = $cartDETAILS . "-" . $cartColor;
 		}
 		if($cartSize !== "default"){
 			$cartDETAILS = $cartDETAILS . "-" . $cartSize;
 		}
-		
+
 ?>
 
     <div style="padding: 10px 5px 0px 5px;" class="product col-xs-12 col-sm-6 col-md-6 col-lg-6" id="<? echo $cartId?>">

@@ -103,11 +103,11 @@ $(function(){
 </script>
 <div class="banner">
 
-<?php 
+<?php
 	$urlPath = "$_SERVER[REQUEST_URI]";
 	$explodePath = explode('/', $urlPath);
 	$backPath = $explodePath[2];
-	
+
 	$explodeBackPath =  explode('&', $backPath);
 	$codeNum = explode('=', $explodeBackPath[0]);
 	$bank = explode('=', $explodeBackPath[1]);
@@ -117,7 +117,7 @@ $(function(){
 </div>
 </div>
 <div class="container" >
-  <div class="row row-padding-xs-100 " style="margin-top:30px;">
+  <div class="row row-padding-xs-100 " style="margin-top:70px;">
     <div class="col-xs-12 gal  row_padding-xs" style="border-bottom:1px solid #D3D3D3; padding-bottom:5px; padding-left:0px;">
       <span style="font-size:25px; font-weight:500;">Order</span>
     </div>
