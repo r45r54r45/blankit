@@ -435,7 +435,7 @@ $PRICE =  number_format($storePrice, 0, '.', ','); // 가격 천 단위 콤마 �
       </a>
 </div>
         <div class="col-xs-12 col-sm-6">
-          <img src="source/image/profile_placeholder.png" class="img img-circle img-responsive"
+          <img src="/source/image/profile_placeholder.png" class="img img-circle img-responsive"
           style="width:100px">
           <div style="display:inline-block">
             <div >
