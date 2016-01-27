@@ -214,7 +214,7 @@ function makePrice(option){
 
 <input style="display:none;" type="text" id="storeType" value="<?echo $storeType?> ">
 <div class="container" >
-  <div class="row" style="padding-bottom:30px; border-bottom: 1px solid  #D3D3D3;">
+  <div class="row" style="margin-top:20px;adding-bottom:30px; border-bottom: 1px solid  #D3D3D3;">
     <p style="display:block; text-align:center; font-weight:bold; font-size:40px;padding-top:20px;"><?php echo $storeName;?></p>
     <p style="display:block; text-align:center; font-weight:regular; font-size:20px;">designed by. <?php echo $userName;?></p>
 
