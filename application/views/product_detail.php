@@ -72,12 +72,12 @@
   //$curPage =  $this->uri->segment(3); //현재 아이템 번호 & ?
   $urlPath = "$_SERVER[REQUEST_URI]";
   $explodePath = explode('/', $urlPath);
-  $curPage = $explodePath[3]; 
+  $curPage = $explodePath[3];
   /*** 물음표 제거기 ***/
   $testQ = explode('?', $curPage);
   $nowPage = $testQ[0]; //현재 아이템 번호
   $itemNum = $nowPage; //작품의 고유번호 넣어주삼. 작품 이미지 주소 가져오는데 사용
-  
+
   if ($curPage == $nowPage){
 	  foreach ($contents->result() as $row){
 	  	if ($row->store_id == $curPage){
@@ -102,9 +102,9 @@
   	$itemType = $testQ[1];
   	//echo "I was here at 2";
   }
-  
+
   //-----------진우파트 끝--------------
-  
+
   $itemImage="/source/image/ecobag_test.png";//작품이미지
   $itemPos; //아이템이 삽입될 위치
   $itemSizeImg; //제품 사이즈 이미지 주소
@@ -186,14 +186,14 @@
 
 <!-- 에코백일경우에만 뜨는 메뉴 시작 -->
 <?php
-if ($itemType == "E_1" || $itemType == "E_2" || $itemType == "E_3" || $itemType == "E_4"){ 
+if ($itemType == "E_1" || $itemType == "E_2" || $itemType == "E_3" || $itemType == "E_4"){
 	echo '
-	
+
 <div class="row row_padding-xs" style="margin-top:20px;">
     <div class="col-md-12" id="E-location" style="position:relative; height:25px; padding-bottom:40px; border-bottom: 1.5px solid #D3D3D3;">
 <div class="menu">
   <div class="menu_item">
-    <a href="/store/product/' . $itemNum . '?E_1' . '">숄더(컬러)</a> 
+    <a href="/store/product/' . $itemNum . '?E_1' . '">숄더(컬러)</a>
   </div>
   <div class="menu_item" >
     <a href="/store/product/' . $itemNum . '?E_2' . '">숄더(아이보리)</a>
@@ -211,16 +211,16 @@ if ($itemType == "E_1" || $itemType == "E_2" || $itemType == "E_3" || $itemType 
 <!-- 에코백일경우에만 뜨는 메뉴 끝 -->
 <!-- 맨투맨/후드에만 뜨는 메뉴 시작 -->
 <?php
-if ($itemType == "M_1" || $itemType == "H_1"){ 
+if ($itemType == "M_1" || $itemType == "H_1"){
 	echo '
-	
+
 <div class="row row_padding-xs" style="margin-top:20px;">
     <div class="col-md-12" id="E-location" style="position:relative; height:25px; padding-bottom:40px; border-bottom: 1.5px solid #D3D3D3;">
-<div class="menu">
-  <div class="menu_item">
-    <a href="/store/product/' . $itemNum . '?M_1' . '">맨투맨</a> 
+<div class="menu" style="width: 80px;margin-left: -40px;">
+  <div class="menu_item" style="width:49%">
+    <a href="/store/product/' . $itemNum . '?M_1' . '">맨투맨</a>
   </div>
-  <div class="menu_item" >
+  <div class="menu_item" style="width:49%">
     <a href="/store/product/' . $itemNum . '?H_1' . '">후드</a>
   </div>
 </div>

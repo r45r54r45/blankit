@@ -263,7 +263,7 @@ $(window).resize(function(){
 </div>
 <div class="row">
   <div class="col-md-12">
-    <div class="view_more"><a href="/store">view more</a></div>
+    <div class="view_more"><a href="/funding">view more</a></div>
   </div>
 </div>
 <!-- 모바일 시작 -->
@@ -297,7 +297,7 @@ $(window).resize(function(){
       ?>
       <li>
     <div class=" radius-4">
-    <div><a href="/store/product/<?php echo $row->store_id?>">
+    <div><a href="/funding/product/<?php echo $row->store_id?>">
       <img src="<?php echo $row->store_image;?>" class="img_rounded">
     </a></div>
     <div class="status_bar" style="background: linear-gradient(to right, #687C87 <?php echo ceil($percGoal)?>%,#D3D3D3 <?php echo ceil($percGoal)?>% );"></div>
