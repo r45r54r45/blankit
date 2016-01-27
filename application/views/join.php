@@ -64,7 +64,7 @@ input[type="radio"] + label{
   font-size: 13px;
   color:#443333;
 }
-.navbar-color{
+.nav-color{
   color: #777 !important;
 }
 </style>
