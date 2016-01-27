@@ -8,7 +8,7 @@ class File extends CI_Controller {
 		$uriPath = $this->uri->segment(2);
 		$idName = explode("=", $uriPath);
 		//$fileName = $idName[1] . "_profile.jpg";
-		$filename  = basename($_FILES['file']['name']);
+		$filename  = basename($_FILES['userfile']['tmp_name']);
 		$extension = pathinfo($filename, PATHINFO_EXTENSION);
 		$new       = $idName[1].'.'.$extension;
 		
