@@ -11,7 +11,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
     <!-- 스토어 세부페이지와 submit 페이지에서만 출력 시작-->
     <!-- 진우씨, 이 밑에 if 문에서는 해당페이지인지 확인해서 그 페이지에서만 뜨게끔 해놔야해요 -->
-    <?if(true){?>
+    <?
+  	if($this->uri->segment(1) == "funding" && $this->uri->segment(2) == "product"){
+  	?>
+  	<script>alert("Yay!");</script>
     <meta property="fb:app_id" content="214340015575657"/>
     <meta property="og:url"                content="<?echo $actual_link; ?>" />
     <meta property="og:type"               content="website" />
