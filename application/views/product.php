@@ -130,7 +130,7 @@ function makePrice(option){
 }
 </script>
 
-<?php 
+<?php
 if ($session_id){
 
 	echo "
@@ -461,7 +461,7 @@ $PRICE =  number_format($storePrice, 0, '.', ','); // 가격 천 단위 콤마 �
         </div>
       </a>
 </div>
-<?php 
+<?php
 foreach ($contents->result() as $row){
 	if ($numPath == $row->store_id){
 		$artistType = $row->artist_type;
@@ -472,7 +472,7 @@ foreach ($contents->result() as $row){
 
 ?>
 
-        <div class="col-xs-12 col-sm-6" style="border-bottom: 1px solid #D3D3D3;
+        <div class="col-xs-12 col-sm-8" style="border-bottom: 1px solid #D3D3D3;
     padding-bottom: 20px;
     padding-top: 20px;">
           <img src="<?php echo $artistProfile;?>" class="img img-circle img-responsive"
@@ -486,7 +486,7 @@ foreach ($contents->result() as $row){
             </div>
           </div>
         </div>
-        <div class="col-xs-12 col-sm-6 hidden-xs" style="border-bottom: 1px solid #D3D3D3;
+        <div class="col-xs-12 col-sm-4 hidden-xs" style="border-bottom: 1px solid #D3D3D3;
     padding-bottom: 20px;
     padding-top: 20px;">
       <a onclick="facebook_for_artist()" style="cursor:pointer;">
