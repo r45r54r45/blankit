@@ -139,7 +139,14 @@ $(function(){
 
 		$totalGoal = $row->store_goal;
 		$nowGoal = $row->store_goal_now;
-		$percGoal = $nowGoal / $totalGoal * 100;
+		
+		// 0 현재 모집인원 나누기 전체 모집인원 문제
+		if ($nowGoal == 0){
+			$percGoal = 0;
+		}
+		else {
+			$percGoal = $nowGoal / $totalGoal * 100;
+		}
 
 		//"앞으로 # 일 계산"
 		$curDate = date('Y-m-d H:i:s');
