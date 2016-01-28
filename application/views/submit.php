@@ -51,6 +51,10 @@
   font-size: 16px;
   color: #655453;
 }
+#cover{
+ background: red;
+ z-index: 9000;
+}
 </style>
 <script>
 function banner_generator(){
@@ -133,6 +137,7 @@ function checkSubmit(){
         제품 파일 업로드
       </span>
     </div>
+    <div id="cover">
     <div class="col-xs-6" style="margin-top:10px;">
       <div class="row">
         <div class="col-xs-12">
@@ -184,6 +189,8 @@ function checkSubmit(){
       </div>
 
     </div>
+  </div>
+  <!-- end of cover -->
   </div>
   <div class="row" style="margin-top:20px;">
     <div class="col-xs-12" style="text-align:center;">
