@@ -134,6 +134,7 @@ function makePrice(option){
 if ($session_id){
 
 	echo "
+<script>
 function checkSubmit(){
   if($(\"input[name=\'type\']\").val()==\"default\"){
     alert(\"타입을 선택해주세요\");
@@ -154,15 +155,18 @@ function checkSubmit(){
   alert(\'장바구니에 상품이 들어갔습니다.\');
   $(\"#formHidden\").submit();
   }
+</script>
 	";
 }
 
 else {
 	echo "
+<script>
 function checkSubmit(){
   alert(\'로그인 하셔야 합니다.\');
   $(\"#formHidden\").submit();
   }
+</script>
 	";
 }
 ?>
