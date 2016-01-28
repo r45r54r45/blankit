@@ -112,7 +112,7 @@ $(function(){
   	$cnt = 0;
 	foreach ($contents->result() as $row)
 	{
- 
+
 		$storeType = $row->store_type;
 
 		//현재 URL에 맞는 타입이 아니면 패쓰
@@ -193,9 +193,9 @@ $(function(){
 
  if($cnt==0){
    echo "
-   <span style='margin: 100px auto 0px;
+   <span style='margin: 300px auto 0px;
    display: table;
-   font-size: 20px;'>비어있습니다.</span>
+   font-size: 20px;'>없어 임마.</span>
    ";
  }?>
 
