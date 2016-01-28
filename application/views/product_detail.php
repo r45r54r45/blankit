@@ -105,7 +105,7 @@
 
   //-----------진우파트 끝--------------
 
-  $itemImage="/source/image/ecobag_test.png";//작품이미지
+  
   $itemPos; //아이템이 삽입될 위치
   $itemSizeImg; //제품 사이즈 이미지 주소
   $itemBed=array(); //배경으로 쓰일 제품 이미지 목록
@@ -166,12 +166,14 @@
   }
 
   ?>
-
-<?
+  
+  
+  <?
 	foreach($contents->result() as $row){
 		if ($row->store_id == $nowPage){
 			$storeName = $row->store_name;
 			$storeExplain = $row->store_explain;
+			$itemImage = $row->store_image;
 			break;
 		}
 	}
