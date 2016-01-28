@@ -32,7 +32,7 @@ class Submit extends CI_Controller {
 			$store_id = $this->submit_model->image_num($userSESSION, $artwork);
 			
 			$ext = end(explode(".",$_FILES['file']['name']));
-			$fileName = $store_id . "_" . $userSESSION . $ext;
+			$fileName = $store_id . "_" . $userSESSION . "." . $ext;
 			move_uploaded_file($_FILES['file']['tmp_name'],SITE_ROOT."/files/funding/". $fileName);
 			
 			$this->submit_model->upload_image($fileName, $store_id);
