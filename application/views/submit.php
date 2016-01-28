@@ -73,9 +73,6 @@ function checkSubmit(){
 	  	alert('성공적으로 업로드 되었습니다.');
 	  	$("#formform").submit();
 	}
-	else {
-		alert('로그인 하셔야 작품을 제출할 수 있습니다.');
-	}
 }
 </script>
 <div class="banner">
