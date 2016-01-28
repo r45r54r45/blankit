@@ -88,7 +88,7 @@ else {
 	echo '
 	<script>
 	function checkSubmit(){
-		alert("로그인 하셔야 업로드가 가능합니다.");
+		alert("아티스트 회원만 작품 업로드가 가능합니다.");
   	}
 	</script> ';
 }
@@ -224,7 +224,7 @@ else {
     top: 100px;
     z-index: 9000;
     opacity: 0.5; text-align:center;">
-      <span style="line-height:360px; vertical-align:middle;font-size:25px;color:#655453;">로그인 하셔야 작품을 제출할 수 있습니다.</span>
+      <span style="line-height:360px; vertical-align:middle;font-size:25px;color:#655453;">아티스트 회원만 작품을 업로드할 수 있습니다.</span>
     </div>
   	';}
 	?>
