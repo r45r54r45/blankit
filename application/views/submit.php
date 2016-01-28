@@ -83,8 +83,12 @@ if ($session_id !== "" && $session_userType == "2"){
     	alert(\"블랭킷 X 아티스트 작품명을 입력해주세요.\");
     	return;
   	}
-	if($(\"input[id='goalNum']:checked\").length==0){
+	if($(\"input[name='storeType']:checked\").length==0){
     	alert(\"작품 카테고리를 선택해주세요.\");
+    	return;
+  	}
+	if($(\"input[id='goalNum']:checked\").length==0){
+    	alert(\"목표 구매자 수를 선택해주세요.\");
     	return;
   	}
 		alert(\"성공적으로 업로드 되었습니다.\");
@@ -192,7 +196,7 @@ else {
       </div>
       <div class="row" style="margin-top:20px;">
         <div class="col-xs-12">
-          <div class="tt" >블랭킷 X 아티스트 목표 구매자수</div>
+          <div class="tt" >블랭킷 X 아티스트 목표 구매자 수</div>
           <select id="goalNum" style=" width:100%" name="storeGoal">
             <option value="default">선택</option>
             <option value="5">5개</option>
