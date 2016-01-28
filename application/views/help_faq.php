@@ -221,7 +221,7 @@ $(function(){
     </div>
     <div class="sisi col-xs-4 col-sm-2">
       <div style="width:6px;height:6px; <?=($menu==4?"background:#96AFB5;":"")?>display:block;margin:0 auto 3px; border-radius:3px;"></div>
-      <a href="/help/faq?menu=4" class="sisisi"<?=($menu==4?" style=\"color:#96AFB5;\"":"")?>> Delivery</a>
+      <a href="/help/faq?menu=4" class="sisisi"<?=($menu==4?" style=\"color:#96AFB5;\"":"")?>> delivery</a>
     </div>
     <div class="sisi col-xs-4 col-sm-2">
       <div style="width:6px;height:6px; <?=($menu==5?"background:#96AFB5;":"")?>display:block;margin:0 auto 3px; border-radius:3px;"></div>

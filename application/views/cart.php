@@ -180,6 +180,8 @@ function allOrderProduct(){
   </div>
   <div class="row row-padding-xs-100 " style="margin-top:30px;">
     <span class="title1">주문 리스트 확인</span>
+    <br>
+    <span class="title1" style="font-size:13px;">구매하실 제품을 선택해주세요</span>
   </div>
   <div class="row row-padding-xs-100 " style="margin-top:10px;">
   <!-- 주문목록 반복되는 부분 *시작* -->

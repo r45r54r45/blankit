@@ -204,6 +204,12 @@ $(function(){
 
           </div>
         </div>
+        <div class="row" style="margin-top:20px;">
+          <div class="col-xs-12" style="text-align:center;">
+            <a onclick="checkSubmit();" style="cursor:pointer;"><div style="display:block; width:200px; border:1px solid #337ab7; margin:10px auto; padding:10px 0px; border-radius:10px; color:#337ab7; font-size:15px; font-weight:500;">문의하기</div></a>
+          </div>
+
+        </div>
       </div>
 
 
