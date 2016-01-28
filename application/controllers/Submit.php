@@ -20,15 +20,22 @@ class Submit extends CI_Controller {
 	public function func_checkSubmit(){
 
 		if ($this->session->flashdata('redirect') == "submit" && $this->session->userdata('user_id')){
+			$userSESSION = $this->session->userdata('user_id');
+			
 			$artwork = $this->input->post('artwork');
 			$explain = $this->input->post('explain');
 			$storeType = $this->input->post('storeType');
 			$storeGoal = $this->input->post('storeGoal');
-						$ext = end(explode(".",$_FILES['file']['name']));
-			$fileName = 진우 여기야 . $ext;
-			move_uploaded_file($_FILES['file']['tmp_name'],SITE_ROOT."/files/여기 작품 수납 공간 폴더/". $fileName);
+			
 			$this->load->model('submit_model');
 			$this->submit_model->upload_artwork($artwork, $explain, $storeType, $storeGoal);
+			$store_id = $this->submit_model->image_num($userSESSION, $artwork);
+			
+			$ext = end(explode(".",$_FILES['file']['name']));
+			$fileName = $store_id . "_" . $userSESSION . $ext;
+			move_uploaded_file($_FILES['file']['tmp_name'],SITE_ROOT."/files/funding/". $fileName);
+			
+			$this->submit_model->upload_image($fileName, $store_id);
 
 			//완료 페이지로 redirect
 			$completeUrl = "http://blankit.kr/submit/complete";

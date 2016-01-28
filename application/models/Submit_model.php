@@ -23,9 +23,27 @@ class Submit_model extends CI_Model{
 			$date =  date('Y-m-d 0:0:0', strtotime("+7 days"));
 			
 			$this->db->query("
-				insert into `STORE` (user_id, store_name, store_random_id, store_day, store_type, store_goal, store_status, store_explain)
+				insert into `STORE` (user_id, store_name, store_random_id, store_day, store_type, store_goal, store_status, store_explain, store_image)
 				values ('$user_id_SESSION', '$artwork', '$seed_date', '$date', '$storeType', '$storeGoal', '1', '$explain')
 			");
 		}
+	}
+	
+	public function image_num($userSESSION, $artwork){
+		return $this->db->query("
+			select max(store_id)
+			from `STORE`
+			where store_name = '$artwork' and user_id = '$userSESSION'
+		");
+	}
+	
+	public function upload_image($fileName, $store_id){
+		$finalRoot = "/files/funding/" . $fileName;
+		
+		$this->db->query ("
+			update `STORE`
+			set store_image = '$fileRoot'
+			where store_id = '$store_id'
+		");
 	}
 }
