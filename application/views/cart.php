@@ -186,7 +186,9 @@ function allOrderProduct(){
   <div class="row row-padding-xs-100 " style="margin-top:10px;    min-height: 300px;">
   <!-- 주문목록 반복되는 부분 *시작* -->
 <?
+  $cnt=0;
 	foreach($realCart->result() as $row){
+    $cnt++;
 		$storeRandomId = $row->store_random_id;
 		$cartPrice = $row->cart_price;
 		$cartNum = $row->cart_num;
@@ -253,7 +255,18 @@ function allOrderProduct(){
       </div>
     </div>
   </div>
-<? }?>
+<? }
+  if($cnt==0){
+    echo "
+    <span style='margin:auto auto;'>카트가 비어있습니다.</span>
+
+
+
+
+    ";
+  }
+
+?>
     <!-- 주문목록 반복되는 부분 끝 -->
 
   </div>
