@@ -502,7 +502,7 @@ obj.value=obj.value.substring(0,maxLength);
 }
 </SCRIPT>
                 <textarea name = "introduction" style="border-radius:10px;
-                width:100%; height:150px; border:2px solid rgba(0, 0, 0, 0.3);"   maxlength="200"
+                width:100%; height:150px; border:2px solid rgba(0, 0, 0, 0.3);"   maxlength="100"
                 onkeyup="return textarea_maxlength(this)"></textarea>
               </div>
               <div class="row row-padding-xs-100 " style="margin-top:10px;">

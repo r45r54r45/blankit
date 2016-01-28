@@ -133,40 +133,40 @@ function makePrice(option){
 <?php
 if ($session_id){
 
-	echo "
-<script>
-function checkSubmit(){
-  if($(\"input[name='type']\").val()==\"default\"){
-    alert(\"타입을 선택해주세요\");
-    return false;
-  }
-  if($(\"#color\").length!=0){
-    if($(\"input[name='color']\").val()==\"default\"){
-      alert('컬러를 선택해주세요');
+  echo "
+  <script>
+  function checkSubmit(){
+    if($(\"input[name='type']\").val()==\"default\"){
+      alert(\"타입을 선택해주세요\");
       return false;
     }
-  }
-  if($(\"#size\").length!=0){
-    if($(\"input[name='size']\").val()==\"default\"){
-      alert(\"사이즈를 선택해주세요\");
-      return false;
+    if($(\"#color\").length!=0){
+      if($(\"input[name='color']\").val()==\"default\"){
+        alert('컬러를 선택해주세요');
+        return false;
+      }
     }
+    if($(\"#size\").length!=0){
+      if($(\"input[name='size']\").val()==\"default\"){
+        alert(\"사이즈를 선택해주세요\");
+        return false;
+      }
+    }
+    alert('장바구니에 상품이 들어갔습니다.');
+    $(\"#formHidden\").submit();
   }
-  alert('장바구니에 상품이 들어갔습니다.');
-  $(\"#formHidden\").submit();
-  }
-</script>
-	";
+  </script>
+  ";
 }
 
 else {
-	echo "
-<script>
-function checkSubmit(){
-  alert('로그인 하셔야 합니다.');
+  echo "
+  <script>
+  function checkSubmit(){
+    alert('로그인 하셔야 합니다.');
   }
-</script>
-	";
+  </script>
+  ";
 }
 ?>
 
@@ -442,46 +442,48 @@ $PRICE =  number_format($storePrice, 0, '.', ','); // 가격 천 단위 콤마 �
         //$this->load->helper('url');
         $URL =  $_SERVER['SERVER_NAME'];
         $URI = $_SERVER['REQUEST_URI'];
-        
+
         $facebookURL = $URL . $URI;
-        
+
         echo "
         <script>
-	        function facebook_for_artist(){
-	          FB.ui({
-	            method: 'share',
-	            href: '" . $facebookURL . "',
-	          }, function(response){});
-	        }
-	    </script> ";
-        ?>
-        <div class="row row_padding-xs" style="margin-top:20px;">
-          <div class="col-xs-12 col-sm-6 visible-xs" style="border-bottom: 1px solid #D3D3D3;
-    padding-bottom: 20px;">
-        <a onclick="facebook_for_artist()" style="cursor:pointer;">
-          <div class="col-xs-12" style="
-          background-color: #3a5795;
-          box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .52); height:100px; border-radius:20px; text-align:center; ">
-          <span style="font-size:30px; line-height: 100px; vertical-align:middle; font-weight:500; color:white; ">페이스북에 공유하기</span>
+        function facebook_for_artist(){
+          FB.ui({
+            method: 'share',
+            href: '" . $facebookURL . "',
+          }, function(response){});
+          }
+          </script> ";
+          ?>
+          <div class="row row_padding-xs" style="margin-top:20px;">
+            <div class="col-xs-12 col-sm-6 visible-xs" style="border-bottom: 1px solid #D3D3D3;
+            padding-bottom: 20px;">
+            <a onclick="facebook_for_artist()" style="cursor:pointer;">
+              <div class="col-xs-12" style="
+              background-color: #3a5795;
+              box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .52); height:100px; border-radius:20px; text-align:center; ">
+              <span style="font-size:30px; line-height: 100px; vertical-align:middle; font-weight:500; color:white; ">페이스북에 공유하기</span>
+            </div>
+          </a>
         </div>
-      </a>
-</div>
-<?php
-foreach ($contents->result() as $row){
-	if ($numPath == $row->store_id){
-		$artistType = $row->artist_type;
-		$artistIntro = $row->artist_intro;
-		$artistProfile = $row->artist_profile;
-	}
-}
+        <?php
+        foreach ($contents->result() as $row){
+          if ($numPath == $row->store_id){
+            $artistType = $row->artist_type;
+            $artistIntro = $row->artist_intro;
+            $artistProfile = $row->artist_profile;
+          }
+        }
 
-?>
-
-        <div class="col-xs-12 col-sm-8" style="border-bottom: 1px solid #D3D3D3;
-    padding-bottom: 20px;
-    padding-top: 20px;">
-          <img src="<?php echo $artistProfile;?>" class="img img-circle img-responsive"
-          style="height:100px; display:inline-block;">
+        ?>
+        <div style="border-bottom: 1px solid #D3D3D3;">
+          <div class="col-xs-12 col-sm-8" style="
+          padding-bottom: 20px;
+          padding-top: 20px;">
+          <div style="display:inline-block;">
+            <img src="<?php echo $artistProfile;?>" class="img img-circle img-responsive"
+            style="height:100px;">
+          </div>
           <div style="padding-left: 20px;display:inline-block">
             <div >
               <span style="font-size:16px; font-weight:400;"><?php echo $userName;?> (<?php echo $artistType?>)</span>
@@ -491,15 +493,16 @@ foreach ($contents->result() as $row){
             </div>
           </div>
         </div>
-        <div class="col-xs-12 col-sm-4 hidden-xs" style="border-bottom: 1px solid #D3D3D3;
-    padding-bottom: 20px;
-    padding-top: 20px;">
-      <a onclick="facebook_for_artist()" style="cursor:pointer;">
-        <div class="col-xs-12" style="
-        background-color: #3a5795;
-        box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .52); height:100px; border-radius:20px; text-align:center; ">
-        <span style="font-size:30px; line-height: 100px; vertical-align:middle; font-weight:500; color:white; ">페이스북에 공유하기</span>
-      </div>
-    </a>
+        <div class="col-xs-12 col-sm-4 hidden-xs" style="
+        padding-bottom: 20px;
+        padding-top: 20px;">
+        <a onclick="facebook_for_artist()" style="cursor:pointer;">
+          <div class="col-xs-12" style="
+          background-color: #3a5795;
+          box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .52); height:100px; border-radius:20px; text-align:center; ">
+          <span style="font-size:30px; line-height: 100px; vertical-align:middle; font-weight:500; color:white; ">페이스북에 공유하기</span>
+        </div>
+      </a>
+    </div>
+  </div>
 </div>
-      </div>
