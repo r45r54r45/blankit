@@ -439,11 +439,10 @@ $PRICE =  number_format($storePrice, 0, '.', ','); // 가격 천 단위 콤마 �
           <input type="text" name="storeType" value="<?echo $GlobalStoreType;?>">
         </form>
         <?php
-        $this->load->helper('url');
-        //$facebookURL = current_url();
-        echo $_SERVER['SERVER_NAME'];
-        echo "///";
-        echo $_SERVER[REQUEST_URI];
+        $URL =  $_SERVER['SERVER_NAME'];
+        $URI = $_SERVER[REQUEST_URI];
+        
+        $facebookURL = $URL . $URI;
         
         echo "
         <script>
