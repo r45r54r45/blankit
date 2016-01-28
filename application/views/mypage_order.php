@@ -167,7 +167,9 @@ $(function(){
 
    <!-- 주문 목록 반복되는 블럭 시작 -->
    <?
+   $cnt=0;
    		foreach($order_list->result() as $row){
+        $cnt++;
    			 $orderRandomId = $row->order_random_id;
    			 $orderDate = $row->order_date;
    			 $realDate = explode(' ', $orderDate);
@@ -259,7 +261,15 @@ $(function(){
       </div>
     </div>
   </div>
-    <? }?>
+    <? }
+    if($cnt==0){
+      echo "
+      <span style='margin: 100px auto 0px;
+      display: table;
+      font-size: 20px;'>비어있습니다.</span>
+      ";
+    }
+    ?>
     <!-- 주문목록 반복되는 부분 끝 -->
 
 
