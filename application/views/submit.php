@@ -119,10 +119,11 @@ else {
         작업 파일 다운로드
       </span>
     </div>
+    <div style="margin-top:30px;" class="col-xs-12 hidden-sm hidden-md hidden-lg">
+      <span style="display:block; text-align:center;">작업 파일 다운로드는 PC에서만 제공합니다.</span>
+    </div>
   </div>
-  <div class="row hidden-sm hidden-md hidden-lg" style="margin-top:30px; margin-bottom:30px; ">
-    <span style="display:block; text-align:center;">작업 파일 다운로드는 PC에서만 제공합니다.</span>
-  </div>
+
   <div class="row hidden-xs" style="margin-top:30px; margin-bottom:30px; ">
     <div class="col-xs-2">
     </div>
@@ -155,7 +156,7 @@ else {
         제품 파일 업로드
       </span>
     </div>
-    <div class="row hidden-sm hidden-md hidden-lg" style="margin-top:30px; margin-bottom:30px; ">
+    <div class="col-xs-12 hidden-sm hidden-md hidden-lg" style="margin-top:30px; margin-bottom:30px; ">
       <span style="display:block; text-align:center;">제품 파일 업로드는 PC에서만 제공합니다.</span>
     </div>
     <div class="hidden-xs" style="position:relative;">
@@ -211,11 +212,7 @@ else {
 
     </div>
     <div class="clearfix"></div>
-    
     <!-- 진우, 로그인 안되있으면 이부분 출력해줘 시작-->
-    <?
-    if ($session_id == ""){
-    echo '
     <div style="background: #D3D3D3;
     height: 360px;
     width: 100%;
@@ -226,19 +223,16 @@ else {
     opacity: 0.5; text-align:center;">
       <span style="line-height:360px; vertical-align:middle;font-size:25px;color:#655453;">로그인 하셔야 작품을 제출할 수 있습니다.</span>
     </div>
-    ';}
-    ?>
     <!-- 진우, 로그인 안되있으면 이부분 출력해줘 끝-->
 
-
+  </div>
   <!-- end of cover -->
   </div>
-  <div class="row" style="margin-top:20px;">
+  <div class="row hidden-xs" style="margin-top:20px;">
     <div class="col-xs-12" style="text-align:center;">
       <a onclick="checkSubmit();" style="cursor:pointer;"><div style="display:block; width:200px; border:1px solid #337ab7; margin:10px auto; padding:10px 0px; border-radius:10px; color:#337ab7; font-size:15px; font-weight:500;">업로드하기</div></a>
     </div>
 
-  </div>
   </div>
 
 </form>
