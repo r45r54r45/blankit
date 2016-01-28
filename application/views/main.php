@@ -204,9 +204,9 @@ $(function(){
      controls:false
    });
    bannerAnimation();
-   $("#bg").css("height",$("#bg").width()+"px");
+   $(".bg").css("height",$("#bg").width()+"px");
    $(window).on("resize",function(){
-     $("#bg").css("height",$("#bg").width()+"px");
+     $(".bg").css("height",$("#bg").width()+"px");
    });
 });
 var bannerNum=0;
@@ -434,7 +434,7 @@ $(window).resize(function(){
       if($num<4){
     ?>
     <div class="col-xs-6 col-sm-4 col-md-3 col-lg-15">
-      <div id="bg" class="img_hover_cover ">
+      <div  class="bg img_hover_cover ">
         <img src="<?echo $row->artist_profile;?>" class="img img_hover img-circle">
       </div>
       <div style="text-align:center; margin-top:10px;">
@@ -446,7 +446,7 @@ $(window).resize(function(){
     if($num==4){
   ?>
   <div class="col-xs-6 col-sm-4 col-md-3 col-lg-15">
-    <div id="bg" class="img_hover_cover ">
+    <div class="bg img_hover_cover ">
       <img src="<?echo $row->artist_profile;?>" class="img img_hover img-circle">
     </div>
     <div style="text-align:center; margin-top:10px;">
@@ -458,7 +458,7 @@ $(window).resize(function(){
   if($num==5){
 ?>
 <div class="col-xs-6 col-sm-4 hidden-md col-lg-15">
-  <div id="bg" class="img_hover_cover ">
+  <div  class=" bg img_hover_cover ">
     <img src="<?echo $row->artist_profile;?>" class="img img_hover img-circle">
   </div>
   <div style="text-align:center; margin-top:10px;">
@@ -470,7 +470,7 @@ $(window).resize(function(){
 if($num==6){
 ?>
 <div class="col-xs-6 col-sm-4 hidden-md hidden-lg">
-<div id="bg" class="img_hover_cover">
+<div  class=" bg img_hover_cover">
   <img src="<?echo $row->artist_profile;?>" class="img img_hover img-circle">
 </div>
 <div style="text-align:center; margin-top:10px;">
