@@ -164,7 +164,6 @@ else {
 <script>
 function checkSubmit(){
   alert(\'로그인 하셔야 합니다.\');
-  $(\"#formHidden\").submit();
   }
 </script>
 	";
