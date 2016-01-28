@@ -2,6 +2,8 @@
 
 .img_hover_cover{
    z-index: 100;
+   border-radius: 50%;
+   overflow: hidden;
    background: #96AFB5;
    width:100%;
      box-shadow: 0 2px 20px -2px rgba(0, 0, 0, .52);
