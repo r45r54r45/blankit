@@ -23,6 +23,10 @@ $(function(){
   //   $('#loginbutton,#feedbutton').removeAttr('disabled');
   //   FB.getLoginStatus(updateStatusCallback);
   // });
+  $(".pp").css("height",$(".pp").width()+"px");
+  $(window).on("resize",function(){
+    $(".pp").css("height",$(".pp").width()+"px");
+  });
 });
 window.fbAsyncInit = function() {
   FB.init({

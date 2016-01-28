@@ -102,10 +102,7 @@ $(function(){
       $("#root_container").css("height",$(".banner").height()+"px");
       banner_generator();
   });
-  $(".pp").css("height",$(".pp").width()+"px");
-  $(window).on("resize",function(){
-    $(".pp").css("height",$(".pp").width()+"px");
-  });
+
 });
 </script>
   <div class="row" style="min-height:400px">

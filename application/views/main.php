@@ -448,7 +448,7 @@ $(window).resize(function(){
     </div>
     <div class="artist_hover" style="width: 100%; display: inline-flex;">
       <div style="width:20%; margin-left: 10px; padding-top: 10px; margin-bottom:15px;">
-        <img src="<?php echo $row->artist_profile;?>" class="img img-circle">
+        <img src="<?php echo $row->artist_profile;?>" class="pp img img-circle">
       </div>
       <div style="width:80%; padding-left:10px; padding-top:10px;">
         <p class="artist_name"><?php echo $row->user_name;?></p>
