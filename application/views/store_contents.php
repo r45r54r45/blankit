@@ -90,7 +90,7 @@ $(function(){
   });
 });
 </script>
-  <div class="row">
+  <div class="row" style="min-height:400px">
 <!-- 컨텐츠 반복시작 -->
 
 <?php
@@ -193,9 +193,9 @@ $(function(){
 
  if($cnt==0){
    echo "
-   <span style='margin: 300px auto 0px;
+   <span style='margin: 100px auto 0px;
    display: table;
-   font-size: 20px;'>없어 임마.</span>
+   font-size: 20px;'>없어 임마..</span>
    ";
  }?>
 
