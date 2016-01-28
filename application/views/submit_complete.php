@@ -69,39 +69,29 @@ $(function(){
         </span>
       </div>
   </div>
-  <div class="row hidden-sm hidden-md hidden-lg" style="margin-top:30px; margin-bottom:30px; ">
-    <span style="display:block; text-align:center;">작업 파일 다운로드는 PC에서만 제공합니다.</span>
-  </div>
-  <div class="row hidden-xs" style="margin-top:30px; margin-bottom:30px; ">
-    <div class="col-xs-2">
-    </div>
-    <div class="col-xs-2 download_cover">
-      <a href="">
-        <img src="/source/image/download_1.png" class="download_img img img-responsive">
-      </a>
-    </div>
-    <div class="col-xs-1">
-    </div>
-    <div class="col-xs-2 download_cover">
-      <a href="">
-      <img src="/source/image/download_2.png" class="download_img img img-responsive">
-    </a>
-    </div>
-    <div class="col-xs-1">
-    </div>
-    <div class="col-xs-2 download_cover">
-      <a href="">
-      <img src="/source/image/download_3.png" class="download_img img img-responsive">
-    </a>
-    </div>
-    <div class="col-xs-2">
-    </div>
-  </div>
+
   <div class="row">
       <div class="col-xs-12" style="margin-top:30px; border-top: 1px solid #D3D3D3;">
         <span style="margin-top:30px; text-align:center; display:block; font-size: 25px; color:#655453; font-weight:bold;">
-          제품 파일 업로드
+          친구들에게 자랑하기
         </span>
       </div>
+      <script>
+      function facebook_for_artist(){
+        FB.ui({
+          method: 'share',
+          href: 'http://blankit.kr/funding/product/여기에 프로덕트 번호 넣어줘 진우',
+        }, function(response){});
+      }
+      </script>
+      <div class="col-xs-12" style="margin-top:30px; ">
+      <a onclick="facebook_for_artist()" style="cursor:pointer;">
+        <div class="col-xs-12" style="
+        background-color: #3a5795;
+        box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .52); height:100px; border-radius:20px; text-align:center; ">
+        <span style="font-size:30px; line-height: 100px; vertical-align:middle; font-weight:500; color:white; ">페이스북</span>
+      </div>
+    </a>
+  </div>
   </div>
 </div>
