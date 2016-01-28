@@ -65,6 +65,10 @@ $(function(){
       $("#root_container").css("height",$(".banner").height()+"px");
       banner_generator();
   });
+  $(".bg").css("height",$(".bg").width()+"px");
+  $(window).on("resize",function(){
+    $(".bg").css("height",$(".bg").width()+"px");
+  });
 });
 </script>
   <div class="banner">
@@ -94,7 +98,7 @@ $(function(){
   	{
     ?>
     <div class="col-xs-6 col-sm-4 col-md-3 col-lg-15">
-      <div class="img_hover_cover img-circle">
+      <div class="img_hover_cover  bg ">
         <img src="<?echo $row->artist_profile;?>" class="img img_hover img-circle">
       </div>
       <div style="text-align:center; margin-top:10px;">
