@@ -144,7 +144,7 @@ $(function(){
     switch ($storeType) {
       case '1':
         $itemPos="left:37%;top:35%;width:23.066666666666666%;height:20.333333333333332%;";
-        $itemBed="/source/product/M_1_1"."_bed.JPG"
+        $itemBed="/source/product/M_1_1"."_bed.JPG";
       break;
       case '2':
         $itemPos="left:34.599999999999994%;top:46.1%;width:31.1%;height:42.199999999999996%;";
