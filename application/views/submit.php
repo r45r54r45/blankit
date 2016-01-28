@@ -149,7 +149,7 @@ else {
     <div class="col-xs-2">
     </div>
   </div>
-  <form action="/submit/func_checkSubmit" method="post" id="formform">
+  <form action="/submit/func_checkSubmit" enctype="multipart/form-data" method="post" id="formform">
   <div class="row">
     <div class="col-xs-12" style="margin-top:30px;margin-bottom:20px; border-top: 1px solid #D3D3D3;">
       <span style="margin-top:30px; text-align:center; display:block; font-size: 25px; color:#655453; font-weight:bold;">
@@ -197,7 +197,7 @@ else {
       <div class="row" style="margin-top:20px;">
         <div class="col-xs-12">
           <div  class="tt">블랭킷 X 아티스트 작품 파일</div>
-          <input type="file" style="margin-top:10px;width:100%;">
+          <input type="file" name="file"  style="margin-top:10px;width:100%;">
         </div>
       </div>
 
