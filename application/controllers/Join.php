@@ -36,7 +36,7 @@ class Join extends CI_Controller {
 			}
 		}
 		
-		$mainUrl = "http://blankit.kr";
+		$mainUrl = "http://blankit.kr/login";
 		$this->load->helper('url');
 		redirect($mainUrl);
 	}

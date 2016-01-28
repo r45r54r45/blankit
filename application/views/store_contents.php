@@ -109,10 +109,10 @@ $(function(){
 		$urlNum = 0;
 	}
 	//url 확인 여기까지
-  // $cnt=0;
+  	$cnt = 0;
 	foreach ($contents->result() as $row)
 	{
- // $cnt++;
+ 
 		$storeType = $row->store_type;
 
 		//현재 URL에 맞는 타입이 아니면 패쓰
@@ -137,6 +137,7 @@ $(function(){
 			continue;
 		}
 
+		$cnt++;
 		$totalGoal = $row->store_goal;
 		$nowGoal = $row->store_goal_now;
 
@@ -190,13 +191,13 @@ $(function(){
   <!-- <div class="clearfix visible-xs-block visible-sm-block visible-md-block"></div> -->
 <?php }
 
-// if($cnt==0){
-//   echo "
-//   <span style='margin: 100px auto 0px;
-//   display: table;
-//   font-size: 20px;'>비어있습니다.</span>
-//   ";
-// }?>
+ if($cnt==0){
+   echo "
+   <span style='margin: 100px auto 0px;
+   display: table;
+   font-size: 20px;'>비어있습니다.</span>
+   ";
+ }?>
 
 <!-- 컨텐츠 반복 끝 -->
 </div>
