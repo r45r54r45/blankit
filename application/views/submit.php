@@ -75,7 +75,7 @@ $(function(){
 
 <?php
 
-if ($session_id){
+if ($session_id !== "" && $session_userType == "2"){
 	echo '
 	<script>
 	function checkSubmit(){
@@ -214,7 +214,7 @@ else {
     <div class="clearfix"></div>
     <!-- 진우, 로그인 안되있으면 이부분 출력해줘 시작-->
      <?
-	if ($session_id == ""){
+	if ($session_id == "" || $session_userType == "1"){
 	echo '
     <div style="background: #D3D3D3;
     height: 360px;

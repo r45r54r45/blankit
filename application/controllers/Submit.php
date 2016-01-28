@@ -6,8 +6,10 @@ class Submit extends CI_Controller {
 	public function index()
 	{
 		$data['session_id'] = "";
+		
 		if ($this->session->userdata('user_id')){
 			$data['session_id'] = $this->session->userdata('user_id');
+			$data['session_userType'] = $this->session->userdata('user_type');
 		}
 
 		$this->load->view('header');
@@ -21,6 +23,7 @@ class Submit extends CI_Controller {
 
 		if ($this->session->flashdata('redirect') == "submit" && $this->session->userdata('user_id')){
 			$userSESSION = $this->session->userdata('user_id');
+			
 			
 			$artwork = $this->input->post('artwork');
 			$explain = $this->input->post('explain');
