@@ -29,7 +29,11 @@ class Submit extends CI_Controller {
 			
 			$this->load->model('submit_model');
 			$this->submit_model->upload_artwork($artwork, $explain, $storeType, $storeGoal);
-			$store_id = $this->submit_model->image_num($userSESSION, $artwork);
+			$store_id_seed = $this->submit_model->image_num($userSESSION, $artwork);
+			
+			foreach ($store_id_seed->result() as $row){
+				$store_id = $row->seed;
+			}
 			
 			$ext = end(explode(".",$_FILES['file']['name']));
 			$fileName = $store_id . "_" . $userSESSION . "." . $ext;

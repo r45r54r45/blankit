@@ -31,7 +31,7 @@ class Submit_model extends CI_Model{
 	
 	public function image_num($userSESSION, $artwork){
 		return $this->db->query("
-			select max(store_id)
+			select max(store_id) as seed
 			from `STORE`
 			where store_name = '$artwork' and user_id = '$userSESSION'
 		");
