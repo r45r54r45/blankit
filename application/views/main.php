@@ -136,6 +136,8 @@
   }
   .img_hover_cover{
      z-index: 100;
+     border-radius: 50%;
+     overflow: hidden;
      background: #96AFB5;
      width:100%;
      box-shadow: 0 2px 20px -2px rgba(0, 0, 0, .52);
@@ -432,7 +434,7 @@ $(window).resize(function(){
       if($num<4){
     ?>
     <div class="col-xs-6 col-sm-4 col-md-3 col-lg-15">
-      <div id="bg" class="img_hover_cover img-circle">
+      <div id="bg" class="img_hover_cover ">
         <img src="<?echo $row->artist_profile;?>" class="img img_hover img-circle">
       </div>
       <div style="text-align:center; margin-top:10px;">
@@ -444,7 +446,7 @@ $(window).resize(function(){
     if($num==4){
   ?>
   <div class="col-xs-6 col-sm-4 col-md-3 col-lg-15">
-    <div id="bg" class="img_hover_cover img-circle">
+    <div id="bg" class="img_hover_cover ">
       <img src="<?echo $row->artist_profile;?>" class="img img_hover img-circle">
     </div>
     <div style="text-align:center; margin-top:10px;">
@@ -456,7 +458,7 @@ $(window).resize(function(){
   if($num==5){
 ?>
 <div class="col-xs-6 col-sm-4 hidden-md col-lg-15">
-  <div id="bg" class="img_hover_cover img-circle">
+  <div id="bg" class="img_hover_cover ">
     <img src="<?echo $row->artist_profile;?>" class="img img_hover img-circle">
   </div>
   <div style="text-align:center; margin-top:10px;">
@@ -468,7 +470,7 @@ $(window).resize(function(){
 if($num==6){
 ?>
 <div class="col-xs-6 col-sm-4 hidden-md hidden-lg">
-<div id="bg" class="img_hover_cover img-circle">
+<div id="bg" class="img_hover_cover">
   <img src="<?echo $row->artist_profile;?>" class="img img_hover img-circle">
 </div>
 <div style="text-align:center; margin-top:10px;">
