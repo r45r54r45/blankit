@@ -438,14 +438,18 @@ $PRICE =  number_format($storePrice, 0, '.', ','); // 가격 천 단위 콤마 �
           <input type="text" name="storeId" value="<?echo $numPath;?>">
           <input type="text" name="storeType" value="<?echo $GlobalStoreType;?>">
         </form>
+        <?php
+        $facebookURL = current_url();
+        echo "
         <script>
-        function facebook_for_artist(){
-          FB.ui({
-            method: 'share',
-            href: 'http://blankit.kr/funding/product/5',
-          }, function(response){});
-        }
-        </script>
+	        function facebook_for_artist(){
+	          FB.ui({
+	            method: 'share',
+	            href: '" . $facebookURL . "',
+	          }, function(response){});
+	        }
+	    </script> ";
+        ?>
         <div class="row row_padding-xs" style="margin-top:20px;">
           <div class="col-xs-12 col-sm-6 visible-xs" style="border-bottom: 1px solid #D3D3D3;
     padding-bottom: 20px;">
