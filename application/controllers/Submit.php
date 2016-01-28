@@ -14,13 +14,7 @@ class Submit extends CI_Controller {
 		$artwork = $this->input->post('artwork');
 		$explain = $this->input->post('explain');
 		$storeType = $this->input->post('storeType');
-		//$storeGoal = $this->input->post('storeGoal');
-		$storeGoal = 5;
-		
-		/* 		$artwork = "this";
-		 $explain = "this";
-		 $storeType = 1;
-		 $storeGoal = 1; */
+		$storeGoal = $this->input->post('storeGoal');
 		
 		$this->load->model('submit_model');
 		$this->submit_model->upload_artwork($artwork, $explain, $storeType, $storeGoal);

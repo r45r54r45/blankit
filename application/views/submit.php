@@ -168,6 +168,7 @@ $(function(){
           <input type="file" style="margin-top:10px;width:100%;">
         </div>
       </div>
+
     </div>
     <div class="col-xs-6" style=" margin-top:10px;">
       <div class="row" style="">
@@ -183,6 +184,9 @@ $(function(){
     <div class="col-xs-12" style="text-align:center;">
       <a onclick="#" style="cursor:pointer;"><div style="display:block; width:200px; border:1px solid #337ab7; margin:10px auto; padding:10px 0px; border-radius:10px; color:#337ab7; font-size:15px; font-weight:500;">업로드하기</div></a>
     </div>
+
   </div>
+
 </form>
+
 </div>
