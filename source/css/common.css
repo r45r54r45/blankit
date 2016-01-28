@@ -131,8 +131,8 @@ a, a:hover, a:visited, a:link, a:active{
    }
    .img_rounded{
      width:100%;
-     border-top-left-radius: 15px;
-     border-top-right-radius: 15px;
+     border-top-left-radius: 13px;
+     border-top-right-radius: 13px;
    }
    .ui-selectmenu-text{
      font-size:13px;

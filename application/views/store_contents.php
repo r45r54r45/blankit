@@ -205,8 +205,8 @@ $(function(){
       <div class="box radius-4">
       <div><a href="/funding/product/<?php echo $row->store_id?>">
       	<!-- <img src="" class="img_rounded"> -->
-        <div class="product_area img_rounded">
-            <image class="product_bed img-responsive" src="<?echo $itemBed?>">
+        <div class="product_area ">
+            <image class="product_bed img_rounded img-responsive" src="<?echo $itemBed?>">
             <div class="product" style="<?echo $itemPos;?>">
               <img src="<?php echo $row->store_image;?>" class="img img-responsive">
             </div>
