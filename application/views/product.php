@@ -462,6 +462,7 @@ foreach ($contents->result() as $row){
 	if ($numPath == $row->store_id){
 		$artistType = $row->artist_type;
 		$artistIntro = $row->artist_intro;
+		$artistProfile = $row->artist_profile;
 	}
 }
 
@@ -470,7 +471,7 @@ foreach ($contents->result() as $row){
         <div class="col-xs-12 col-sm-6" style="border-bottom: 1px solid #D3D3D3;
     padding-bottom: 20px;
     padding-top: 20px;">
-          <img src="/source/image/profile_placeholder.png" class="img img-circle img-responsive"
+          <img src="<?php echo $artistProfile;?>" class="img img-circle img-responsive"
           style="height:100px; display:inline-block;">
           <div style="padding-left: 20px;display:inline-block">
             <div >
