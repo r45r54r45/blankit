@@ -98,7 +98,10 @@ $(function(){
     moveInfo("color",event.target.id);
   });
   makePrice("default");
-  $("#hello").css("width",$("#wrap").width()-100+"px");
+  $("#hello").css("width",$("#wrap").width()-105+"px");
+  $(window).on("resize",function(){
+    $("#hello").css("width",$("#wrap").width()-105+"px");
+  });
 });
 function moveInfo(dataType,data){
   $("input[name='"+dataType+"']").val(data);
@@ -485,7 +488,7 @@ $PRICE =  number_format($storePrice, 0, '.', ','); // 가격 천 단위 콤마 �
             <img src="<?php echo $artistProfile;?>" class="img img-circle img-responsive"
             style="height:100px;">
           </div>
-          <div id="hello" style="padding-left: 20px;display:inline-block">
+          <div id="hello" style="padding-left: 20px;display:inline-block;vertical-align: top;padding-top: 10px;">
             <div >
               <span style="font-size:16px; font-weight:400;"><?php echo $userName;?> (<?php echo $artistType?>)</span>
             </div>
