@@ -155,7 +155,7 @@ else {
         제품 파일 업로드
       </span>
     </div>
-    <div class="hidden-xs">
+    <div class="hidden-xs" style="position:relative;">
     <div class="col-xs-6" style="margin-top:10px;">
       <div class="row">
         <div class="col-xs-12">
@@ -208,6 +208,19 @@ else {
 
     </div>
     <div class="clearfix"></div>
+    <!-- 진우, 로그인 안되있으면 이부분 출력해줘 시작-->
+    <div style="background: #D3D3D3;
+    height: 360px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 100px;
+    z-index: 9000;
+    opacity: 0.5; text-align:center;">
+      <span style="line-height:360px; vertical-align:middle;font-size:25px;color:#655453;">로그인 하셔야 작품을 제출할 수 있습니다.</span>
+    </div>
+    <!-- 진우, 로그인 안되있으면 이부분 출력해줘 끝-->
+
   </div>
   <!-- end of cover -->
   </div>
