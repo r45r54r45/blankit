@@ -432,7 +432,7 @@ $(window).resize(function(){
       if($num<4){
     ?>
     <div class="col-xs-6 col-sm-4 col-md-3 col-lg-15">
-      <div class="img_hover_cover img-circle">
+      <div id="bg" class="img_hover_cover img-circle">
         <img src="<?echo $row->artist_profile;?>" class="img img_hover img-circle">
       </div>
       <div style="text-align:center; margin-top:10px;">
@@ -444,7 +444,7 @@ $(window).resize(function(){
     if($num==4){
   ?>
   <div class="col-xs-6 col-sm-4 col-md-3 col-lg-15">
-    <div class="img_hover_cover img-circle">
+    <div id="bg" class="img_hover_cover img-circle">
       <img src="<?echo $row->artist_profile;?>" class="img img_hover img-circle">
     </div>
     <div style="text-align:center; margin-top:10px;">
@@ -456,7 +456,7 @@ $(window).resize(function(){
   if($num==5){
 ?>
 <div class="col-xs-6 col-sm-4 hidden-md col-lg-15">
-  <div class="img_hover_cover img-circle">
+  <div id="bg" class="img_hover_cover img-circle">
     <img src="<?echo $row->artist_profile;?>" class="img img_hover img-circle">
   </div>
   <div style="text-align:center; margin-top:10px;">
