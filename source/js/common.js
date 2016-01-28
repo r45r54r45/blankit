@@ -27,7 +27,7 @@ $(function(){
   $(window).on("resize",function(){
     $(".pp").css("height",$(".pp").width()+"px");
   });
-  $("img.lazy").lazyload({
+  $(".lazy").lazyload({
     effect : "fadeIn"
 });
 });
