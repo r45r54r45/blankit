@@ -34,6 +34,10 @@ background-size: contain;
 .navbar-right{
   color:white !important;
 }
+.YourButton{
+      border: 2px solid white;
+          color: white;
+}
 </style>
 <script>
 function banner_generator(){
@@ -59,18 +63,9 @@ $(function(){
 </div>
 <div class="container" >
   <div class="row">
-      <div class="col-xs-1">
-      </div>
-    <div class="col-xs-10">
-      <img src="/source/image/submit_guide.png" class="img img-responsive" style="margin-top: 30px;d">
-    </div>
-    <div class="col-xs-1">
-    </div>
-  </div>
-  <div class="row">
-      <div class="col-xs-12" style="margin-top:30px; border-top: 1px solid #D3D3D3;">
+      <div class="col-xs-12" style="margin-top:30px; ">
         <span style="margin-top:30px; text-align:center; display:block; font-size: 25px; color:#655453; font-weight:bold;">
-          작업 파일 다운로드
+          업로드가 완료되었습니다.
         </span>
       </div>
   </div>
