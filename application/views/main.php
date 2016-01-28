@@ -204,9 +204,9 @@ $(function(){
      controls:false
    });
    bannerAnimation();
-   $(".bg").css("height",$("#bg").width()+"px");
+   $(".bg").css("height",$(".bg").width()+"px");
    $(window).on("resize",function(){
-     $(".bg").css("height",$("#bg").width()+"px");
+     $(".bg").css("height",$(".bg").width()+"px");
    });
 });
 var bannerNum=0;
