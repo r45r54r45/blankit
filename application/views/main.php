@@ -180,6 +180,9 @@
     position: absolute;
     z-index:2;
     }
+    .product>img{
+      opacity: 0.8;
+    }
 </style>
 <script>
 function slanted_banner_generator(){
