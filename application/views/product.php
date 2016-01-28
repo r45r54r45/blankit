@@ -457,6 +457,16 @@ $PRICE =  number_format($storePrice, 0, '.', ','); // 가격 천 단위 콤마 �
         </div>
       </a>
 </div>
+<?php 
+foreach ($contents->result() as $row){
+	if ($numPath == $row->store_id){
+		$artistType = $row->artist_type;
+		$artistIntro = $row->artist_intro;
+	}
+}
+
+?>
+
         <div class="col-xs-12 col-sm-6" style="border-bottom: 1px solid #D3D3D3;
     padding-bottom: 20px;
     padding-top: 20px;">
@@ -464,10 +474,10 @@ $PRICE =  number_format($storePrice, 0, '.', ','); // 가격 천 단위 콤마 �
           style="height:100px; display:inline-block;">
           <div style="padding-left: 20px;display:inline-block">
             <div >
-              <span style="font-size:16px; font-weight:400;"><?php echo $userName;?> (직업)</span>
+              <span style="font-size:16px; font-weight:400;"><?php echo $userName;?> (<?php echo $artistType?>)</span>
             </div>
             <div>
-              <span style="font-size:13px; font-weight:300;">유저 자기소개</span>
+              <span style="font-size:13px; font-weight:300;"><?php echo $artistIntro?></span>
             </div>
           </div>
         </div>
