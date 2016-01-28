@@ -8,7 +8,7 @@
 </div>
 </div>
 <script>
-$(document).on("load",function(){
+$(function(){
   $(".lazy").lazyload({
     effect : "fadeIn"
 });
