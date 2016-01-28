@@ -32,11 +32,12 @@
     <!-- 스토어 세부페이지와 submit 페이지에서만 출력 끝-->
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>blank it</title>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" crossorigin="anonymous" ></script>
     <script src="/source/js/common.js" ></script>
     <script src="/source/js/dropzone.js" ></script>
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
+
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="/source/css/dropzone.css" >
