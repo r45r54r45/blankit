@@ -102,6 +102,10 @@ $(function(){
       $("#root_container").css("height",$(".banner").height()+"px");
       banner_generator();
   });
+  $(".pp").css("height",$(".pp").width()+"px");
+  $(window).on("resize",function(){
+    $(".pp").css("height",$(".pp").width()+"px");
+  });
 });
 </script>
   <div class="row" style="min-height:400px">
@@ -220,7 +224,7 @@ $(function(){
       </div>
       <div class="artist_hover" style="width: 100%; display: inline-flex;">
         <div style="width:20%; margin-left: 10px; padding-top: 10px; margin-bottom:15px;">
-          <img src="<?php echo $row->artist_profile;?>" class="img img-circle">
+          <img src="<?php echo $row->artist_profile;?>" class="pp img img-circle">
         </div>
         <div style="width:80%; padding-left:10px; padding-top:10px;">
           <p class="artist_name"><?php echo $row->user_name;?></p>
