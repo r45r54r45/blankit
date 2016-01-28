@@ -27,9 +27,7 @@ $(function(){
   $(window).on("resize",function(){
     $(".pp").css("height",$(".pp").width()+"px");
   });
-  $(".lazy").lazyload({
-    effect : "fadeIn"
-});
+
 });
 window.fbAsyncInit = function() {
   FB.init({
