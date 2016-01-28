@@ -208,7 +208,11 @@ else {
 
     </div>
     <div class="clearfix"></div>
+    
     <!-- 진우, 로그인 안되있으면 이부분 출력해줘 시작-->
+    <?
+    if ($session_id == ""){
+    echo '
     <div style="background: #D3D3D3;
     height: 360px;
     width: 100%;
@@ -219,6 +223,8 @@ else {
     opacity: 0.5; text-align:center;">
       <span style="line-height:360px; vertical-align:middle;font-size:25px;color:#655453;">로그인 하셔야 작품을 제출할 수 있습니다.</span>
     </div>
+    ';}
+    ?>
     <!-- 진우, 로그인 안되있으면 이부분 출력해줘 끝-->
 
   </div>

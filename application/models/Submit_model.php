@@ -23,8 +23,8 @@ class Submit_model extends CI_Model{
 			$date =  date('Y-m-d 0:0:0', strtotime("+7 days"));
 			
 			$this->db->query("
-				insert into `STORE` (user_id, store_name, store_random_id, store_day, store_type, store_goal, store_status)
-				values ('$user_id_SESSION', '$artwork', '$seed_date', '$date', '$storeType', '$storeGoal', '1')
+				insert into `STORE` (user_id, store_name, store_random_id, store_day, store_type, store_goal, store_status, store_explain)
+				values ('$user_id_SESSION', '$artwork', '$seed_date', '$date', '$storeType', '$storeGoal', '1', '$explain')
 			");
 		}
 	}

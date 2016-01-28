@@ -167,6 +167,10 @@
 
   ?>
 
+<?
+	
+?>
+
 <!-- 제품에 들어간 작품 부분 시작-->
 <div class="row row_padding-xs" style="margin-top:40px;">
   <div class="col-xs-12" style="padding-bottom:40px; border-bottom:1px solid #D3D3D3;">
