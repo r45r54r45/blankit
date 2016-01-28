@@ -69,10 +69,8 @@ $(function(){
 });
 
 function checkSubmit(){
-	if ($this->session->userdata('user_id')){
-	  	alert('성공적으로 업로드 되었습니다.');
-	  	$("#formform").submit();
-	}
+  	alert('성공적으로 업로드 되었습니다.');
+  	$("#formform").submit();
 }
 </script>
 <div class="banner">
