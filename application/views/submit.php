@@ -75,12 +75,13 @@ $(function(){
 
 <?php
 
-if ($this->session->userdata('user_id')){
+if ($session_id){
 	echo '
 	<script>
 	function checkSubmit(){
 		alert("성공적으로 업로드 되었습니다.");
 		$("#formform").submit();
+  	}
 	</script> ';
 }
 else {
@@ -88,6 +89,7 @@ else {
 	<script>
 	function checkSubmit(){
 		alert("로그인 하셔야 업로드가 가능합니다.");
+  	}
 	</script> ';
 }
 

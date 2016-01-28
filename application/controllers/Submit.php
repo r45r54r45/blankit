@@ -5,8 +5,13 @@ class Submit extends CI_Controller {
 
 	public function index()
 	{
+		$data['session_id'] = "";
+		if ($this->session->userdata('user_id')){
+			$data['session_id'] = $this->session->userdata('user_id');
+		}
+		
 		$this->load->view('header');
-		$this->load->view('submit');
+		$this->load->view('submit', $data);
 		$this->load->view('footer');
 		
 		$this->session->set_flashdata('redirect', 'submit');
