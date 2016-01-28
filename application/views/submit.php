@@ -67,6 +67,11 @@ $(function(){
   $("#goalNum").selectmenu();
   $("#goalNum-button").css("margin-top","10px");
 });
+
+function checkSubmit(){
+  alert('성공적으로 업로드 되었습니다.');
+  $("#formform").submit();
+}
 </script>
 <div class="banner">
   <img src="/source/image/submit-page-banner.jpg">
@@ -153,7 +158,7 @@ $(function(){
       <div class="row" style="margin-top:20px;">
         <div class="col-xs-12">
           <div class="tt" >블랭킷 X 아티스트 목표 구매자수</div>
-          <select id="goalNum" style=" width:100%">
+          <select id="goalNum" style=" width:100%" name="storeGoal">
             <option value="default">선택</option>
             <option value="5">5개</option>
             <option value="10">10개</option>
@@ -182,7 +187,7 @@ $(function(){
   </div>
   <div class="row" style="margin-top:20px;">
     <div class="col-xs-12" style="text-align:center;">
-      <a onclick="#" style="cursor:pointer;"><div style="display:block; width:200px; border:1px solid #337ab7; margin:10px auto; padding:10px 0px; border-radius:10px; color:#337ab7; font-size:15px; font-weight:500;">업로드하기</div></a>
+      <a onclick="checkSubmit();" style="cursor:pointer;"><div style="display:block; width:200px; border:1px solid #337ab7; margin:10px auto; padding:10px 0px; border-radius:10px; color:#337ab7; font-size:15px; font-weight:500;">업로드하기</div></a>
     </div>
 
   </div>
