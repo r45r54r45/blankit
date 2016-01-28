@@ -13,12 +13,20 @@
     <!-- 진우씨, 이 밑에 if 문에서는 해당페이지인지 확인해서 그 페이지에서만 뜨게끔 해놔야해요 -->
     <?
   	if($this->uri->segment(1) == "funding" && $this->uri->segment(2) == "product"){
+  		$idURL = $this->uri->segment(3); // 제품번호
+  		foreach ($contents->result() as $row){
+  			if ($idURL == $row->store_id){
+  				$storeName = $row->store_name;
+  				$storeExplain = $row->store_explain;
+  				break;
+  			}
+  		}
   	?>
     <meta property="fb:app_id" content="214340015575657"/>
     <meta property="og:url"                content="<?echo $actual_link; ?>" />
     <meta property="og:type"               content="website" />
-    <meta property="og:title"              content="<?echo "작품 제목"?>" />
-    <meta property="og:description"        content="<?echo "작품 설명";?>" />
+    <meta property="og:title"              content="<?echo $storeName;?>" />
+    <meta property="og:description"        content="<?echo $storeExplain;?>" />
     <meta property="og:image"              content="<?echo "http://blankit.kr/source/image/facebook_share_image.png" ?>" />
     <?}?>
     <!-- 스토어 세부페이지와 submit 페이지에서만 출력 끝-->
@@ -65,9 +73,6 @@
             <img id="logo" alt="blankit" src="
 	<?
 	/*** 스토어 상품의 시간만료 체크 ***/
-
-
-
 	/*** 여기까지, 스토어 상품의 시간만료 체크 ***/
 
     	if($actual_link=="http://blankit.kr/"||$actual_link=="http://blankit.kr/artist"||$actual_link=="http://blankit.kr/funding"||$actual_link=="http://blankit.kr/funding/cloth"||$actual_link=="http://blankit.kr/funding/ecobag"||$actual_link=="http://blankit.kr/funding/pouch"||$actual_link=="http://blankit.kr/funding/done"||$actual_link=="http://blankit.kr/submit")
@@ -82,7 +87,7 @@
         <div class="side-collapse in" style="    ">
         <nav role="navigation" style="" class="navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a class="nav-color navbar-left" onclick="alert('준비중입니다.')"  style="    width: 100px;">about us</a></li>
+            <li><a class="nav-color navbar-left" href="/aboutus" style="    width: 100px;">about us</a></li>
             <li><a class="nav-color navbar-left" href="/artist">artist</a></li>
             <li class="dropdown">
               <a href="/funding" id="store_menu" class="nav-color navbar-left dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">funding</span></a>

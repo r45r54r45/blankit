@@ -59,7 +59,7 @@ class Funding extends CI_Controller {
 		$data['details']=$this->store_model->details();
 		$data['contents']=$this->store_model->contents();
 
-		$this->load->view('header');
+		$this->load->view('header', $data);
 		$this->load->view('product',$data);
 		$this->load->view('product_detail', $data);
 		$this->load->view('footer');
