@@ -194,8 +194,6 @@ $(function(){
   });
   $(".banner").css("display","");
   $(".banner").hover(function(){
-    // $(".banner").css("background","red");
-    //배너에 마우스 오버시 배너 바꾸는 화살표 필요
   });
    $('.bxslider').bxSlider({
      slideMargin:50,
@@ -204,7 +202,10 @@ $(function(){
      controls:false
    });
    bannerAnimation();
-
+   $("#bg").css("height",$("#bg").width()+"px");
+   $(window).on("resize",function(){
+     $("#bg").css("height",$("#bg").width()+"px");
+   });
 });
 var bannerNum=0;
 var bannerMax=3;
@@ -467,7 +468,7 @@ $(window).resize(function(){
 if($num==6){
 ?>
 <div class="col-xs-6 col-sm-4 hidden-md hidden-lg">
-<div class="img_hover_cover img-circle">
+<div id="bg" class="img_hover_cover img-circle">
   <img src="<?echo $row->artist_profile;?>" class="img img_hover img-circle">
 </div>
 <div style="text-align:center; margin-top:10px;">
