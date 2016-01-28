@@ -183,7 +183,7 @@ function allOrderProduct(){
     <br>
     <span class="title1" style="font-size:13px;">구매하실 제품을 선택해주세요</span>
   </div>
-  <div class="row row-padding-xs-100 " style="margin-top:10px;">
+  <div class="row row-padding-xs-100 " style="margin-top:10px;    min-height: 300px;">
   <!-- 주문목록 반복되는 부분 *시작* -->
 <?
 	foreach($realCart->result() as $row){

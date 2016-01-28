@@ -162,7 +162,7 @@ $(function(){
   <div class="row row-padding-xs-100 " style="margin-top:30px;">
     <span class="title1">주문 리스트 확인</span>
   </div>
-  <div class="row row-padding-xs-100 " style="margin-top:10px;">
+  <div class="row row-padding-xs-100 " style="margin-top:10px;     min-height: 300px;">
 
 
    <!-- 주문 목록 반복되는 블럭 시작 -->
