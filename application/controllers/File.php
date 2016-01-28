@@ -13,7 +13,6 @@ class File extends CI_Controller {
 			//$fileName = $idName . "_profile." . $ext;
 			$fileName = $_GET['file'] . "_profile." . $ext;
 			move_uploaded_file($_FILES['userfile']['tmp_name'],SITE_ROOT."/files/profile/". $fileName);
-			
 			$profile = "/files/profile/" . $fileName;
 			$id = $_GET['file'];
 			$this->load->model('join_model');
