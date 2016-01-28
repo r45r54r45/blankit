@@ -76,13 +76,21 @@ $(function(){
 <?php
 
 if ($session_id !== "" && $session_userType == "2"){
-	echo '
+	echo "
 	<script>
 	function checkSubmit(){
-		alert("성공적으로 업로드 되었습니다.");
-		$("#formform").submit();
+	if($(\"input[name='artwork']\").val()==''){
+    	alert(\"블랭킷 X 아티스트 작품명을 입력해주세요.\");
+    	return;
   	}
-	</script> ';
+	if($(\"input[id='goalNum']:checked\").length==0){
+    	alert(\"작품 카테고리를 선택해주세요.\");
+    	return;
+  	}
+		alert(\"성공적으로 업로드 되었습니다.\");
+		$(\"#formform\").submit();
+  	}
+	</script> ";
 }
 else {
 	echo '
