@@ -50,6 +50,11 @@ class Funding extends CI_Controller {
 	}
 	public function product() // 제품 상세보기
 	{
+		$data['session_id'] = "";
+		if ($this->session->userdata('user_id')){
+			$data['session_id'] = $this->session->userdata('user_id');
+		}
+		
 		$this->load->model('store_model');
 		$data['details']=$this->store_model->details();
 		$data['contents']=$this->store_model->contents();

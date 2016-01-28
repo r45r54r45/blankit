@@ -102,26 +102,7 @@ $(function(){
 function moveInfo(dataType,data){
   $("input[name='"+dataType+"']").val(data);
 }
-function checkSubmit(){
-  if($("input[name='type']").val()=="default"){
-    alert("타입을 선택해주세요");
-    return false;
-  }
-  if($("#color").length!=0){
-    if($("input[name='color']").val()=="default"){
-      alert('컬러를 선택해주세요');
-      return false;
-    }
-  }
-  if($("#size").length!=0){
-    if($("input[name='size']").val()=="default"){
-      alert("사이즈를 선택해주세요");
-      return false;
-    }
-  }
-  alert('장바구니에 상품이 들어갔습니다.');
-  $("#formHidden").submit();
-}
+
 function makePrice(option){
   var init;
   var actual;
@@ -148,6 +129,44 @@ function makePrice(option){
   }
 }
 </script>
+
+<?php 
+if ($session_id){
+
+	echo "
+function checkSubmit(){
+  if($(\"input[name=\'type\']\").val()==\"default\"){
+    alert(\"타입을 선택해주세요\");
+    return false;
+  }
+  if($(\"#color\").length!=0){
+    if($(\"input[name=\'color\']\").val()==\"default\"){
+      alert(\'컬러를 선택해주세요\');
+      return false;
+    }
+  }
+  if($(\"#size\").length!=0){
+    if($(\"input[name=\'size\']\").val()==\"default\"){
+      alert(\"사이즈를 선택해주세요\");
+      return false;
+    }
+  }
+  alert(\'장바구니에 상품이 들어갔습니다.\');
+  $(\"#formHidden\").submit();
+  }
+	";
+}
+
+else {
+	echo "
+function checkSubmit(){
+  alert(\'로그인 하셔야 합니다.\');
+  $(\"#formHidden\").submit();
+  }
+	";
+}
+?>
+
 <div class="banner">
 
 </div>
