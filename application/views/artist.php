@@ -101,7 +101,7 @@ $(function(){
     ?>
     <div class="col-xs-6 col-sm-4 col-md-3 col-lg-15">
       <div class="img_hover_cover  bg ">
-        <img src="<?echo $row->artist_profile;?>" class="img img_hover img-circle">
+        <img src="<?echo $row->artist_profile;?>" class="img img_hover ">
       </div>
       <div style="text-align:center; margin-top:10px;">
         <p style="margin-bottom:2px;" class="artist_name"><?  echo $row->user_name;?></p>
