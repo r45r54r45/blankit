@@ -42,7 +42,7 @@ class Submit_model extends CI_Model{
 		
 		$this->db->query ("
 			update `STORE`
-			set store_image = '$fileRoot'
+			set store_image = '$finalRoot'
 			where store_id = '$store_id'
 		");
 	}
