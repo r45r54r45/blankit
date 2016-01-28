@@ -152,7 +152,7 @@ $(function(){
       break;
       case '2':
         $itemPos="left:34.599999999999994%;top:46.1%;width:31.1%;height:42.199999999999996%;";
-        $itemBed="/source/product/E_2_bed.png";
+        $itemBed="/source/product/E_2_bed.jpg";
       break;
       case '3':
         $itemPos="left:23.799999999999997%;top:28.799999999999997%;width:52.56666666666666%;height:42.86666666666667%;";

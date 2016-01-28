@@ -105,7 +105,7 @@
 
   //-----------진우파트 끝--------------
 
-  
+
   $itemPos; //아이템이 삽입될 위치
   $itemSizeImg; //제품 사이즈 이미지 주소
   $itemBed=array(); //배경으로 쓰일 제품 이미지 목록
@@ -114,27 +114,27 @@
     case "E_1": //에코백 E_1_1(블랙) E_1_2(카키) E_1_3(네이비)
       $itemPos="left:35.4%;top:46.400000000000006%;width:29.333333333333332%;height:39.93333333333333%;";
       $itemSizeImg="/source/product/".$itemType."_size.png";
-      array_push($itemBed,"/source/product/".$itemType."_1"."_bed.png");
-      array_push($itemBed,"/source/product/".$itemType."_2"."_bed.png");
-      array_push($itemBed,"/source/product/".$itemType."_3"."_bed.png");
+      array_push($itemBed,"/source/product/".$itemType."_1"."_bed.jpg");
+      array_push($itemBed,"/source/product/".$itemType."_2"."_bed.jpg");
+      array_push($itemBed,"/source/product/".$itemType."_3"."_bed.jpg");
       $itemDetail="/source/product/".$itemType."_detail.jpg";
     break;
     case "E_2": //에코백-숄더 //숄더-아이보리가 이거임
       $itemPos="left:34.599999999999994%;top:46.1%;width:31.1%;height:42.199999999999996%;";
       $itemSizeImg="/source/product/".$itemType."_size.png";
-      array_push($itemBed,"/source/product/".$itemType."_bed.png");
+      array_push($itemBed,"/source/product/".$itemType."_bed.jpg");
       $itemDetail="/source/product/".$itemType."_detail.jpg";
     break;
     case "E_3": //에코백-토트/크로스
       $itemPos="left:35.4%;top:49.6%;width:28.9%;height:39.36666666666667%;";
       $itemSizeImg="/source/product/".$itemType."_size.png";
-      array_push($itemBed,"/source/product/".$itemType."_bed.png");
+      array_push($itemBed,"/source/product/".$itemType."_bed.jpg");
       $itemDetail="/source/product/".$itemType."_detail.jpg";
     break;
     case "E_4": //에코백 크로스형
       $itemPos="left:37.6%;top:57.199999999999996%;width:25.466666666666665%;height:34.66666666666667%;";
       $itemSizeImg="/source/product/".$itemType."_size.png";
-      array_push($itemBed,"/source/product/".$itemType."_bed.png");
+      array_push($itemBed,"/source/product/".$itemType."_bed.jpg");
       $itemDetail="/source/product/".$itemType."_detail.jpg";
     break;
     case "P_1": //파우치
@@ -166,8 +166,8 @@
   }
 
   ?>
-  
-  
+
+
   <?
 	foreach($contents->result() as $row){
 		if ($row->store_id == $nowPage){
