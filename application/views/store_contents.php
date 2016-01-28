@@ -109,12 +109,12 @@ $(function(){
 		$urlNum = 0;
 	}
 	//url 확인 여기까지
-
+  $cnt=0;
 	foreach ($contents->result() as $row)
 	{
-
+ $cnt++;
 		$storeType = $row->store_type;
-	
+
 		//현재 URL에 맞는 타입이 아니면 패쓰
 /* 		if ($urlNum == 4){
 			if ($row->store_status == 3){
@@ -139,7 +139,7 @@ $(function(){
 
 		$totalGoal = $row->store_goal;
 		$nowGoal = $row->store_goal_now;
-		
+
 		// 0 현재 모집인원 나누기 전체 모집인원 문제
 		if ($nowGoal == 0){
 			$percGoal = 0;
@@ -188,7 +188,15 @@ $(function(){
     </div>
   </div>
   <!-- <div class="clearfix visible-xs-block visible-sm-block visible-md-block"></div> -->
-<?php }?>
+<?php }
+
+if($cnt==0){
+  echo "
+  <span style='margin: 100px auto 0px;
+  display: table;
+  font-size: 20px;'>카트가 비어있습니다.</span>
+  ";
+}?>
 
 <!-- 컨텐츠 반복 끝 -->
 </div>
