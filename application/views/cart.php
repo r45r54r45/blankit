@@ -258,7 +258,9 @@ function allOrderProduct(){
 <? }
   if($cnt==0){
     echo "
-    <span style='margin:auto auto;'>카트가 비어있습니다.</span>
+    <span style='margin: 100px auto 0px;
+    display: table;
+    font-size: 20px;'>카트가 비어있습니다.</span>
 
 
 
