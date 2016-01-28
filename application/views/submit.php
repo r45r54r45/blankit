@@ -108,7 +108,7 @@ else {
     <div class="col-xs-1">
     </div>
     <div class="col-xs-10">
-      <img src="/source/image/submit_guide.png" class="img img-responsive" style="margin-top: 30px;d">
+      <img src="/source/image/submit_guide.png" class="img img-responsive" style="margin-top: 30px;">
     </div>
     <div class="col-xs-1">
     </div>
@@ -155,7 +155,7 @@ else {
         제품 파일 업로드
       </span>
     </div>
-    <div id="cover">
+    <div class="hidden-xs">
     <div class="col-xs-6" style="margin-top:10px;">
       <div class="row">
         <div class="col-xs-12">
@@ -207,6 +207,7 @@ else {
       </div>
 
     </div>
+    <div class="clearfix"></div>
   </div>
   <!-- end of cover -->
   </div>
