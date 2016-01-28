@@ -486,7 +486,7 @@ $PRICE =  number_format($storePrice, 0, '.', ','); // 가격 천 단위 콤마 �
           padding-top: 20px;">
           <div style="display:inline-block;">
             <img src="<?php echo $artistProfile;?>" class="pp img img-circle img-responsive"
-            style="height:100px;">
+            style="width:100px;">
           </div>
           <div id="hello" style="padding-left: 20px;display:inline-block;vertical-align: top;padding-top: 10px;">
             <div >
