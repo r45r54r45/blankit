@@ -59,8 +59,11 @@ class Submit extends CI_Controller {
 
 	public function complete()
 	{
+		$this->load->model('store_model');
+		$data['contents'] = $this->store_model->contents();
+		
 		$this->load->view('header');
-		$this->load->view('submit_complete');
+		$this->load->view('submit_complete', $data);
 		$this->load->view('footer');
 	}
 }
