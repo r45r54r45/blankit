@@ -225,7 +225,7 @@ if (isset($_GET['status'])){
             <div style="font-weight:500; color:#676464; text-align:center;">파일첨부</div>
           </div>
           <div class="col-xs-12 col-sm-9">
-            <input type="file" style="width:100%; height:30px; border:1px solid #B7B7B7;">
+            <input type="file" name="file" style="width:100%; height:30px; border:1px solid #B7B7B7;">
           </div>
           <div class="hidden-xs col-sm-1">
 	</form>

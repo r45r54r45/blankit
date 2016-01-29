@@ -29,6 +29,12 @@ class Help extends CI_Controller {
 			
 			$this->load->model('cs_model');
 			$this->cs_model->upload_cs($title, $contents);
+
+			$ext = end(explode(".",$_FILES['file']['name']));
+			$fileName = $qa_id . "_" . $userSESSION . "." . $ext;
+			$qa_id = $this->cs_model->id_seed($fileName);
+
+			move_uploaded_file($_FILES['file']['tmp_name'],SITE_ROOT."/files/cs/". $fileName);
 			
 			$csUrl = "http://blankit.kr/help/cs?status=success";
 			$this->load->helper('url');
