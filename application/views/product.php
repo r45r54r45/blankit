@@ -444,17 +444,18 @@ $PRICE =  number_format($storePrice, 0, '.', ','); // 가격 천 단위 콤마 �
         </form>
         <?php
         //$this->load->helper('url');
-        $URL =  $_SERVER['SERVER_NAME'];
+        /* $URL =  $_SERVER['SERVER_NAME'];
         $URI = $_SERVER['REQUEST_URI'];
 
-        $facebookURL = $URL . $URI;
-
+        $facebookURL = $URL . $URI; */
+		$facebookURL = $this->uri->segment(3);
+        
         echo "
         <script>
         function facebook_for_artist(){
           FB.ui({
             method: 'share',
-            href: '" . $facebookURL . "',
+            href: 'http://blankit.kr/funding/product/" . $facebookURL . "',
           }, function(response){});
           }
           </script> ";
