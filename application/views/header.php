@@ -9,13 +9,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
-    <!-- 스토어 세부페이지와 submit 페이지에서만 출력 시작-->
-    <!-- 진우씨, 이 밑에 if 문에서는 해당페이지인지 확인해서 그 페이지에서만 뜨게끔 해놔야해요 -->
+    
+    <!-- 펀딩 세부페이지 페이스북 (일반인용)-->
     <?
   	if($this->uri->segment(1) == "funding" && $this->uri->segment(2) == "product"){
   		$idURL = $this->uri->segment(3); // 제품번호
   		foreach ($contents->result() as $row){
   			if ($idURL == $row->store_id){
+  				$userName = $row->user_name;
+  				$storeName = $row->store_name;
+  				$storeExplain = $row->store_explain;
+  				$storeImage = $row->store_image;
+  				break;
+  			}
+  		}
+  	?>
+    <meta property="fb:app_id" content="214340015575657"/>
+    <meta property="og:url"                content="<?echo $actual_link; ?>" />
+    <meta property="og:type"               content="website" />
+    <meta property="og:title"              content="<?echo $userName . "아티스트의 " . $storeName;?>" />
+    <meta property="og:description"        content="<?echo "독립 아티스트를 응원해주세요! 작품 설명: " $storeExplain;?>" />
+    <meta property="og:image"              content="<?echo "http://blankit.kr" . $storeImage; ?>" />
+    <?}?>
+    
+    <!-- 작품 제출완료 페이지 페이스북 (작가용)-->
+    <?
+  	if($this->uri->segment(1) == "submit" && $this->uri->segment(2) == "complete"){
+  		$idURL = $_GET['id']; // 제품번호
+  		foreach ($contents->result() as $row){
+  			if ($idURL == $row->store_id){
+  				$userName = $row->user_name;
   				$storeName = $row->store_name;
   				$storeExplain = $row->store_explain;
   				break;
@@ -25,10 +48,12 @@
     <meta property="fb:app_id" content="214340015575657"/>
     <meta property="og:url"                content="<?echo $actual_link; ?>" />
     <meta property="og:type"               content="website" />
-    <meta property="og:title"              content="<?echo $storeName;?>" />
-    <meta property="og:description"        content="<?echo $storeExplain;?>" />
+    <meta property="og:title"              content="<?echo $userName . "아티스트의 " . $storeName;?>" />
+    <meta property="og:description"        content="<?echo "저의 작품으로 제품을 출시합니다. 작품 설명: " . $storeExplain;?>" />
     <meta property="og:image"              content="<?echo "http://blankit.kr/source/image/facebook_share_image.png" ?>" />
     <?}?>
+    
+    
     <!-- 스토어 세부페이지와 submit 페이지에서만 출력 끝-->
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>blank it</title>

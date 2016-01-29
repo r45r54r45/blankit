@@ -45,7 +45,7 @@ class Submit extends CI_Controller {
 			$this->submit_model->upload_image($fileName, $store_id);
 
 			//완료 페이지로 redirect
-			$completeUrl = "http://blankit.kr/submit/complete";
+			$completeUrl = "http://blankit.kr/submit/complete?id=" . "store_id";
 			$this->load->helper('url');
 			redirect($completeUrl);
 		}
