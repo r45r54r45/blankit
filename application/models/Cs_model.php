@@ -8,7 +8,7 @@ class Cs_model extends CI_Model{
 
 	public function upload_cs($title, $contents){
 		$userSESSION = $this->session->userdata('user_id');
-		$date = date('Y-M-D h:i:s');
+		$date = date('Y-m-d H:i:s');
 		
 		$this->db->query("
 			insert into `QA` (qa_title, qa_body, user_id, qa_date)
