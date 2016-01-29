@@ -83,7 +83,7 @@ $(function(){
       function facebook_for_artist(){
         FB.ui({
           method: 'share',
-          href: 'http://blankit.kr/funding/product/" . $itemNum . "',
+          href: 'http://blankit.kr/submit/complete/?id=" . $itemNum . "',
         }, function(response){});
       }
       </script> ";
