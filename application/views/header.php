@@ -23,14 +23,15 @@
   				break;
   			}
   		}
-  	/* echo '
+  	?>
     <meta property="fb:app_id" content="214340015575657"/>
-    <meta property="og:url"                content="' . $actual_link . '" />
+    <meta property="og:url"                content="<?php echo $actual_link;?>" />
     <meta property="og:type"               content="website" />
-    <meta property="og:title"              content="' . $userName . '아티스트의 ' . $storeName . '" />
-    <meta property="og:description"        content="' . '독립 아티스트를 응원해주세요! 작품 설명: ' . $storeExplain . '" />
-    <meta property="og:image"              content="' . 'http://blankit.kr' . $storeImage . '" />
-    ' */;}?>
+    <meta property="og:title"              content="<?php echo $userName . " 아티스트의 " . $storeName;?>" />
+    <meta property="og:description"        content="<?php echo "독립 아티스트를 응원해주세요! 작품 설명: " . $storeExplain;?>" />
+    <meta property="og:image"              content="<?php echo 'http://blankit.kr' . $storeImage;?>" />
+    
+    <?}?>
     
     <!-- 작품 제출완료 페이지 페이스북 (작가용)-->
     <?
