@@ -195,7 +195,7 @@ if (isset($_GET['status'])){
       </div>
     </div>
 
-	<form id="formform" method="post" action="/help/func_cs_submit">
+	<form id="formform" method="post" action="/help/func_cs_submit" enctype="multipart/form-data">
     <div class="row row-padding-xs-100" style="margin-top:20px; ">
       <div class="col-xs-12" style="background:#F5F6F7; border-radius:15px;">
         <div class="row" style="margin-top:30px;">
