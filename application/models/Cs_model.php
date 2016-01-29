@@ -16,7 +16,7 @@ class Cs_model extends CI_Model{
 		");
 	}
 	
-	public function id_seed($fileName){
+	public function id_seed(){
 		$seed = $this->db->query("
 			select max(qa_id) as seed from `QA`
 			where user_id='$userSESSION'
@@ -25,8 +25,6 @@ class Cs_model extends CI_Model{
 		foreach($seed->result() as $row){
 			$qa_id = $row->seed;
 		}
-		
-		update_qa_root($qa_id, $fileName);
 		
 		return $qa_id;
 	}
