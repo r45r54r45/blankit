@@ -28,7 +28,7 @@
     <meta property="og:url"                content="<?echo $actual_link; ?>" />
     <meta property="og:type"               content="website" />
     <meta property="og:title"              content="<?echo $userName . "아티스트의 " . $storeName;?>" />
-    <meta property="og:description"        content="<?echo "독립 아티스트를 응원해주세요! 작품 설명: " $storeExplain;?>" />
+    <meta property="og:description"        content="<?echo "독립 아티스트를 응원해주세요! 작품 설명: " . $storeExplain;?>" />
     <meta property="og:image"              content="<?echo "http://blankit.kr" . $storeImage; ?>" />
     <?}?>
     
