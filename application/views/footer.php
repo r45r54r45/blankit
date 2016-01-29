@@ -7,12 +7,6 @@
 </div>
 </div>
 </div>
-<script>
-$(function(){
-  $(".lazy").lazyload({
-    effect : "fadeIn"
-});
-});
-</script>
+
 </body>
 </html>
