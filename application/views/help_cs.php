@@ -138,8 +138,11 @@ $(function(){
 });
 </script>
 
-<?php 
-if ($_GET['status']){
+<?php
+
+$getStatus = $_GET['status'];
+
+if ($getStatus){
 	if($_GET['status'] == "success"){
 		echo "
 	  		<script>alert('성공적으로 문의되었습니다. 최대한 신속히 답변 드리도록 하겠습니다.');</script>	
