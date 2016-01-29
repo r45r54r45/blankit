@@ -214,8 +214,7 @@ if (isset($_GET['status'])){
             <div style="font-weight:500; color:#676464; text-align:center;">내용</div>
           </div>
           <div class="col-xs-12 col-sm-9">
-            <textarea type="text" name="contents" style="width:100%;height:150px; border:1px solid #B7B7B7;">
-            </textarea>
+            <textarea type="text" name="contents" style="width:100%;height:150px; border:1px solid #B7B7B7;"></textarea>
           </div>
           <div class="hidden-xs col-sm-1">
 
