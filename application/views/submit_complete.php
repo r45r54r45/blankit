@@ -76,14 +76,18 @@ $(function(){
           친구들에게 자랑하기
         </span>
       </div>
+      <?php
+      $itemNum = $_GET['id'];
+      echo "
       <script>
       function facebook_for_artist(){
         FB.ui({
           method: 'share',
-          href: 'http://blankit.kr/funding/product/여기에 프로덕트 번호 넣어줘 진우',
+          href: 'http://blankit.kr/funding/product/" . $itemNum . "',
         }, function(response){});
       }
-      </script>
+      </script> ";
+      ?>
       <div class="col-xs-12" style="margin-top:30px; ">
       <a onclick="facebook_for_artist()" style="cursor:pointer;">
         <div class="col-xs-12" style="

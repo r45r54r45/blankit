@@ -458,7 +458,7 @@ $PRICE =  number_format($storePrice, 0, '.', ','); // 가격 천 단위 콤마 �
           }, function(response){});
           }
           </script> ";
-          ?>
+        ?>
           <div class="row row_padding-xs" style="margin-top:20px;">
             <div class="col-xs-12 col-sm-6 visible-xs" style="border-bottom: 1px solid #D3D3D3;
             padding-bottom: 20px;">
