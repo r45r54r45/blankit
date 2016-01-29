@@ -255,7 +255,7 @@ $PRICE =  number_format($storePrice, 0, '.', ','); // 가격 천 단위 콤마 �
       <div class="row">
         <div class="col-xs-6 col-sm-12">
           <div class="col-xs-12">
-            <span class="option_title">남은 일자</span>
+            <span class="option_title">남은 일자ㅏ</span>
           </div>
           <div class="col-xs-12">
             <span style="font-size:50px; font-weight:300; "><?php echo $remainDays;?></span>
