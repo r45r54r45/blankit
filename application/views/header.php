@@ -27,8 +27,8 @@
     <meta property="fb:app_id" content="214340015575657"/>
     <meta property="og:url"                content="<?php echo $actual_link;?>" />
     <meta property="og:type"               content="website" />
-    <meta property="og:title"              content="<?php echo "일반인용 제목";//$userName . " 아티스트의 " . $storeName;?>" />
-    <meta property="og:description"        content="<?php echo "일반인용 내용"; //"독립 아티스트를 응원해주세요! 작품 설명: " . $storeExplain;?>" />
+    <meta property="og:title"              content="<?php echo $userName . " 아티스트의 " . $storeName;?>" />
+    <meta property="og:description"        content="<?php echo "독립 아티스트를 응원해주세요! 작품 설명: " . $storeExplain;?>" />
     <meta property="og:image"              content="<?php echo 'http://blankit.kr' . $storeImage;?>" />
     
     <?}?>
