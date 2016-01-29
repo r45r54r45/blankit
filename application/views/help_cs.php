@@ -168,6 +168,7 @@ $(function(){
       </div>
     </div>
 
+	<form id="formform" method="post" action="/help/func_cs_submit">
     <div class="row row-padding-xs-100" style="margin-top:20px; ">
       <div class="col-xs-12" style="background:#F5F6F7; border-radius:15px;">
         <div class="row" style="margin-top:30px;">
@@ -175,7 +176,7 @@ $(function(){
             <div style="font-weight:500; color:#676464; text-align:center;">제목</div>
           </div>
           <div class="col-xs-12 col-sm-9">
-            <input type="text" style="width:100%;">
+            <input type="text" name="title" style="width:100%;">
           </div>
           <div class="hidden-xs col-sm-1">
 
@@ -186,7 +187,7 @@ $(function(){
             <div style="font-weight:500; color:#676464; text-align:center;">내용</div>
           </div>
           <div class="col-xs-12 col-sm-9">
-            <textarea type="text" style="width:100%;height:150px; border:1px solid #B7B7B7;">
+            <textarea type="text" name="contents" style="width:100%;height:150px; border:1px solid #B7B7B7;">
             </textarea>
           </div>
           <div class="hidden-xs col-sm-1">
@@ -201,7 +202,7 @@ $(function(){
             <input type="file" style="width:100%; height:30px; border:1px solid #B7B7B7;">
           </div>
           <div class="hidden-xs col-sm-1">
-
+	</form>
           </div>
         </div>
         <div class="row" style="margin-top:20px;">

@@ -21,4 +21,9 @@ class Help extends CI_Controller {
 		$this->load->view('help_cs');
 		$this->load->view('footer');
 	}
+	public function func_cs_submit(){
+		//로그인 상태 및 post 데이터가 있어야함
+		$title = $this->input->post['title'];
+		$contents = $this->input->post['contents'];
+	}
 }
