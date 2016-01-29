@@ -14,12 +14,14 @@
     <?
   	if($this->uri->segment(1) == "funding" && $this->uri->segment(2) == "product"){
   		$idURL = $this->uri->segment(3); // 제품번호
+  		echo "<script>alert('I was here at 1');</script>"
   		foreach ($contents->result() as $row){
   			if ($idURL == $row->store_id){
   				$userName = $row->user_name;
   				$storeName = $row->store_name;
   				$storeExplain = $row->store_explain;
   				$storeImage = $row->store_image;
+  				echo "<script>alert('I was here at 2');</script>"
   				break;
   			}
   		}
