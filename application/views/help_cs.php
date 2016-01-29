@@ -139,12 +139,12 @@ $(function(){
 </script>
 
 <?php 
-if ($_GET['status'] == success){
+if ($_GET['status'] == "success"){
 	echo "
   		<script>alert('성공적으로 문의되었습니다. 최대한 신속히 답변 드리도록 하겠습니다.');</script>	
   	";
 }
-if ($_GET['status'] == fail){
+if ($_GET['status'] == "fail"){
 	echo "
   		<script>alert('문의 제출 시 오류가 생겼거나 비정상적 접근을 시도하셨습니다.');</script>
   	";
