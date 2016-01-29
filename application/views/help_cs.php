@@ -136,6 +136,16 @@ input[type="radio"] + label{
 $(function(){
 
 });
+
+function checkSubmit(){
+	if($('input[name="title"]').val()==0){
+		alert('제목을 입력해주세요');
+	}
+	if($('input[name="contents"]').val()==0){
+		alert('내용을 입력해주세요');
+	}
+	$('#formform').submit();
+}
 </script>
 
 <?php
