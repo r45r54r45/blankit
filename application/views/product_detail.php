@@ -258,7 +258,7 @@ if ($itemType == "M_1" || $itemType == "H_1"){
 </div>
 <div class="row row_padding-xs" style="margin-top:20px;">
   <div class="col-xs-12" style="padding-bottom:40px; border-bottom:1px solid #D3D3D3;">
-      <div class="t1-grey">제품 상세이미지</div>
+      <div class="t1-grey">제품 상세 이미지</div>
       <img src="<?echo $itemDetail;?>" class="img img-responsive">
     </div>
   </div>
@@ -278,12 +278,12 @@ if ($itemType == "M_1" || $itemType == "H_1"){
   <div class="col-xs-12" style="padding-bottom:40px; ">
     <div class="t1-grey">주의사항 및 안내</div>
     <div class="t2" style="margin-top:20px;">
-      무통장 입금 확인 완료시, 구매 인원에 반영이됩니다.<br/><br/>
+      무통장 입금 확인 완료 시, 구매 인원에 반영이됩니다.<br/><br/>
       기간이 마감된 제품은 제작 진행 상태로, 취소가 불가합니다.<br/><br/>
       블랭킷의 모든 제품은 주문제작으로, 교환/환불이 불가합니다.<br/><br/>
       하자가 있는 제품 한에서 환불이 가능합니다. (교환 불가)<br/><br/>
       기간 마감 후 최대 10일 내에 제작이 되어 발송합니다.<br/><br/>
-      기간 내에 목표치 미도달시, 전액이 환불됩니다.<br/><br/>
+      기간 내에 목표치 미도달 시, 전액이 환불됩니다.<br/><br/>
     </div>
   </div>
 </div>
