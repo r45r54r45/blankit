@@ -23,18 +23,18 @@
   				break;
   			}
   		}
-  	echo '
+  	/* echo '
     <meta property="fb:app_id" content="214340015575657"/>
     <meta property="og:url"                content="' . $actual_link . '" />
     <meta property="og:type"               content="website" />
     <meta property="og:title"              content="' . $userName . '아티스트의 ' . $storeName . '" />
     <meta property="og:description"        content="' . '독립 아티스트를 응원해주세요! 작품 설명: ' . $storeExplain . '" />
     <meta property="og:image"              content="' . 'http://blankit.kr' . $storeImage . '" />
-    ';}?>
+    ' */;}?>
     
     <!-- 작품 제출완료 페이지 페이스북 (작가용)-->
     <?
-  	/* if($this->uri->segment(1) == "submit" && $this->uri->segment(2) == "complete"){
+  	if($this->uri->segment(1) == "submit" && $this->uri->segment(2) == "complete"){
   		$idURL = $_GET['id']; // 제품번호
   		foreach ($contents->result() as $row){
   			if ($idURL == $row->store_id){
@@ -43,10 +43,15 @@
   				$storeExplain = $row->store_explain;
   				break;
   			}
-  		} */
+  		}
   	?>
-    
-    <?//}?>
+    <meta property="fb:app_id" content="214340015575657"/>
+    <meta property="og:url"                content="<?echo $actual_link; ?>" />
+    <meta property="og:type"               content="website" />
+    <meta property="og:title"              content="<?echo $userName . "아티스트의 " . $storeName;?>" />
+    <meta property="og:description"        content="<?echo "저의 작품으로 제품을 출시합니다. 작품 설명: " . $storeExplain;?>" />
+    <meta property="og:image"              content="<?echo "http://blankit.kr/source/image/facebook_share_image.png" ?>" />
+    <?}?>
     
     
     <!-- 스토어 세부페이지와 submit 페이지에서만 출력 끝-->
