@@ -1,16 +1,18 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Artist_model extends CI_Model{
+class CS_model extends CI_Model{
 	public function __construct(){
 		$this->load->database();
 	}
 
-	public function artist_list(){
-	return $this->db->query("
-				select user_name, artist_profile, artist_type
-				from USER u
-				where user_type='2';
-				");
+	public function upload_cs($title, $contents){
+		$userSESSION = $this->session->userdata('user_id');
+		$date = date('Y-M-D h:i:s');
+		
+		$this->db->query("
+			insert into `QA` (qa_title, qa_body, user_id, qa_date)
+			values ('$title', '$contents', '$userSESSION', '$date')
+		");
 	}
 }
