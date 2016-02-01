@@ -183,6 +183,9 @@
     .product>img{
       opacity: 0.8;
     }
+    #footer{
+      margin-top:0px !important;
+    }
 </style>
 <script>
 function slanted_banner_generator(){
