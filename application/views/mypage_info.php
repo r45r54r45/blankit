@@ -128,20 +128,7 @@ input[type="radio"] + label{
 </style>
 <script>
 
-$("input[name='phone1']").bind('input', function() {
-    /* This will be fired every time, when textbox's value changes. */
-    alert('phone1 바뀜');
-} );
-
-$("input[name='phone2']").bind('input', function() {
-    /* This will be fired every time, when textbox's value changes. */
-	alert('phone2 바뀜');
-} );
-
-$("input[name='phone3']").bind('input', function() {
-    /* This will be fired every time, when textbox's value changes. */
-	alert('phone3 바뀜');
-} );
+$("input[name='phone1']").change(function() { alert('바뀜'); } );
 
 var pongpong;
 function phone_check(){
