@@ -109,7 +109,7 @@ input[type="radio"] + label{
   background: white;
 }
 .menu{
-  width:90px;
+  width:110px;
   display:inline-block;
 }
 .menu_item{
