@@ -262,7 +262,7 @@ function submitCheck(){
     <span class="title1">내 정보 관리</span>
   </div>
 
-  <form action="진우 수정하는 컨트톨로 필요" method="post" id="formform">
+  <form action="/mypage/func_updateInfo" method="post" id="formform">
     <div class="row row-padding-xs-100 " style="margin-top:10px;">
       <div class="menu">아이디</div>
       <span> <?php echo $userSession;?> </span>
