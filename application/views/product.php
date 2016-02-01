@@ -505,4 +505,3 @@ $PRICE =  number_format($storePrice, 0, '.', ','); // 가격 천 단위 콤마 �
     </div>
     <div class="clearfix"></div>
   </div>
-</div>
