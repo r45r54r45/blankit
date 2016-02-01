@@ -209,7 +209,7 @@ else {
       <div class="row" style="margin-top:20px;">
         <div class="col-xs-12">
           <div  class="tt">블랭킷 X 아티스트 작품 파일</div>
-          <input type="file" name="file"  style="margin-top:10px;width:100%;">
+          <input type="file" accept="image/png" name="file"  style="margin-top:10px;width:100%;">
         </div>
       </div>
 
