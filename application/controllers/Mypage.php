@@ -38,10 +38,21 @@ class Mypage extends CI_Controller {
 	}
 	
 	public function func_updateInfo(){
-		 $email = $this->input->post('email');
-			 $phone1 = $this->input->post('phone1');
-			 $phone2 = $this->input->post('phone2');
-			 $phone3 = $this->input->post('phone3');
-		 $phone = $phone1 . $phone2 . $phone3;
+		$email = $this->input->post('email');
+		
+		$phone1 = $this->input->post('phone1');
+		$phone2 = $this->input->post('phone2');
+		$phone3 = $this->input->post('phone3');
+		$phone = $phone1 . $phone2 . $phone3;
+		
+	 	$tempPW = $this->input->post('pw');
+	 	if ($tempPW !== ""){
+	 		$pw = $tempPW;
+	 	}
+	 	else{
+	 		$pw = "";
+	 	}
+	 	
+	 	$intro = $this->input->post('introduction');
 	}
 }
