@@ -25,6 +25,12 @@ class Mypage_model extends CI_Model{
 	}
 	
 	public function update_userInfo(){
+		$userSession = $this->session->userdata('user_id');
 		
+		$this->db->query("
+			update `USER`
+			set ~~
+			where user_id='$userSession'
+		");
 	}
 }

@@ -24,6 +24,7 @@ class Mypage extends CI_Controller {
 		if($this->session->userdata('user_id')){
 			$this->load->model('mypage_model');
 			$data['userInfo'] = $this->mypage_model->user_info();
+			$data['userSession'] = $this->session->userdata('user_id');
 			
 			$this->load->view('header');
 			$this->load->view('mypage_info', $data);

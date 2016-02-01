@@ -243,7 +243,12 @@ function submitCheck(){
       </div>
     </div>
 
-
+<?php 
+	foreach($userInfo->result() as $row){
+		$userEmail = $row->user_email;
+		$userName = $row->user_name;
+	}
+?>
 
   <div class="row row-padding-xs-100 " style="margin-top:30px;">
     <span class="title1">내 정보 관리</span>
@@ -252,11 +257,15 @@ function submitCheck(){
   <form action="진우 수정하는 컨트톨로 필요" method="post" id="formform">
     <div class="row row-padding-xs-100 " style="margin-top:10px;">
       <div class="menu">아이디</div>
-      <span> 진우 아이디 </span>
+      <span> <?php echo $userSession;?> </span>
+      </div>
+      <div class="row row-padding-xs-100 " style="margin-top:10px;">
+        <div class="menu title2">이름</div>
+        <span> <?php echo $userName;?> </span>
       </div>
       <div class="row row-padding-xs-100 " style="margin-top:10px;">
         <div class="menu">이메일</div>
-        <input type="email" name="email">
+        <input type="email" name="email" value="<?php echo $userEmail;?>">
         </div>
       <div class="row row-padding-xs-100 " style="margin-top:10px;">
         <div class="menu title2">비밀번호</div>
@@ -266,10 +275,7 @@ function submitCheck(){
         <div class="menu title2">비밀번호 확인</div>
         <input class="menu_input" id="pw_check" type="password">
       </div>
-      <div class="row row-padding-xs-100 " style="margin-top:10px;">
-        <div class="menu title2">이름</div>
-        <span> 진우 이름 </span>
-      </div>
+
       <div class="row row-padding-xs-100 " style="margin-top:10px;">
         <div class="menu title2">휴대전화</div>
         <input class="menu_input_phone_1" name="phone1" type="text" value="010">-
