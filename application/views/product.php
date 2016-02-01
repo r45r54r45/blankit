@@ -449,7 +449,7 @@ $PRICE =  number_format($storePrice, 0, '.', ','); // 가격 천 단위 콤마 �
 
         $facebookURL = $URL . $URI; */
 		$facebookURL = $this->uri->segment(3);
-        
+
         echo "
         <script>
         function facebook_for_artist(){
@@ -502,10 +502,7 @@ $PRICE =  number_format($storePrice, 0, '.', ','); // 가격 천 단위 콤마 �
         padding-bottom: 20px;
         padding-top: 20px;">
         <a onclick="facebook_for_artist()" style="cursor:pointer;">
-          <div class="col-xs-12" style="
-          background-color: #3a5795;
-          box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .52); height:100px; border-radius:20px; text-align:center; ">
-          <span style="font-size:30px; line-height: 100px; vertical-align:middle; font-weight:500; color:white; ">페이스북에 공유하기</span>
+          <img src="/source/image/fb_user.png" class="img img-responsive" style="margin:0 auto;">
         </div>
       </a>
     </div>
