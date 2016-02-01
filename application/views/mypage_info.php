@@ -127,6 +127,7 @@ input[type="radio"] + label{
 }
 </style>
 <script>
+var phoneChange = 0;
 var pongpong;
 function phone_check(){
 
@@ -192,10 +193,10 @@ function submitCheck(){
 }
 
   //진우 // 핸드폰 인증 넣어야함
-/*   if($("#phone_check").val()==''){
-    alert("핸드폰 인증을 해주세요");
-    return;
-  } */
+	if($("#phone_check").val()=='' && phoneChange !== 0){
+    	alert("핸드폰 인증을 해주세요");
+	    return;
+  	} 
   
   if($("input[name='type']:checked").length==0){
     alert("회원구분을 선택해주세요");
@@ -365,15 +366,20 @@ if(isset($_GET['status'])){
           <a onclick="submitCheck();"><div class="myButton" style="width:200px; font-size:20px;">수정하기</div></a>
         </div>
       </div>
-
     </div>
-
+</div>
 
 <script>
-$('#phone1').on('input', function() {
-    // do something
-    alert('데헿');
-});
+	$('#phone1').on('input', function() {
+	    // do something
+	    phoneChange++;
+	});
+	$('#phone2').on('input', function() {
+	    // do something
+		phoneChange++;
+	});
+	$('#phone3').on('input', function() {
+	    // do something
+		phoneChange++;
+	});
 </script>
-
-</div>
