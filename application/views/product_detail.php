@@ -36,9 +36,10 @@
 }
 .product_bed{
   position: relative;
-  left:0
+  left:0;
   top:0;
   z-index: 1;
+  width: 100%;
 }
 .product{
   position: absolute;
