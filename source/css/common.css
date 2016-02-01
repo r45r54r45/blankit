@@ -1,9 +1,12 @@
-body{
+
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);body{
   overflow-x: hidden;
   position: relative;
   font-family: 'Noto Sans KR', sans-serif;
 }
-@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+img.product_bed.img-responsive{
+  width:100%;
+}
 #logo{
   margin-top: 3px;
   pointer-events: auto;
