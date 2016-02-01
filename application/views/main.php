@@ -180,9 +180,7 @@
     position: absolute;
     z-index:2;
     }
-    .product>img{
-      opacity: 0.8;
-    }
+
     #footer{
       margin-top:0px !important;
     }

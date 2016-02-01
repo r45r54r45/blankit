@@ -112,7 +112,7 @@
   $itemDetail; //제품 설명 이미지
   switch ($itemType){
     case "E_1": //에코백 E_1_1(블랙) E_1_2(카키) E_1_3(네이비)
-      $itemPos="left:35.4%;top:46.400000000000006%;width:29.333333333333332%;height:39.93333333333333%;";
+      $itemPos="left:35.4%;top:46.100000000000006%;width:29.333333333333332%;height:39.93333333333333%;";
       $itemSizeImg="/source/product/".$itemType."_size.png";
       array_push($itemBed,"/source/product/".$itemType."_1"."_bed.jpg");
       array_push($itemBed,"/source/product/".$itemType."_2"."_bed.jpg");
