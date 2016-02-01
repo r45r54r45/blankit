@@ -15,4 +15,16 @@ class Mypage_model extends CI_Model{
 			where o.user_id = '$user_id_SESSION';
 		");	
 	}
+	
+	public function user_info(){
+		$userSession = $this->session->userdata('user_id');
+		
+		return $this->db->query("
+			select * from `USER` where user_id='$userSession';
+		");
+	}
+	
+	public function update_userInfo(){
+		
+	}
 }
