@@ -152,7 +152,7 @@ $(function(){
             <a href="/mypage/info">내 정보관리</a>
           </div>
           <div class="menu_item">
-            <a href="#" onclick="alert('준비중 입니다.')" style="font-size:13px;">포트폴리오 관리</a>
+            <a href="#" onclick="alert('준비중 입니다.')" style="">포트폴리오 관리</a>
           </div>
 
 
