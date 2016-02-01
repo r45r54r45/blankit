@@ -179,6 +179,7 @@
 ?>
 
 <!-- 제품에 들어간 작품 부분 시작-->
+<div class="container">
 <div class="row row_padding-xs" style="margin-top:40px;">
   <div class="col-xs-12" style="padding-bottom:40px; border-bottom:1px solid #D3D3D3;">
   <div class="t1-gal" style="margin-bottom:20px;"><?php echo $storeName;?></div>
@@ -288,4 +289,3 @@ if ($itemType == "M_1" || $itemType == "H_1"){
 </div>
 </div>
 <!-- 주의사항 끝 -->
-</div>
