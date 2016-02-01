@@ -246,13 +246,13 @@ function submitCheck(){
 
 
   <div class="row row-padding-xs-100 " style="margin-top:30px;">
-    <span class="title1">내 정보 수정</span>
+    <span class="title1">내 정보 관리</span>
   </div>
 
-  <form action="/join/func_join_ok" method="post" id="formform">
+  <form action="진우 수정하는 컨트톨로 필요" method="post" id="formform">
     <div class="row row-padding-xs-100 " style="margin-top:10px;">
       <div class="menu">아이디</div>
-      <span> 아이디 </span>
+      <span> 진우 아이디 </span>
       </div>
       <div class="row row-padding-xs-100 " style="margin-top:10px;">
         <div class="menu title2">비밀번호</div>
@@ -264,7 +264,7 @@ function submitCheck(){
       </div>
       <div class="row row-padding-xs-100 " style="margin-top:10px;">
         <div class="menu title2">이름</div>
-        <input class="menu_input" name="name" type="text">
+        <span> 진우 이름 </span>
       </div>
       <div class="row row-padding-xs-100 " style="margin-top:10px;">
         <div class="menu title2">휴대전화</div>
@@ -283,7 +283,8 @@ function submitCheck(){
           <div class="row row-padding-xs-100 " style="margin-top:10px;">
             <div class="menu title2">회원구분</div>
             <div class="menu_input_radio">
-              <input type="radio" name="type" id="type1" value="1"><label for="type1">일반 회원</label>
+              <input type="radio" name="type" id="type1" value="1" checked="checked"><label for="type1">일반 회원</label>
+              <!-- 진우 input 타입 radio 부분에 checked="checked" 넣으면 체크되서 나옴. -->
             </div>
             <div class="menu_input_radio">
               <input type="radio" name="type" id="type2" value="2"><label for="type2">아티스트 회원</label>
@@ -292,7 +293,7 @@ function submitCheck(){
           <div id="artist_content" style="display:none;">
             <div class="row row-padding-xs-100 " style="margin-top:10px; line-height:35px;">
               <div class="menu title2" style="vertical-align:middle;">현재 직업</div>
-              <input class="menu_input" name="job" type="text">
+              <span>진우 지금 현재 직업</span>
             </div>
             <div class="row row-padding-xs-100 " style="margin-top:10px;">
               <div class="menu title2" style="margin-bottom:10px;">프로필사진</div>
@@ -313,7 +314,7 @@ function submitCheck(){
   </SCRIPT>
               <textarea name = "introduction" style="border-radius:10px;
               width:100%; height:150px; border:2px solid rgba(0, 0, 0, 0.3);"   maxlength="100"
-              onkeyup="return textarea_maxlength(this)"></textarea>
+              onkeyup="return textarea_maxlength(this)">진우 기존 소개글</textarea>
             </div>
             <div class="row row-padding-xs-100 " style="margin-top:10px;">
               <div class="menu title2" style="margin-bottom:10px;">포트폴리오</div>
