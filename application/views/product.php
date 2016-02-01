@@ -234,6 +234,25 @@ else{
 //여기까지 "앞으로 # 일 계산"
 
 $PRICE =  number_format($storePrice, 0, '.', ','); // 가격 천 단위 콤마 넣어주기
+
+
+$itemPos;
+$itemBed;
+switch ($GlobalStoreType) {
+  case '1':
+    $itemPos="left:37%;top:35%;width:23.066666666666666%;height:20.333333333333332%;";
+    $itemBed="/source/product/M_1_2_bed.jpg";
+  break;
+  case '2':
+    $itemPos="left:34.599999999999994%;top:46.1%;width:31.1%;height:42.199999999999996%;";
+    $itemBed="/source/product/E_1_1_bed.jpg";
+  break;
+  case '3':
+    $itemPos="left:23.799999999999997%;top:28.799999999999997%;width:52.56666666666666%;height:42.86666666666667%;";
+    $itemBed="/source/product/P_1_bed.jpg";
+  break;
+
+}
 ?>
 
 
@@ -249,7 +268,12 @@ $PRICE =  number_format($storePrice, 0, '.', ','); // 가격 천 단위 콤마 �
 <div class="container" style="margin-top:20px;">
   <div class="row row_padding-xs">
     <div class="col-md-8" style="">
-      <img style="width:100%;" src="<?php echo $storeImage;?>" class="img img-responsive">
+      <div class="product_area ">
+          <image class="product_bed img_rounded img-responsive" src="<?echo $itemBed?>">
+          <div class="product" style="<?echo $itemPos;?>">
+            <img src="<?php echo $storeImage;?>" class="img img-responsive">
+          </div>
+        </div>
     </div>
     <div class="col-md-4" style="padding-left:20px; height:100%; ">
       <div class="row">
