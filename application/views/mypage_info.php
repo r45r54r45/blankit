@@ -207,12 +207,14 @@ function submitCheck(){
 }
 </script>
 <?php 
-if ($_GET['status'] == "success"){
-	echo "
-  		<script>
-  			alert(\"성공적으로 '내 정보'가 변경되었습니다!\");
-  		</script>	
-  	";
+if(isset($_GET['status'])){
+	if ($_GET['status'] == "success"){
+		echo "
+	  		<script>
+	  			alert(\"성공적으로 '내 정보'가 변경되었습니다!\");
+	  		</script>	
+	  	";
+	}
 }
 ?>
 
