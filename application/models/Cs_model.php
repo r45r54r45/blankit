@@ -18,21 +18,21 @@ class Cs_model extends CI_Model{
 	
 	public function id_seed(){
 		$seed = $this->db->query("
-			select max(qa_id) as seed from `QA`
+			select max(qa_id) as seed1 from `QA`
 			where user_id='$userSESSION'
 		");
 		
 		foreach($seed->result() as $row){
-			$qa_id = $row->seed;
+			$qa_id = $row->seed1;
 		}
 		
 		return $qa_id;
 	}
 	
-	public function update_qa_root($qa_id, $fileName){
+	public function update_qa_root($qa_id2, $fileName){
 		$fileRoot = "/files/cs/" . $fileName;
 		$this->db->query("
-			update `QA` set qa_file='$fileRoot' where qa_id='$qa_id'
+			update `QA` set qa_file='$fileRoot' where qa_id='$qa_id2'
 		");
 	}
 }
