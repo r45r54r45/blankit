@@ -17,6 +17,8 @@ class Cs_model extends CI_Model{
 	}
 	
 	public function id_seed(){
+		$userSESSION = $this->session->userdata('user_id');
+		
 		$seed = $this->db->query("
 			select max(qa_id) as seed1 from `QA`
 			where user_id='$userSESSION'
