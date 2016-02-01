@@ -218,7 +218,7 @@ function submitCheck(){
   </div>
   <div class="row row-padding-xs-100 " style="margin-top:10px;">
     <span class="title2">개인 정보 수집 및 안내</span>
-    <span id="info_see" style="cursor:pointer; color:blue;">(펼치기)</span>
+    <span id="info_see" style="cursor:pointer; color:#687c87;">(펼치기)</span>
   </div>
   <div id="info_see_content" class="row row-padding-xs-100 " style="display:none; margin-top:10px;">
     <div style="background:#F5F6F7; width:100%; height:130px; overflow-y:auto;  padding:5px;">
@@ -423,7 +423,7 @@ function submitCheck(){
     </div>
     <div class="row row-padding-xs-100 " style="margin-top:10px;">
       <span class="title2">이용 약관</span>
-      <span id="usage_see" style="cursor:pointer; color:blue;">(펼치기)</span>
+      <span id="usage_see" style="cursor:pointer; color:#687c87;">(펼치기)</span>
     </div>
     <div id="usage_see_content" class="row row-padding-xs-100 " style="display:none; margin-top:10px;">
       <div style="background:#F5F6F7; width:100%; height:130px; overflow-y:auto; padding:5px;">
