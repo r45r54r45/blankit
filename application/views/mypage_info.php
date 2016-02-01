@@ -206,6 +206,7 @@ function submitCheck(){
   myDropzone1.processQueue();
 }
 </script>
+
 <?php 
 if(isset($_GET['status'])){
 	if ($_GET['status'] == "success"){
@@ -266,11 +267,18 @@ if(isset($_GET['status'])){
 			$phone2 = "";
 			$phone3 = "";
 		}
-		$userType = $row->user_type; // 1 일반인 2 아티스트
+		$userType = $row->user_type; // 1 일반인, 2 아티스트
 		$artistType = $row->artist_type;
 		$artistIntro = $row->artist_intro;
 	}
 ?>
+
+<script>
+$('#phone1').on('input', function() {
+    // do something
+    alert('데헿');
+});
+</script>
 
   <div class="row row-padding-xs-100 " style="margin-top:30px;">
     <span class="title1">내 정보 관리</span>
@@ -300,9 +308,9 @@ if(isset($_GET['status'])){
 
       <div class="row row-padding-xs-100 " style="margin-top:10px;">
         <div class="menu title2">휴대전화</div>
-        <input class="menu_input_phone_1" name="phone1" type="text" value="<?php echo $phone1;?>">-
-        <input class="menu_input_phone_2" name="phone2" type="text" value="<?php echo $phone2;?>">-
-        <input class="menu_input_phone_2" name="phone3" type="text" value="<?php echo $phone3;?>">
+        <input class="menu_input_phone_1" name="phone1" id="phone1" type="text" value="<?php echo $phone1;?>">-
+        <input class="menu_input_phone_2" name="phone2" id="phone2" type="text" value="<?php echo $phone2;?>">-
+        <input class="menu_input_phone_2" name="phone3" id="phone3" type="text" value="<?php echo $phone3;?>">
         <a onclick="phone_check()"><div class="ppp menu_button myButton" style="border-radius:5px;" id="kkll">인증번호 발송</div><a>
         </div>
         <div id="ddd" style="display:none"></div>
