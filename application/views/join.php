@@ -117,7 +117,7 @@ function phone_check2(){
   console.log($("#kkk").text());
   if($("input[name='sisisisi']").val()!=$("#kkk").text())alert('인증번호가 틀렸습니다.');
   else{
-    $(".pp").css("display","none");
+    $(".ppp").css("display","none");
 
     $("#phone_check").val("hello");
     alert('인증되었습니다.');
@@ -1049,13 +1049,13 @@ function submitCheck(){
           <input class="menu_input_phone_1" name="phone1" type="text" value="010">-
           <input class="menu_input_phone_2" name="phone2" type="text">-
           <input class="menu_input_phone_2" name="phone3" type="text">
-          <a onclick="phone_check()"><div class="pp menu_button myButton" style="border-radius:5px;" id="kkll">인증번호 발송</div><a>
+          <a onclick="phone_check()"><div class="ppp menu_button myButton" style="border-radius:5px;" id="kkll">인증번호 발송</div><a>
           </div>
           <div id="ddd" style="display:none"></div>
           <div class="row row-padding-xs-100 " style="margin-top:10px;display:none;" id="kkll2">
             <div class="menu"></div>
-            <input class="pp menu_input" type="text" name="sisisisi" >
-            <a onclick="phone_check2()"><div class="pp menu_button myButton" style="border-radius:5px;" >인증번호 확인</div><a>
+            <input class="ppp menu_input" type="text" name="sisisisi" >
+            <a onclick="phone_check2()"><div class="ppp menu_button myButton" style="border-radius:5px;" >인증번호 확인</div><a>
               <input style="display:none" type="text"  id="phone_check">
             </div>
             <div class="row row-padding-xs-100 " style="margin-top:10px;">
