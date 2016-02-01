@@ -127,6 +127,36 @@ input[type="radio"] + label{
 }
 </style>
 <script>
+var pongpong;
+function phone_check(){
+
+  $.ajax({
+    url: "/join/phone_check?phone="+$("input[name='phone1']").val()+$("input[name='phone2']").val()+$("input[name='phone3']").val(),
+    success:function(data){
+      pongpong=data;
+      $("#kkll").css("display","none");
+      $("#kkll2").css("display","");
+      $("input[name='phone1']").attr("readonly",true);
+      $("input[name='phone2']").attr("readonly",true);
+      $("input[name='phone3']").attr("readonly",true);
+      alert('인증번호가 발송되었습니다.');
+
+    }
+  });
+}
+function phone_check2(){
+  $('#ddd').append(pongpong);
+  console.log($("#kkk").text());
+  if($("input[name='sisisisi']").val()!=$("#kkk").text())alert('인증번호가 틀렸습니다.');
+  else{
+    $(".ppp").css("display","none");
+
+    $("#phone_check").val("hello");
+    alert('인증되었습니다.');
+  }
+}
+
+var myDropzone1;
 $(function(){
   $("input[name='type']").on("change",function(event){
     switch(event.target.defaultValue){
@@ -138,26 +168,18 @@ $(function(){
       break;
     }
   });
+  // if ($('#profile').length) {
+  //   var nameValue = document.getElementById("id").value;
+  //   myDropzone1 = new Dropzone("#profile", { url: "/file/profile?file=" + nameValue, paramName: "userfile",maxFiles:1,addRemoveLinks:true,autoProcessQueue: false,dictRemoveFile:"파일 삭제",dictMaxFilesExceeded:"1개만 업로드할 수 있습니다."});
+  // };
 });
-function submitCheck(){
-  if($("input[id='info_checkbox']:checked").length==0){
-    alert("개인정보 수집 및 안내에 동의해주세요");
-    return;
-  }
-  if($("input[id='usage_checkbox']:checked").length==0){
-    alert("이용약관에 동의해주세요");
-    return;
-  }
-  if($("input[name='id']").val()==''){
-    alert("아이디를 입력해주세요");
-    return;
-  }
-  //진우 // 아이디 중복확인 넣어야함
 
-  if($("#id_check").val()==''){
-    alert("아이디 중복확인을 해주세요");
-    return;
-  }
+$(document).on("load",function(){
+
+});
+Dropzone.autoDiscover = false;
+
+function submitCheck(){
   if($("input[name='pw']").val()==''){
     alert("비밀번호를 입력해주세요");
     return;
@@ -185,6 +207,7 @@ function submitCheck(){
   }
 
   $("#formform").submit();
+  myDropzone1.processQueue();
 }
 </script>
 <div class="banner">
@@ -226,13 +249,19 @@ function submitCheck(){
     <span class="title1">내 정보 수정</span>
   </div>
 
-  <form action="진우" method="post" id="formform">
-
+  <form action="/join/func_join_ok" method="post" id="formform">
+    <div class="row row-padding-xs-100 " style="margin-top:10px;">
+      <div class="menu">아이디</div>
+      <span> 아이디 </span>
+      </div>
       <div class="row row-padding-xs-100 " style="margin-top:10px;">
         <div class="menu title2">비밀번호</div>
         <input class="menu_input" name="pw" type="password">
       </div>
-
+      <div class="row row-padding-xs-100 " style="margin-top:10px;">
+        <div class="menu title2">비밀번호 확인</div>
+        <input class="menu_input" id="pw_check" type="password">
+      </div>
       <div class="row row-padding-xs-100 " style="margin-top:10px;">
         <div class="menu title2">이름</div>
         <input class="menu_input" name="name" type="text">
@@ -242,24 +271,7 @@ function submitCheck(){
         <input class="menu_input_phone_1" name="phone1" type="text" value="010">-
         <input class="menu_input_phone_2" name="phone2" type="text">-
         <input class="menu_input_phone_2" name="phone3" type="text">
-
-        </div>
-        <div class="row row-padding-xs-100 " style="margin-top:10px;">
-          <div class="menu title2" style="  vertical-align: top;line-height: 100%;padding-top: 5px;">배송지</div>
-          <div style="display:inline-block;width:210px;">
-            <!-- 주소와 우편번호를 입력할 <input>들을 생성하고 적당한 name과 class를 부여한다 -->
-            <input type="text" class="margin-bottom-5 menu_input postcodify_postcode5" id="location2_1" placeholder="우편번호" value="" name="home1"/>
-            <a href="#"><button type="button" id="postcodify_search_button" class=" myButton">찾기</button></a><br />
-            <input  id="location2_2" type="text" class="margin-bottom-5 menu_input postcodify_address"  placeholder="기본주소" value="" name="home2"/><br />
-            <input id="location2_3" type="text" class="margin-bottom-5 menu_input postcodify_details" placeholder="상세주소" value="" name="home3"/><br />
-
-            <!-- jQuery와 Postcodify를 로딩한다 -->
-            <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-            <script src="//cdn.poesis.kr/post/search.min.js"></script>
-
-            <!-- "검색" 단추를 누르면 팝업 레이어가 열리도록 설정한다 -->
-            <script> $(function() { $("#postcodify_search_button").postcodifyPopUp(); }); </script>
-          </div>
+        <a onclick="phone_check()"><div class="ppp menu_button myButton" style="border-radius:5px;" id="kkll">인증번호 발송</div><a>
         </div>
         <div id="ddd" style="display:none"></div>
         <div class="row row-padding-xs-100 " style="margin-top:10px;display:none;" id="kkll2">
@@ -282,7 +294,12 @@ function submitCheck(){
               <div class="menu title2" style="vertical-align:middle;">현재 직업</div>
               <input class="menu_input" name="job" type="text">
             </div>
-
+            <div class="row row-padding-xs-100 " style="margin-top:10px;">
+              <div class="menu title2" style="margin-bottom:10px;">프로필사진</div>
+              <div id="profile" class="">
+                <div class="dz-default dz-message"><span>프로필 사진은 한 개만 업로드 할 수 있습니다<br>( 클릭 또는 파일을 드래그 해주세요! )</span></div>
+              </div>
+            </div>
             <div class="row row-padding-xs-100 " style="margin-top:10px;">
               <div class="menu title2" style="margin-bottom:10px;">소개글</div>
               <SCRIPT type=text/javascript>
