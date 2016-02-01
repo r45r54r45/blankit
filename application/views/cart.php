@@ -87,9 +87,8 @@ input[type="radio"] + label{
 }
 .order_result_2{
   margin-left: 10px;
-  font-size:20px;
+  font-size:15px;
   color:#443333;
-  float:right;
 }
 .order_title{
   color:#868686;
@@ -276,7 +275,7 @@ function allOrderProduct(){
     <!-- 주문목록 반복되는 부분 끝 -->
 
   </div>
-  <div class="row row-padding-xs-100 " style="margin-top:10px;">
+  <div class="row row-padding-xs-100 " style="margin-top:10px; float:right;">
     <span class="order_result_2">2500원 = </span>
     <span class="order_result_2">+ 택배비</span>
     <span class="order_result_2" id="priceTag"></span>
