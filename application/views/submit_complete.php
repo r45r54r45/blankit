@@ -89,12 +89,14 @@ $(function(){
       </script> ";
       ?>
       <div class="col-xs-12" style="margin-top:30px; ">
-      <a onclick="facebook_for_artist()" style="cursor:pointer;">
+
         <div class="col-xs-12">
-          <img src="/source/image/fb_artist.png" class="img img-responsive">
+          <a onclick="facebook_for_artist()" style="cursor:pointer;">
+          <img src="/source/image/fb_artist.png" class="img img-responsive" style="margin:0 auto;">
+              </a>
         </div>
       </div>
-    </a>
+
   </div>
   </div>
 </div>
