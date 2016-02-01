@@ -312,8 +312,8 @@ if(isset($_GET['status'])){
         <div id="ddd" style="display:none"></div>
         <div class="row row-padding-xs-100 " style="margin-top:10px;display:none;" id="kkll2">
           <div class="menu"></div>
-          <input class="pp menu_input" type="text" name="sisisisi" >
-          <a onclick="phone_check2()"><div class="pp menu_button myButton" style="border-radius:5px;" >인증번호 확인</div><a>
+          <input class="ppp menu_input" type="text" name="sisisisi" >
+          <a onclick="phone_check2()"><div class="ppp menu_button myButton" style="border-radius:5px;" >인증번호 확인</div><a>
             <input style="display:none" type="text"  id="phone_check">
           </div>
           <div class="row row-padding-xs-100 " style="margin-top:10px;">
