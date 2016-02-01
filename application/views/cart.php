@@ -285,8 +285,8 @@ function allOrderProduct(){
 
 
   </div>
-
-    <div class="row row-padding-xs-100 " style="margin-top:20px;">
+<div class="clearfix"></div>
+    <div class="row row-padding-xs-100 " style="margin-top:20px;  clear: both">
       <div style="text-align:center;">
       <button class="fff"  onclick="deleteProduct()">삭제</button>
       <button class="fff"  onclick="partOrderProduct()">선택결제</button>
