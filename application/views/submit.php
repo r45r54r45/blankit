@@ -148,14 +148,16 @@ else {
     <div class="col-xs-1">
     </div>
     <div class="col-xs-2 download_cover">
-      <a href="https://drive.google.com/file/d/0B7DWyelmxAOpbUVETEhxUkdlaEE/view?usp=sharing">
+      <a href="https://docs.google.com/uc?id=0B7DWyelmxAOpbUVETEhxUkdlaEE&export=download">
+      <!-- https://drive.google.com/file/d/0B7DWyelmxAOpbHJIRmlONWpxNzg/view?usp=sharing -->
         <img src="/source/image/download_2.png" class="download_img img img-responsive">
       </a>
     </div>
     <div class="col-xs-1">
     </div>
     <div class="col-xs-2 download_cover">
-      <a href="https://drive.google.com/file/d/0B7DWyelmxAOpXzhRNWhXaUVSZWc/view">
+      <a href="https://docs.google.com/uc?id=0B7DWyelmxAOpXzhRNWhXaUVSZWc&export=download">
+      <!-- https://drive.google.com/file/d/0B7DWyelmxAOpbHJIRmlONWpxNzg/view?usp=sharing -->
         <img src="/source/image/download_3.png" class="download_img img img-responsive">
       </a>
     </div>
