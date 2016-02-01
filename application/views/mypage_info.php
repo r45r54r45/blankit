@@ -180,17 +180,11 @@ $(document).on("load",function(){
 Dropzone.autoDiscover = false;
 
 function submitCheck(){
-  if($("input[name='pw']").val()==''){
-    alert("비밀번호를 입력해주세요");
-    return;
-  }
-  if($("input[name='pw']").val()!=$("#pw_check").val()){
-    alert("비밀번호 확인이 올바르지 않습니다.");
-    return;
-  }
-  if($("input[name='email']").val()==''){
-    alert("이메일을 입력해주세요");
-    return;
+  if($("input[name='pw']").val()!==''){
+	  if($("input[name='pw']").val()!=$("#pw_check").val()){
+		    alert("비밀번호 확인이 올바르지 않습니다.");
+		    return;  
+  		}
   }
   if($("input[name='phone2']").val()==''||$("input[name='phone3']").val()==''){
     alert("휴대전화를 입력해주세요");
