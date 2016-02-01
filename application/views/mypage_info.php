@@ -127,9 +127,6 @@ input[type="radio"] + label{
 }
 </style>
 <script>
-
-$("input[name='phone1']").change(function() { alert('바뀜'); } );
-
 var pongpong;
 function phone_check(){
 
@@ -195,10 +192,10 @@ function submitCheck(){
   }
 
   //진우 // 핸드폰 인증 넣어야함
-  if($("#phone_check").val()==''){
+/*   if($("#phone_check").val()==''){
     alert("핸드폰 인증을 해주세요");
     return;
-  }
+  } */
   
   if($("input[name='type']:checked").length==0){
     alert("회원구분을 선택해주세요");

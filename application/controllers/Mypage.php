@@ -54,5 +54,16 @@ class Mypage extends CI_Controller {
 	 	}
 	 	
 	 	$intro = $this->input->post('introduction');
+	 	
+	 	$this->load->model('mypage_model');
+	 	
+	 	//비번 안 바뀔 떄
+	 	if ($pw == ""){
+	 		$this->mypage_model->update_userInfo($email, $phone, $intro);
+	 	}
+	 	else {
+	 		$this->mypage_model->update_userInfo_pw($pw, $email, $phone, $intro);
+	 	}
+	 	
 	}
 }
