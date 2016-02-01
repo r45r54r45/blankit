@@ -140,7 +140,8 @@ else {
     <div class="col-xs-2">
     </div>
     <div class="col-xs-2 download_cover">
-      <a href="https://drive.google.com/file/d/0B7DWyelmxAOpbHJIRmlONWpxNzg/view?usp=sharing">
+      <a href="https://docs.google.com/uc?authuser=0&id=0B7DWyelmxAOpbHJIRmlONWpxNzg&export=download">
+      <!-- https://drive.google.com/file/d/0B7DWyelmxAOpbHJIRmlONWpxNzg/view?usp=sharing -->
         <img src="/source/image/download_1.png" class="download_img img img-responsive">
       </a>
     </div>
