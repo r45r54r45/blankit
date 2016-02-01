@@ -13,7 +13,7 @@
 
 </div>
 </div>
-<div class="container">
+<div class="container" style="margin-top: 100px;">
 <p>블랭킷 이용약관</p>
 
 <p>제 1 조 목적</p>
