@@ -247,6 +247,20 @@ function submitCheck(){
 	foreach($userInfo->result() as $row){
 		$userEmail = $row->user_email;
 		$userName = $row->user_name;
+		$userPhone = $row->user_phone;
+		if ($userPhone !== ""){
+			$phone1 = substr($userPhone, 0, 3);
+			$phone2 = substr($userPhone, 3, 4);
+			$phone3 = substr($userPhone, 7, 4);
+		}
+		else{
+			$phone1 = "";
+			$phone2 = "";
+			$phone3 = "";
+		}
+		$userType = $row->user_type; // 1 일반인 2 아티스트
+		$artistType = $row->artist_type;
+		$artistIntro = $row->artist_intro;
 	}
 ?>
 
@@ -278,9 +292,9 @@ function submitCheck(){
 
       <div class="row row-padding-xs-100 " style="margin-top:10px;">
         <div class="menu title2">휴대전화</div>
-        <input class="menu_input_phone_1" name="phone1" type="text" value="010">-
-        <input class="menu_input_phone_2" name="phone2" type="text">-
-        <input class="menu_input_phone_2" name="phone3" type="text">
+        <input class="menu_input_phone_1" name="phone1" type="text" value="<?php echo $phone1;?>">-
+        <input class="menu_input_phone_2" name="phone2" type="text" value="<?php echo $phone2;?>">-
+        <input class="menu_input_phone_2" name="phone3" type="text" value="<?php echo $phone3;?>">
         <a onclick="phone_check()"><div class="ppp menu_button myButton" style="border-radius:5px;" id="kkll">인증번호 발송</div><a>
         </div>
         <div id="ddd" style="display:none"></div>
@@ -293,17 +307,17 @@ function submitCheck(){
           <div class="row row-padding-xs-100 " style="margin-top:10px;">
             <div class="menu title2">회원구분</div>
             <div class="menu_input_radio">
-              <input type="radio" name="type" id="type1" value="1" checked="checked"><label for="type1">일반 회원</label>
+              <input type="radio" name="type" id="type1" value="1" <?php if($userType=="1"){echo 'checked="checked"';}?>><label for="type1">일반 회원</label>
               <!-- 진우 input 타입 radio 부분에 checked="checked" 넣으면 체크되서 나옴. -->
             </div>
             <div class="menu_input_radio">
-              <input type="radio" name="type" id="type2" value="2"><label for="type2">아티스트 회원</label>
+              <input type="radio" name="type" id="type2" value="2" <?php if($userType=="2"){echo 'checked="checked"';}?>><label for="type2">아티스트 회원</label>
             </div>
           </div>
           <div id="artist_content" style="display:none;">
             <div class="row row-padding-xs-100 " style="margin-top:10px; line-height:35px;">
               <div class="menu title2" style="vertical-align:middle;">현재 직업</div>
-              <span>진우 지금 현재 직업</span>
+              <span><?php echo $artistType;?></span>
             </div>
             <div class="row row-padding-xs-100 " style="margin-top:10px;">
               <div class="menu title2" style="margin-bottom:10px;">프로필사진</div>
@@ -312,7 +326,7 @@ function submitCheck(){
               </div>
             </div>
             <div class="row row-padding-xs-100 " style="margin-top:10px;">
-              <div class="menu title2" style="margin-bottom:10px;">소개글</div>
+              <div class="menu title2" style="margin-bottom:10px;"></div>
               <SCRIPT type=text/javascript>
   function textarea_maxlength(obj){
   var maxLength = parseInt(obj.getAttribute("maxlength"));
@@ -324,7 +338,7 @@ function submitCheck(){
   </SCRIPT>
               <textarea name = "introduction" style="border-radius:10px;
               width:100%; height:150px; border:2px solid rgba(0, 0, 0, 0.3);"   maxlength="100"
-              onkeyup="return textarea_maxlength(this)">진우 기존 소개글</textarea>
+              onkeyup="return textarea_maxlength(this)"><?php echo $artistIntro;?></textarea>
             </div>
             <div class="row row-padding-xs-100 " style="margin-top:10px;">
               <div class="menu title2" style="margin-bottom:10px;">포트폴리오</div>
