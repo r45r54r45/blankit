@@ -58,7 +58,6 @@
     color: #868686;
     text-align: center;
     display: inline-block;
-    width:23%;
     height:100%;
     cursor: pointer;
   }
@@ -202,16 +201,16 @@ if ($itemType == "E_1" || $itemType == "E_2" || $itemType == "E_3" || $itemType 
 <div class="row row_padding-xs" style="margin-top:20px;" id="here">
     <div class="col-md-12" id="E-location" style="position:relative; height:25px; padding-bottom:40px; border-bottom: 1.5px solid #D3D3D3;">
 <div class="menu">
-  <div class="menu_item">
+  <div class="menu_item" style="width:23%;">
     <a href="/funding/product/' . $itemNum . '?E_1#here' . '">숄더(컬러)</a>
   </div>
-  <div class="menu_item" >
+  <div class="menu_item" style="width:27%;">
     <a href="/funding/product/' . $itemNum . '?E_2#here' . '">숄더(아이보리)</a>
   </div>
-  <div class="menu_item">
+  <div class="menu_item" style="width:25%;">
     <a href="/funding/product/' . $itemNum . '?E_3#here' . '">토트/크로스</a>
   </div>
-  <div class="menu_item">
+  <div class="menu_item" style="width:20%;">
     <a href="/funding/product/' . $itemNum . '?E_4#here' . '">크로스</a>
   </div>
 </div>
