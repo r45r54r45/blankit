@@ -83,15 +83,18 @@ if ($session_id !== "" && $session_userType == "2"){
     	alert(\"블랭킷 X 아티스트 작품명을 입력해주세요.\");
     	return;
   	}
-	if($(\"input[name='storeType']:checked\").length==0){
+	  if($(\"input[name='storeType']:checked\").length==0){
     	alert(\"작품 카테고리를 선택해주세요.\");
     	return;
   	}
-	if($(\"input[id='goalNum']\").val()==\"default\"){
+	   if($(\"input[id='goalNum']\").val()==\"default\"){
     	alert(\"목표 구매자 수를 선택해주세요.\");
     	return;
   	}
-		alert(\"성공적으로 업로드 되었습니다.\");
+    if($(\"input[name='file']\").val()==\"\"){
+     alert(\"작품파일을 업로드해주세요\");
+     return;
+   }
 		$(\"#formform\").submit();
   	}
 	</script> ";
