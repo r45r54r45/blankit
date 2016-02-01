@@ -29,7 +29,7 @@ class Mypage_model extends CI_Model{
 		
 		$this->db->query("
 			update `USER`
-			set user_email='$email', user_phone='$phone', artist_intro='$intro', type='$type'
+			set user_email='$email', user_phone='$phone', artist_intro='$intro', user_type='$type'
 			where user_id='$userSession'
 		");
 	}
@@ -39,7 +39,7 @@ class Mypage_model extends CI_Model{
 	
 		$this->db->query("
 			update `USER`
-			set user_email='$email', user_phone='$phone', artist_intro='$intro', user_pw='$pw', type='$type'
+			set user_email='$email', user_phone='$phone', artist_intro='$intro', user_pw='$pw', user_type='$type'
 			where user_id='$userSession'
 		");
 	}

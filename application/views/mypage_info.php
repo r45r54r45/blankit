@@ -180,16 +180,16 @@ $(document).on("load",function(){
 Dropzone.autoDiscover = false;
 
 function submitCheck(){
-  if($("input[name='pw']").val()!==''){
-	  if($("input[name='pw']").val()!=$("#pw_check").val()){
-		    alert("비밀번호 확인이 올바르지 않습니다.");
-		    return;  
+	if($("input[name='pw']").val()!==''){
+		if($("input[name='pw']").val()!=$("#pw_check").val()){
+			alert("비밀번호 확인이 올바르지 않습니다.");
+		    	return;  
   		}
-  }
-  if($("input[name='phone2']").val()==''||$("input[name='phone3']").val()==''){
-    alert("휴대전화를 입력해주세요");
-    return;
-  }
+	}
+  	if($("input[name='phone2']").val()==''||$("input[name='phone3']").val()==''){
+    	alert("휴대전화를 입력해주세요");
+    	return;
+}
 
   //진우 // 핸드폰 인증 넣어야함
 /*   if($("#phone_check").val()==''){
@@ -206,6 +206,16 @@ function submitCheck(){
   myDropzone1.processQueue();
 }
 </script>
+<?php 
+if ($_GET['status'] == "success"){
+	echo "
+  		<script>
+  			alert(\"성공적으로 '내 정보'가 변경되었습니다!\");
+  		</script>	
+  	";
+}
+?>
+
 <div class="banner">
 
 </div>

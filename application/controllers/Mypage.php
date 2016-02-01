@@ -66,5 +66,8 @@ class Mypage extends CI_Controller {
 	 		$this->mypage_model->update_userInfo_pw($pw, $email, $phone, $intro, $type);
 	 	}
 	 	
+	 	$mypageUrl = "http://blankit.kr/mypage/info?status=success";
+	 	$this->load->helper('url');
+	 	redirect($mypageUrl);
 	}
 }
