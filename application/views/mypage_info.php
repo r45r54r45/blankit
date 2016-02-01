@@ -273,12 +273,7 @@ if(isset($_GET['status'])){
 	}
 ?>
 
-<script>
-$('#phone1').on('input', function() {
-    // do something
-    alert('데헿');
-});
-</script>
+
 
   <div class="row row-padding-xs-100 " style="margin-top:30px;">
     <span class="title1">내 정보 관리</span>
@@ -374,6 +369,11 @@ $('#phone1').on('input', function() {
     </div>
 
 
-
+<script>
+$('#phone1').on('input', function() {
+    // do something
+    alert('데헿');
+});
+</script>
 
 </div>
