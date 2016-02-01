@@ -24,23 +24,23 @@ class Mypage_model extends CI_Model{
 		");
 	}
 	
-	public function update_userInfo($email, $phone, $intro){
+	public function update_userInfo($email, $phone, $intro, $type){
 		$userSession = $this->session->userdata('user_id');
 		
 		$this->db->query("
 			update `USER`
-			set user_email='$email', user_phone='$phone', artist_intro='$intro'
+			set user_email='$email', user_phone='$phone', artist_intro='$intro', type='$type'
 			where user_id='$userSession'
 		");
 	}
 	
-	public function update_userInfo_pw($pw, $email, $phone, $intro){
+	public function update_userInfo_pw($pw, $email, $phone, $intro, $type){
 		$userSession = $this->session->userdata('user_id');
 	
 		$this->db->query("
-				update `USER`
-				set user_email='$email', user_phone='$phone', artist_intro='$intro', user_pw='$pw'
-				where user_id='$userSession'
-				");
+			update `USER`
+			set user_email='$email', user_phone='$phone', artist_intro='$intro', user_pw='$pw', type='$type'
+			where user_id='$userSession'
+		");
 	}
 }
