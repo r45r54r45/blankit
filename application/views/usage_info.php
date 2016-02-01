@@ -1,6 +1,19 @@
+<style>
+.banner{
+  height:50px;
+  width:100%;
+  background: white;
+  position:absolute;
+  left:0;
+  top:0;
+  border-bottom: 1px solid #D3D3D3;
+}
+</style>
 <div class="banner">
 
 </div>
+</div>
+<div class="container">
 <p>블랭킷 이용약관</p>
 
 <p>제 1 조 목적</p>
@@ -588,5 +601,7 @@
 <p>부 칙</p>
 
 이 약관은 2016년 2월 1일부터 적용합니다.
+
+</div>
 
 </div>
