@@ -99,6 +99,14 @@ input[type="radio"] + label{
   color:#443333;
   margin: 0px 0px 0px 3px;
 }
+.fff{
+  width: 70px;
+    color: #687C87;
+    height: 30px;
+    border-radius: 10px;
+    background: white;
+    border: 1px solid #687C87;
+}
 </style>
 <script>
 var result=[];
@@ -261,10 +269,6 @@ function allOrderProduct(){
     <span style='margin: 100px auto 0px;
     display: table;
     font-size: 20px;'>카트가 비어있습니다.</span>
-
-
-
-
     ";
   }
 
@@ -285,9 +289,9 @@ function allOrderProduct(){
 </div>
     <div class="row row-padding-xs-100 " style="margin-top:20px;">
       <div style="text-align:center;">
-      <button onclick="deleteProduct()">삭제</button>
-      <button onclick="partOrderProduct()">선택결제</button>
-      <button onclick="allOrderProduct()">전체결제</button>
+      <button class="fff"  onclick="deleteProduct()">삭제</button>
+      <button class="fff"  onclick="partOrderProduct()">선택결제</button>
+      <button class="fff"  onclick="allOrderProduct()">전체결제</button>
     </div>
     </div>
 
