@@ -188,8 +188,8 @@ function submitCheck(){
     alert("비밀번호 확인이 올바르지 않습니다.");
     return;
   }
-  if($("input[name='name']").val()==''){
-    alert("이름을 입력해주세요");
+  if($("input[name='email']").val()==''){
+    alert("이메일을 입력해주세요");
     return;
   }
   if($("input[name='phone2']").val()==''||$("input[name='phone3']").val()==''){
@@ -254,6 +254,10 @@ function submitCheck(){
       <div class="menu">아이디</div>
       <span> 진우 아이디 </span>
       </div>
+      <div class="row row-padding-xs-100 " style="margin-top:10px;">
+        <div class="menu">이메일</div>
+        <input type="email" name="email">
+        </div>
       <div class="row row-padding-xs-100 " style="margin-top:10px;">
         <div class="menu title2">비밀번호</div>
         <input class="menu_input" name="pw" type="password">
