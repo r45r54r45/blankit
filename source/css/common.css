@@ -235,3 +235,7 @@ pre {
              width:0;
          }
      }
+
+     .menu_item{
+       font-size:13px !important;
+     }
