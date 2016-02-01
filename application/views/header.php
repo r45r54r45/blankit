@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
-    
+
     <!-- 펀딩 세부페이지 페이스북 (일반인용)-->
     <?
   	if($this->uri->segment(1) == "funding" && $this->uri->segment(2) == "product"){
@@ -30,9 +30,9 @@
     <meta property="og:title"              content="<?php echo $userName . " 아티스트의 " . $storeName;?>" />
     <meta property="og:description"        content="<?php echo "독립 아티스트를 응원해주세요! 작품 설명: " . $storeExplain;?>" />
     <meta property="og:image"              content="<?php echo 'http://blankit.kr' . $storeImage;?>" />
-    
+
     <?}?>
-    
+
     <!-- 작품 제출완료 페이지 페이스북 (작가용)-->
     <?
   	if($this->uri->segment(1) == "submit" && $this->uri->segment(2) == "complete"){
@@ -53,8 +53,8 @@
     <meta property="og:description"        content="<?echo "저의 작품으로 제품을 출시합니다. 작품 설명: " . $storeExplain;?>" />
     <meta property="og:image"              content="<?echo "http://blankit.kr/source/image/facebook_share_image.png" ?>" />
     <?}?>
-    
-    
+
+
     <!-- 스토어 세부페이지와 submit 페이지에서만 출력 끝-->
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>blank it</title>
@@ -101,7 +101,7 @@
 	/*** 스토어 상품의 시간만료 체크 ***/
 	/*** 여기까지, 스토어 상품의 시간만료 체크 ***/
 
-    	if($actual_link=="http://blankit.kr/"||$actual_link=="http://blankit.kr/artist"||$actual_link=="http://blankit.kr/funding"||$actual_link=="http://blankit.kr/funding/cloth"||$actual_link=="http://blankit.kr/funding/ecobag"||$actual_link=="http://blankit.kr/funding/pouch"||$actual_link=="http://blankit.kr/funding/done"||$actual_link=="http://blankit.kr/submit")
+    	if($actual_link=="http://blankit.kr/"||$actual_link=="http://blankit.kr/artist"||$actual_link=="http://blankit.kr/funding"||$actual_link=="http://blankit.kr/funding/cloth"||$actual_link=="http://blankit.kr/funding/ecobag"||$actual_link=="http://blankit.kr/funding/pouch"||$actual_link=="http://blankit.kr/funding/done"||$actual_link=="http://blankit.kr/submit"||$actual_link=="http://www.blankit.kr/"||$actual_link=="http://www.blankit.kr/artist"||$actual_link=="http://www.blankit.kr/funding"||$actual_link=="http://www.blankit.kr/funding/cloth"||$actual_link=="http://www.blankit.kr/funding/ecobag"||$actual_link=="http://www.blankit.kr/funding/pouch"||$actual_link=="http://www.blankit.kr/funding/done"||$actual_link=="http://www.blankit.kr/submit")
       		echo "/source/image/logo_white.png";
     	else
       		echo "/source/image/logo.png";
