@@ -31,6 +31,7 @@ class Help extends CI_Controller {
 			$this->cs_model->upload_cs($title, $contents);
 
 			$qa_id = $this->cs_model->id_seed();
+			$userSESSION = $this->session->userdata('user_id');
 
 			$ext = end(explode(".",$_FILES['file']['name']));
 			$fileName = $qa_id . "_" . $userSESSION . "." . $ext;
