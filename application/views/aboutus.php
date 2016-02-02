@@ -158,6 +158,8 @@ $(function(){
       </p>
     </div>
     <div class="col-xs-1"></div>
+  </div>
+  <div class="row row-padding-xs-100 " style="margin:5px 0px 5px;">
     <div class="col-xs-1"></div>
     <div class="col-xs-10 gal" style="text-align:center;display:block;">
       <img src="">
@@ -167,6 +169,8 @@ $(function(){
       </p>
     </div>
     <div class="col-xs-1"></div>
+  </div>
+  <div class="row row-padding-xs-100 " style="margin:5px 0px 5px;">
     <div class="col-xs-1"></div>
     <div class="col-xs-10 gal" style="text-align:center;display:block;">
       <img src="">
@@ -176,5 +180,6 @@ $(function(){
       </p>
     </div>
     <div class="col-xs-1"></div>
+  </div>
   </div>
 </div>
