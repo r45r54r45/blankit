@@ -237,7 +237,7 @@ else {
     position: absolute;
     left: 0;
     top: 100px;
-    z-index: 9000;
+    z-index: 8999;
     opacity: 0.5; text-align:center;">
       <span style="line-height:360px; vertical-align:middle;font-size:25px;color:#655453;">아티스트 회원만 작품을 업로드할 수 있습니다.</span>
     </div>
@@ -249,12 +249,64 @@ else {
   <!-- end of cover -->
   </div>
   <div class="row hidden-xs" style="margin-top:20px;">
+    <div class="hidden-xs col-sm-12">
+
+    </div>
+  </div>
+  <div class="row hidden-xs" style="margin-top:20px;">
     <div class="col-xs-12" style="text-align:center;">
-      <a onclick="checkSubmit();" style="cursor:pointer;"><div style="display:block; width:200px; border:1px solid #337ab7; margin:10px auto; padding:10px 0px; border-radius:10px; color:#337ab7; font-size:15px; font-weight:500;">업로드하기</div></a>
+      <?php
+      if ($session_id !== "" && $session_userType == "2"){ ?>
+      <button style="background: transparent;
+    border: 1px solid #337ab7;
+    margin: 10px auto;
+    padding: 10px 100px;
+    border-radius: 10px;
+    color: #337ab7;
+    font-size: 15px;
+    font-weight: 500;" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+          업로드하기
+    </button>
+    <? }else{ ?>
+      <button style="background: transparent;
+    border: 1px solid #337ab7;
+    margin: 10px auto;
+    padding: 10px 100px;
+    border-radius: 10px;
+    color: #337ab7;
+    font-size: 15px;
+    font-weight: 500;" type="button" class="btn btn-primary btn-lg" data-toggle="modal" >
+          로그인 해주세요
+    </button>
+    <?}?>
     </div>
 
   </div>
 
 </form>
 
+</div>
+
+<div style="  z-index: 9000" class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">알려드립니다.</h4>
+      </div>
+      <div class="modal-body">
+        블랭킷은 제작비용 0원에 아티스트님의 제품을 제작해드립니다.
+  아티스트는 본인의 페이스북에 블랭킷과의 콜라보레이션 사실을
+  펀딩 기간 동안 전체공개로 기재해 주셔야 합니다. <a onclick="window.open();">(자료 예시 보기)</a>
+  해당 자료는 업로드 완료 페이지에서 바로 공유가 가능합니다.
+  페이스북이 없는 경우, 고객센터로 1:1 문의 부탁드립니다.
+  만일 본 자료를 공유하지 않거나, 펀딩 기간 내에 삭제시,
+  제품은 무통보 삭제되며 아티스트에게 수익금은 전달되지 않습니다.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">동의하지 않습니다.</button>
+        <button type="button" class="btn btn-primary" onclick="checkSubmit()">동의하고 업로드합니다.</button>
+      </div>
+    </div>
+  </div>
 </div>
