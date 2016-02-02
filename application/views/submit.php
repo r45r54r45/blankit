@@ -232,6 +232,7 @@ else {
             <option value="20">20개</option>
             <option value="40">40개</option>
           </select>
+          <span>수량에 따라 아티스트 수익금이 상이합니다. 자세한 것은 가이드북을 참고해주세요!</span>
         </div>
       </div>
       <div class="row" style="margin-top:20px;">
