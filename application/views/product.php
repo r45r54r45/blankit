@@ -515,7 +515,7 @@ switch ($GlobalStoreType) {
               <span style="font-size:16px; font-weight:400;"><?php echo $userName;?> (<?php echo $artistType;?>)</span>
             </div>
             <div>
-              <span style="font-size:13px; font-weight:300;"><?php $lineArtistIntro = str_replace(" ","\n",$artistIntro); echo $artistIntro;?></span>
+              <span style="font-size:13px; font-weight:300;"><?php $lineArtistIntro = str_replace("\n","\n",$artistIntro); echo $lineArtistIntro;?></span>
             </div>
           </div>
         </div>
