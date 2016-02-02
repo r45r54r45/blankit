@@ -58,7 +58,7 @@ class Mypage extends CI_Controller {
 	 	}
 	 	
 	 	$intro = $this->input->post('introduction');
-	 	$intro = str_replace(array("\r", "\n"), '<br/>', $intro);
+	 	$intro = str_replace(array("\r", "\n"), '', $intro);
 	 	
 	 	$type = $this->input->post('type');
 	 	$this->session->set_userdata('user_type', $type);
