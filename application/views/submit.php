@@ -237,7 +237,7 @@ else {
     position: absolute;
     left: 0;
     top: 100px;
-    z-index: 9000;
+    z-index: 8999;
     opacity: 0.5; text-align:center;">
       <span style="line-height:360px; vertical-align:middle;font-size:25px;color:#655453;">아티스트 회원만 작품을 업로드할 수 있습니다.</span>
     </div>
@@ -266,12 +266,12 @@ else {
 
 </div>
 
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div style="  z-index: 9000" class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+        <h4 class="modal-title" id="myModalLabel">알려드립니다.</h4>
       </div>
       <div class="modal-body">
         블랭킷은 제작비용 0원에 아티스트님의 제품을 제작해드립니다.
@@ -283,8 +283,8 @@ else {
   제품은 무통보 삭제되며 아티스트에게 수익금은 전달되지 않습니다.
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">동의하고 업로드합니다.</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">동의하지 않습니다.</button>
+        <button type="button" class="btn btn-primary" onclick="checkSubmit()">동의하고 업로드합니다.</button>
       </div>
     </div>
   </div>
