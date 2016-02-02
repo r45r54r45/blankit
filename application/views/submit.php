@@ -255,7 +255,14 @@ else {
   </div>
   <div class="row hidden-xs" style="margin-top:20px;">
     <div class="col-xs-12" style="text-align:center;">
-      <button style="border:1px solid #337ab7; margin:10px auto; padding:10px 0px; border-radius:10px; color:#337ab7; font-size:15px; font-weight:500;" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+      <button style="background: transparent;
+    border: 1px solid #337ab7;
+    margin: 10px auto;
+    padding: 10px 100px;
+    border-radius: 10px;
+    color: #337ab7;
+    font-size: 15px;
+    font-weight: 500;" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
           업로드하기
     </button>
     </div>
