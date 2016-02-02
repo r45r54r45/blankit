@@ -232,7 +232,7 @@ $(function(){
           <span class="order_title">주문정보</span>
         </div>
         <div class="col-xs-9">
-          <span class="order_content">[<?php echo ?> 아티스트] 개와고양이를 외 3</span>
+          <span class="order_content">[<?php //echo ;?> 아티스트] 개와고양이를 외 3</span>
         </div>
       </div>
       <div class="row">
