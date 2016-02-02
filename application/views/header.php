@@ -83,19 +83,7 @@
     <![endif]-->
   </head>
   <body style="  display: none;">
-  
-  	<?php 
-	echo 'Welcome, ';
-	if ($this->session->userdata('user_type') == '1'){
-		echo '일반 닝겐';
-	}
-	else if ($this->session->userdata('user_type') == '2'){
-		echo '아티스트 양반';
-	}
-	else echo '넌 누구야';
-	?>
-  
-<header role="banner" class="navbar  navbar-default" >
+	<header role="banner" class="navbar  navbar-default" >
     <!-- <nav class="navbar navbar-default"> -->
       <div class="container-fluid">
 
