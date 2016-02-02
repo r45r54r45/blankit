@@ -512,10 +512,10 @@ switch ($GlobalStoreType) {
           </div>
           <div id="hello" style="padding-left: 20px;display:inline-block;vertical-align: top;padding-top: 10px;">
             <div >
-              <span style="font-size:16px; font-weight:400;"><?php echo $userName;?> (<?php echo $artistType?>)</span>
+              <span style="font-size:16px; font-weight:400;"><?php echo $userName;?> (<?php echo $artistType;?>)</span>
             </div>
             <div>
-              <span style="font-size:13px; font-weight:300;"><?php echo $artistIntro?></span>
+              <span style="font-size:13px; font-weight:300;"><?php $lineArtistIntro = str_replace("<br/>","\n",$artistIntro); echo $artistIntro;?></span>
             </div>
           </div>
         </div>
