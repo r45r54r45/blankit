@@ -249,6 +249,21 @@ else {
   <!-- end of cover -->
   </div>
   <div class="row hidden-xs" style="margin-top:20px;">
+    <div class="hidden-xs col-sm-12">
+      블랭킷은 제작비용 0원에 아티스트님의 제품을 제작해드립니다.
+아티스트는 본인의 페이스북에 블랭킷과의 콜라보레이션 사실을
+펀딩 기간 동안 전체공개로 기재해 주셔야 합니다. <a onclick="window.open();">(자료 예시 보기)</a>
+해당 자료는 업로드 완료 페이지에서 바로 공유가 가능합니다.
+페이스북이 없는 경우, 고객센터로 1:1 문의 부탁드립니다.
+만일 본 자료를 공유하지 않거나, 펀딩 기간 내에 삭제시,
+제품은 무통보 삭제되며 아티스트에게 수익금은 전달되지 않습니다.
+
+<input type="radio" class="form-control">동의합니다
+
+(동의하지 않습니다 선택하고 업로드 진행시, 알림창 뜨면서 ‘동의를 해주셔야 진행이 가능합니다’ 표시)
+    </div>
+  </div>
+  <div class="row hidden-xs" style="margin-top:20px;">
     <div class="col-xs-12" style="text-align:center;">
       <a onclick="checkSubmit();" style="cursor:pointer;"><div style="display:block; width:200px; border:1px solid #337ab7; margin:10px auto; padding:10px 0px; border-radius:10px; color:#337ab7; font-size:15px; font-weight:500;">업로드하기</div></a>
     </div>
