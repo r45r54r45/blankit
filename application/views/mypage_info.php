@@ -351,7 +351,7 @@ if(isset($_GET['status'])){
 				  </SCRIPT>
               <textarea name = "introduction" style="border-radius:10px;
               width:100%; height:150px; border:2px solid rgba(0, 0, 0, 0.3);"   maxlength="100"
-              onkeyup="return textarea_maxlength(this)"><?php echo $artistIntro;?></textarea>
+              onkeyup="return textarea_maxlength(this)"><?php $lineArtistIntro = str_replace("<br/>","\n",$artistIntro); echo $lineArtistIntro;?></textarea>
             </div>
             <div class="row row-padding-xs-100 " style="margin-top:10px;">
               <div class="menu title2" style="margin-bottom:10px;">포트폴리오</div>
