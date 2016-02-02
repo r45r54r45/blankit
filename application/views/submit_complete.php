@@ -68,6 +68,12 @@ $(function(){
           업로드가 완료되었습니다.
         </span>
       </div>
+      <div class="col-xs-12" style="margin-top:30px; ">
+        <span style="margin-top:10px; text-align:center; display:block; font-size: 18px; color:#655453; font-weight:400;">
+          아티스트는 페이스북에 블랭킷과의 콜라보레이션 사실을 공유해주셔야 할 의무가 있습니다.<br>
+          펀딩 기간 종료시까지 기재해주셔야 하며, 미실시 및 펀딩 기간 내에 삭제시 페널티가 있습니다.
+        </span>
+      </div>
   </div>
 
   <div class="row">
