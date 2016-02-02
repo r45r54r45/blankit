@@ -148,10 +148,10 @@ $(function(){
       <span style="font-size:32px; font-weight:500;">ABOUT US</span>
     </div>
   </div>
-  <div class="row row-padding-xs-100 " style="margin:70px 0px 40px;">
+  <div class="row row-padding-xs-100 " style="margin:70px 0px 5px;">
     <div class="col-xs-1"></div>
     <div class="col-xs-10 gal" style="text-align:center;display:block;">
-      <img src="">
+      <img src="/source/image/a1.png" class="img">
       <p style="font-size:20px; font-weight:400;">블랭킷에서는 당신이 큐레이터입니다.</p>
       <p style="text-align: left;font-size:15px; font-weight:300;">
         길거리에서 같은 옷 마주치기 민망하지는 않으셨나요? 유행 스타일만 찍어내는 편집숍에 실망하지는 않으셨나요? 당신의 그 안목, 블랭킷이 품겠습니다. 블랭킷은 소량 다품종으로 아트워크 기반의 제품을 제작합니다. 펀딩에 참여하여 당신이 발굴한 독립 아티스트의 아트워크를 소유해보세요. 나의 옷장이 곧 갤러리가 됩니다.
@@ -162,7 +162,7 @@ $(function(){
   <div class="row row-padding-xs-100 " style="margin:5px 0px 5px;">
     <div class="col-xs-1"></div>
     <div class="col-xs-10 gal" style="text-align:center;display:block;">
-      <img src="">
+      <img src="/source/image/a2.png" class="img">
       <p style="font-size:20px; font-weight:400;">블랭킷에서는 당신이 아티스트입니다.</p>
       <p style="text-align: left;font-size:15px; font-weight:300;">
         대학교 사망년, 만년 대리 회사원, 백수... 블랭킷에서는 직업도 직위도 잊으세요. 블랭킷에서만큼은 모두가 아티스트입니다. 그래픽 아트, 패턴 디자인부터 운치 있게 찍은 스마트폰 사진까지- 간단한 편집능력만 있다면 당신의 감성을 제품으로 제작해드립니다. (편집을 할 줄 몰라도 블랭킷의 상시 이벤트/공모전에 참여하실 수 있답니다.) 어서오세요, 블랭킷에서는 당신이 아티스트입니다
@@ -173,7 +173,7 @@ $(function(){
   <div class="row row-padding-xs-100 " style="margin:5px 0px 5px;">
     <div class="col-xs-1"></div>
     <div class="col-xs-10 gal" style="text-align:center;display:block;">
-      <img src="">
+      <img src="/source/image/a4.png" class="img">
       <p style="font-size:20px; font-weight:400;">블랭킷에서는 당신이 甲입니다.</p>
       <p style="text-align: left;font-size:15px; font-weight:300;">
         내 작품 하나 만드려면 제품 떼오기부터 후가공 맡기기, 포장하기, 배송하기, 고객 문의받기까지- 할게 너무 많죠? 시켜만 주세요, 블랭킷이 모두 다 해드리겠습니다. 가격은 0원으로 모시겠습니다. 아티스트님은 파일만 올려주시고 입금을 기다려주시면 된다구요(찡긋)! 아티스트분들을 위해서, 블랭킷은 기꺼이 모든 업무를 도맡는 乙이 되겠습니다. 블랭킷에서는 당신이 甲이니까요.
