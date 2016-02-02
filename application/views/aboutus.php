@@ -143,14 +143,21 @@ $(function(){
 </div>
 <div class="container" >
   <div class="row row-padding-xs-100 " style="margin:70px 0px 40px;">
-    <div class="col-xs-12 gal" style="text-align:center;display:block;">
+    <div class="col-xs-12 gal" style="text-align:center;display:block;padding: 30px 0 20px;
+    border-bottom: 1px solid #D3D3D3;">
       <span style="font-size:32px; font-weight:500;">ABOUT US</span>
     </div>
   </div>
   <div class="row row-padding-xs-100 " style="margin:70px 0px 40px;">
-    <div class="col-xs-12 gal" style="text-align:center;display:block;">
-      <span style="font-size:32px; font-weight:500;">ABOUT US</span>
+    <div class="col-xs-1"></div>
+    <div class="col-xs-10 gal" style="text-align:center;display:block;">
+      <img src="">
+      <p style="font-size:23px; font-weight:400;">블랭킷에서는 당신이 큐레이터입니다.</p>
+      <p style="font-size:20px; font-weight:300;">
+        길거리에서 같은 옷 마주치기 민망하지는 않으셨나요? 유행 스타일만 찍어내는 편집숍에 실망하지는 않으셨나요? 당신의 그 안목, 블랭킷이 품겠습니다. 블랭킷은 소량 다품종으로 아트워크 기반의 제품을 제작합니다. 펀딩에 참여하여 당신이 발굴한 독립 아티스트의 아트워크를 소유해보세요. 나의 옷장이 곧 갤러리가 됩니다.
+      </p>
     </div>
+    <div class="col-xs-1"></div>
+
   </div>
 </div>
-  
