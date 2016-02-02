@@ -334,11 +334,12 @@ if(isset($_GET['status'])){
             <div class="row row-padding-xs-100 " style="margin-top:10px;">
               <div class="menu title2" style="margin-bottom:10px;">프로필사진</div>
               <div id="profile" class="">
+              	<input type="file" accept="image/png" name="file"  style="margin-top:10px;width:100%;">
                 <div class="dz-default dz-message"><span>프로필 사진은 한 개만 업로드 할 수 있습니다<br>( 클릭 또는 파일을 드래그 해주세요! )</span></div>
               </div>
             </div>
             <div class="row row-padding-xs-100 " style="margin-top:10px;">
-              <div class="menu title2" style="margin-bottom:10px;"></div>
+              <div class="menu title2" style="margin-bottom:10px;">자기소개</div>
               <SCRIPT type=text/javascript>
   function textarea_maxlength(obj){
   var maxLength = parseInt(obj.getAttribute("maxlength"));
