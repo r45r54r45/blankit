@@ -164,6 +164,17 @@ else {
     <div class="col-xs-2">
     </div>
   </div>
+  <div class="row">
+    <div class="col-xs-12" style="margin-top:30px; border-top: 1px solid #D3D3D3;">
+      <span style="margin-top:30px; text-align:center; display:block; font-size: 25px; color:#655453; font-weight:bold;">
+        아티스트 가이드북 다운로드
+      </span>
+    </div>
+  </div>
+  <div class="row" style="margin-top:30px; margin-bottom:30px; text-align:center;">
+    <div>다운로드 버튼
+    </div>
+  </div>
   <form action="/submit/func_checkSubmit" enctype="multipart/form-data" method="post" id="formform">
   <div class="row">
     <div class="col-xs-12" style="margin-top:30px;margin-bottom:20px; border-top: 1px solid #D3D3D3;">
@@ -197,6 +208,20 @@ else {
           </div>
         </div>
       </div>
+      <!-- <div class="row" style="margin-top:20px;">
+        <div class="col-xs-12">
+          <div class="tt">블랭킷 X 아티스트 작품 메인 제품</div>
+          <div class="menu_input_radio">
+            <input type="radio" name="bed_color" id="bed1" value="1"><label for="bed1">아이보리</label>
+          </div>
+          <div class="menu_input_radio">
+            <input type="radio" name="bed_color" id="bed2" value="2"><label for="bed2">검정</label>
+          </div>
+          <div class="menu_input_radio">
+            <input type="radio" name="bed_color" id="bed3" value="3"><label for="bed3">등등</label>
+          </div>
+        </div>
+      </div> -->
       <div class="row" style="margin-top:20px;">
         <div class="col-xs-12">
           <div class="tt" >블랭킷 X 아티스트 목표 구매자 수</div>

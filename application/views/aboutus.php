@@ -144,51 +144,13 @@ $(function(){
 <div class="container" >
   <div class="row row-padding-xs-100 " style="margin:70px 0px 40px;">
     <div class="col-xs-12 gal" style="text-align:center;display:block;">
-      <span style="font-size:32px; font-weight:500;">HELP</span>
+      <span style="font-size:32px; font-weight:500;">ABOUT US</span>
+    </div>
+  </div>
+  <div class="row row-padding-xs-100 " style="margin:70px 0px 40px;">
+    <div class="col-xs-12 gal" style="text-align:center;display:block;">
+      <span style="font-size:32px; font-weight:500;">ABOUT US</span>
     </div>
   </div>
 </div>
-
-
-
-  <div class="container" >
-    <div class="row row-padding-xs-100" style="margin-bottom:10px;">
-      <div class="col-md-12" style="position:relative; height:25px; border-bottom: 1.5px solid #D3D3D3;">
-        <div class="menu">
-          <div class="menu_item" style="border-bottom:2px solid #96AFB5; color:#96AFB5;">
-            <a href="/help">공지사항</a>
-          </div>
-          <div class="menu_item" >
-            <a href="/help/faq">FAQ</a>
-          </div>
-          <div class="menu_item">
-            <a href="/help/cs">고객센터</a>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="row row-padding-xs-100" style="margin-top:20px;">
-      <table class="table">
-        <thead>
-          <tr style="height:30px; border-bottom:2px solid #96AFB5;">
-            <td class="ss" style="width:10%;">번호</td>
-            <td class="ss" style="width:70%;">제목</td>
-            <td class="ss" style="width:20%;">작성일</td>
-          </tr>
-        </thead>
-        <tbody>
-
-          <? for($i=0; $i<9; $i++){?>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <? } ?>
-        </tbody>
-      </table>
-    </div>
-
-</div>
+  
