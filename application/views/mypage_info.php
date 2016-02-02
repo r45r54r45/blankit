@@ -327,7 +327,7 @@ if(isset($_GET['status'])){
             </div>
           </div>
           <div id="artist_content" <?php if($this->session->userdata('user_type') == '1'){echo 'style="display:none;"';}?>>
-            <div class="row row-padding-xs-100 " style="margin-top:10px; line-height:35px;">
+            <div class="row row-padding-xs-100 " style="margin-top:10px; ">
               <div class="menu title2" style="vertical-align:middle;">현재 직업</div>
               <input class="menu_input" id="artistType" name="artistType" type="text" value="<?php echo $artistType;?>">
             </div>
