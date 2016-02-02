@@ -27,8 +27,8 @@ class Submit extends CI_Controller {
 			
 			$artwork = $this->input->post('artwork');
 			
-			$explain = $this->input->post('explain');
-			$explain = str_replace(array("\r\n"), '<br/>', $explain);
+			$explainSeed = $this->input->post('explain');
+			$explain = str_replace(array("\r\n"), '<br/>', $explainSeed);
 			
 			$storeType = $this->input->post('storeType');
 			$storeGoal = $this->input->post('storeGoal');
