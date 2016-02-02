@@ -13,7 +13,11 @@ class Mypage_model extends CI_Model{
 			select *
 			from `ORDER` o
 			where o.user_id = '$userSession';
-		");	
+		");
+		
+		return $this->db->query("
+			select SUBSTRING_INDEX(order_cart, ',', 1) as seed from `ORDER` 
+		");
 	}
 	
 	public function user_info(){
