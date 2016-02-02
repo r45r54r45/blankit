@@ -255,6 +255,8 @@ else {
   </div>
   <div class="row hidden-xs" style="margin-top:20px;">
     <div class="col-xs-12" style="text-align:center;">
+      <?php
+      if ($session_id !== "" && $session_userType == "2"){ ?>
       <button style="background: transparent;
     border: 1px solid #337ab7;
     margin: 10px auto;
@@ -265,6 +267,18 @@ else {
     font-weight: 500;" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
           업로드하기
     </button>
+    <? }else{ ?>
+      <button style="background: transparent;
+    border: 1px solid #337ab7;
+    margin: 10px auto;
+    padding: 10px 100px;
+    border-radius: 10px;
+    color: #337ab7;
+    font-size: 15px;
+    font-weight: 500;" type="button" class="btn btn-primary btn-lg" data-toggle="modal" >
+          로그인 해주세요
+    </button>
+    <?}?>
     </div>
 
   </div>
