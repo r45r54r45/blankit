@@ -43,4 +43,13 @@ class Mypage_model extends CI_Model{
 			where user_id='$userSession'
 		");
 	}
+	
+	public function update_profile($fileName){
+		$userSession = $this->session->userdata('user_id');
+		$this->db->query("
+			update `USER`
+			set artist_profile='$fileName'
+			where user_id='$userSession'
+		");
+	}
 }

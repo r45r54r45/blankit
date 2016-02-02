@@ -38,6 +38,8 @@ class Mypage extends CI_Controller {
 	}
 	
 	public function func_updateInfo(){
+		$userSESSION = $this->session->userdata('user_id');
+		
 		$email = $this->input->post('email');
 		
 		$phone1 = $this->input->post('phone1');
@@ -64,6 +66,14 @@ class Mypage extends CI_Controller {
 	 	}
 	 	else {
 	 		$this->mypage_model->update_userInfo_pw($pw, $email, $phone, $intro, $type);
+	 	}
+	 	
+	 	if($_FILES['file']['name']){
+		 	$ext = end(explode(".",$_FILES['file']['name']));
+		 	$fileName = $userSESSION . "_profile." . $ext;
+		 	move_uploaded_file($_FILES['file']['tmp_name'],SITE_ROOT."/files/profile/". $fileName);
+		 	
+		 	$this->mypage_model->update_profile($fileName);
 	 	}
 	 	
 	 	$mypageUrl = "http://blankit.kr/mypage/info?status=success";
