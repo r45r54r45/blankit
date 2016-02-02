@@ -177,9 +177,10 @@ $(function(){
    			 $orderPrice = number_format($row->order_price, 0, '.', ',');
    			 $orderStatus = $row->order_status;
    			 $orderLog = $row->order_log;
-   			 $orderStore = substr($row->order_store, 1, 1);
    			 
-   			 echo '<script>alert("' . $orderStore . '");</script>';
+   			 $seedOrderStore = $row->order_store;
+   			 $lenOrderStore = strlen($seedOrderStore);
+   			 $orderStore = substr($seedOrderStore, 1, 1);
    			 
    			 foreach($store_list->result() as $row){
    			 	if($orderStore == $row->store_id){
@@ -242,7 +243,7 @@ $(function(){
           <span class="order_title">주문정보</span>
         </div>
         <div class="col-xs-9">
-          <span class="order_content">개와고양이를 외 3</span>
+          <span class="order_content"><?php echo $storeName; echo "///" . $lenOrderStore;?></span>
         </div>
       </div>
       <div class="row">
