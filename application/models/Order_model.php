@@ -59,8 +59,8 @@ class Order_model extends CI_Model{
 		$concatStoreId = $concatStoreId . ",";
 		
 		$this->db->query("
-			INSERT INTO `ORDER` (order_date, order_price, order_status, order_home, order_receiver, order_phone, order_email, order_name, order_bank, order_account, order_notice, order_random_id, user_id, order_cart, order_user, order_store)
-			VALUES ('$date', '$totalPrice', '0', '$home', '$receiver', '$phone', '$email', '$payer', '$bank', '$account', '$notice', '$orderRandomId', '$user_id_SESSION', '$concatCartId', '$user_id_SESSION', '$concatStoreId');
+			INSERT INTO `ORDER` (order_date, order_price, order_status, order_home, order_receiver, order_phone, order_email, order_name, order_bank, order_account, order_notice, order_random_id, user_id, order_cart, order_store)
+			VALUES ('$date', '$totalPrice', '0', '$home', '$receiver', '$phone', '$email', '$payer', '$bank', '$account', '$notice', '$orderRandomId', '$user_id_SESSION', '$concatCartId', '$concatStoreId');
 			");
 		
 		$this->db->query("

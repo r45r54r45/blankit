@@ -8,6 +8,7 @@ class Mypage extends CI_Controller {
 		if ($this->session->userdata('user_id')){
 			$this->load->model('mypage_model');
 			$data['order_list'] = $this->mypage_model->order_list();
+			$data['store_list'] = $this->mypage_model->store_list();
 			
 			$this->load->view('header');
 			$this->load->view('mypage_order', $data);
