@@ -55,6 +55,17 @@
     <?}?>
 
 
+	<?php 
+	echo 'Welcome, ';
+	if ($this->session->userdata('user_type') == '1'){
+		echo '일반 닝겐';
+	}
+	else if ($this->session->userdata('user_type') == '2'){
+		echo '아티스트 양반';
+	}
+	else echo '넌 누구야';
+	?>
+
     <!-- 스토어 세부페이지와 submit 페이지에서만 출력 끝-->
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>blank it</title>

@@ -326,7 +326,7 @@ if(isset($_GET['status'])){
               <input type="radio" name="type" id="type2" value="2" <?php if($userType=="2"){echo 'checked="checked"';}?>><label for="type2">아티스트 회원</label>
             </div>
           </div>
-          <div id="artist_content" <?php if($this->session->userdata('user_type') == 1){echo 'style="display:none;"';}?>>
+          <div id="artist_content" <?php if($this->session->userdata('user_type') == '1'){echo 'style="display:none;"';}?>>
             <div class="row row-padding-xs-100 " style="margin-top:10px; line-height:35px;">
               <div class="menu title2" style="vertical-align:middle;">현재 직업</div>
               <span><?php echo $artistType;?></span>
