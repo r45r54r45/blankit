@@ -128,11 +128,11 @@ $(function(){
 </div>
 <div class="container-fluid" style="background:#F5F6F7; padding:40px 0px; text-align:center;  display:block;">
   <p class="title2">주문번호: <?php echo $codeNum[1];?></p>
-  <p class="title2">입금계좌: <?php echo URLDecode($bank[1]);?> <?php echo $account[1];?></p>
+  <p class="title2">입금계좌: </p>
 </div>
 <div class="container" >
   <div class="row row-padding-xs-100 " style="margin-top:30px; text-align:center;  display:block;">
-    <span class="title2" >주문 내역 확인은 마이블랭킷-주문배송조회에서 가능합니다.<br>
+    <span class="title2" >주문 내역 확인은 <a href="http://blankit.kr/mypage">마이블랭킷-주문배송조회</a>에서 가능합니다.<br>
 입금확인 시점 기준으로 펀딩 결과에 반영이 됩니다.</span>
   </div>
 </div>
