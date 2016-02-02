@@ -179,7 +179,7 @@ $(function(){
    			 $orderLog = $row->order_log;
    			 
    			 $seedOrderStore = $row->order_store;
-   			 $lenOrderStore = (strlen($seedOrderStore) - 1)/2;
+   			 $lenOrderStore = (strlen($seedOrderStore) - 1)/2 - 1;
    			 $orderStore = substr($seedOrderStore, 1, 1);
    			 
    			 foreach($store_list->result() as $row){
