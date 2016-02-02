@@ -54,18 +54,6 @@
     <meta property="og:image"              content="<?echo "http://blankit.kr/source/image/facebook_share_image.png" ?>" />
     <?}?>
 
-
-	<?php 
-	echo 'Welcome, ';
-	if ($this->session->userdata('user_type') == '1'){
-		echo '일반 닝겐';
-	}
-	else if ($this->session->userdata('user_type') == '2'){
-		echo '아티스트 양반';
-	}
-	else echo '넌 누구야';
-	?>
-
     <!-- 스토어 세부페이지와 submit 페이지에서만 출력 끝-->
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>blank it</title>
@@ -95,6 +83,18 @@
     <![endif]-->
   </head>
   <body style="  display: none;">
+  
+  	<?php 
+	echo 'Welcome, ';
+	if ($this->session->userdata('user_type') == '1'){
+		echo '일반 닝겐';
+	}
+	else if ($this->session->userdata('user_type') == '2'){
+		echo '아티스트 양반';
+	}
+	else echo '넌 누구야';
+	?>
+  
 <header role="banner" class="navbar  navbar-default" >
     <!-- <nav class="navbar navbar-default"> -->
       <div class="container-fluid">
