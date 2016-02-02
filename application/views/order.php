@@ -383,7 +383,7 @@ function submitCheck(){
     </div>
     <div class="row row-padding-xs-100 " style="margin-top:10px;">
       <div class="menu title2">입금 계좌번호</div>
-      <input class="menu_input" placeholder="입금할 계좌번호" style="width:200px;" type="text" name="account">
+      <input class="menu_input" placeholder="입금확인을 위해 필요합니다" style="width:200px;" type="text" name="account">
     </div>
     <input type="text" name="orderRandomId" value="<?echo $seed_date;?>" style="display:none">
 </form>
