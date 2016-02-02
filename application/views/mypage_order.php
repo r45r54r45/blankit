@@ -179,7 +179,7 @@ $(function(){
    			 $orderLog = $row->order_log;
    			 
    			 $seedOrderStore = $row->order_store;
-   			 $lenOrderStore = strlen($seedOrderStore);
+   			 $lenOrderStore = (strlen($seedOrderStore) - 1)/2;
    			 $orderStore = substr($seedOrderStore, 1, 1);
    			 
    			 foreach($store_list->result() as $row){
@@ -243,8 +243,9 @@ $(function(){
           <span class="order_title">주문정보</span>
         </div>
         <div class="col-xs-9">
-          <span class="order_content"><?php echo $storeName; echo "///" . $lenOrderStore;?></span>
+          <span class="order_content"><?php echo $storeName; if($lenOrderStore>1){echo " 외 " . $lenOrderStore;}?></span>
         </div>
+        
       </div>
       <div class="row">
         <div class="col-xs-3">
