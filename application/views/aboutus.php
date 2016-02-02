@@ -20,7 +20,9 @@
 tr{
   height:40px;
 }
-
+.gal>img{
+  width:31px;
+}
 .myButton {
   background-color:#687c87;
   border-radius:12px;
