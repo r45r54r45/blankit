@@ -56,7 +56,9 @@ class Mypage extends CI_Controller {
 	 	}
 	 	
 	 	$intro = $this->input->post('introduction');
+	 	
 	 	$type = $this->input->post('type');
+	 	$this->session->set_userdata('user_type', '$type');
 	 	
 	 	$this->load->model('mypage_model');
 	 	

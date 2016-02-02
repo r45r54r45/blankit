@@ -326,7 +326,7 @@ if(isset($_GET['status'])){
               <input type="radio" name="type" id="type2" value="2" <?php if($userType=="2"){echo 'checked="checked"';}?>><label for="type2">아티스트 회원</label>
             </div>
           </div>
-          <div id="artist_content" style="display:none;">
+          <div id="artist_content" <?php if($this->session->userdata('user_id') == 1){echo 'style="display:none;"';}?>>
             <div class="row row-padding-xs-100 " style="margin-top:10px; line-height:35px;">
               <div class="menu title2" style="vertical-align:middle;">현재 직업</div>
               <span><?php echo $artistType;?></span>
@@ -340,15 +340,15 @@ if(isset($_GET['status'])){
             </div>
             <div class="row row-padding-xs-100 " style="margin-top:10px;">
               <div class="menu title2" style="margin-bottom:10px;">자기소개</div>
-              <SCRIPT type=text/javascript>
-  function textarea_maxlength(obj){
-  var maxLength = parseInt(obj.getAttribute("maxlength"));
-  if(obj.value.length>maxLength) {
-  alert('글자수가 '+(obj.value.length-1)+'자 이내로 제한됩니다');
-  obj.value=obj.value.substring(0,maxLength);
-  }
-  }
-  </SCRIPT>
+	              <SCRIPT type=text/javascript>
+				  function textarea_maxlength(obj){
+				  var maxLength = parseInt(obj.getAttribute("maxlength"));
+				  if(obj.value.length>maxLength) {
+				  alert('글자수가 '+(obj.value.length-1)+'자 이내로 제한됩니다');
+				  obj.value=obj.value.substring(0,maxLength);
+				  }
+				  }
+				  </SCRIPT>
               <textarea name = "introduction" style="border-radius:10px;
               width:100%; height:150px; border:2px solid rgba(0, 0, 0, 0.3);"   maxlength="100"
               onkeyup="return textarea_maxlength(this)"><?php echo $artistIntro;?></textarea>

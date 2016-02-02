@@ -45,6 +45,7 @@ class Mypage_model extends CI_Model{
 	}
 	
 	public function update_profile($fileName){
+		$fileName = "/files/profile/" . $fileName;
 		$userSession = $this->session->userdata('user_id');
 		$this->db->query("
 			update `USER`
