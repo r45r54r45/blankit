@@ -63,7 +63,7 @@
       <script src="/source/js/jquery.bxslider.min.js"></script>
     <script src="/source/js/dropzone.js" ></script>
     <script src="/source/js/common.js" ></script>
-      <script src="/source/js/jquery.lazyload,min.js" ></script>
+    <script src="/source/js/jquery.lazyload.min.js" ></script>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
