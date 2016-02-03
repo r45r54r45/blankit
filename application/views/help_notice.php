@@ -179,8 +179,12 @@ $(function(){
           </tr>
         </thead>
         <tbody>
-
-          <? for($i=0; $i<9; $i++){?>
+          <tr>
+            <td>1</td>
+            <td>블랭킷 시작합니다~</td>
+            <td>2016-2-3</td>
+          </tr>
+          <? for($i=0; $i<8; $i++){?>
           <tr>
             <td></td>
             <td></td>
