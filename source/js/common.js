@@ -1,4 +1,7 @@
 $(function(){
+  $("img.lazy").lazyload({
+    effect : "fadeIn"
+});
   $("#store_menu").click(function(){
     location.href="/funding";
   });
