@@ -1,6 +1,4 @@
 $(function(){
-  $("body").css("display","");
-
   $("#store_menu").click(function(){
     location.href="/funding";
   });

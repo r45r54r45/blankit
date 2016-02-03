@@ -82,7 +82,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body style="  display: none;">
+  <body >
 	<header role="banner" class="navbar  navbar-default" >
     <!-- <nav class="navbar navbar-default"> -->
       <div class="container-fluid">
