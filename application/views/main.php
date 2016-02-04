@@ -326,7 +326,7 @@ $(window).resize(function(){
               $itemBed="/source/product/M_1_2_bed.jpg";
             break;
             case '2':
-              $itemPos="left:34.599999999999994%;top:46.1%;width:31.1%;height:42.199999999999996%;";
+              $itemPos="left:35.4%;top:46.100000000000006%;width:29.333333333333332%;height:39.93333333333333%;";
               $itemBed="/source/product/E_1_1_bed.jpg";
             break;
             case '3':
@@ -411,7 +411,7 @@ $(window).resize(function(){
         $itemBed="/source/product/M_1_2"."_bed.JPG";
       break;
       case '2':
-        $itemPos="left:34.599999999999994%;top:46.1%;width:31.1%;height:42.199999999999996%;";
+        $itemPos="left:35.4%;top:46.100000000000006%;width:29.333333333333332%;height:39.93333333333333%;";
         $itemBed="/source/product/E_1_1_bed.jpg";
       break;
       case '3':
