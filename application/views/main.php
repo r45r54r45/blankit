@@ -233,10 +233,10 @@ var zindex=1;
 function bannerAnimation(){
 bannerBeforeSelector().animate({
   opacity:0
-},{duration:4000});
+},{duration:3000});
 bannerSelector().css("z-index",++zindex).animate({
   opacity:1
-},{duration:4000,
+},{duration:3000,
  complete: function() {
    $(".banner-roll-circle").css("background","none");
    $("#banner-roll-circle-"+bannerNum).css("background","#687C87");
