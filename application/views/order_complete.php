@@ -128,7 +128,7 @@ $(function(){
 </div>
 <div class="container-fluid" style="background:#F5F6F7; padding:40px 0px; text-align:center;  display:block;">
   <p class="title2">주문번호: <?php echo $codeNum[1];?></p>
-  <p class="title2">입금계좌: </p>
+  <p class="title2">입금계좌: 신한은행 110-164-960190 천진우</p>
 </div>
 <div class="container" >
   <div class="row row-padding-xs-100 " style="margin-top:30px; text-align:center;  display:block;">
