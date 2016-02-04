@@ -164,7 +164,7 @@
   ga('create', 'UA-73326444-1', 'auto');
   ga('require', 'linkid');
   ga('send', 'pageview');
-  ga('set', 'userId', {{USER_ID}}); // 로그인한 User-ID를 사용하여 User-ID를 설정합니다.
+  
 
 </script>
     </header>
