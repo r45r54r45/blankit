@@ -143,21 +143,21 @@ else {
     <div class="col-xs-2">
     </div>
     <div class="col-xs-2 download_cover">
-      <a href="https://docs.google.com/uc?authuser=0&id=0B-DTjWKJzjjsOEtxVGtBWjZQN28&export=download">
+      <a href="https://drive.google.com/file/d/0B-DTjWKJzjjsOEtxVGtBWjZQN28/view?usp=sharing">
         <img src="/source/image/download_1.png" class="download_img img img-responsive">
       </a>
     </div>
     <div class="col-xs-1">
     </div>
     <div class="col-xs-2 download_cover">
-      <a href="https://docs.google.com/uc?export=download&confirm=BHrG&id=0B-DTjWKJzjjsRzlhNE5FSXphcVk">
+      <a href="https://drive.google.com/file/d/0B-DTjWKJzjjsRzlhNE5FSXphcVk/view?usp=sharing">
         <img src="/source/image/download_2.png" class="download_img img img-responsive">
       </a>
     </div>
     <div class="col-xs-1">
     </div>
     <div class="col-xs-2 download_cover">
-      <a href="https://docs.google.com/uc?export=download&confirm=J3JH&id=0B-DTjWKJzjjsUXp5amhrd25ncms">
+      <a href="https://drive.google.com/file/d/0B-DTjWKJzjjsUXp5amhrd25ncms/view?usp=sharing">
         <img src="/source/image/download_3.png" class="download_img img img-responsive">
       </a>
     </div>
