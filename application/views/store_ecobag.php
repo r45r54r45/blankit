@@ -68,7 +68,7 @@
   <div class="banner">
     <img src="/source/image/store-page-banner.jpg" style="margin-top: -130px;">
     <div class="banner-text">
-      <p>오로지 블랭킷에서만, <br class="visible-xs">오로지 이 기간동안에만 만나볼 수 있는</p>
+      <p>오로지 블랭킷에서만, </p> <p>오로지 이 기간동안에만 만나볼 수 있는</p>
       <p>아티스트들의 아트워크를 확인해보세요</p>
     </div>
   </div>
