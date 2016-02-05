@@ -10,7 +10,7 @@ class Artist_model extends CI_Model{
 	return $this->db->query("
 				select user_name, artist_profile, artist_type
 				from USER u
-				where user_type='2';
+				where user_type='2' order by user_join desc;
 				");
 	}
 }
