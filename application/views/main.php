@@ -507,7 +507,7 @@ $(window).resize(function(){
       </div>
       <div style="text-align:center; margin-top:10px;">
         <p style="margin-bottom:2px;" class="artist_name"><?  echo $row->user_name;?></p>
-        <p class="artist_type"><? echo $row->artist_type;?></p>
+        <p class="artist_type"><? if($row->artist_type) {echo $row->artist_type;} else echo "-"; ?></p>
       </div>
     </div>
     <? }
