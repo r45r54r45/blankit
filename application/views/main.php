@@ -362,7 +362,7 @@ $(window).resize(function(){
       </div>
       <div style="width:80%; padding-left:10px; padding-top:15px;">
         <p class="artist_name"><?php echo $row->user_name;?></p>
-        <p class="artist_type"><?php echo $row->artist_type;?></p>
+        <p class="artist_type"><? if($row->artist_type=="") {echo "-";} else echo $row->artist_type; ?></p>
       </div>
     </div>
   </div>
@@ -453,7 +453,7 @@ $(window).resize(function(){
       </div>
       <div style="width:80%; padding-left:10px; padding-top:10px;">
         <p class="artist_name"><?php echo $row->user_name;?></p>
-        <p class="artist_type"><?php echo $row->artist_type;?></p>
+        <p class="artist_type"><? if($row->artist_type=="") {echo "-";} else echo $row->artist_type; ?></p>
       </div>
     </div>
   </div>
@@ -519,7 +519,7 @@ $(window).resize(function(){
     </div>
     <div style="text-align:center; margin-top:10px;">
       <p style="margin-bottom:2px;" class="artist_name"><?  echo $row->user_name;?></p>
-      <p class="artist_type"><? echo $row->artist_type;?></p>
+      <p class="artist_type"><? if($row->artist_type=="") {echo "-";} else echo $row->artist_type; ?></p>
     </div>
   </div>
   <? }
@@ -531,7 +531,7 @@ $(window).resize(function(){
   </div>
   <div style="text-align:center; margin-top:10px;">
     <p style="margin-bottom:2px;" class="artist_name"><?  echo $row->user_name;?></p>
-    <p class="artist_type"><? echo $row->artist_type;?></p>
+    <p class="artist_type"><? if($row->artist_type=="") {echo "-";} else echo $row->artist_type; ?></p>
   </div>
 </div>
 <? }
@@ -543,7 +543,7 @@ if($num==6){
 </div>
 <div style="text-align:center; margin-top:10px;">
   <p style="margin-bottom:2px;" class="artist_name"><?  echo $row->user_name;?></p>
-  <p class="artist_type"><? echo $row->artist_type;?></p>
+  <p class="artist_type"><? if($row->artist_type=="") {echo "-";} else echo $row->artist_type; ?></p>
 </div>
 </div>
 <? }
