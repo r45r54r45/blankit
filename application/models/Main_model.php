@@ -8,7 +8,7 @@ class Main_model extends CI_Model{
 
 	public function mdpick(){
 	return $this->db->query("
-				select store_image, store_day, store_goal, store_goal_now, artist_type, store_type, user_name, artist_profile, s.store_id
+				select store_image, store_day, store_goal, store_goal_now, store_type, user_name, s.store_id
 				from  STORE s order by store_id desc;
 				");
 	}
