@@ -174,7 +174,7 @@ else {
     </div>
   </div>
   <div class="row" style="margin-top:30px; margin-bottom:30px; text-align:center;">
-    <div>  <a onclick="https://drive.google.com/file/d/0B-DTjWKJzjjsR0NRU3JMS29teG8/view?usp=sharing">다운로드 버튼</a>
+    <div>  <a href="https://drive.google.com/file/d/0B-DTjWKJzjjsR0NRU3JMS29teG8/view?usp=sharing">다운로드 버튼</a>
     </div>
   </div>
   <form action="/submit/func_checkSubmit" enctype="multipart/form-data" method="post" id="formform">
