@@ -164,6 +164,7 @@
   ga('create', 'UA-73326444-1', 'auto');
   ga('require', 'linkid');
   ga('send', 'pageview');
+  ga('set', 'userId', {{USER_ID}});
   
 
 </script>
