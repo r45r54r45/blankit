@@ -166,15 +166,15 @@ else {
   </div>
   <div class="row">
     <div class="col-xs-12" style="margin-top:30px; border-top: 1px solid #D3D3D3;">
-      <a onclick="https://drive.google.com/file/d/0B-DTjWKJzjjsR0NRU3JMS29teG8/view?usp=sharing">
+
       <span style="margin-top:30px; text-align:center; display:block; font-size: 25px; color:#655453; font-weight:bold;">
         아티스트 가이드북 다운로드
       </span>
-    </a>
+
     </div>
   </div>
   <div class="row" style="margin-top:30px; margin-bottom:30px; text-align:center;">
-    <div>다운로드 버튼
+    <div>  <a onclick="https://drive.google.com/file/d/0B-DTjWKJzjjsR0NRU3JMS29teG8/view?usp=sharing">다운로드 버튼</a>
     </div>
   </div>
   <form action="/submit/func_checkSubmit" enctype="multipart/form-data" method="post" id="formform">
