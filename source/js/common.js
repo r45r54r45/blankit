@@ -29,7 +29,7 @@
     $(".pp").css("height",$(".pp").width()+"px");
   });
 
-});
+
 window.fbAsyncInit = function() {
   FB.init({
     appId      : '214340015575657',
