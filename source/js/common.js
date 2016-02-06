@@ -1,7 +1,7 @@
-$(function(){
+/*$(function(){
   $("img.lazy").show().lazyload({
     effect : "fadeIn"
-});
+});*/
   $("#store_menu").click(function(){
     location.href="/funding";
   });
