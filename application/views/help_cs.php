@@ -206,9 +206,20 @@ if (isset($_GET['status'])){
             <input type="text" name="title" style="width:100%;">
           </div>
           <div class="hidden-xs col-sm-1">
-
           </div>
         </div>
+        
+           <div class="row" style="margin-top:30px;">
+          <div class="col-xs-12 col-sm-2">
+            <div style="font-weight:500; color:#676464; text-align:center;">이메일</div>
+          </div>
+          <div class="col-xs-12 col-sm-9">
+            <input type="text" name="email" style="width:100%;">
+          </div>
+          <div class="hidden-xs col-sm-1">
+          </div>
+        </div>
+        
         <div class="row" style="margin-top:20px;">
           <div class="col-xs-12 col-sm-2">
             <div style="font-weight:500; color:#676464; text-align:center;">내용</div>
