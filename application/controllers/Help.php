@@ -23,12 +23,13 @@ class Help extends CI_Controller {
 	}
 	public function func_cs_submit(){
 		// post 데이터가 있어야함
-		if($this->input->post('title') && $this->input->post('contents')){
+		if($this->input->post('title') && $this->input->post('contents') && $this->input->post('email')){
 			$title = $this->input->post('title');
 			$contents = $this->input->post('contents');
+			$email = $this->input->post('email');
 			
 			$this->load->model('cs_model');
-			$this->cs_model->upload_cs($title, $contents);
+			$this->cs_model->upload_cs($title, $contents, $email);
 
 			$qa_id2 = $this->cs_model->id_seed();
 			$userSESSION = $this->session->userdata('user_id');

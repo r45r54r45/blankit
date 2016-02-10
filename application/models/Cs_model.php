@@ -6,13 +6,13 @@ class Cs_model extends CI_Model{
 		$this->load->database();
 	}
 
-	public function upload_cs($title, $contents){
+	public function upload_cs($title, $contents, $email){
 		$userSESSION = $this->session->userdata('user_id');
 		$date = date('Y-m-d H:i:s');
 		
 		$this->db->query("
-			insert into `QA` (qa_title, qa_body, user_id, qa_date)
-			values ('$title', '$contents', '$userSESSION', '$date')
+			insert into `QA` (qa_title, qa_body, user_id, qa_date, qa_email)
+			values ('$title', '$contents', '$userSESSION', '$date', '$email')
 		");
 	}
 	
