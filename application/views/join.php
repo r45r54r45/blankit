@@ -143,6 +143,9 @@ $(function(){
       break;
     }
   });
+  $(".temp").on("click",function(){
+    alert('아이디 중복확인을 먼저 해주세요!');
+  })
   // if ($('#profile').length) {
   //   var nameValue = document.getElementById("id").value;
   //   myDropzone1 = new Dropzone("#profile", { url: "/file/profile?file=" + nameValue, paramName: "userfile",maxFiles:1,addRemoveLinks:true,autoProcessQueue: false,dictRemoveFile:"파일 삭제",dictMaxFilesExceeded:"1개만 업로드할 수 있습니다."});
