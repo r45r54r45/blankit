@@ -1052,9 +1052,7 @@ function submitCheck(){
             <div class="menu title2">이름</div>
             <input class="menu_input" name="name" type="text">
           </div>
-          <!-- email -->
-          <script language="Javascript">
-          <!--
+          <script >
           function checkemailaddy(){
             if ($(".email_select").val() == '1') {
               $(".email2").attr("readonly",false);
@@ -1066,12 +1064,12 @@ function submitCheck(){
               $(".email2").val($(".email_select").val());
             }
           }
-          //-->
+
           </script>
           <div class="row row-padding-xs-100 " style="margin-top:10px;">
             <div class="menu title2">이메일</div>
             <input name="email1" type="text" class="menu_input" id="email1" size="15"> @ <input name="email2" type="text" class="menu_input" id="email2" size="20">
-            <select name="email_select" class="menu_input" id="email_select" onChange="checkemailaddy();">
+            <select name="email_select" class="menu_input" id="email_select" onchange="checkemailaddy();">
               <option value="" selected>선택하세요</option>
               <option value="naver.com">naver.com</option>
               <option value="hotmail.com">hotmail.com</option>
