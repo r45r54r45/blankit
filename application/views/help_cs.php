@@ -212,7 +212,7 @@ if (isset($_GET['status'])){
           </div>
         </div>
         
-           <div class="row" style="margin-top:30px;">
+           <div class="row" style="margin-top:20px;">
           <div class="col-xs-12 col-sm-2">
             <div style="font-weight:500; color:#676464; text-align:center;">이메일</div>
           </div>
