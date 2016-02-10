@@ -2,19 +2,7 @@
   $("img.lazy").show().lazyload({
     effect : "fadeIn"
 });*/
-  $("#store_menu").click(function(){
-    location.href="/funding";
-  });
-  $("#aboutus_menu").click(function(){
-    location.href="/aboutus";
-  });
-  var sideslider = $('[data-toggle=collapse-side]');
-  var sel = sideslider.attr('data-target');
-  var sel2 = sideslider.attr('data-target-2');
-  sideslider.click(function(event){
-    $(sel).toggleClass('in');
-    $(sel2).toggleClass('out');
-  });
+
   // $.ajaxSetup({ cache: true });
   // $.getScript('//connect.facebook.net/en_US/sdk.js', function(){
   //   FB.init({
@@ -30,6 +18,19 @@
   });
 $(window).on("load",function(){
   $(".pp").css("height",$(".pp").width()+"px");
+  $("#store_menu").click(function(){
+    location.href="/funding";
+  });
+  $("#aboutus_menu").click(function(){
+    location.href="/aboutus";
+  });
+  var sideslider = $('[data-toggle=collapse-side]');
+  var sel = sideslider.attr('data-target');
+  var sel2 = sideslider.attr('data-target-2');
+  sideslider.click(function(event){
+    $(sel).toggleClass('in');
+    $(sel2).toggleClass('out');
+  });
 });
 
 window.fbAsyncInit = function() {
