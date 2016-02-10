@@ -81,6 +81,7 @@ function id_check(){
         $("input[name='id']").attr("readonly",true);
         $("#uuu").css("display","none");
         if ($('#profile').length) {
+          $(".temp").off();
           var nameValue = $("input[name='id']").val();
           var urll="/file/profile?file=" + nameValue;
           console.log(urll);
