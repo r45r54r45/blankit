@@ -303,7 +303,8 @@ else {
     border-radius: 10px;
     color: #337ab7;
     font-size: 15px;
-    font-weight: 500;" type="button" class="btn btn-primary btn-lg" data-toggle="modal" >
+    font-weight: 500;" type="button" class="btn btn-primary btn-lg" data-toggle="modal" 
+    onclick="location.href='/login'">
           로그인 해주세요
     </button>
     <?}?>
