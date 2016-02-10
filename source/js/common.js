@@ -2,6 +2,22 @@
   $("img.lazy").show().lazyload({
     effect : "fadeIn"
 });*/
+
+  // $.ajaxSetup({ cache: true });
+  // $.getScript('//connect.facebook.net/en_US/sdk.js', function(){
+  //   FB.init({
+  //     appId: '214340015575657',
+  //     version: 'v2.5' // or v2.0, v2.1, v2.2, v2.3
+  //   });
+  //   $('#loginbutton,#feedbutton').removeAttr('disabled');
+  //   FB.getLoginStatus(updateStatusCallback);
+  // });
+
+  $(window).on("resize",function(){
+    $(".pp").css("height",$(".pp").width()+"px");
+  });
+$(window).on("load",function(){
+  $(".pp").css("height",$(".pp").width()+"px");
   $("#store_menu").click(function(){
     location.href="/funding";
   });
@@ -15,20 +31,7 @@
     $(sel).toggleClass('in');
     $(sel2).toggleClass('out');
   });
-  // $.ajaxSetup({ cache: true });
-  // $.getScript('//connect.facebook.net/en_US/sdk.js', function(){
-  //   FB.init({
-  //     appId: '214340015575657',
-  //     version: 'v2.5' // or v2.0, v2.1, v2.2, v2.3
-  //   });
-  //   $('#loginbutton,#feedbutton').removeAttr('disabled');
-  //   FB.getLoginStatus(updateStatusCallback);
-  // });
-  $(".pp").css("height",$(".pp").width()+"px");
-  $(window).on("resize",function(){
-    $(".pp").css("height",$(".pp").width()+"px");
-  });
-
+});
 
 window.fbAsyncInit = function() {
   FB.init({

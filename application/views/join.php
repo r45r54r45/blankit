@@ -81,10 +81,12 @@ function id_check(){
         $("input[name='id']").attr("readonly",true);
         $("#uuu").css("display","none");
         if ($('#profile').length) {
+          $(".temp").off();
           var nameValue = $("input[name='id']").val();
           var urll="/file/profile?file=" + nameValue;
           console.log(urll);
           myDropzone1 = new Dropzone("#profile", { url:urll , paramName: "userfile",maxFiles:1,addRemoveLinks:true,autoProcessQueue: false,dictRemoveFile:"파일 삭제",dictMaxFilesExceeded:"1개만 업로드할 수 있습니다."});
+          $('#profile').attr("class","dropzone");
         };
         console.log(nameValue);
         alert('사용할 수 있는 아이디입니다.');
@@ -142,6 +144,9 @@ $(function(){
       break;
     }
   });
+  $(".temp").on("click",function(){
+    alert('아이디 중복확인을 먼저 해주세요!');
+  })
   // if ($('#profile').length) {
   //   var nameValue = document.getElementById("id").value;
   //   myDropzone1 = new Dropzone("#profile", { url: "/file/profile?file=" + nameValue, paramName: "userfile",maxFiles:1,addRemoveLinks:true,autoProcessQueue: false,dictRemoveFile:"파일 삭제",dictMaxFilesExceeded:"1개만 업로드할 수 있습니다."});
@@ -1113,7 +1118,18 @@ function submitCheck(){
                 </div>
                 <div class="row row-padding-xs-100 " style="margin-top:10px;">
                   <div class="menu title2" style="margin-bottom:10px;">프로필사진</div>
-                  <div id="profile" class="dropzone">
+                  <style>
+                  .temp{
+                    border: 2px solid rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+      width: 100%;
+      height: 150px;
+      text-align: center;
+      padding-top: 40px;
+      cursor: pointer;
+                  }
+                  </style>
+                  <div id="profile" class="temp">
                     <div class="dz-default dz-message"><span>프로필 사진은 한 개만 업로드 할 수 있습니다<br>( 클릭 또는 파일을 드래그 해주세요! )</span></div>
                   </div>
                 </div>
