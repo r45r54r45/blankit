@@ -45,10 +45,10 @@ class Help extends CI_Controller {
 			
 			$this->email->from('do-not-reply@blankit.kr', 'Customer Service');
 			$this->email->to('arsischeon@gmail.com');
-			//$this->email->cc('yunjiljjh@gmail.com', 'ryusooyon@gmail.com', 'r54r45r54@gmail.com');
+			$this->email->cc('yunjiljjh@gmail.com', 'ryusooyon@gmail.com', 'r54r45r54@gmail.com');
 
 			$emailSubject = 'CS 문의 접수 - ' . $title;
-			$emailMessage = "문의가 접수 되었어! 확인해보자. 다음과 같은 내용이야: \n\n" . $email . "\n\n" . $contents;
+			$emailMessage = "문의가 접수 되었어! 확인해보자. 다음과 같은 내용이야: \n\n접수 이메일: " . $email . "\n\n문의 내용: " . $contents;
 			
 			$this->email->subject($emailSubject);
 			$this->email->message($emailMessage);
