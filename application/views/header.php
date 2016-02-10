@@ -50,7 +50,7 @@
     <meta property="og:url"                content="<?echo $actual_link; ?>" />
     <meta property="og:type"               content="website" />
     <meta property="og:title"              content="<?echo $userName . "아티스트의 " . $storeName;?>" />
-    <meta property="og:description"        content="<?echo "저의 작품으로 제품을 출시합니다. 작품 설명: " . $storeExplain;?>" />
+    <meta property="og:description"        content="<?echo "저의 작품으로 제품을 출시합니다."; if($storeExplain==''){}else{" 작품 설명: " . $storeExplain;}?>" />
     <meta property="og:image"              content="<?echo "http://blankit.kr/source/image/facebook_share_image.png" ?>" />
     <?}?>
 
