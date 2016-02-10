@@ -1113,7 +1113,13 @@ function submitCheck(){
                 </div>
                 <div class="row row-padding-xs-100 " style="margin-top:10px;">
                   <div class="menu title2" style="margin-bottom:10px;">프로필사진</div>
-                  <div id="profile" style="width:100%;height:150px">
+                  <div id="profile" style="    border: 2px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    padding-top: 40px;
+    cursor: pointer;">
                     <div class="dz-default dz-message"><span>프로필 사진은 한 개만 업로드 할 수 있습니다<br>( 클릭 또는 파일을 드래그 해주세요! )</span></div>
                   </div>
                 </div>
