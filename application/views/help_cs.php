@@ -146,10 +146,7 @@ function checkSubmit(){
 		alert('이메일을 입력해주세요');
 		return;
 	}
-	if($('input[name="contents"]').val()==0){
-		alert('내용을 입력해주세요');
-		return;
-	}
+
 	$('#formform').submit();
 }
 </script>
