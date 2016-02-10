@@ -1056,21 +1056,21 @@ function submitCheck(){
           <script language="Javascript">
           <!--
           function checkemailaddy(){
-            if (form.email_select.value == '1') {
-              form.email2.readonly = false;
-              form.email2.value = '';
-              form.email2.focus();
+            if ($(".email_select").val() == '1') {
+              $(".email2").attr("readonly",false);
+              $(".email2").val('');
+              $(".email2").focus();
             }
             else {
-              form.email2.readonly = true;
-              form.email2.value = form.email_select.value;
+              $(".email2").attr("readonly",true);
+              $(".email2").val($(".email_select").val());
             }
           }
           //-->
           </script>
           <div class="row row-padding-xs-100 " style="margin-top:10px;">
             <div class="menu title2">이메일</div>
-            <input name="email1" type="text" class="menu_input" id="email1" size="15"> @ <input name="email2" type="text" class="box" id="email2" size="20">
+            <input name="email1" type="text" class="menu_input" id="email1" size="15"> @ <input name="email2" type="text" class="menu_input" id="email2" size="20">
             <select name="email_select" class="menu_input" id="email_select" onChange="checkemailaddy();">
               <option value="" selected>선택하세요</option>
               <option value="naver.com">naver.com</option>
