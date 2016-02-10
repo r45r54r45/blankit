@@ -1054,6 +1054,7 @@ function submitCheck(){
           </div>
           <script >
           function checkemailaddy(){
+            console.log($(".email_select").val());
             if ($(".email_select").val() == '1') {
               $(".email2").attr("readonly",false);
               $(".email2").val('');
