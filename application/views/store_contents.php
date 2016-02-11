@@ -174,14 +174,17 @@ $(function(){
 
 
 		if ($urlNum == 0){
-
+			echo '<script>alert("1");</script>';
 		} else if ($storeType == $urlNum){
+			echo '<script>alert("2");</script>';
 			if ($row->store_status == 3){
+				echo '<script>alert("3");</script>';
 				continue;
 			}
 		} else if ($urlNum == 4 && $row->store_status == 3){
-
+			echo '<script>alert("4");</script>';
 		} else {
+			echo '<script>alert("5");</script>';
 			continue;
 		}
 
