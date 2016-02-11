@@ -177,8 +177,8 @@ strVar += "";
 var shib;
 function choose(){
   $("#miribogi").val(shib);
+  console.log("#type"+storeType_event);
   $("#type"+storeType_event).attr("checked",true);
-  $("#myModal2").hide();
 }
 </script>
 
@@ -435,7 +435,7 @@ if ($session_id == "" || $session_userType == "1"){
 
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary" onclick="choose()">선택완료</button>
+        <button type="button" class="btn btn-primary" onclick="choose()" data-dismiss="modal">선택완료</button>
       </div>
     </div>
   </div>
