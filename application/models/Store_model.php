@@ -8,7 +8,7 @@ class Store_model extends CI_Model{
 
 	public function contents(){
 		return $this->db->query("
-		select store_name, store_image, store_day, store_goal, store_goal_now, artist_type, user_name, artist_profile, store_type, store_status, s.store_id, store_explain, artist_intro, store_pref
+		select store_name, store_image, store_day, store_goal, store_goal_now, artist_type, user_name, artist_profile, store_type, store_status, s.store_id, store_explain, artist_intro, store_pref as PREF
 		from STORE s, USER u
 		where s.user_id = u.user_id order by store_id desc;
 		");
@@ -16,7 +16,7 @@ class Store_model extends CI_Model{
 
 	public function details(){
 		return $this->db->query("
-		select store_image, store_day, store_goal, store_goal_now, user_name, store_type, store_status, s.store_id, store_name, store_price, u.user_id as SELLER, store_pref
+		select store_image, store_day, store_goal, store_goal_now, user_name, store_type, store_status, s.store_id, store_name, store_price, u.user_id as SELLER, store_pref as PREF
 		from STORE s, USER u
 		where s.user_id = u.user_id order by store_id desc;
 		");

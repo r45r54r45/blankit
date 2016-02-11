@@ -130,9 +130,7 @@ $(function(){
 	{
 
 		$storeType = $row->store_type;
-		echo '<script>alert("시작!");</script>';
-		$pref = $row->store_pref;
-		echo '<script>alert("통과!");</script>';
+		$pref = $row->PREF;
 
 		//현재 URL에 맞는 타입이 아니면 패쓰
 /* 		if ($urlNum == 4){
