@@ -130,7 +130,7 @@ $(function(){
 
     $storeType = $row->store_type;
     $pref = $row->PREF;
-
+    echo $pref;
     $itemPos;
     $itemBed;
     if($pref=="E_1_1" || $pref=="E_1_2" || $pref=="E_1_3"){
