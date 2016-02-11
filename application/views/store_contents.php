@@ -129,7 +129,7 @@ $(function(){
   {
 
     $storeType = $row->store_type;
-    $pref = $row->PREF;
+    $pref = trim($row->PREF);
 
     $itemPos;
     $itemBed;
