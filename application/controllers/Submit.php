@@ -33,8 +33,10 @@ class Submit extends CI_Controller {
 			$storeType = $this->input->post('storeType');
 			$storeGoal = $this->input->post('storeGoal');
 			
+			$pref = $this->input->post('miribogi');
+			
 			$this->load->model('submit_model');
-			$this->submit_model->upload_artwork($artwork, $explain, $storeType, $storeGoal);
+			$this->submit_model->upload_artwork($artwork, $explain, $storeType, $storeGoal, $pref);
 			$store_id_seed = $this->submit_model->image_num($userSESSION, $artwork);
 			
 			foreach ($store_id_seed->result() as $row){
