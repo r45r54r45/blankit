@@ -457,7 +457,7 @@ switch ($GlobalStoreType) {
 	              	//구매자가 없을 때 아직 수정 가능하게
 	              	echo '
 		            <div class="col-xs-12">
-		            <div class="submit_button"><a onclick="location.href=\'/help/cs?productID=' . $storeID . '\'"
+		            <div class="submit_button"><a onclick="location.href=\'/help/cs?productID=' . $storeId . '\'"
 		            class="myButton">수정/삭제</a></div>
 		            </div>';
 	              }
