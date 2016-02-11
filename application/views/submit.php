@@ -175,9 +175,10 @@ strVar += "";
   });
 });
 var shib;
-function choose(){
+function choose(e){
   if($("input[name='miribogi_type']:checked").length==0){
     alert('옵션을 선택해주세요');
+    e.preventDefault();
     return;
   }
   $("#miribogi").val(shib);
@@ -439,7 +440,7 @@ if ($session_id == "" || $session_userType == "1"){
 
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary" onclick="choose()" data-dismiss="modal">선택완료</button>
+        <button type="button" class="btn btn-primary" onclick="choose(event)" data-dismiss="modal">선택완료</button>
       </div>
     </div>
   </div>
