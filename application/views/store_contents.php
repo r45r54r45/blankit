@@ -174,17 +174,17 @@ $(function(){
 
 
 		if ($urlNum == 0){
-			echo '<script>alert("1");</script>';
+			//echo '<script>alert("1");</script>';
 		} else if ($storeType == $urlNum){
-			echo '<script>alert("2");</script>';
+			//echo '<script>alert("2");</script>';
 			if ($row->store_status == 3){
-				echo '<script>alert("3");</script>';
+				//echo '<script>alert("3");</script>';
 				continue;
 			}
 		} else if ($urlNum == 4 && $row->store_status == 3){
-			echo '<script>alert("4");</script>';
+			//echo '<script>alert("4");</script>';
 		} else {
-			echo '<script>alert("5");</script>';
+			//echo '<script>alert("5");</script>';
 			continue;
 		}
 
@@ -220,10 +220,10 @@ $(function(){
 
     <div class="col-xs-6 col-sm-4 col-md-3 col-lg-15">
       <div class="box radius-4">
-      <div><a href="/funding/product/<?php echo $row->store_id?>">
+      <div><a href="/funding/product/<?php echo $row->store_id;?>">
       	<!-- <img src="" class="img_rounded"> -->
         <div class="product_area ">
-            <image class="product_bed img_rounded img-responsive" src="<?echo $itemBed?>">
+            <image class="product_bed img_rounded img-responsive" src="<?echo $itemBed;?>">
             <div class="product" style="<?echo $itemPos;?>">
               <img src="<?php echo $row->store_image;?>" class="img img-responsive">
             </div>
