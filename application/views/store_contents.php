@@ -172,7 +172,7 @@ $(function(){
     // 우현 이미지 합성부분 종료
 
 
-/*     if ($urlNum == 0){
+     if ($urlNum == 0){
 
     } else if ($storeType == $urlNum){
       if ($row->store_status == 3){
@@ -183,7 +183,7 @@ $(function(){
     } else {
       continue;
 
-    } */
+    } 
     
 
     $cnt++;
