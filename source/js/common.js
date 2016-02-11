@@ -16,7 +16,7 @@
   $(window).on("resize",function(){
     $(".pp").css("height",$(".pp").width()+"px");
   });
-$(window).on("load",function(){
+$(document).on("load",function(){
   $(".pp").css("height",$(".pp").width()+"px");
   $("#store_menu").click(function(){
     location.href="/funding";
