@@ -425,7 +425,7 @@ if ($session_id == "" || $session_userType == "1"){
   </div>
 
 </div>
-<input type="text" id="miribogi" name="miribogi">
+<input type="hidden" id="miribogi" name="miribogi">
 </form>
 
 </div>
