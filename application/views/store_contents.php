@@ -133,7 +133,7 @@ $(function(){
 
     $itemPos;
     $itemBed;
-    echo $pref;
+    
     if($pref=="E_1_1" || $pref=="E_1_2" || $pref=="E_1_3"){
       $itemPos="left:35.4%;top:46.100000000000006%;width:29.333333333333332%;height:39.93333333333333%;";
       $itemBed="/source/product/" . $pref . "_bed.jpg";
