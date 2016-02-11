@@ -200,7 +200,7 @@ else {
         <div class="col-xs-12">
           <div class="tt" >블랭킷 X 아티스트 작품 카테고리</div>
           <div class="menu_input_radio">
-            <input type="radio" name="storeType" id="type1" value="1"><label for="type1">의류</label>
+            <input type="radio" name="storeType" id="type1" value="1" data-toggle="modal" data-target="#myModal2"><label for="type1">의류</label>
           </div>
           <div class="menu_input_radio">
             <input type="radio" name="storeType" id="type2" value="2"><label for="type2">에코백</label>
@@ -210,6 +210,7 @@ else {
           </div>
         </div>
       </div>
+      뭔가 이걸 클릭하면 미리보기 옵션을 볼 수 있을거 같애
       <!-- <div class="row" style="margin-top:20px;">
         <div class="col-xs-12">
           <div class="tt">블랭킷 X 아티스트 작품 메인 제품</div>
@@ -315,6 +316,23 @@ else {
 </form>
 
 </div>
+<div style="  z-index: 9000" class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel2">미리보기 옵션을 선택해주세요</h4>
+      </div>
+      <div class="modal-body">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" onclick="choose()">선택완료</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 <div style="  z-index: 9000" class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
