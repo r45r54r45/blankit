@@ -240,3 +240,6 @@ pre {
      .menu_item{
        font-size:13px !important;
      }
+.pp{
+  display:none;
+}
