@@ -449,7 +449,7 @@ switch ($GlobalStoreType) {
               <?php
               	if ($dayStatus == 1){
 	              echo '
-	              <div class="col-xs-12">
+	              <div class="col-xs-12" style="margin-bottom:20px;">
 	              <div class="submit_button"><a onclick="checkSubmit();"
 	              class="myButton">구매하기</a></div>
 	              </div>';
