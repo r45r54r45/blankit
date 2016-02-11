@@ -165,7 +165,7 @@ $(function(){
     	$itemPos="left:37%;top:35%;width:23.066666666666666%;height:20.333333333333332%;";
     	$itemBed="/source/product/" . $pref . "_bed.jpg";
     }else{
-    
+    	echo '<script>alert("에러 발생!");</script>';
     }
 // 우현 이미지 합성부분 종료
 
