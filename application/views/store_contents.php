@@ -157,6 +157,7 @@ $(function(){
     }else{
 
     }
+    echo $pref;
     // 우현 이미지 합성부분 종료
 
 
@@ -172,7 +173,7 @@ $(function(){
     } else {
       continue;
     }
-
+    echo $pref;
     $cnt++;
     $totalGoal = $row->store_goal;
     $nowGoal = $row->store_goal_now;
