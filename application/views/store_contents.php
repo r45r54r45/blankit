@@ -130,7 +130,7 @@ $(function(){
 
     $storeType = $row->store_type;
     $pref = $row->PREF;
-    echo $pref;
+    
     $itemPos;
     $itemBed;
     if($pref=="E_1_1" || $pref=="E_1_2" || $pref=="E_1_3"){
@@ -157,7 +157,7 @@ $(function(){
     }else{
 
     }
-    echo "///" . $pref;
+    
     // 우현 이미지 합성부분 종료
 
 
@@ -173,7 +173,7 @@ $(function(){
     } else {
       continue;
     }
-    echo "///" . $pref;
+    
     $cnt++;
     $totalGoal = $row->store_goal;
     $nowGoal = $row->store_goal_now;
@@ -211,7 +211,7 @@ $(function(){
       <div><a href="/funding/product/<?php echo $row->store_id;?>">
       	<!-- <img src="" class="img_rounded"> -->
         <div class="product_area ">
-            <image class="product_bed img_rounded img-responsive" src="<?echo $itemBed;?>">
+            <image class="product_bed img_rounded img-responsive" src="<?echo $itemBed;?>"> <?php echo $itemBed;?>
             <div class="product" style="<?echo $itemPos;?>">
               <img src="<?php echo $row->store_image;?>" class="img img-responsive">
               </div>
