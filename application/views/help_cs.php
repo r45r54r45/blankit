@@ -230,7 +230,7 @@ if (isset($_GET['status'])){
           <div class="col-xs-12 col-sm-9">
             <textarea type="text" name="contents" style="width:100%;height:150px; border:1px solid #B7B7B7;"><?php 
             if (isset($_GET['productID'])){
-            	$productID = $_GET('productID');
+            	//$productID = $_GET['productID'];
             	echo "이미 제출된 작품 판매 페이지의 수정/삭제 요청은 현재 고객센터에서 접수 받고 있습니다.\n요청 접수 시 해당 작품은 자동으로 펀딩 목록에서 임시 제외되며, 신속히 요청을 확인 및 처리한 뒤 다시 올려드리겠습니다.\n 만일 삭제 요청일 경우 문의 접수 직후 바로 새로 판매 등록하시는 것을 추천드립니다.\n 감사합니다.";
             }
             ?></textarea>
