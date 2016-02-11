@@ -37,4 +37,10 @@ class Cs_model extends CI_Model{
 			update `QA` set qa_file='$fileRoot' where qa_id='$qa_id2'
 		");
 	}
+	
+	public function takedown($takedown){
+		$this->db->query("
+				update `STORE` set store_status='4' where store_id='$takedown'
+				");
+	}
 }

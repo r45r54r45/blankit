@@ -27,6 +27,7 @@ class Help extends CI_Controller {
 			$title = $this->input->post('title');
 			$contents = $this->input->post('contents');
 			$email = $this->input->post('email');
+			$takeDown = $this->input->post('takeDown');
 			
 			$this->load->model('cs_model');
 			$this->cs_model->upload_cs($title, $contents, $email);
@@ -55,6 +56,12 @@ class Help extends CI_Controller {
 			
 			$this->email->send();
 			/*** 이메일 여기까지 ***/
+			
+			/*** 테이크다운 ***/
+			if ($takeDown !== ""){
+				$this->cs_model->takedown($takedown);
+			}
+			/*** 테이크다운 여기까지 ***/
 			
 			$csUrl = "http://blankit.kr/help/cs?status=success";
 			$this->load->helper('url');
