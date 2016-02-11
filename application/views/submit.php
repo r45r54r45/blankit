@@ -71,40 +71,41 @@ $(function(){
   $("#goalNum").selectmenu();
   $("#goalNum-button").css("margin-top","10px");
   $("input[name='storeType']").on("click",function(){
-    switch (event.target.value) {
+    var storeType_event=event.target.value;
+    switch (storeType_event) {
       case "1":
       var strVar="";
-strVar += "<div class=\"row\" style=\"margin-top:20px;\">";
+strVar += "<div class=\"row\" style=\"\">";
 strVar += "  <div class=\"col-xs-12\">";
 strVar += "    <div class=\"menu_input_radio\">";
-strVar += "      <input type=\"radio\" id=\"t1\" value=\"H_1_1\"><label for=\"t1\">후드 - 아이보리 <\/label>";
+strVar += "      <input type=\"radio\" name=\"miribogi_type\" id=\"t1\" value=\"H_1_1\"><label for=\"t1\">후드 - 아이보리 <\/label>";
 strVar += "    <\/div>";
 strVar += "    <div class=\"menu_input_radio\">";
-strVar += "      <input type=\"radio\" id=\"t2\" value=\"H_1_2\"><label for=\"t2\">후드 - 네이비<\/label>";
+strVar += "      <input name=\"miribogi_type\"  type=\"radio\" id=\"t2\" value=\"H_1_2\"><label for=\"t2\">후드 - 네이비<\/label>";
 strVar += "    <\/div>";
 strVar += "    <div class=\"menu_input_radio\">";
-strVar += "      <input type=\"radio\" id=\"t3\" value=\"H_1_3\"><label for=\"t3\">후드 - 블랙<\/label>";
+strVar += "      <input name=\"miribogi_type\"  type=\"radio\" id=\"t3\" value=\"H_1_3\"><label for=\"t3\">후드 - 블랙<\/label>";
 strVar += "    <\/div>";
 strVar += "    <div class=\"menu_input_radio\">";
-strVar += "      <input type=\"radio\" id=\"t4\" value=\"H_1_4\"><label for=\"t4\">후드 - 그레이<\/label>";
+strVar += "      <input name=\"miribogi_type\"  type=\"radio\" id=\"t4\" value=\"H_1_4\"><label for=\"t4\">후드 - 그레이<\/label>";
 strVar += "    <\/div>";
 strVar += "    <div class=\"menu_input_radio\">";
-strVar += "      <input type=\"radio\" id=\"t5\" value=\"H_1_5\"><label for=\"t5\">후드 - 레드<\/label>";
+strVar += "      <input name=\"miribogi_type\"  type=\"radio\" id=\"t5\" value=\"H_1_5\"><label for=\"t5\">후드 - 레드<\/label>";
 strVar += "    <\/div>";
 strVar += "    <div class=\"menu_input_radio\">";
-strVar += "      <input type=\"radio\" id=\"t6\" value=\"M_1_1\"><label for=\"t6\">맨투맨 - 아이보리<\/label>";
+strVar += "      <input name=\"miribogi_type\"  type=\"radio\" id=\"t6\" value=\"M_1_1\"><label for=\"t6\">맨투맨 - 아이보리<\/label>";
 strVar += "    <\/div>";
 strVar += "    <div class=\"menu_input_radio\">";
-strVar += "      <input type=\"radio\" id=\"t7\" value=\"M_1_2\"><label for=\"t7\">맨투맨 - 블랙<\/label>";
+strVar += "      <input name=\"miribogi_type\"  type=\"radio\" id=\"t7\" value=\"M_1_2\"><label for=\"t7\">맨투맨 - 블랙<\/label>";
 strVar += "    <\/div>";
 strVar += "    <div class=\"menu_input_radio\">";
-strVar += "      <input type=\"radio\" id=\"t8\" value=\"M_1_3\"><label for=\"t8\">맨투맨 - 네이비<\/label>";
+strVar += "      <input name=\"miribogi_type\"  type=\"radio\" id=\"t8\" value=\"M_1_3\"><label for=\"t8\">맨투맨 - 네이비<\/label>";
 strVar += "    <\/div>";
 strVar += "    <div class=\"menu_input_radio\">";
-strVar += "      <input type=\"radio\" id=\"t9\" value=\"M_1_4\"><label for=\"t9\">맨투맨 - 그레이<\/label>";
+strVar += "      <input name=\"miribogi_type\"  type=\"radio\" id=\"t9\" value=\"M_1_4\"><label for=\"t9\">맨투맨 - 그레이<\/label>";
 strVar += "    <\/div>";
 strVar += "    <div class=\"menu_input_radio\">";
-strVar += "      <input type=\"radio\" id=\"t10\" value=\"M_1_5\"><label for=\"t10\">맨투맨 - 레드<\/label>";
+strVar += "      <input name=\"miribogi_type\"  type=\"radio\" id=\"t10\" value=\"M_1_5\"><label for=\"t10\">맨투맨 - 레드<\/label>";
 strVar += "    <\/div>";
 strVar += "  <\/div>";
 strVar += "<\/div>";
@@ -113,25 +114,25 @@ strVar += "<\/div>";
       break;
       case "2":
       var strVar="";
-strVar += "<div class=\"row\" style=\"margin-top:20px;\">";
+strVar += "<div class=\"row\" style=\"\">";
 strVar += "  <div class=\"col-xs-12\">";
 strVar += "    <div class=\"menu_input_radio\">";
-strVar += "      <input type=\"radio\" id=\"t1\" value=\"E_1_1\"><label for=\"t1\">에코백 칼라 - 블랙<\/label>";
+strVar += "      <input name=\"miribogi_type\"  type=\"radio\" id=\"t1\" value=\"E_1_1\"><label for=\"t1\">에코백 칼라 - 블랙<\/label>";
 strVar += "    <\/div>";
 strVar += "    <div class=\"menu_input_radio\">";
-strVar += "      <input type=\"radio\" id=\"t2\" value=\"E_1_2\"><label for=\"t2\">에코백 칼라 - 카키<\/label>";
+strVar += "      <input name=\"miribogi_type\"  type=\"radio\" id=\"t2\" value=\"E_1_2\"><label for=\"t2\">에코백 칼라 - 카키<\/label>";
 strVar += "    <\/div>";
 strVar += "    <div class=\"menu_input_radio\">";
-strVar += "      <input type=\"radio\" id=\"t3\" value=\"E_1_3\"><label for=\"t3\">에코백 칼라 - 네이비<\/label>";
+strVar += "      <input name=\"miribogi_type\"  type=\"radio\" id=\"t3\" value=\"E_1_3\"><label for=\"t3\">에코백 칼라 - 네이비<\/label>";
 strVar += "    <\/div>";
 strVar += "    <div class=\"menu_input_radio\">";
-strVar += "      <input type=\"radio\" id=\"t4\" value=\"E_2\"><label for=\"t4\">에코백 숄더 - 아이보리<\/label>";
+strVar += "      <input name=\"miribogi_type\"  type=\"radio\" id=\"t4\" value=\"E_2\"><label for=\"t4\">에코백 숄더 - 아이보리<\/label>";
 strVar += "    <\/div>";
 strVar += "    <div class=\"menu_input_radio\">";
-strVar += "      <input type=\"radio\" id=\"t5\" value=\"E_3\"><label for=\"t5\">에코백 토트\/크로스<\/label>";
+strVar += "      <input name=\"miribogi_type\"  type=\"radio\" id=\"t5\" value=\"E_3\"><label for=\"t5\">에코백 토트\/크로스<\/label>";
 strVar += "    <\/div>";
 strVar += "    <div class=\"menu_input_radio\">";
-strVar += "      <input type=\"radio\" id=\"t6\" value=\"E_4\"><label for=\"t6\">에코백 크로스형<\/label>";
+strVar += "      <input name=\"miribogi_type\"  type=\"radio\" id=\"t6\" value=\"E_4\"><label for=\"t6\">에코백 크로스형<\/label>";
 strVar += "    <\/div>";
 strVar += "    <!-- <div class=\"menu_input_radio\">";
 strVar += "      <input type=\"radio\" id=\"t7\" value=\"M_1_2\"><label for=\"t7\">맨투맨 - 블랙<\/label>";
@@ -153,10 +154,10 @@ strVar += "";
       break;
       case "3":
       var strVar="";
-strVar += "<div class=\"row\" style=\"margin-top:20px;\">";
+strVar += "<div class=\"row\" style=\"\">";
 strVar += "  <div class=\"col-xs-12\">";
 strVar += "    <div class=\"menu_input_radio\">";
-strVar += "      <input type=\"radio\" id=\"t1\" value=\"P_1\"><label for=\"t1\">파우치<\/label>";
+strVar += "      <input name=\"miribogi_type\"  type=\"radio\" id=\"t1\" value=\"P_1\"><label for=\"t1\">파우치<\/label>";
 strVar += "    <\/div>";
 strVar += "";
 strVar += "  <\/div>";
@@ -167,6 +168,10 @@ strVar += "";
       break;
 
     }
+    $("input[name='miribogi_type']").on("click",function(event){
+      $("#miribogi").val(this.event.target.value);
+
+    });
   });
 });
 function choose(){
@@ -412,7 +417,7 @@ if ($session_id == "" || $session_userType == "1"){
   </div>
 
 </div>
-<input type="hidden" id="miribogi" name="miribigi">
+<input type="text" id="miribogi" name="miribigi">
 </form>
 
 </div>
