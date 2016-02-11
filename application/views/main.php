@@ -296,9 +296,11 @@ $(window).resize(function(){
 
       	foreach ($mdpick->result() as $row)
       	{
-          $storeType = $row->store_type;
+          	$storeType = $row->store_type;
 	        $totalGoal = $row->store_goal;
 	        $nowGoal = $row->store_goal_now;
+	        $pref = $row->store_pref;
+	        
 	        $percGoal = $nowGoal / $totalGoal * 100;
 
 	        //"앞으로 # 일 계산"
@@ -320,7 +322,7 @@ $(window).resize(function(){
           // 우현 이미지 합성 부분 시작
           $itemPos;
           $itemBed;
-          switch ($storeType) {
+         /*  switch ($storeType) {
             case '1':
               $itemPos="left:37%;top:35%;width:23.066666666666666%;height:20.333333333333332%;";
               $itemBed="/source/product/M_1_2_bed.jpg";
@@ -333,7 +335,31 @@ $(window).resize(function(){
               $itemPos="left:23.799999999999997%;top:28.799999999999997%;width:52.56666666666666%;height:42.86666666666667%;";
               $itemBed="/source/product/P_1_bed.jpg";
             break;
-
+          } */
+          
+          if($pref=="E_1_1" || $pref=="E_1_2" || $pref=="E_1_3"){
+          	$itemPos="left:35.4%;top:46.100000000000006%;width:29.333333333333332%;height:39.93333333333333%;";
+          	$itemBed="/source/product/" . $pref . "_bed.jpg";
+          }else if($pref=="E_2"){
+          	$itemPos="left:34.599999999999994%;top:46.1%;width:31.1%;height:42.199999999999996%;";
+          	$itemBed="/source/product/" . $pref . "_bed.jpg";
+          }else if($pref=="E_3"){
+          	$itemPos="left:35.4%;top:49.6%;width:28.9%;height:39.36666666666667%;";
+          	$itemBed="/source/product/" . $pref . "_bed.jpg";
+          }else if($pref=="E_4"){
+          	$itemPos="left:37.6%;top:57.199999999999996%;width:25.466666666666665%;height:34.66666666666667%;";
+          	$itemBed="/source/product/" . $pref . "_bed.jpg";
+          }else if($pref=="P_1"){
+          	$itemPos="left:23.799999999999997%;top:28.799999999999997%;width:52.56666666666666%;height:42.86666666666667%;";
+          	$itemBed="/source/product/" . $pref . "_bed.jpg";
+          }else if($pref=="H_1_1" || $pref=="H_1_2" || $pref=="H_1_3" || $pref=="H_1_4" || $pref=="H_1_5"){
+          	$itemPos="left:38%;top:40.2%;width:20.96666666666667%;height:18.46666666666667%;";
+          	$itemBed="/source/product/" . $pref . "_bed.jpg";
+          }else if($pref=="M_1_1" || $pref=="M_1_2" || $pref=="M_1_3" || $pref=="M_1_4" || $pref=="M_1_5"){
+          	$itemPos="left:37%;top:35%;width:23.066666666666666%;height:20.333333333333332%;";
+          	$itemBed="/source/product/" . $pref . "_bed.jpg";
+          }else{
+          	
           }
       // 우현 이미지 합성부분 종료
       ?>
@@ -405,7 +431,7 @@ $(window).resize(function(){
     // 우현 이미지 합성 부분 시작
     $itemPos;
     $itemBed;
-    switch ($storeType) {
+    /* switch ($storeType) {
       case '1':
         $itemPos="left:37%;top:35%;width:23.066666666666666%;height:20.333333333333332%;";
         $itemBed="/source/product/M_1_2"."_bed.JPG";
@@ -419,6 +445,30 @@ $(window).resize(function(){
         $itemBed="/source/product/P_1_bed.jpg";
       break;
 
+    } */
+    if($pref=="E_1_1" || $pref=="E_1_2" || $pref=="E_1_3"){
+    	$itemPos="left:35.4%;top:46.100000000000006%;width:29.333333333333332%;height:39.93333333333333%;";
+    	$itemBed="/source/product/" . $pref . "_bed.jpg";
+    }else if($pref=="E_2"){
+    	$itemPos="left:34.599999999999994%;top:46.1%;width:31.1%;height:42.199999999999996%;";
+    	$itemBed="/source/product/" . $pref . "_bed.jpg";
+    }else if($pref=="E_3"){
+    	$itemPos="left:35.4%;top:49.6%;width:28.9%;height:39.36666666666667%;";
+    	$itemBed="/source/product/" . $pref . "_bed.jpg";
+    }else if($pref=="E_4"){
+    	$itemPos="left:37.6%;top:57.199999999999996%;width:25.466666666666665%;height:34.66666666666667%;";
+    	$itemBed="/source/product/" . $pref . "_bed.jpg";
+    }else if($pref=="P_1"){
+    	$itemPos="left:23.799999999999997%;top:28.799999999999997%;width:52.56666666666666%;height:42.86666666666667%;";
+    	$itemBed="/source/product/" . $pref . "_bed.jpg";
+    }else if($pref=="H_1_1" || $pref=="H_1_2" || $pref=="H_1_3" || $pref=="H_1_4" || $pref=="H_1_5"){
+    	$itemPos="left:38%;top:40.2%;width:20.96666666666667%;height:18.46666666666667%;";
+    	$itemBed="/source/product/" . $pref . "_bed.jpg";
+    }else if($pref=="M_1_1" || $pref=="M_1_2" || $pref=="M_1_3" || $pref=="M_1_4" || $pref=="M_1_5"){
+    	$itemPos="left:37%;top:35%;width:23.066666666666666%;height:20.333333333333332%;";
+    	$itemBed="/source/product/" . $pref . "_bed.jpg";
+    }else{
+    	 
     }
 // 우현 이미지 합성부분 종료
 ?>
