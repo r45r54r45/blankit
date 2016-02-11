@@ -125,11 +125,14 @@ $(function(){
 	}
 	//url 확인 여기까지
   	$cnt = 0;
+  	
 	foreach ($contents->result() as $row)
 	{
 
 		$storeType = $row->store_type;
+		echo '<script>alert("시작!");</script>';
 		$pref = $row->store_pref;
+		echo '<script>alert("통과!");</script>';
 
 		//현재 URL에 맞는 타입이 아니면 패쓰
 /* 		if ($urlNum == 4){
@@ -143,7 +146,7 @@ $(function(){
     // 우현 이미지 합성 부분 시작
     $itemPos;
     $itemBed;
-    echo '<script>alert("시작!");</script>';
+    
     if($pref=="E_1_1" || $pref=="E_1_2" || $pref=="E_1_3"){
     	$itemPos="left:35.4%;top:46.100000000000006%;width:29.333333333333332%;height:39.93333333333333%;";
     	$itemBed="/source/product/" . $pref . "_bed.jpg";
@@ -166,9 +169,9 @@ $(function(){
     	$itemPos="left:37%;top:35%;width:23.066666666666666%;height:20.333333333333332%;";
     	$itemBed="/source/product/" . $pref . "_bed.jpg";
     }else{
-    	echo '<script>alert("에러 발생!");</script>';
+    	
     }
-    echo '<script>alert("통과!");</script>';
+    
 // 우현 이미지 합성부분 종료
 
 
