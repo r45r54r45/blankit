@@ -446,12 +446,23 @@ switch ($GlobalStoreType) {
               </div>
             </div>
             <div class="row options_row" style="margin-top:20px;">
-              <?php if ($dayStatus == 1)
-              echo '
-              <div class="col-xs-12">
-              <div class="submit_button"><a onclick="checkSubmit();"
-              class="myButton">구매하기</a></div>
-              </div>'
+              <?php
+              	if ($dayStatus == 1){
+	              echo '
+	              <div class="col-xs-12">
+	              <div class="submit_button"><a onclick="checkSubmit();"
+	              class="myButton">구매하기</a></div>
+	              </div>';
+	              if($storeGoalNow == 0){
+	              	//구매자가 없을 때 아직 수정 가능하게
+	              	echo '
+		            <div class="col-xs-12">
+		            <div class="submit_button"><a onclick="location.href=\'/help/cs?productID=' . $storeID . '\'"
+		            class="myButton">수정/삭제</a></div>
+		            </div>';
+	              }
+              	}
+              
               ?>
             </div>
           </div>
