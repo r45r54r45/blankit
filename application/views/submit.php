@@ -176,10 +176,13 @@ strVar += "";
 });
 var shib;
 function choose(){
+  if($("input[name='miribogi_type']:checked").length==0){
+    alert('옵션을 선택해주세요');
+    return;
+  }
   $("#miribogi").val(shib);
   var kk="#type"+storeType_event;
-  //$("#type1").attr("checked",true);
-  $(kk).attr("checked",true);
+  $(kk).prop("checked",true);
 }
 </script>
 
