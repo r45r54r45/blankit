@@ -205,22 +205,15 @@ $(function(){
 
     <div class="col-xs-6 col-sm-4 col-md-3 col-lg-15">
       <div class="box radius-4">
-<<<<<<< HEAD
-        <div><a href="/funding/product/<?php echo $row->store_id?>">
-          <!-- <img src="" class="img_rounded"> -->
-          <div class="product_area ">
-            <image class="product_bed img_rounded img-responsive" src="<?echo $itemBed?>">
-              <div class="product" style="<?echo $itemPos;?>">
-                <img src="<?php echo $row->store_image;?>" class="img img-responsive">
-              </div>
-=======
+
+
       <div><a href="/funding/product/<?php echo $row->store_id;?>">
       	<!-- <img src="" class="img_rounded"> -->
         <div class="product_area ">
             <image class="product_bed img_rounded img-responsive" src="<?echo $itemBed;?>">
             <div class="product" style="<?echo $itemPos;?>">
               <img src="<?php echo $row->store_image;?>" class="img img-responsive">
->>>>>>> origin/master
+              </div>
             </div>
 
           </a></div>
