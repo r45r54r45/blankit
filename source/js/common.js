@@ -18,6 +18,7 @@
   });
 $(window).on("load",function(){
   $(".pp").css("height",$(".pp").width()+"px");
+  $(".box").css("display","");
   $("#store_menu").click(function(){
     location.href="/funding";
   });
