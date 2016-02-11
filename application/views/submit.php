@@ -177,7 +177,7 @@ strVar += "";
 var shib;
 function choose(){
   $("#miribogi").val(shib);
-  var kk="#type"+storeType_event);
+  var kk="#type"+storeType_event;
   $("#type1").attr("checked",true);
   $(kk).attr("checked",true);
 }
