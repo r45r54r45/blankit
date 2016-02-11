@@ -299,7 +299,7 @@ $(window).resize(function(){
           	$storeType = $row->store_type;
 	        $totalGoal = $row->store_goal;
 	        $nowGoal = $row->store_goal_now;
-	        $pref = $row->store_pref;
+	        $pref = trim($row->store_pref);
 	        
 	        $percGoal = $nowGoal / $totalGoal * 100;
 
@@ -411,7 +411,7 @@ $(window).resize(function(){
       $storeType = $row->store_type;
 		$totalGoal = $row->store_goal;
 		$nowGoal = $row->store_goal_now;
-		$pref = $row->store_pref;
+		$pref = trim($row->store_pref);
 		$percGoal = $nowGoal / $totalGoal * 100;
 		//"앞으로 # 일 계산"
 		$curDate = date('Y-m-d H:i:s');
