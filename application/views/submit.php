@@ -70,7 +70,7 @@ $(function(){
   });
   $("#goalNum").selectmenu();
   $("#goalNum-button").css("margin-top","10px");
-  $("input[name='storeType']").on("change",function(){
+  $("input[name='storeType']").on("click",function(){
     switch (event.target.value) {
       case "1":
       var strVar="";
