@@ -59,7 +59,7 @@ class Help extends CI_Controller {
 			
 			/*** 테이크다운 ***/
 			if ($takeDown !== ""){
-				$this->cs_model->takedown($takedown);
+				$this->cs_model->takedown($takeDown);
 			}
 			/*** 테이크다운 여기까지 ***/
 			
