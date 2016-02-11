@@ -61,6 +61,7 @@ function banner_generator(){
   var width = document.documentElement.clientWidth;
   $(".banner>img").css("margin-left","-"+($(".banner>img").width()-width)/2+"px");
 }
+    var storeType_event;
 $(function(){
   $("#root_container").css("height",$(".banner").height()+"px");
   banner_generator();
@@ -71,7 +72,7 @@ $(function(){
   $("#goalNum").selectmenu();
   $("#goalNum-button").css("margin-top","10px");
   $("input[name='storeType']").on("click",function(){
-    var storeType_event=event.target.value;
+  storeType_event=event.target.value;
     switch (storeType_event) {
       case "1":
       var strVar="";
@@ -169,13 +170,15 @@ strVar += "";
 
     }
     $("input[name='miribogi_type']").on("click",function(event){
-      $("#miribogi").val(this.event.target.value);
-
+      shib=event.target.value;
     });
   });
 });
+var shib;
 function choose(){
-
+  $("#miribogi").val(shib);
+  $("#type"+storeType_event).attr("checked",true);
+  $("#myModal2").hide();
 }
 </script>
 
