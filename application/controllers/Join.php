@@ -12,7 +12,12 @@ class Join extends CI_Controller {
 		$this->load->view('join');
 		$this->load->view('footer');
 	}
-
+	public function complete()
+	{
+		$this->load->view('header');
+		$this->load->view('join_complete');
+		$this->load->view('footer');
+	}
 	public function func_join_ok()
 	{
 		if ($this->input->post('id') !== ""){
@@ -29,20 +34,20 @@ class Join extends CI_Controller {
 			$introduction = $this->input->post('introduction');
 
 			$introduction = str_replace(array("\r\n"), '<br/>', $introduction);
-			
+
 			/*** 이메일 전송 ***/
 			$this->load->library('email');
-				
+
 			$this->email->from('do-not-reply@blankit.kr', 'New User');
 			$this->email->to('arsischeon@gmail.com');
 			$this->email->cc('ryusooyon@gmail.com, yunjiljjh@gmail.com, r54r45r54@gmail.com');
-			
+
 			$emailSubject = ' - 유저 신규 가입 - ';
 			$emailMessage = "신규 유저가 가입했어!\n\n----------\n\n 아이디: " . $id . "\n\n이름: " . $name . "\n\n유저 종류: " . $type;
-				
+
 			$this->email->subject($emailSubject);
 			$this->email->message($emailMessage);
-				
+
 			$this->email->send();
 			/*** 이메일 여기까지 ***/
 
@@ -55,7 +60,7 @@ class Join extends CI_Controller {
 			}
 		}
 
-		$mainUrl = "http://blankit.kr/login";
+		$mainUrl = "http://blankit.kr/join/complete";
 		$this->load->helper('url');
 		redirect($mainUrl);
 	}

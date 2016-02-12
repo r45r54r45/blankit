@@ -1,6 +1,16 @@
 <?php
   defined('BASEPATH') OR exit('No direct script access allowed');
   $actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+  $pageURL = (@$_SERVER["HTTPS"] == "on") ? "https://" : "http://";
+if ($_SERVER["SERVER_PORT"] != "80")
+{
+    $pageURL .= substr($_SERVER['SERVER_NAME'], 4).":".$_SERVER["SERVER_PORT"].$_SERVER["REQUEST_URI"];
+}
+else
+{
+    $pageURL .= substr($_SERVER['SERVER_NAME'], 4).$_SERVER["REQUEST_URI"];
+}
+header('Location: '. $pageURL);
 ?>
 <!DOCTYPE html>
 <html lang="ko">
@@ -154,7 +164,7 @@
     </div>
 
       </div>
-      
+
     <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -164,7 +174,7 @@
   ga('create', 'UA-73326444-1', 'auto');
   ga('require', 'linkid');
   ga('send', 'pageview');
-  
+
 
 </script>
     </header>
