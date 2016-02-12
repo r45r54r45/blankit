@@ -1,25 +1,30 @@
 <style>
 
+.myButton {
+  background-color:#687c87;
+  border-radius:12px;
+  border:2px solid #687c87;
+  display:inline-block;
+  cursor:pointer;
+  color:white !important;
+  font-family:"Noto Sans", "Noto Sans CJK KR", sans-serif;
+  font-size:12px;
+  font-weight:regular;
+  padding:3px 12px;
+}
+.myButton:hover {
+  background-color: white;
+  color: #687c87 !important;
+}
+.myButton:active {
+  position:relative;
+  top:1px;
+}
+.submit_button{
+  display: block;
+  text-align: center;
+}
 
-.arrow{
-  padding: 0 30px 0 30px;
-  margin:0 auto; display:block;
-}
-.download_cover{
-  background-image: url("/source/image/download_hover.png");
-  z-index: 100;
-background-size: contain;
- background-position:15px;
- background-repeat: no-repeat;
-}
- .download_img{
-     z-index: 50;
-   opacity:1;
- }
-.download_cover:hover .download_img{
-     z-index: 50;
-  opacity:0.5;
-}
 .banner{
   height:50px;
   width:100%;
@@ -29,15 +34,12 @@ background-size: contain;
   top:0;
   border-bottom: 1px solid #D3D3D3;
 }
-.banner>img{
-  min-height: 300px;
+
+.navbar-left{
+  color: #777 !important;
 }
-.navbar-right{
-  color:white !important;
-}
-.YourButton{
-      border: 2px solid white;
-          color: white;
+.navbar-left:hover{
+  color: #5D787A !important;
 }
 </style>
 <script>
