@@ -50,8 +50,8 @@
   </div>
 </div>
 <div class="container" >
-  <div class="row">
-      <div class="col-xs-12" style="margin-top:30px; ">
+  <div class="row" style="    min-height: 400px;">
+      <div class="col-xs-12" style="margin-top:100px; ">
         <span style="margin-top:30px; text-align:center; display:block; font-size: 25px; color:#655453; font-weight:bold;">
           회원가입이 완료되었습니다.
         </span>
