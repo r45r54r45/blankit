@@ -289,6 +289,19 @@ else {
   </div>
   <div class="row" style="margin-top:30px; margin-bottom:30px; text-align:center;">
     <div>  <a style="cursor:pointer;" href="https://drive.google.com/file/d/0B-DTjWKJzjjsR0NRU3JMS29teG8/view?usp=sharing">다운로드 버튼</a>
+    
+    <button style="background: transparent;
+      border: 1px solid #337ab7;
+      margin: 10px auto;
+      padding: 10px 100px;
+      border-radius: 10px;
+      color: #337ab7;
+      font-size: 15px;
+      font-weight: 500;" type="button" class="btn btn-primary btn-lg"
+      href="https://drive.google.com/file/d/0B-DTjWKJzjjsR0NRU3JMS29teG8/view?usp=sharing"
+      >
+      로그인 해주세요
+    </button>
     </div>
   </div>
   <form action="/submit/func_checkSubmit" enctype="multipart/form-data" method="post" id="formform">
