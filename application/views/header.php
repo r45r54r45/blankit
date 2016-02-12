@@ -1,10 +1,11 @@
 <?php
   defined('BASEPATH') OR exit('No direct script access allowed');
   $actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-  // $pageURL = (@$_SERVER["HTTPS"] == "on") ? "https://" : "http://";
-  //
-  //   $pageURL .= substr($_SERVER['SERVER_NAME'], 4).$_SERVER["REQUEST_URI"];
-header('Location: '. $actual_link);
+
+  if (substr($_SERVER['HTTP_HOST'], 0, 4) === 'www.') {
+      header('Location: http'.(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS']=='on' ? 's':'').'://' . substr($_SERVER['HTTP_HOST'], 4).$_SERVER['REQUEST_URI']);
+      exit;
+  }
 ?>
 <!DOCTYPE html>
 <html lang="ko">
