@@ -4,8 +4,7 @@
   // $pageURL = (@$_SERVER["HTTPS"] == "on") ? "https://" : "http://";
   //
   //   $pageURL .= substr($_SERVER['SERVER_NAME'], 4).$_SERVER["REQUEST_URI"];
-
-header('Location: '. $pageURL);
+header('Location: '. $actual_link);
 ?>
 <!DOCTYPE html>
 <html lang="ko">
