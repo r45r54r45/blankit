@@ -21,12 +21,13 @@ background-size: contain;
   opacity:0.5;
 }
 .banner{
+  height:50px;
   width:100%;
-  height:300px;
+  background: white;
   position:absolute;
   left:0;
   top:0;
-  overflow:hidden;
+  border-bottom: 1px solid #D3D3D3;
 }
 .banner>img{
   min-height: 300px;
@@ -40,32 +41,17 @@ background-size: contain;
 }
 </style>
 <script>
-function banner_generator(){
-  var width = document.documentElement.clientWidth;
-  $(".banner>img").css("margin-left","-"+($(".banner>img").width()-width)/2+"px");
-}
-$(function(){
-  $("#root_container").css("height",$(".banner").height()+"px");
-  banner_generator();
-  $(window).on("resize",function(){
-      $("#root_container").css("height",$(".banner").height()+"px");
-      banner_generator();
-  });
-});
+
 </script>
   <div class="banner">
-    <img src="/source/image/submit-page-banner.jpg">
-    <div class="banner-text">
-    <p>혼자 간직해온 작품이 있나요?</p>
-    <p>제작비용 0원에 당신만의 제품을 선보이세요.</p>
-    </div>
+
   </div>
 </div>
 <div class="container" >
   <div class="row">
       <div class="col-xs-12" style="margin-top:30px; ">
         <span style="margin-top:30px; text-align:center; display:block; font-size: 25px; color:#655453; font-weight:bold;">
-          업로드가 완료되었습니다.
+          회원가입이 완료되었습니다.
         </span>
       </div>
       <div class="col-xs-12" style="margin-top:30px; ">
@@ -76,33 +62,6 @@ $(function(){
       </div>
   </div>
 
-  <div class="row">
-      <div class="col-xs-12" style="margin-top:30px; border-top: 1px solid #D3D3D3;">
-        <span style="margin-top:30px; text-align:center; display:block; font-size: 25px; color:#655453; font-weight:bold;">
-          친구들에게 자랑하기
-        </span>
-      </div>
-      <?php
-      $itemNum = $_GET['id'];
-      echo "
-      <script>
-      function facebook_for_artist(){
-        FB.ui({
-          method: 'share',
-          href: 'http://blankit.kr/submit/complete/?id=" . $itemNum . "',
-        }, function(response){});
-      }
-      </script> ";
-      ?>
-      <div class="col-xs-12" style="margin-top:30px; ">
 
-        <div class="col-xs-12">
-          <a onclick="facebook_for_artist()" style="cursor:pointer;">
-          <img src="/source/image/fb_artist.png" class="img img-responsive" style="margin:0 auto;">
-              </a>
-        </div>
-      </div>
-
-  </div>
   </div>
 </div>
