@@ -298,7 +298,7 @@ else {
       color: #337ab7;
       font-size: 15px;
       font-weight: 500;" type="button" class="btn btn-primary btn-lg"
-      href="https://drive.google.com/file/d/0B-DTjWKJzjjsR0NRU3JMS29teG8/view?usp=sharing"
+      onclick="location.href='https://drive.google.com/file/d/0B-DTjWKJzjjsR0NRU3JMS29teG8/view?usp=sharing'"
       >
       로그인 해주세요
     </button>
