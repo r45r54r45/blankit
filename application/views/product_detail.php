@@ -208,7 +208,7 @@ if ($itemType == "E_1" || $itemType == "E_2" || $itemType == "E_3" || $itemType 
 <div class="menu">
   <div class="menu_item" style="width:23%;">
     <a href="/funding/product/' . $itemNum . '?E_1#here' . '"
-    <?if($itemType == "E_1")echo 'style=\'background: #687C87;
+    <?if($itemType == 'E_1')echo 'style=\'background: #687C87;
     color: white;\'';?>>숄더(컬러)</a>
   </div>
   <div class="menu_item" style="width:27%;">
