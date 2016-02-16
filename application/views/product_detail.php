@@ -206,24 +206,24 @@ if ($itemType == "E_1" || $itemType == "E_2" || $itemType == "E_3" || $itemType 
     <div class="col-md-12" id="E-location" style="position:relative; height:25px; padding-bottom:40px;border-bottom: 2px solid #687C87;
     border-top: 1px solid #D3D3D3;">
 <div class="menu">
-  <div class="menu_item" style="width:23%;"  '; if($itemType == "E_1")echo " style=\'background: #687C87;
-  color: white;\'";
-  echo '>
+  <div class="menu_item" style="width:23%;  '; if($itemType == "E_1")echo " background: #687C87;
+  color: white;";
+  echo '">
     <a href="/funding/product/' . $itemNum . '?E_1#here' . '">숄더(컬러)</a>
   </div>
-  <div class="menu_item" style="width:27%;"'; if($itemType == "E_2")echo " style=\'background: #687C87;
-  color: white;\'";
-  echo '>
+  <div class="menu_item" style="width:27%;'; if($itemType == "E_2")echo " background: #687C87;
+  color: white;";
+  echo '">
     <a href="/funding/product/' . $itemNum . '?E_2#here' . '">숄더(아이보리)</a>
   </div>
-  <div class="menu_item" style="width:25%;" '; if($itemType == "E_3")echo " style=\'background: #687C87;
-  color: white;\'";
-  echo '>
+  <div class="menu_item" style="width:25%; '; if($itemType == "E_3")echo " background: #687C87;
+  color: white;";
+  echo '">
     <a href="/funding/product/' . $itemNum . '?E_3#here' . '">토트/크로스</a>
   </div>
-  <div class="menu_item" style="width:20%;" '; if($itemType == "E_4")echo " style=\'background: #687C87;
-  color: white;\'";
-  echo '>
+  <div class="menu_item" style="width:20%; '; if($itemType == "E_4")echo " background: #687C87;
+  color: white;";
+  echo '">
     <a href="/funding/product/' . $itemNum . '?E_4#here' . '">크로스</a>
   </div>
 </div>
@@ -240,14 +240,14 @@ if ($itemType == "M_1" || $itemType == "H_1"){
     <div class="col-md-12" id="E-location" style="position:relative; height:25px; padding-bottom:40px;     border-bottom: 2px solid #687C87;
     border-top: 1px solid #D3D3D3;">
 <div class="menu" style="width: 80px;margin-left: -40px;">
-  <div class="menu_item" style="width:47%" '; if($itemType == "M_1")echo " style=\'background: #687C87;
-  color: white;\'";
-  echo '>
+  <div class="menu_item" style="width:47% '; if($itemType == "M_1")echo " background: #687C87;
+  color: white;";
+  echo '">
     <a href="/funding/product/' . $itemNum . '?M_1#here' . '">맨투맨</a>
   </div>
-  <div class="menu_item" style="width:47%" '; if($itemType == "M_2")echo " style=\'background: #687C87;
-  color: white;\'";
-  echo '>
+  <div class="menu_item" style="width:47% '; if($itemType == "M_2")echo " background: #687C87;
+  color: white;";
+  echo '">
     <a href="/funding/product/' . $itemNum . '?H_1#here' . '">후드</a>
   </div>
 </div>
