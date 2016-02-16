@@ -52,7 +52,7 @@
     left:50%;
     bottom:0;
     margin-left: -180px;
-    background: white;
+    background: transparent;
   }
   .menu_item{
     font-weight: bold;
@@ -61,6 +61,8 @@
     display: inline-block;
     height:100%;
     cursor: pointer;
+    vertical-align: middle;
+    line-height: 40px;
   }
   .menu_item:hover{
     color: #96AFB5;
@@ -182,7 +184,7 @@
 <!-- 제품에 들어간 작품 부분 시작-->
 <div class="container">
 <div class="row row_padding-xs" style="margin-top:40px;">
-  <div class="col-xs-12" style="padding-bottom:40px; border-bottom:1px solid #D3D3D3;">
+  <div class="col-xs-12" style="padding-bottom:40px; >
   <div class="t1-gal" style="margin-bottom:20px;"><?php echo $storeName;?></div>
   <div class="artwork">
     <img style="margin: 0 auto;" src="<?echo $itemImage;?>" class="img thumbnail img-responsive" >
@@ -201,19 +203,24 @@ if ($itemType == "E_1" || $itemType == "E_2" || $itemType == "E_3" || $itemType 
 	echo '
 
 <div class="row row_padding-xs" style="margin-top:20px;" id="here">
-    <div class="col-md-12" id="E-location" style="position:relative; height:25px; padding-bottom:40px; border-bottom: 1.5px solid #D3D3D3;">
+    <div class="col-md-12" id="E-location" style="position:relative; height:25px; padding-bottom:40px;border-bottom: 2px solid #687C87;
+    border-top: 1px solid #D3D3D3;">
 <div class="menu">
   <div class="menu_item" style="width:23%;">
-    <a href="/funding/product/' . $itemNum . '?E_1#here' . '">숄더(컬러)</a>
+    <a href="/funding/product/' . $itemNum . '?E_1#here' . '"<?if($itemType == "E_1")echo " style='background: #687C87;
+    color: white;';"?>>숄더(컬러)</a>
   </div>
   <div class="menu_item" style="width:27%;">
-    <a href="/funding/product/' . $itemNum . '?E_2#here' . '">숄더(아이보리)</a>
+    <a href="/funding/product/' . $itemNum . '?E_2#here' . '"<?if($itemType == "E_2")echo " style='background: #687C87;
+    color: white;';"?>>숄더(아이보리)</a>
   </div>
   <div class="menu_item" style="width:25%;">
-    <a href="/funding/product/' . $itemNum . '?E_3#here' . '">토트/크로스</a>
+    <a href="/funding/product/' . $itemNum . '?E_3#here' . '"<?if($itemType == "E_3")echo " style='background: #687C87;
+    color: white;';"?>>토트/크로스</a>
   </div>
   <div class="menu_item" style="width:20%;">
-    <a href="/funding/product/' . $itemNum . '?E_4#here' . '">크로스</a>
+    <a href="/funding/product/' . $itemNum . '?E_4#here' . '"<?if($itemType == "E_4")echo " style='background: #687C87;
+    color: white;';"?>>크로스</a>
   </div>
 </div>
 </div>
@@ -226,13 +233,16 @@ if ($itemType == "M_1" || $itemType == "H_1"){
 	echo '
 
 <div class="row row_padding-xs" style="margin-top:20px;" id="here">
-    <div class="col-md-12" id="E-location" style="position:relative; height:25px; padding-bottom:40px; border-bottom: 1.5px solid #D3D3D3;">
+    <div class="col-md-12" id="E-location" style="position:relative; height:25px; padding-bottom:40px;     border-bottom: 2px solid #687C87;
+    border-top: 1px solid #D3D3D3;">
 <div class="menu" style="width: 80px;margin-left: -40px;">
   <div class="menu_item" style="width:47%">
-    <a href="/funding/product/' . $itemNum . '?M_1#here' . '">맨투맨</a>
+    <a href="/funding/product/' . $itemNum . '?M_1#here' . '"<?if($itemType == "M_1")echo " style='background: #687C87;
+    color: white;';"?>>맨투맨</a>
   </div>
   <div class="menu_item" style="width:47%">
-    <a href="/funding/product/' . $itemNum . '?H_1#here' . '">후드</a>
+    <a href="/funding/product/' . $itemNum . '?H_1#here' . '"<?if($itemType == "M_2")echo " style='background: #687C87;
+    color: white;';"?>>후드</a>
   </div>
 </div>
 </div>
