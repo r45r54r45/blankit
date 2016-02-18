@@ -265,16 +265,31 @@ foreach ($contents->result() as $row){
     display: inline-block;
     width: 69%;">
     <div >
-      <span style="font-size:16px; font-weight:400;"><?php echo $userName;?></span> <span style="font-size:14px; font-weight:300;"><?php echo $artistType;?></span>
+      <span style="font-size:20px; font-weight:400;"><?php echo $userName;?></span> <span style="font-size:14px; font-weight:300;"><?php echo $artistType;?></span>
     </div>
-    <div  style="display:inline-block; width:20%;height:50px;    margin-top: 20px;">
+    <div  style=" width:20%;height:50px;    margin-top: 20px;">
       <span style="font-size:13px; font-weight:300;"><?php $lineArtistIntro = str_replace(" ","\n",$artistIntro); echo $lineArtistIntro;?></span>
     </div>
-    <div>
-      <div style="display:inline-block; width:20%;height:50px;"></div>
-      <div style="display:inline-block; width:20%;height:50px;"></div>
-      <div style="display:inline-block; width:20%;height:50px;"></div>
-      <div style="display:inline-block; width:20%;height:50px;"></div>
+    <style>
+    .artist_other_art{
+      padding: 0 10%;
+    display: inline-block;
+    width: 20%;
+    height: 100%;
+    background-color: #D3D3D3;
+    }
+    </style>
+    <div class="hidden-xs" style="left: 40%;
+    right: 0;
+    position: absolute;
+    bottom: 0;
+    width: 60%;
+    height: 25%;
+    position:relative;">
+      <div class="artist_other_art"></div>
+      <div class="artist_other_art"></div>
+      <div class="artist_other_art"></div>
+      <div class="artist_other_art" style="background:none; position:absolute; bottom:0"><span style="border-bottom:2px solid #868686; ">view more</span></div>
     </div>
   </div>
 </div>
