@@ -9,7 +9,7 @@ class Main extends CI_Controller {
 		$data['mdpick']=$this->main_model->mdpick();
 		
 		/** 마감 확인 **/
-		//$data2['dateChecker']=$this->main_model->dateChecker(); -> 16.02.18 제거
+		$data2['dateChecker']=$this->main_model->dateChecker(); -> 16.02.18 제거
 
 		$this->load->model('artist_model');
 		$data['artist_list']=$this->artist_model->artist_list();
