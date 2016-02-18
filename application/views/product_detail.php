@@ -251,19 +251,24 @@ foreach ($contents->result() as $row){
 ?>
 <div class="col-xs-12" style="margin-top:30px;" >
   <div style="display:inline-block; width:30%;">
-    <div><img src="<?php echo $artistProfile;?>" class="pp img img-circle img-responsive"
-      style="height: 100%;
+    <div><img src="<?php echo $artistProfile;?>" class="img img-circle img-responsive"
+      style="    padding: 10%;
     width: 100%;"></div>
     <div>  <a onclick="facebook_for_artist()" style="cursor:pointer;">
         <img src="/source/image/fb_user.png" class="img img-responsive" style="margin:0 auto;">
 
     </a></div>
   </div>
-  <div style="display:inline-block; width:70%;">
+  <div style="padding-top: 5%;
+    padding-left: 10%;
+    vertical-align: top;
+    display: inline-block;
+    width: 69%;">
     <div >
-      <span style="font-size:16px; font-weight:400;"><?php echo $userName;?> (<?php echo $artistType;?>)</span>
+      <span style="font-size:16px; font-weight:400;"><?php echo $userName;?></span> <span style="font-size:14px; font-weight:300;"><?php echo $artistType;?></span>
     </div>
     <div>
+      <div style="display:inline-block; width:20%;height:50px;    margin-top: 20px;"></div>
       <span style="font-size:13px; font-weight:300;"><?php $lineArtistIntro = str_replace(" ","\n",$artistIntro); echo $lineArtistIntro;?></span>
     </div>
     <div>
