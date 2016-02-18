@@ -373,15 +373,15 @@ $(window).resize(function(){
           </div>
         </div>
     </a></div>
-    <div class="status_bar" style="background: linear-gradient(to right, #687C87 <?php echo ceil($percGoal)?>%,#D3D3D3 <?php echo ceil($percGoal)?>% );"></div>
-    <div class="artist_hover" style="padding-top:7px;">
-      <span class="status_percent"><?php echo ceil($percGoal) . "%";?></span>
-      <span class="status_day_word"><?php if ($dayStatus == 1) echo "앞으로";?> <span class="status_day">
+    <div class="status_bar" style="background: linear-gradient(to right, #687C87 0%,#D3D3D3 100% );"></div>
+    <!-- <div class="artist_hover" style="padding-top:7px;">
+      <span class="status_percent"><?php //echo ceil($percGoal) . "%";?></span>
+      <span class="status_day_word"><?php //if ($dayStatus == 1) echo "앞으로";?> <span class="status_day">
            	<?php
-      			echo $remainDays;
+      			//echo $remainDays;
       		?>
-      </span><?php if ($dayStatus == 1) echo "일";?></span>
-    </div>
+      </span><?php// if ($dayStatus == 1) echo "일";?></span>
+    </div> -->
     <div class="artist_hover" style="width: 100%; display: inline-flex;">
       <div style="width:20%; margin-left: 10px; padding-top: 10px; margin-bottom:15px;">
         <img src="<?php echo $row->artist_profile;?>" class="img img-circle">
