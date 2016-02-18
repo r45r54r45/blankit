@@ -251,10 +251,12 @@ foreach ($contents->result() as $row){
 ?>
 <div class="col-xs-12" style="margin-top:30px;" >
   <div style="display:inline-block; width:30%;">
-    <div><img src="<?php echo $artistProfile;?>" class="pp img img-circle img-responsive"></div>
+    <div><img src="<?php echo $artistProfile;?>" class="pp img img-circle img-responsive"
+      style="height: 100%;
+    width: 100%;"></div>
     <div>  <a onclick="facebook_for_artist()" style="cursor:pointer;">
         <img src="/source/image/fb_user.png" class="img img-responsive" style="margin:0 auto;">
-      </div>
+
     </a></div>
   </div>
   <div style="display:inline-block; width:70%;">
