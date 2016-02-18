@@ -193,9 +193,10 @@
     <span style="margin:0 auto; display:table;">작 품 해 설</span>
   </div>
   <div class="col-xs-12" style="margin-top:20px;" >
-    <span style="margin:0 auto; width:30px; display:table; border-bottom:1px solid black;">    </span>
+    <span style="margin:0 auto; width:30px; display:table; border-bottom:2px solid #D3D3D3;">    </span>
   </div>
-  <div class="col-xs-12" style="margin-top:20px;" >
+  <div class="col-xs-12" style="margin-top:20px;border-bottom: 1px solid #D3D3D3;
+    padding-bottom: 30px;" >
   <div class="t2">
     <?echo $storeExplain;?>
   </div>
