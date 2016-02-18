@@ -313,7 +313,15 @@ height: 100%;
     </div>
   </div>
 </div>
-
+<div class="col-xs-12" style="margin-top:40px;" >
+  <span style="margin:0 auto; display:table;">작 품 구 입</span>
+</div>
+<div class="col-xs-12" style="margin-top:20px;" >
+  <span style="margin:0 auto; width:30px; display:table; border-bottom:2px solid #D3D3D3;"></span>
+</div>
+<div class="col-xs-12" style="margin-top:40px;" >
+  <span style="margin:0 auto; display:table;">원하는 제품 카테고리를 선택해주세요</span>
+</div>
 </div>
 <!-- 제품에 들어간 작품부분 끝 -->
 <!-- style="border-bottom:2px solid #96AFB5; color:#96AFB5;" -->
