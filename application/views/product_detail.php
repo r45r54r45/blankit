@@ -272,7 +272,7 @@ foreach ($contents->result() as $row){
     </div>
     <style>
     .artist_other_art{
-      padding: 0 10%;
+      padding: 0 2%;
     display: inline-block;
     width: 23%;
     height: 100%;
@@ -281,6 +281,8 @@ foreach ($contents->result() as $row){
     .inside_art{
       background-color: #D3D3D3;
       border-radius:10%;
+      width: 100%;
+height: 100%;
     }
     </style>
     <div class="hidden-xs" style="left: 40%;
