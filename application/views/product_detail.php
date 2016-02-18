@@ -209,7 +209,7 @@
 </div>
 <?php
 $facebookURL = $this->uri->segment(3);
-
+$numPath =  $this->uri->segment(3);
     echo "
     <script>
     function facebook_for_artist(){
