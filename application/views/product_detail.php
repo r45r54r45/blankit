@@ -274,7 +274,7 @@ foreach ($contents->result() as $row){
     .artist_other_art{
       padding: 0 10%;
     display: inline-block;
-    width: 20%;
+    width: 23%;
     height: 100%;
     background-color: #D3D3D3;
     }
@@ -285,11 +285,19 @@ foreach ($contents->result() as $row){
     bottom: 0;
     width: 60%;
     height: 25%;
-    position:relative;">
+    ">
       <div class="artist_other_art"></div>
       <div class="artist_other_art"></div>
       <div class="artist_other_art"></div>
-      <div class="artist_other_art" style="background:none; position:absolute; bottom:0"><span style="border-bottom:2px solid #868686; ">view more</span></div>
+      <div class="artist_other_art" style="b    text-align: center;
+    position: relative;
+    padding: 0;
+    background: none;"><span style="bottom: 0;
+    position: absolute;
+    font-size: 10px;
+    border-bottom: 2px solid #868686;
+    left: 50%;
+    margin-left: -24px;">view more</span></div>
     </div>
   </div>
 </div>
