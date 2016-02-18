@@ -201,6 +201,56 @@
     <?echo $storeExplain;?>
   </div>
 </div>
+<div class="col-xs-12" style="margin-top:40px;" >
+  <span style="margin:0 auto; display:table;">작 가 소 개</span>
+</div>
+<div class="col-xs-12" style="margin-top:20px;" >
+  <span style="margin:0 auto; width:30px; display:table; border-bottom:2px solid #D3D3D3;"></span>
+</div>
+<?php
+$facebookURL = $this->uri->segment(3);
+
+    echo "
+    <script>
+    function facebook_for_artist(){
+      FB.ui({
+        method: 'share',
+        href: 'http://blankit.kr/funding/product/" . $facebookURL . "',
+      }, function(response){});
+      }
+      </script> ";
+foreach ($contents->result() as $row){
+  if ($numPath == $row->store_id){
+    $artistType = $row->artist_type;
+    $artistIntro = $row->artist_intro;
+    $artistProfile = $row->artist_profile;
+  }
+}
+
+?>
+<div class="col-xs-12" style="margin-top:30px;" >
+  <div style="display:inline-block; width:30%;">
+    <div><img src="<?php echo $artistProfile;?>" class="pp img img-circle img-responsive"></div>
+    <div>  <a onclick="facebook_for_artist()" style="cursor:pointer;">
+        <img src="/source/image/fb_user.png" class="img img-responsive" style="margin:0 auto;">
+      </div>
+    </a></div>
+  </div>
+  <div style="display:inline-block; width:70%;">
+    <div >
+      <span style="font-size:16px; font-weight:400;"><?php echo $userName;?> (<?php echo $artistType;?>)</span>
+    </div>
+    <div>
+      <span style="font-size:13px; font-weight:300;"><?php $lineArtistIntro = str_replace(" ","\n",$artistIntro); echo $lineArtistIntro;?></span>
+    </div>
+    <div>
+      <div style="display:inline-block; width:20%;height:50px;"></div>
+      <div style="display:inline-block; width:20%;height:50px;"></div>
+      <div style="display:inline-block; width:20%;height:50px;"></div>
+      <div style="display:inline-block; width:20%;height:50px;"></div>
+    </div>
+  </div>
+</div>
 
 </div>
 <!-- 제품에 들어간 작품부분 끝 -->
