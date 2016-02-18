@@ -259,7 +259,7 @@ foreach ($contents->result() as $row){
 
     </a></div>
   </div>
-  <div style="padding-top: 5%;
+  <div style="padding-top: 3%;
     padding-left: 10%;
     vertical-align: top;
     display: inline-block;
@@ -267,7 +267,13 @@ foreach ($contents->result() as $row){
     <div >
       <span style="font-size:20px; font-weight:400;"><?php echo $userName;?></span> <span style="font-size:14px; font-weight:300;"><?php echo $artistType;?></span>
     </div>
-    <div  style=" width:100%;height:50px;    margin-top: 20px;">
+    <div  style="bottom: 25%;
+    position: absolute;
+    height: 50%;
+    overflow-y: hidden;
+    width: 100%;
+    margin-top: 3%;
+    left: 41%;">
       <span style="font-size:13px; font-weight:300;"><?php $lineArtistIntro = str_replace(" ","\n",$artistIntro); echo $lineArtistIntro;?></span>
     </div>
     <style>
