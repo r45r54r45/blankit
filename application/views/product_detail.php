@@ -276,7 +276,11 @@ foreach ($contents->result() as $row){
     display: inline-block;
     width: 23%;
     height: 100%;
-    background-color: #D3D3D3;
+
+    }
+    .inside_art{
+      background-color: #D3D3D3;
+      border-radius:10%;
     }
     </style>
     <div class="hidden-xs" style="left: 40%;
@@ -286,9 +290,15 @@ foreach ($contents->result() as $row){
     width: 60%;
     height: 25%;
     ">
-      <div class="artist_other_art"></div>
-      <div class="artist_other_art"></div>
-      <div class="artist_other_art"></div>
+      <div class="artist_other_art">
+        <div class="inside_art"></div>
+      </div>
+      <div class="artist_other_art">
+        <div class="inside_art"></div>
+      </div>
+      <div class="artist_other_art">
+        <div class="inside_art"></div>
+      </div>
       <div class="artist_other_art" style="b    text-align: center;
     position: relative;
     padding: 0;
