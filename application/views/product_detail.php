@@ -210,6 +210,27 @@
 <?php
 $facebookURL = $this->uri->segment(3);
 $numPath =  $this->uri->segment(3);
+foreach ($details->result() as $row)
+{
+  if($row->store_id == $numPath){
+    $storeImage = $row->store_image;
+    $storeDay = $row->store_day;
+    $storeGoal = $row->store_goal;
+    $storeGoalNow = $row->store_goal_now;
+    $userName = $row->user_name;
+    $GlobalUserName=$userName;
+    $storeType = $row->store_type;
+    $GlobalStoreType=$storeType;
+    $storeStatus = $row->store_status;
+    $storeId = $row->store_id;
+    $storeName = $row->store_name;
+    $GlobalStoreName=$storeName;
+    $storePrice = $row->store_price;
+
+    $SELLER = $row->SELLER;
+    break;
+  }
+}
     echo "
     <script>
     function facebook_for_artist(){
