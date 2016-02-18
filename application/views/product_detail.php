@@ -313,7 +313,8 @@ height: 100%;
     </div>
   </div>
 </div>
-<div class="col-xs-12" style="margin-top:40px;" >
+<div class="col-xs-12" style="margin-top:40px;    border-top: 1px solid #D3D3D3;
+    padding-top: 40px;" >
   <span style="margin:0 auto; display:table;">작 품 구 입</span>
 </div>
 <div class="col-xs-12" style="margin-top:20px;" >
