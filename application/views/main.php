@@ -380,7 +380,7 @@ $(window).resize(function(){
            	<?php
       			//echo $remainDays;
       		?>
-      </span><?php// if ($dayStatus == 1) echo "일";?></span>
+      </span><?php //if ($dayStatus == 1) echo "일";?></span>
     </div> -->
     <div class="artist_hover" style="width: 100%; display: inline-flex;">
       <div style="width:20%; margin-left: 10px; padding-top: 10px; margin-bottom:15px;">
