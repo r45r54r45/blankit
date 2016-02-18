@@ -145,6 +145,13 @@ $(function(){
   });
 });
 
+$("input[name='user_pw']").keypress(function(event) {
+    if (event.which == 13) {
+        event.preventDefault();
+        submitCheck();
+    }
+});
+
 function submitCheck(){
   if($("input[name='user_id']").val()==''){
     alert("아이디를 입력해주세요");
