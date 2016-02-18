@@ -188,17 +188,18 @@
   <div class="artwork">
     <img style="margin: 0 auto;" src="<?echo $itemImage;?>" class="img thumbnail img-responsive" >
   </div>
+  </div>
+  <div class="col-xs-12" style="margin-top:40px;" >
+    <span style="margin:0 auto; display:table;">작 품 해 설</span>
+  </div>
+  <div class="col-xs-12" style="margin-top:20px;" >
+    <span style="margin:0 auto; width:30px; display:table; border-bottom:1px solid black;">    </span>
+  </div>
+  <div class="col-xs-12" style="margin-top:20px;" >
   <div class="t2">
     <?echo $storeExplain;?>
   </div>
-  </div>
-  <div class="col-xs-12" style="margin-top:40px;" >
-    <span style="margin:0 auto; display:block;">작 품 해 설</span>
-  </div>
-  <div class="col-xs-12" style="margin-top:40px;" >
-    <span style="margin:0 auto; display:block; border-bottom:1px solid black;">    </span>
-  </div>
-
+</div>
 
 </div>
 <!-- 제품에 들어간 작품부분 끝 -->
