@@ -145,13 +145,6 @@ $(function(){
   });
 });
 
-$("input[name='user_pw']").keypress(function(event) {
-    if (event.which == 13) {
-        event.preventDefault();
-        alert("Enter Pressed");
-    }
-});
-
 function submitCheck(){
   if($("input[name='user_id']").val()==''){
     alert("아이디를 입력해주세요");
@@ -221,6 +214,15 @@ if ($explodePath = explode('?', $urlPath)){
           </div>
 
         </form>
+        
+        <script>
+        $("input[name='user_pw']").keypress(function(event) {
+            if (event.which == 13) {
+                event.preventDefault();
+                alert("Enter Pressed");
+            }
+        });
+        </script>
 
         <div class="row" style="margin-top:10px; height: 25px;">
           <div class="col-xs-4" style="padding-top:4px;">
