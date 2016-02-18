@@ -550,7 +550,7 @@ $(window).resize(function(){
     foreach ($artist_list->result() as $row)
     {
       // 작가 이미지 없을 시 스킵하기
-      if($row->artist_profile == "NULL"){
+      if($row->artist_profile == NULL){
       	continue;
       }
       
