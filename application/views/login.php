@@ -219,7 +219,7 @@ if ($explodePath = explode('?', $urlPath)){
         $("input[name='user_pw']").keypress(function(event) {
             if (event.which == 13) {
                 event.preventDefault();
-                alert("Enter Pressed");
+                submitCheck();
             }
         });
         </script>
