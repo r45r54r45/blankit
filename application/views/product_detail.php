@@ -271,7 +271,7 @@ foreach ($contents->result() as $row){
     position: absolute;
     height: 50%;
     overflow-y: hidden;
-    width: 100%;
+    width: 55%;
     margin-top: 3%;
     left: 41%;">
       <span style="font-size:13px; font-weight:300;"><?php $lineArtistIntro = str_replace(" ","\n",$artistIntro); echo $lineArtistIntro;?></span>
