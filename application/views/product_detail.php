@@ -183,8 +183,8 @@
 
 <!-- 제품에 들어간 작품 부분 시작-->
 <div class="container">
-<div class="row row_padding-xs" style="margin-top:40px;">
-  <div class="col-xs-12" style="padding-bottom:40px; >
+<div class="row row_padding-xs"  style="margin-top:40px;">
+  <div class="col-xs-12" style="padding-bottom:40px;" >
   <div class="artwork">
     <img style="margin: 0 auto;" src="<?echo $itemImage;?>" class="img thumbnail img-responsive" >
   </div>
