@@ -267,8 +267,7 @@ foreach ($contents->result() as $row){
     <div >
       <span style="font-size:16px; font-weight:400;"><?php echo $userName;?></span> <span style="font-size:14px; font-weight:300;"><?php echo $artistType;?></span>
     </div>
-    <div>
-      <div style="display:inline-block; width:20%;height:50px;    margin-top: 20px;"></div>
+    <div  style="display:inline-block; width:20%;height:50px;    margin-top: 20px;">
       <span style="font-size:13px; font-weight:300;"><?php $lineArtistIntro = str_replace(" ","\n",$artistIntro); echo $lineArtistIntro;?></span>
     </div>
     <div>
