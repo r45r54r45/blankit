@@ -192,9 +192,13 @@
     <?echo $storeExplain;?>
   </div>
   </div>
-  <div class="col-xs-12" style="margin-top:40px; >
+  <div class="col-xs-12" style="margin-top:40px;" >
     <span style="margin:0 auto; display:block;">작 품 해 설</span>
   </div>
+  <div class="col-xs-12" style="margin-top:40px; >
+    <span style="margin:0 auto; display:block; border-bottom:1px solid black;">    </span>
+  </div>
+
 
 </div>
 <!-- 제품에 들어간 작품부분 끝 -->
