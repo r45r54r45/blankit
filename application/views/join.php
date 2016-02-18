@@ -171,7 +171,7 @@ function submitCheck(){
     alert("아이디를 입력해주세요");
     return;
   }
-  if ($("input[name='id']").indexOf("@") == 0){
+  if ($("input[name='id']").val().indexOf("@") < 0){
 	alert("아이디는 이메일이어야 합니다");  
 	return;
   }
