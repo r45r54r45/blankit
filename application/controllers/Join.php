@@ -27,7 +27,7 @@ class Join extends CI_Controller {
 			$phone1 = $this->input->post('phone1');
 			$phone2 = $this->input->post('phone2');
 			$phone3 = $this->input->post('phone3');
-			$email = $this->input->post('email');
+			//$email = $this->input->post('email'); -> 이메일 제거/통합 16.02.08
 			$phone = $phone1 . $phone2 . $phone3;
 			$type = $this->input->post('type'); // 1일반 2아티스트
 			$job = $this->input->post('job');
@@ -53,10 +53,10 @@ class Join extends CI_Controller {
 
 			$this->load->model('join_model');
 			if ($type == 1){
-				$this->join_model->func_join_ok1($id, $pw, $name,$email, $phone, $type);
+				$this->join_model->func_join_ok1($id, $pw, $name, $phone, $type);
 			}
 			else {
-				$this->join_model->func_join_ok2($id, $pw, $name,$email, $phone, $type, $job, $introduction);
+				$this->join_model->func_join_ok2($id, $pw, $name, $phone, $type, $job, $introduction);
 			}
 		}
 

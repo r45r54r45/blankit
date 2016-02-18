@@ -1057,7 +1057,8 @@ function submitCheck(){
             <div class="menu title2">이름</div>
             <input class="menu_input" name="name" type="text">
           </div>
-          <script >
+          
+          <!-- <script>
           function checkemailaddy(){
             if ($("#email_select").val() == '1') {
               $("#email2").attr("readonly",false);
@@ -1084,8 +1085,8 @@ function submitCheck(){
             </select>
 
 
-          </div>
-  <input name="email" type="hidden">
+          </div> 
+  			<input name="email" type="hidden">  16.02.18 이메일 제거/통합-->
 
 
           <div class="row row-padding-xs-100 " style="margin-top:10px;">
