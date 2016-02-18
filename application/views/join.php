@@ -1043,7 +1043,7 @@ function submitCheck(){
           <div class="menu">아이디</div>
           <input class="menu_input" name="id" type="text" id="id">
           <a onclick="id_check()"><div id="uuu" class="menu_button myButton" style="border-radius:5px;">중복확인</div><a>
-            <input type="text" style="display:none;" id="id_check">
+            <input type="text" style="display:none;" id="id_check" placeholder="이메일을 입력해주세요">
           </div>
           <div class="row row-padding-xs-100 " style="margin-top:10px;">
             <div class="menu title2">비밀번호</div>
