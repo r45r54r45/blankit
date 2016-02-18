@@ -549,6 +549,11 @@ $(window).resize(function(){
     $num=0;
     foreach ($artist_list->result() as $row)
     {
+      // 작가 이미지 없을 시 스킵하기
+      if($row->artist_profile == "NULL"){
+      	continue;
+      }
+      
       $num++;
       if($num<4){
     ?>
