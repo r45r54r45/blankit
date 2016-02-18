@@ -185,7 +185,6 @@
 <div class="container">
 <div class="row row_padding-xs" style="margin-top:40px;">
   <div class="col-xs-12" style="padding-bottom:40px; >
-  <!-- <div class="t1-gal" style="margin-bottom:20px;"><?php echo $storeName;?></div> -->
   <div class="artwork">
     <img style="margin: 0 auto;" src="<?echo $itemImage;?>" class="img thumbnail img-responsive" >
   </div>
@@ -193,6 +192,10 @@
     <?echo $storeExplain;?>
   </div>
   </div>
+  <div class="col-xs-12" style="margin-top:40px; >
+    <span style="margin:0 auto; display:block;">작 품 해 설</span>
+  </div>
+
 </div>
 <!-- 제품에 들어간 작품부분 끝 -->
 <!-- style="border-bottom:2px solid #96AFB5; color:#96AFB5;" -->
