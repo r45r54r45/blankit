@@ -72,35 +72,35 @@ input[type="radio"] + label{
 }
 </style>
 <script>
-if ($("input[name='id']").val().indexOf("@") < 0){
-	alert("아이디는 이메일 형식이어야 합니다");
-} else{
 	function id_check(){
-	  $.ajax({
-	    url: "/join/id_check?id="+$("input[name='id']").val(),
-	    success:function(data){
-	      if(data=='true'){
-	        $("#id_check").val("true");
-	        $("input[name='id']").attr("readonly",true);
-	        $("#uuu").css("display","none");
-	        if ($('#profile').length) {
-	          $(".temp").off();
-	          var nameValue = $("input[name='id']").val();
-	          var urll="/file/profile?file=" + nameValue;
-	          console.log(urll);
-	          myDropzone1 = new Dropzone("#profile", { url:urll , paramName: "userfile",maxFiles:1,addRemoveLinks:true,autoProcessQueue: false,dictRemoveFile:"파일 삭제",dictMaxFilesExceeded:"1개만 업로드할 수 있습니다."});
-	          $('#profile').attr("class","dropzone");
-	        };
-	        console.log(nameValue);
-	        alert('사용할 수 있는 아이디입니다.');
-	      }else{
-	        alert('사용할 수 없는 아이디입니다.');
-	      }
-	
-	    }
-	  });
-	}
-}
+		if ($("input[name='id']").val().indexOf("@") < 0){
+			alert("아이디는 이메일 형식이어야 합니다");		
+		}
+		else{	
+  $.ajax({
+    url: "/join/id_check?id="+$("input[name='id']").val(),
+    success:function(data){
+      if(data=='true'){
+        $("#id_check").val("true");
+        $("input[name='id']").attr("readonly",true);
+        $("#uuu").css("display","none");
+        if ($('#profile').length) {
+          $(".temp").off();
+          var nameValue = $("input[name='id']").val();
+          var urll="/file/profile?file=" + nameValue;
+          console.log(urll);
+          myDropzone1 = new Dropzone("#profile", { url:urll , paramName: "userfile",maxFiles:1,addRemoveLinks:true,autoProcessQueue: false,dictRemoveFile:"파일 삭제",dictMaxFilesExceeded:"1개만 업로드할 수 있습니다."});
+          $('#profile').attr("class","dropzone");
+        };
+        console.log(nameValue);
+        alert('사용할 수 있는 아이디입니다.');
+      }else{
+        alert('사용할 수 없는 아이디입니다.');
+      }
+
+    }
+  });
+	}}
 
 	
 var pongpong;
