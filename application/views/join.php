@@ -171,8 +171,10 @@ function submitCheck(){
     alert("아이디를 입력해주세요");
     return;
   }
-  //진우 // 아이디 중복확인 넣어야함
-
+  if ($("input[name='id']").indexOf("@") == 0){
+	alert("아이디는 이메일이어야 합니다");  
+	return;
+  }
   if($("#id_check").val()==''){
     alert("아이디 중복확인을 해주세요");
     return;
