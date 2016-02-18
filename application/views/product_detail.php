@@ -209,7 +209,28 @@
 </div>
 <?php
 $facebookURL = $this->uri->segment(3);
+$numPath =  $this->uri->segment(3);
+foreach ($details->result() as $row)
+{
+  if($row->store_id == $numPath){
+    $storeImage = $row->store_image;
+    $storeDay = $row->store_day;
+    $storeGoal = $row->store_goal;
+    $storeGoalNow = $row->store_goal_now;
+    $userName = $row->user_name;
+    $GlobalUserName=$userName;
+    $storeType = $row->store_type;
+    $GlobalStoreType=$storeType;
+    $storeStatus = $row->store_status;
+    $storeId = $row->store_id;
+    $storeName = $row->store_name;
+    $GlobalStoreName=$storeName;
+    $storePrice = $row->store_price;
 
+    $SELLER = $row->SELLER;
+    break;
+  }
+}
     echo "
     <script>
     function facebook_for_artist(){
@@ -230,10 +251,12 @@ foreach ($contents->result() as $row){
 ?>
 <div class="col-xs-12" style="margin-top:30px;" >
   <div style="display:inline-block; width:30%;">
-    <div><img src="<?php echo $artistProfile;?>" class="pp img img-circle img-responsive"></div>
+    <div><img src="<?php echo $artistProfile;?>" class="pp img img-circle img-responsive"
+      style="height: 100%;
+    width: 100%;"></div>
     <div>  <a onclick="facebook_for_artist()" style="cursor:pointer;">
         <img src="/source/image/fb_user.png" class="img img-responsive" style="margin:0 auto;">
-      </div>
+
     </a></div>
   </div>
   <div style="display:inline-block; width:70%;">
