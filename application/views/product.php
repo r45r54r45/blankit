@@ -210,7 +210,7 @@ foreach ($details->result() as $row)
     $storeName = $row->store_name;
     $GlobalStoreName=$storeName;
     $storePrice = $row->store_price;
-    
+
     $SELLER = $row->SELLER;
     break;
   }
@@ -267,7 +267,7 @@ switch ($GlobalStoreType) {
 
   </div>
 </div>
-<div class="container" style="margin-top:20px;">
+<div class="container sr-only" style="margin-top:20px;">
   <div class="row row_padding-xs">
     <div class="col-md-8" style="">
       <div class="product_area ">
@@ -464,7 +464,7 @@ switch ($GlobalStoreType) {
 		            </div>';
 	              }
               	}
-              
+
               ?>
             </div>
           </div>
