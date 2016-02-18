@@ -98,6 +98,10 @@ $(function(){
     <?
     foreach ($artist_list->result() as $row)
   	{
+  		/** 작가 프로필 없을 시 스킵하기 **/
+  		if($row->artist_profile == NULL){
+  			continue;
+  		}
     ?>
     <div class="col-xs-6 col-sm-4 col-md-3 col-lg-15">
       <div class="img_hover_cover  bg ">

@@ -9,12 +9,12 @@ class Main extends CI_Controller {
 		$data['mdpick']=$this->main_model->mdpick();
 		
 		/** 마감 확인 **/
-		$data2['dateChecker']=$this->main_model->dateChecker(); // -> 16.02.18 제거
+		//$data2['dateChecker']=$this->main_model->dateChecker(); // -> 16.02.18 제거
 
 		$this->load->model('artist_model');
 		$data['artist_list']=$this->artist_model->artist_list();
 		// $data['mdartist']=$this->main->mdartist();
-		$this->load->view('header', $data2);
+		$this->load->view('header');
 		$this->load->view('main',$data);
 		$this->load->view('footer');
 		// 푸터는 메인페이지 안에 들어가있음
