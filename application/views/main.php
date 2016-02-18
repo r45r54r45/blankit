@@ -485,8 +485,8 @@ $(window).resize(function(){
           </div>
         </div>
     </a></div>
-    <!-- <div class="status_bar" style="background: linear-gradient(to right, #687C87 <?php echo ceil($percGoal)?>%,#D3D3D3 <?php echo ceil($percGoal)?>% );"> </div>
-     <div class="artist_hover" style="padding-top:7px;">
+    <div class="status_bar" style="background: linear-gradient(to right, #687C87 0%,#D3D3D3 100% );"> </div>
+    <!-- <div class="artist_hover" style="padding-top:7px;">
       <span class="status_percent">
       	<?php
       		//echo ceil($percGoal) . "%";
