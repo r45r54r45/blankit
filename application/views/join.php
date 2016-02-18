@@ -73,7 +73,7 @@ input[type="radio"] + label{
 </style>
 <script>
 	function id_check(){
-		if ($("input[name='id']").val().indexOf("@") < 0){
+		if ($("input[name='id']").val().indexOf("@") < 0 || $("input[name='id']").val().indexOf(".") < 0){
 			alert("아이디는 이메일 형식이어야 합니다");		
 		}
 		else{	
@@ -177,7 +177,7 @@ function submitCheck(){
     alert("아이디를 입력해주세요");
     return;
   }
-  if ($("input[name='id']").val().indexOf("@") < 0){
+  if ($("input[name='id']").val().indexOf("@") < 0 || $("input[name='id']").val().indexOf(".") < 0){
 	alert("아이디는 이메일 형식이어야 합니다");  
 	return;
   }
