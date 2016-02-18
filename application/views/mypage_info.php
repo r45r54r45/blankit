@@ -255,7 +255,7 @@ if(isset($_GET['status'])){
 
 <?php 
 	foreach($userInfo->result() as $row){
-		$userEmail = $row->user_email;
+		//$userEmail = $row->user_email;
 		$userName = $row->user_name;
 		$userPhone = $row->user_phone;
 		if ($userPhone !== ""){
@@ -289,10 +289,10 @@ if(isset($_GET['status'])){
         <div class="menu title2">이름</div>
         <span> <?php echo $userName;?> </span>
       </div>
-      <div class="row row-padding-xs-100 " style="margin-top:10px;">
+      <!-- <div class="row row-padding-xs-100 " style="margin-top:10px;">
         <div class="menu">이메일</div>
-        <input type="email" name="email" value="<?php echo $userEmail;?>">
-        </div>
+        <input type="email" name="email" value="<?php //echo $userEmail;?>">
+        </div> -->
       <div class="row row-padding-xs-100 " style="margin-top:10px;">
         <div class="menu title2">비밀번호</div>
         <input class="menu_input" name="pw" type="password">

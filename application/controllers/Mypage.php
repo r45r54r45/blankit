@@ -41,7 +41,7 @@ class Mypage extends CI_Controller {
 	public function func_updateInfo(){
 		$userSESSION = $this->session->userdata('user_id');
 		
-		$email = $this->input->post('email');
+		//$email = $this->input->post('email');
 		$artistType = $this->input->post('artistType');
 		
 		$phone1 = $this->input->post('phone1');
@@ -67,10 +67,10 @@ class Mypage extends CI_Controller {
 	 	
 	 	//비번 안 바뀔 떄
 	 	if ($pw == ""){
-	 		$this->mypage_model->update_userInfo($email, $phone, $intro, $type, $artistType);
+	 		$this->mypage_model->update_userInfo($phone, $intro, $type, $artistType);
 	 	}
 	 	else {
-	 		$this->mypage_model->update_userInfo_pw($pw, $email, $phone, $intro, $type, $artistType);
+	 		$this->mypage_model->update_userInfo_pw($pw, $phone, $intro, $type, $artistType);
 	 	}
 	 	
 	 	if($_FILES['file']['name']){

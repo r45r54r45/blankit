@@ -31,22 +31,22 @@ class Mypage_model extends CI_Model{
 		");
 	}
 	
-	public function update_userInfo($email, $phone, $intro, $type, $artistType){
+	public function update_userInfo($phone, $intro, $type, $artistType){
 		$userSession = $this->session->userdata('user_id');
 		
 		$this->db->query("
 			update `USER`
-			set user_email='$email', user_phone='$phone', artist_intro='$intro', user_type='$type', artist_type='$artistType'
+			set user_phone='$phone', artist_intro='$intro', user_type='$type', artist_type='$artistType'
 			where user_id='$userSession'
 		");
 	}
 	
-	public function update_userInfo_pw($pw, $email, $phone, $intro, $type, $artistType){
+	public function update_userInfo_pw($pw, $phone, $intro, $type, $artistType){
 		$userSession = $this->session->userdata('user_id');
 	
 		$this->db->query("
 			update `USER`
-			set user_email='$email', user_phone='$phone', artist_intro='$intro', user_pw='$pw', user_type='$type', artist_type='$artistType'
+			set user_phone='$phone', artist_intro='$intro', user_pw='$pw', user_type='$type', artist_type='$artistType'
 			where user_id='$userSession'
 		");
 	}
