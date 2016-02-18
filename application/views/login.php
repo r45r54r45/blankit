@@ -148,7 +148,7 @@ $(function(){
 $("input[name='user_pw']").keypress(function(event) {
     if (event.which == 13) {
         event.preventDefault();
-        submitCheck();
+        alert("Enter Pressed");
     }
 });
 
