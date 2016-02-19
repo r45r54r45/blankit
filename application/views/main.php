@@ -278,7 +278,7 @@ $(window).resize(function(){
 </div>
 <div class="row" style="margin-top:20px;">
   <div class="col-md-12">
-  <p class="row_title">STORE</p>
+  <p class="row_title">GALLERY</p>
   <p class="row_desc">오로지 블랭킷에서 만나볼 수 있는<br>
 아티스트들의 아트워크를 확인해 보세요.</p>
 </div>
