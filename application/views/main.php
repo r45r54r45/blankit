@@ -479,10 +479,10 @@ $(window).resize(function(){
     <div class="box radius-4">
     <div><a href="/funding/product/<?php echo $row->store_id?>">
       <div class="product_area ">
-          <img class="lazy product_bed img_rounded img-responsive" src="<?echo $itemBed?>">
-          <div class="product" style="<?echo $itemPos;?>">
+          <!-- <img class="lazy product_bed img_rounded img-responsive" src="<?echo $itemBed?>">
+          <div class="product" style="<?echo $itemPos;?>"> -->
             <img src="<?php echo $row->store_image;?>" class="lazy img img-responsive" style="border-radius:2%;">
-          </div>
+          <!-- </div> -->
         </div>
     </a></div>
     <div class="status_bar" style="background: linear-gradient(to right, #687C87 0%,#D3D3D3 100% );"> </div>
