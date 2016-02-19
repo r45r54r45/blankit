@@ -377,7 +377,7 @@ else {
   <div class="row" style="">
     <div class="col-xs-12">
       <div class="tt">블랭킷 X 아티스트 작품 설명</div>
-      <textarea style="margin-top:10px;height:292px; border: 1px solid #D3D3D3; width:100%" name="explain"></textarea>
+      <textarea style="margin-top:10px;height:140px; border: 1px solid #D3D3D3; width:100%" name="explain"></textarea>
     </div>
   </div>
 
@@ -388,7 +388,7 @@ else {
 if ($session_id == "" || $session_userType == "1"){
   echo '
   <div style="background: #D3D3D3;
-  height: 360px;
+  height: 180px;
   width: 100%;
   position: absolute;
   left: 0;
