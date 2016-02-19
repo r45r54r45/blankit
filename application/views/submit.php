@@ -227,8 +227,12 @@ else {
 <div class="banner">
   <img src="/source/image/submit-page-banner.jpg">
   <div class="banner-text">
-    <p>혼자 간직해온 작품이 있나요?</p>
-    <p>제작비용 0원에 당신만의 제품을 선보이세요.</p>
+  <p>  혼자 간직해온 작품이 있나요?</p>
+  <p>
+제작비용 0원에 당신만의 제품을 선보이세요.</p>
+<p>
+전문가가 아니어도 좋습니다. 블랭킷은 모든 아티스트를 응원합니다.</p>
+
   </div>
 </div>
 </div>
@@ -243,11 +247,11 @@ else {
     </div>
   </div>
   <div class="row">
-    <div class="col-xs-12" style="margin-top:30px; border-top: 1px solid #D3D3D3;">
+    <!-- <div class="col-xs-12" style="margin-top:30px; border-top: 1px solid #D3D3D3;">
       <span style="margin-top:30px; text-align:center; display:block; font-size: 25px; color:#655453; font-weight:bold;">
         작업 파일 다운로드
       </span>
-    </div>
+    </div> -->
     <div style="margin-top:30px;" class="col-xs-12 hidden-sm hidden-md hidden-lg">
       <span style="display:block; text-align:center;">작업 파일 다운로드는 PC에서만 제공합니다.</span>
     </div>

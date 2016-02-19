@@ -279,7 +279,7 @@ $(window).resize(function(){
 <div class="row" style="margin-top:20px;">
   <div class="col-md-12">
   <p class="row_title">STORE</p>
-  <p class="row_desc">오로지 블랭킷에서만, 오로지 이 기간 동안에만 만나볼 수 있는<br>
+  <p class="row_desc">오로지 블랭킷에서 만나볼 수 있는<br>
 아티스트들의 아트워크를 확인해 보세요.</p>
 </div>
 </div>
@@ -300,7 +300,7 @@ $(window).resize(function(){
 	        $totalGoal = $row->store_goal;
 	        $nowGoal = $row->store_goal_now;
 	        $pref = trim($row->store_pref);
-	        
+
 	        $percGoal = $nowGoal / $totalGoal * 100;
 
 	        //"앞으로 # 일 계산"
@@ -336,7 +336,7 @@ $(window).resize(function(){
               $itemBed="/source/product/P_1_bed.jpg";
             break;
           } */
-          
+
           if($pref=="E_1_1" || $pref=="E_1_2" || $pref=="E_1_3"){
           	$itemPos="left:35.4%;top:46.100000000000006%;width:29.333333333333332%;height:39.93333333333333%;";
           	$itemBed="/source/product/" . $pref . "_bed.jpg";
@@ -359,7 +359,7 @@ $(window).resize(function(){
           	$itemPos="left:37%;top:35%;width:23.066666666666666%;height:20.333333333333332%;";
           	$itemBed="/source/product/" . $pref . "_bed.jpg";
           }else{
-          	
+
           }
       // 우현 이미지 합성부분 종료
       ?>
@@ -469,7 +469,7 @@ $(window).resize(function(){
     	$itemPos="left:37%;top:35%;width:23.066666666666666%;height:20.333333333333332%;";
     	$itemBed="/source/product/" . $pref . "_bed.jpg";
     }else{
-    	 
+
     }
 // 우현 이미지 합성부분 종료
 ?>
@@ -518,17 +518,7 @@ $(window).resize(function(){
 
 
 
-<div class="container-fluid">
-<div class="row" style="margin-top: 40px;">
-  <div class="row-md-12" style="background: #F5F6F7; padding:30px 5px 40px 5px;">
-    <p class="gal" style="font-size:21px; font-weight:bold; text-align:center; margin-top:15px; margin-bottom:15px;">당신도 함께해주세요!</p>
-    <p class="gal" style="font-size:13px; font-weight:regular; text-align:center; margin-bottom:15px; ">혼자 간직해온 작품이 있나요?
-<br class="visible-xs"> 제작비용 0원에 당신만의 제품을 선보이세요.</p>
-    <div class="submit_button"><a href="/submit" class="myButton" style="padding: 8px 35px; color:#687C87;">내 작품 판매하기</a></div>
 
-  </div>
-</div>
-</div>
 <div class="container">
   <div class="row" style="margin-top:40px;">
     <div class="col-md-12">
@@ -553,7 +543,7 @@ $(window).resize(function(){
       if($row->artist_profile == NULL){
       	continue;
       }
-      
+
       $num++;
       if($num<4){
     ?>
@@ -606,6 +596,17 @@ if($num==6){
         } ?>
   </div>
 
+  </div>
+  <div class="container-fluid">
+  <div class="row" style="margin-top: 40px;">
+    <div class="row-md-12" style="background: #F5F6F7; padding:30px 5px 40px 5px;">
+      <p class="gal" style="font-size:21px; font-weight:bold; text-align:center; margin-top:15px; margin-bottom:15px;">당신도 함께해주세요!</p>
+      <p class="gal" style="font-size:13px; font-weight:regular; text-align:center; margin-bottom:15px; ">혼자 간직해온 작품이 있나요?
+  <br class="visible-xs"> 제작비용 0원에 당신만의 제품을 선보이세요.</p>
+      <div class="submit_button"><a href="/submit" class="myButton" style="padding: 8px 35px; color:#687C87;">내 작품 판매하기</a></div>
+
+    </div>
+  </div>
   </div>
   <div class="container-fluid hidden-xs hidden-sm" style="padding:0px; margin-top:45px;">
     <img src="/source/image/main_guide.png" class="img img-responsive">
