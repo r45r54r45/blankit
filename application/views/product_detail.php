@@ -189,14 +189,14 @@
     <img style="margin: 0 auto;" src="<?echo $itemImage;?>" class="img thumbnail img-responsive" >
   </div>
   </div>
-  <div class="col-xs-12" style="margin-top:40px;" >
+  <div class="col-xs-12" style="margin-top:20px;" >
     <span style="margin:0 auto; display:table;">작 품 해 설</span>
   </div>
   <div class="col-xs-12" style="margin-top:20px;" >
     <span style="margin:0 auto; width:30px; display:table; border-bottom:2px solid #D3D3D3;">    </span>
   </div>
   <div class="col-xs-12" style="margin-top:20px;border-bottom: 3px solid #D3D3D3;
-    padding-bottom: 30px;" >
+    padding-bottom: 40px;" >
   <div class="t2">
     <?echo $storeExplain;?>
   </div>
