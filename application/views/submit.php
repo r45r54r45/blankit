@@ -388,14 +388,14 @@ else {
 if ($session_id == "" || $session_userType == "1"){
   echo '
   <div style="background: #D3D3D3;
-  height: 180px;
+  height: 220px;
   width: 100%;
   position: absolute;
   left: 0;
   top: 100px;
   z-index: 8999;
   opacity: 0.5; text-align:center;">
-  <span style="line-height:360px; vertical-align:middle;font-size:25px;color:#655453;">아티스트 회원만 작품을 업로드할 수 있습니다.</span>
+  <span style="line-height:220px; vertical-align:middle;font-size:25px;color:#655453;">아티스트 회원만 작품을 업로드할 수 있습니다.</span>
   </div>
   ';}
   ?>
