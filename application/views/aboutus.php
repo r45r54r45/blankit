@@ -157,8 +157,8 @@ $(function(){
       <p style="    margin-top: 10px;
     font-size: 17px;
     font-weight: 600;">BLANK + IT</p>
-      <p style="    text-align: left;
-    font-size: 11px;
+      <p style="    text-align: center;
+    font-size: 12px;
     font-weight: 400;">
     블랭킷은 <아티스트 굿즈제작 플랫폼>입니다.<br>
 베이식 아이템을 빈(blank) 캔버스 삼아 아티스트의 작품(it)을 담습니다.<br><br>
@@ -176,8 +176,8 @@ $(function(){
       <p style="    margin-top: 10px;
     font-size: 17px;
     font-weight: 600;">블랭킷에서는 당신이 큐레이터입니다.</p>
-      <p style="    text-align: left;
-    font-size: 11px;
+      <p style="    text-align: center;
+    font-size: 12px;
     font-weight: 400;">
     길거리에서 같은 옷 마주치기 민망하지 않으셨나요? <br>
 유행 스타일만 찍어내는 편집숍에 실망하지 않으셨나요? <br><br>
@@ -198,8 +198,8 @@ $(function(){
       <p style="    margin-top: 10px;
     font-size: 17px;
     font-weight: 600;">블랭킷에서는 모두가 아티스트입니다.</p>
-      <p style="    text-align: left;
-    font-size: 11px;
+      <p style="    text-align: center;
+    font-size: 12px;
     font-weight: 400;">
     대학교 사망년, 만년 대리 회사원, 백수…<br>
 블랭킷에서는 직위도 직업도 없습니다.<br><br>
