@@ -370,7 +370,7 @@ $(window).resize(function(){
           <!-- <image class="product_bed img_rounded img-responsive" src="<?echo $itemBed?>">
           <div class="product" style="<?echo $itemPos;?>"> -->
             <img src="<?php echo $row->store_image;?>" class="img img-responsive">
-          </div>
+          <!-- </div> -->
         </div>
     </a></div>
     <div class="status_bar" style="background: linear-gradient(to right, #687C87 0%,#D3D3D3 100% );"></div>
