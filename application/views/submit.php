@@ -324,7 +324,7 @@ else {
             </div>
           </div>
 
-          <div class="row" style="margin-top:20px;">
+          <!-- <div class="row" style="margin-top:20px;">
             <div class="col-xs-12">
               <div class="tt" >블랭킷 X 아티스트 작품 카테고리</div>
               <div class="menu_input_radio">
@@ -337,7 +337,7 @@ else {
                 <input type="radio" name="storeType" id="type3" value="3" data-toggle="modal" data-target="#myModal2"><label for="type3">파우치</label>
               </div>
             </div>
-          </div>
+          </div> -->
           <!-- <div class="row" style="margin-top:20px;">
           <div class="col-xs-12">
           <div class="tt">블랭킷 X 아티스트 작품 메인 제품</div>
@@ -352,7 +352,7 @@ else {
     </div>
   </div>
 </div> -->
-<div class="row" style="margin-top:20px;">
+<!-- <div class="row" style="margin-top:20px;">
   <div class="col-xs-12">
     <div class="tt" >블랭킷 X 아티스트 목표 구매자 수</div>
     <select id="goalNum" style=" width:100%" name="storeGoal">
@@ -364,7 +364,7 @@ else {
     </select>
     <span style="    font-size: 10px;">수량에 따라 아티스트 수익금이 상이합니다. 자세한 것은 가이드북을 참고해주세요!</span>
   </div>
-</div>
+</div> -->
 <div class="row" style="margin-top:20px;">
   <div class="col-xs-12">
     <div  class="tt">블랭킷 X 아티스트 작품 파일</div>
