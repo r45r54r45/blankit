@@ -252,12 +252,12 @@ else {
         작업 파일 다운로드
       </span>
     </div> -->
-    <div style="margin-top:30px;" class="col-xs-12 hidden-sm hidden-md hidden-lg">
+    <!-- <div style="margin-top:30px;" class="col-xs-12 hidden-sm hidden-md hidden-lg">
       <span style="display:block; text-align:center;">작업 파일 다운로드는 PC에서만 제공합니다.</span>
     </div>
-  </div>
+  </div> -->
 
-  <div class="row hidden-xs" style="margin-top:30px; margin-bottom:30px; ">
+  <!-- <div class="row hidden-xs" style="margin-top:30px; margin-bottom:30px; ">
     <div class="col-xs-2">
     </div>
     <div class="col-xs-2 download_cover">
@@ -281,7 +281,7 @@ else {
     </div>
     <div class="col-xs-2">
     </div>
-  </div>
+  </div> -->
   <div class="row">
     <div class="col-xs-12" style="margin-top:30px; border-top: 1px solid #D3D3D3;">
 
