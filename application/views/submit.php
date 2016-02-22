@@ -197,14 +197,6 @@ if ($session_id !== "" && $session_userType == "2"){
       alert(\"블랭킷 X 아티스트 작품명을 입력해주세요.\");
       return;
     }
-    if($(\"input[name='storeType']:checked\").length==0){
-      alert(\"작품 카테고리를 선택해주세요.\");
-      return;
-    }
-    if($(\"input[id='goalNum']\").val()==\"default\"){
-      alert(\"목표 구매자 수를 선택해주세요.\");
-      return;
-    }
     if($(\"input[name='file']\").val()==\"\"){
       alert(\"작품파일을 업로드해주세요\");
       return;
