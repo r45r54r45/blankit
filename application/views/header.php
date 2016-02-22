@@ -124,11 +124,11 @@
             <li><a class="nav-color navbar-left" href="/artist">artist</a></li>
             <li class="dropdown">
               <a href="/funding" id="store_menu" class="nav-color navbar-left dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">gallery</span></a>
-                <ul class="dropdown-menu" role="menu">
+     <!--            <ul class="dropdown-menu" role="menu">
                   <li><a href="/funding/cloth">의류</a></li>
                   <li><a href="/funding/ecobag">에코백</a></li>
                   <li><a href="/funding/pouch">파우치</a></li>
-                </ul>
+                </ul> -->
             </li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
