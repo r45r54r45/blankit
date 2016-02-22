@@ -133,7 +133,7 @@ function makePrice(option){
   }
 }
 
-}
+
 </script>
 
 <?php
