@@ -199,7 +199,7 @@ else {
   cursor: pointer;
 }
 </style>
-<div class="fixed-menu hidden-sm">
+<div class="fixed-menu hidden-sm hidden-xs">
   <div class="fixed-menu-item" onclick="$('body').scrollTo('#artwork_info',500)">
     <span>작품해설</span>
   </div>
