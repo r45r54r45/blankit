@@ -175,28 +175,36 @@ else {
 ?>
 <style>
 .fixed-menu{
+  overflow: hidden;
   position: fixed;
     right: 0;
     top: 30%;
-    height: 89px;
-    width: 60px;
+    height: 179px;
+    width: 90px;
     background: white;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
 .fixed-menu-item{
-  height:29px;
+  height:59px;
   width:100%;
   background: #D3D3D3;
   margin-bottom: 1px;
+  text-align: center;
+  line-height: 29px;
+  vertical-align: middle;
+  color:#777474;
 }
 </style>
-<div class="fixed-menu">
+<div class="fixed-menu hidden-sm">
   <div class="fixed-menu-item">
+    <span>작품해설</span>
   </div>
   <div class="fixed-menu-item">
+    <span>작가소개</span>
   </div>
   <div class="fixed-menu-item" style="margin-bottom:0px;">
+    <span>제품구매</span>
   </div>
 </div>
 <div class="banner">
