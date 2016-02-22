@@ -179,19 +179,19 @@ else {
   position: fixed;
     right: 0;
     top: 30%;
-    height: 179px;
-    width: 90px;
+    height: 149px;
+    width: 80px;
     background: white;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
 .fixed-menu-item{
-  height:59px;
+  height:49px;
   width:100%;
   background: #D3D3D3;
   margin-bottom: 1px;
   text-align: center;
-  line-height: 29px;
+  line-height: 49px;
   vertical-align: middle;
   color:#777474;
 }
