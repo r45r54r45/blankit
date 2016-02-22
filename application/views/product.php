@@ -206,7 +206,7 @@ else {
   <div class="fixed-menu-item" onclick="$('body').scrollTo('#artist_info')">
     <span>작가소개</span>
   </div>
-  <div class="fixed-menu-item" style="margin-bottom:0px;" onclick="$('body').scrollTo()">
+  <div class="fixed-menu-item" style="margin-bottom:0px;" onclick="alert('까꿍~~~~^^^^^^^,,,,,,,,!!!!!')">
     <span>제품구매</span>
   </div>
 </div>
