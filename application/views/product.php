@@ -132,6 +132,23 @@ function makePrice(option){
     break;
   }
 }
+$.fn.scrollTo = function( target, options, callback ){
+  if(typeof options == 'function' && arguments.length == 2){ callback = options; options = target; }
+  var settings = $.extend({
+    scrollTarget  : target,
+    offsetTop     : 50,
+    duration      : 500,
+    easing        : 'swing'
+  }, options);
+  return this.each(function(){
+    var scrollPane = $(this);
+    var scrollTarget = (typeof settings.scrollTarget == "number") ? settings.scrollTarget : $(settings.scrollTarget);
+    var scrollY = (typeof scrollTarget == "number") ? scrollTarget : scrollTarget.offset().top + scrollPane.scrollTop() - parseInt(settings.offsetTop);
+    scrollPane.animate({scrollTop : scrollY }, parseInt(settings.duration), settings.easing, function(){
+      if (typeof callback == 'function') { callback.call(this); }
+    });
+  });
+}
 </script>
 
 <?php
@@ -198,13 +215,13 @@ else {
 }
 </style>
 <div class="fixed-menu hidden-sm">
-  <div class="fixed-menu-item">
+  <div class="fixed-menu-item" onclick="$('body').scrollTo('#artwork_info')">
     <span>작품해설</span>
   </div>
-  <div class="fixed-menu-item">
+  <div class="fixed-menu-item" onclick="$('body').scrollTo('#artist_info')">
     <span>작가소개</span>
   </div>
-  <div class="fixed-menu-item" style="margin-bottom:0px;">
+  <div class="fixed-menu-item" style="margin-bottom:0px;" onclick="$('body').scrollTo()">
     <span>제품구매</span>
   </div>
 </div>
@@ -294,7 +311,7 @@ switch ($GlobalStoreType) {
 
 
 <input style="display:none;" type="text" id="storeType" value="<?echo $storeType?> ">
-<div class="container" >
+<div class="container" id="artwork_info">
   <div class="row" style="margin-top:20px;padding-bottom:30px; border-bottom: 1px solid  #D3D3D3;">
     <p style="display:block; text-align:center; font-weight:bold; font-size:40px;padding-top:20px;"><?php echo $storeName;?></p>
     <p style="display:block; text-align:center; font-weight:regular; font-size:20px;">designed by. <?php echo $userName;?></p>

@@ -201,7 +201,7 @@
     <?echo $storeExplain;?>
   </div>
 </div>
-<div class="col-xs-12" style="margin-top:40px;" >
+<div class="col-xs-12" style="margin-top:40px;" id="artist_info">
   <span style="margin:0 auto; display:table;">작 가 소 개</span>
 </div>
 <div class="col-xs-12" style="margin-top:20px;" >
