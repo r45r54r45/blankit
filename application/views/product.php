@@ -173,7 +173,21 @@ else {
   ";
 }
 ?>
+<style>
+.fixed-menu{
+  position: fixed;
+  right:0
+  top:30%;
+  height:100px;
+  width:50px;
+  background: #D3D3D3;
+  border-top-left-radius: 10%;
+  border-bottom-left-radius: 10%;
+}
+</style>
+<div class="fixed-menu">
 
+</div>
 <div class="banner">
 
 </div>
