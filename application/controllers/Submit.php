@@ -30,13 +30,13 @@ class Submit extends CI_Controller {
 			$explainSeed = $this->input->post('explain');
 			$explain = str_replace(array("\r\n"), '<br/>', $explainSeed);
 			
-			$storeType = $this->input->post('storeType');
-			$storeGoal = $this->input->post('storeGoal');
+			//$storeType = $this->input->post('storeType');
+			//$storeGoal = $this->input->post('storeGoal');
 			
 			$pref = $this->input->post('miribogi');
 			
 			$this->load->model('submit_model');
-			$this->submit_model->upload_artwork($artwork, $explain, $storeType, $storeGoal, $pref);
+			$this->submit_model->upload_artwork($artwork, $explain, $pref);
 			$store_id_seed = $this->submit_model->image_num($userSESSION, $artwork);
 			
 			foreach ($store_id_seed->result() as $row){

@@ -6,7 +6,7 @@ class Submit_model extends CI_Model{
 		$this->load->database();
 	}
 
-	public function upload_artwork($artwork, $explain, $storeType, $storeGoal, $pref){
+	public function upload_artwork($artwork, $explain, $pref){
 		if ($this->session->userdata('user_id')){
 			$user_id_SESSION = $this->session->userdata('user_id');
 			
@@ -23,8 +23,8 @@ class Submit_model extends CI_Model{
 			$date =  date('Y-m-d 0:0:0', strtotime("+365 days"));
 			
 			$this->db->query("
-				insert into `STORE` (user_id, store_name, store_random_id, store_day, store_type, store_goal, store_status, store_explain, store_pref)
-				values ('$user_id_SESSION', '$artwork', '$seed_date', '$date', '$storeType', '$storeGoal', '0', '$explain', '$pref')
+				insert into `STORE` (user_id, store_name, store_random_id, store_day, store_goal, store_status, store_explain, store_pref)
+				values ('$user_id_SESSION', '$artwork', '$seed_date', '$date', '777', '0', '$explain', '$pref')
 			");  // 새 작품 업로드를 0 상태로 임시 변경 16.02.22
 		}
 	}
