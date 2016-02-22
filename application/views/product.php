@@ -176,17 +176,28 @@ else {
 <style>
 .fixed-menu{
   position: fixed;
-  right:0
-  top:30%;
-  height:100px;
-  width:50px;
+    right: 0;
+    top: 30%;
+    height: 89px;
+    width: 60px;
+    background: white;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.fixed-menu-item{
+  height:29px;
+  width:100%;
   background: #D3D3D3;
-  border-top-left-radius: 10%;
-  border-bottom-left-radius: 10%;
+  margin-bottom: 1px;
 }
 </style>
 <div class="fixed-menu">
-
+  <div class="fixed-menu-item">
+  </div>
+  <div class="fixed-menu-item">
+  </div>
+  <div class="fixed-menu-item" style="margin-bottom:0px;">
+  </div>
 </div>
 <div class="banner">
 
