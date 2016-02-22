@@ -68,6 +68,7 @@
       <script src="/source/js/jquery.bxslider.min.js"></script>
     <script src="/source/js/dropzone.js" ></script>
     <script src="/source/js/common.js" ></script>
+    <script src="//cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
     <!--<script src="/source/js/jquery.lazyload.min.js" ></script>-->
 
     <!-- Bootstrap -->
@@ -106,7 +107,7 @@
           <a class="navbar-brand" href="/">
             <img id="logo" alt="blankit" src="
 	<?
-	
+
 
     	if($actual_link=="http://blankit.kr/"||$actual_link=="http://blankit.kr/artist"||$actual_link=="http://blankit.kr/funding"||$actual_link=="http://blankit.kr/funding/cloth"||$actual_link=="http://blankit.kr/funding/ecobag"||$actual_link=="http://blankit.kr/funding/pouch"||$actual_link=="http://blankit.kr/funding/done"||$actual_link=="http://blankit.kr/submit"||$actual_link=="http://www.blankit.kr/"||$actual_link=="http://www.blankit.kr/artist"||$actual_link=="http://www.blankit.kr/funding"||$actual_link=="http://www.blankit.kr/funding/cloth"||$actual_link=="http://www.blankit.kr/funding/ecobag"||$actual_link=="http://www.blankit.kr/funding/pouch"||$actual_link=="http://www.blankit.kr/funding/done"||$actual_link=="http://www.blankit.kr/submit")
       		echo "/source/image/logo_white.png";
