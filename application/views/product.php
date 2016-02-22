@@ -200,10 +200,10 @@ else {
 }
 </style>
 <div class="fixed-menu hidden-sm">
-  <div class="fixed-menu-item" onclick="$('body').scrollTo('#artwork_info')">
+  <div class="fixed-menu-item" onclick="$('body').scrollTo('#artwork_info',500)">
     <span>작품해설</span>
   </div>
-  <div class="fixed-menu-item" onclick="$('body').scrollTo('#artist_info')">
+  <div class="fixed-menu-item" onclick="$('body').scrollTo('#artist_info',500)">
     <span>작가소개</span>
   </div>
   <div class="fixed-menu-item" style="margin-bottom:0px;" onclick="alert('까꿍~~~~^^^^^^^,,,,,,,,!!!!!')">
