@@ -194,6 +194,7 @@ else {
   line-height: 49px;
   vertical-align: middle;
   color:#777474;
+  cursor: pointer;
 }
 </style>
 <div class="fixed-menu hidden-sm">
