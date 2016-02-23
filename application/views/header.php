@@ -17,7 +17,7 @@
 
     <!-- 펀딩 세부페이지 페이스북 (일반인용)-->
     <?
-  	if($this->uri->segment(1) == "funding" && $this->uri->segment(2) == "product"){
+  	if($this->uri->segment(1) == "gallery" && $this->uri->segment(2) == "product"){
   		$idURL = $this->uri->segment(3); // 제품번호
   		foreach ($contents->result() as $row){
   			if ($idURL == $row->store_id){
@@ -109,7 +109,7 @@
 	<?
 
 
-    	if($actual_link=="http://blankit.kr/"||$actual_link=="http://blankit.kr/artist"||$actual_link=="http://blankit.kr/funding"||$actual_link=="http://blankit.kr/funding/cloth"||$actual_link=="http://blankit.kr/funding/ecobag"||$actual_link=="http://blankit.kr/funding/pouch"||$actual_link=="http://blankit.kr/funding/done"||$actual_link=="http://blankit.kr/submit"||$actual_link=="http://www.blankit.kr/"||$actual_link=="http://www.blankit.kr/artist"||$actual_link=="http://www.blankit.kr/funding"||$actual_link=="http://www.blankit.kr/funding/cloth"||$actual_link=="http://www.blankit.kr/funding/ecobag"||$actual_link=="http://www.blankit.kr/funding/pouch"||$actual_link=="http://www.blankit.kr/funding/done"||$actual_link=="http://www.blankit.kr/submit")
+    	if($actual_link=="http://blankit.kr/"||$actual_link=="http://blankit.kr/artist"||$actual_link=="http://blankit.kr/gallery"||$actual_link=="http://blankit.kr/gallery/cloth"||$actual_link=="http://blankit.kr/gallery/ecobag"||$actual_link=="http://blankit.kr/gallery/pouch"||$actual_link=="http://blankit.kr/gallery/done"||$actual_link=="http://blankit.kr/submit"||$actual_link=="http://www.blankit.kr/"||$actual_link=="http://www.blankit.kr/artist"||$actual_link=="http://www.blankit.kr/gallery"||$actual_link=="http://www.blankit.kr/gallery/cloth"||$actual_link=="http://www.blankit.kr/gallery/ecobag"||$actual_link=="http://www.blankit.kr/gallery/pouch"||$actual_link=="http://www.blankit.kr/gallery/done"||$actual_link=="http://www.blankit.kr/submit")
       		echo "/source/image/logo_white.png";
     	else
       		echo "/source/image/logo.png";
@@ -124,11 +124,11 @@
             <li><a class="nav-color navbar-left" href="/aboutus" style="    width: 100px;">about us</a></li>
             <li><a class="nav-color navbar-left" href="/artist">artist</a></li>
             <li class="dropdown">
-              <a href="/funding" id="store_menu" class="nav-color navbar-left dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">gallery</span></a>
+              <a href="/gallery" id="store_menu" class="nav-color navbar-left dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">gallery</span></a>
      <!--            <ul class="dropdown-menu" role="menu">
-                  <li><a href="/funding/cloth">의류</a></li>
-                  <li><a href="/funding/ecobag">에코백</a></li>
-                  <li><a href="/funding/pouch">파우치</a></li>
+                  <li><a href="/gallery/cloth">의류</a></li>
+                  <li><a href="/gallery/ecobag">에코백</a></li>
+                  <li><a href="/gallery/pouch">파우치</a></li>
                 </ul> -->
             </li>
           </ul>

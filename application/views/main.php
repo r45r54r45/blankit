@@ -285,7 +285,7 @@ $(window).resize(function(){
 </div>
 <div class="row">
   <div class="col-md-12">
-    <div class="view_more"><a href="/funding">view more</a></div>
+    <div class="view_more"><a href="/gallery">view more</a></div>
   </div>
 </div>
 <!-- 모바일 시작 -->
@@ -365,7 +365,7 @@ $(window).resize(function(){
       ?>
       <li>
     <div class=" radius-4">
-    <div><a href="/funding/product/<?php echo $row->store_id?>">
+    <div><a href="/gallery/product/<?php echo $row->store_id?>">
       <div class="product_area ">
           <!-- <image class="product_bed img_rounded img-responsive" src="<?echo $itemBed?>">
           <div class="product" style="<?echo $itemPos;?>"> -->
@@ -477,7 +477,7 @@ $(window).resize(function(){
 
   <div class="col-md-five">
     <div class="box radius-4">
-    <div><a href="/funding/product/<?php echo $row->store_id?>">
+    <div><a href="/gallery/product/<?php echo $row->store_id?>">
       <div class="product_area ">
           <!-- <img class="lazy product_bed img_rounded img-responsive" src="<?echo $itemBed?>">
           <div class="product" style="<?echo $itemPos;?>"> -->

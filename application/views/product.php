@@ -507,7 +507,7 @@ switch ($GlobalStoreType) {
         </div>
 
 
-        <form id="formHidden" action="/funding/func_toCart" method="post" style="display:none">
+        <form id="formHidden" action="/gallery/func_toCart" method="post" style="display:none">
           <input type="text" name="type" value="default">
           <input type="text" name="color" value="default">
           <input type="text" name="size" value="default">
@@ -528,7 +528,7 @@ switch ($GlobalStoreType) {
         function facebook_for_artist(){
           FB.ui({
             method: 'share',
-            href: 'http://blankit.kr/funding/product/" . $facebookURL . "',
+            href: 'http://blankit.kr/gallery/product/" . $facebookURL . "',
           }, function(response){});
           }
           </script> ";

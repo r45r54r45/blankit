@@ -236,7 +236,7 @@ foreach ($details->result() as $row)
     function facebook_for_artist(){
       FB.ui({
         method: 'share',
-        href: 'http://blankit.kr/funding/product/" . $facebookURL . "',
+        href: 'http://blankit.kr/gallery/product/" . $facebookURL . "',
       }, function(response){});
       }
       </script> ";
@@ -345,22 +345,22 @@ if ($itemType == "E_1" || $itemType == "E_2" || $itemType == "E_3" || $itemType 
   <div class="menu_item" style="width:23%;  '; if($itemType == "E_1")echo " background: #687C87;
   color: white;";
   echo '">
-    <a href="/funding/product/' . $itemNum . '?E_1#here' . '">숄더(컬러)</a>
+    <a href="/gallery/product/' . $itemNum . '?E_1#here' . '">숄더(컬러)</a>
   </div>
   <div class="menu_item" style="width:27%;'; if($itemType == "E_2")echo " background: #687C87;
   color: white;";
   echo '">
-    <a href="/funding/product/' . $itemNum . '?E_2#here' . '">숄더(아이보리)</a>
+    <a href="/gallery/product/' . $itemNum . '?E_2#here' . '">숄더(아이보리)</a>
   </div>
   <div class="menu_item" style="width:25%; '; if($itemType == "E_3")echo " background: #687C87;
   color: white;";
   echo '">
-    <a href="/funding/product/' . $itemNum . '?E_3#here' . '">토트/크로스</a>
+    <a href="/gallery/product/' . $itemNum . '?E_3#here' . '">토트/크로스</a>
   </div>
   <div class="menu_item" style="width:20%; '; if($itemType == "E_4")echo " background: #687C87;
   color: white;";
   echo '">
-    <a href="/funding/product/' . $itemNum . '?E_4#here' . '">크로스</a>
+    <a href="/gallery/product/' . $itemNum . '?E_4#here' . '">크로스</a>
   </div>
 </div>
 </div>
@@ -379,12 +379,12 @@ if ($itemType == "M_1" || $itemType == "H_1"){
   <div class="menu_item" style="width:47% '; if($itemType == "M_1")echo " background: #687C87;
   color: white;";
   echo '">
-    <a href="/funding/product/' . $itemNum . '?M_1#here' . '">맨투맨</a>
+    <a href="/gallery/product/' . $itemNum . '?M_1#here' . '">맨투맨</a>
   </div>
   <div class="menu_item" style="width:47% '; if($itemType == "M_2")echo " background: #687C87;
   color: white;";
   echo '">
-    <a href="/funding/product/' . $itemNum . '?H_1#here' . '">후드</a>
+    <a href="/gallery/product/' . $itemNum . '?H_1#here' . '">후드</a>
   </div>
 </div>
 </div>

@@ -19,7 +19,7 @@
 $(window).on("load",function(){
   $(".pp").css("height",$(".pp").width()+"px");
   $("#store_menu").click(function(){
-    location.href="/funding";
+    location.href="/gallery";
   });
   $("#aboutus_menu").click(function(){
     location.href="/aboutus";

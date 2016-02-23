@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Funding extends CI_Controller {
+class gallery extends CI_Controller {
 
 	public function index()
 	{
