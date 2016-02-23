@@ -482,7 +482,7 @@ $(window).resize(function(){
       <div class="product_area ">
           <!-- <img class="lazy product_bed img_rounded img-responsive" src="<?echo $itemBed?>">
           <div class="product" style="<?echo $itemPos;?>"> -->
-            <img src="<?php echo $row->store_image;?>" class="lazy img img-responsive" style="border-radius:2%;">
+            <img src="<?php echo $row->store_image;?>" class="lazy img img-responsive" >
           <!-- </div> -->
         </div>
     </a></div>
