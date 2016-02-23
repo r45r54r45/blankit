@@ -231,7 +231,7 @@ $(function(){
             </div>
 
           </a></div>
-          <div class="status_bar" style="background: linear-gradient(to right, #687C87 0%,#D3D3D3 100% );"></div>
+          <!-- <div class="status_bar" style="background: linear-gradient(to right, #687C87 0%,#D3D3D3 100% );"></div> -->
           <!-- <div class="artist_hover" style="padding-top:7px;">
             <span class="status_percent"><?php //echo ceil($percGoal);?>%</span>
             <span class="status_day_word"><?php //if ($dayStatus == 1) echo "앞으로";?> <span class="status_day"><?php //echo $remainDays;?></span><?php //if ($dayStatus == 1) echo "일";?></span>
