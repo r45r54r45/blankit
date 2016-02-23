@@ -85,7 +85,7 @@
 <div class="container" >
   <div class="row" style="margin-bottom:40px;">
     <div class="col-md-12" style="    margin-top: 30px; position:relative; height:25px; border-bottom: 1.5px solid #D3D3D3;">
-      <div class="menu" style="width:160px; left:-80px;">
+      <div class="menu" style="width:160px; margin-left:-80px;">
         <a href="/gallery"><div class="menu_item" style="border-bottom:2px solid #96AFB5; color:#96AFB5; width:48%;">전체</div></a>
 <!--         <a href="/gallery/cloth"><div class="menu_item" >의류</div></a>
         <a href="/gallery/ecobag"><div class="menu_item">에코백</div></a>
