@@ -26,6 +26,7 @@
 }
 
 .radius-4{
+  overflow: hidden;
   border-radius: 15px;
 }
 .status_bar{
