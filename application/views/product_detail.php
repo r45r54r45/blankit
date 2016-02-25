@@ -93,7 +93,7 @@
   		break;
   	}
   	
-  	if($row2 == end($storeChecker->result())){
+  	if($row2 == end($storeChecker){
   		$redirectGallery = "http://blankit.kr/gallery";
   		$this->load->helper('url');
   		redirect($redirectGallery);
