@@ -79,6 +79,25 @@
   $testQ = explode('?', $curPage);
   $nowPage = $testQ[0]; //현재 아이템 번호
   $itemNum = $nowPage; //작품의 고유번호 넣어주삼. 작품 이미지 주소 가져오는데 사용
+  
+  /** redirect 실험 **/
+  foreach ($storeChecker->result() as $row2){
+  	if ($row2->store_id == $nowPage){
+  		$storeStatus = $row2->store_status;
+  		if($storeStatus != 1 && $storeStatus != 2 && $storeStatus != 3){
+  			$redirectGallery = "http://blankit.kr/gallery";
+  			$this->load->helper('url');
+  			redirect($redirectGallery);
+  		}
+  		break;
+  	}
+  	else{
+  		$redirectGallery = "http://blankit.kr/gallery";
+  		$this->load->helper('url');
+  		redirect($redirectGallery);
+  	}
+  }
+  
 
   if ($curPage == $nowPage){
 	  foreach ($contents->result() as $row){

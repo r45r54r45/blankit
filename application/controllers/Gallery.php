@@ -50,6 +50,9 @@ class gallery extends CI_Controller {
 	}
 	public function product() // 제품 상세보기
 	{
+		$this->load->model('storeChecker_model');
+		$data['storeChecker'] = $this->storeChecker_model->allStore();
+		
 		$data['session_id'] = "";
 		if ($this->session->userdata('user_id')){
 			$data['session_id'] = $this->session->userdata('user_id');
