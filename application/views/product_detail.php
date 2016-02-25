@@ -81,7 +81,7 @@
   $itemNum = $nowPage; //작품의 고유번호 넣어주삼. 작품 이미지 주소 가져오는데 사용
   
   /** redirect 실험 **/
-  foreach ($storeChecker->result() as $row2){ // store 다 가져오고
+ /*  foreach ($storeChecker->result() as $row2){ // store 다 가져오고
   	if ($row2->store_id == $nowPage){ // 현재 페이지 상품번호가 store id 목록 중에 있을 때
   		$storeStatus = $row2->store_status;
   		if($storeStatus == 0){ // 접수대기 상태인 0 이라면 redirect
@@ -96,7 +96,7 @@
   		$this->load->helper('url');
   		redirect($redirectGallery);
   	}
-  }
+  } */
   
 
   if ($curPage == $nowPage){
