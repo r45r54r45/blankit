@@ -106,8 +106,7 @@
   		break;
   	}
   }
-  
-  $len = count($storeChecker);
+  /** redirect 실험 여기까지 **/  
 
   if ($curPage == $nowPage){
 	  foreach ($contents->result() as $row){
