@@ -84,7 +84,7 @@
   foreach ($storeChecker->result() as $row2){
   	if ($row2->store_id == $nowPage){
   		$storeStatus = $row2->store_status;
-  		if($storeStatus != 1 && $storeStatus != 2 && $storeStatus != 3){
+  		if($storeStatus != 1 || $storeStatus != 2 || $storeStatus != 3){
   			$redirectGallery = "http://blankit.kr/gallery";
   			$this->load->helper('url');
   			redirect($redirectGallery);
