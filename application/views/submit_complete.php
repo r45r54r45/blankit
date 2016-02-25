@@ -76,33 +76,6 @@ $(function(){
       </div>
   </div>
 
-  <div class="row">
-      <div class="col-xs-12" style="margin-top:30px; border-top: 1px solid #D3D3D3;">
-        <span style="margin-top:30px; text-align:center; display:block; font-size: 25px; color:#655453; font-weight:bold;">
-          친구들에게 자랑하기
-        </span>
-      </div>
-      <?php
-      $itemNum = $_GET['id'];
-      echo "
-      <script>
-      function facebook_for_artist(){
-        FB.ui({
-          method: 'share',
-          href: 'http://blankit.kr/submit/complete/?id=" . $itemNum . "',
-        }, function(response){});
-      }
-      </script> ";
-      ?>
-      <div class="col-xs-12" style="margin-top:30px; ">
-
-        <div class="col-xs-12">
-          <a onclick="facebook_for_artist()" style="cursor:pointer;">
-          <img src="/source/image/fb_artist.png" class="img img-responsive" style="margin:0 auto;">
-              </a>
-        </div>
-      </div>
-
-  </div>
+  
   </div>
 </div>
