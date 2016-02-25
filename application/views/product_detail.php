@@ -85,12 +85,18 @@
   	if ($row2->store_id == $nowPage){ // 현재 페이지 상품번호가 store id 목록 중에 있을 때
   		$storeStatus = $row2->store_status;
   		if($storeStatus == 0){ // 접수대기 상태인 0 이라면 redirect
-  			echo "<script>alert('1');</script>";
   			$redirectGallery = "http://blankit.kr/gallery";
   			$this->load->helper('url');
   			redirect($redirectGallery);
   			break;
   		}
+  		break;
+  	}
+  	
+  	if($row2 == end($storeChecker->result())){
+  		$redirectGallery = "http://blankit.kr/gallery";
+  		$this->load->helper('url');
+  		redirect($redirectGallery);
   		break;
   	}
   } 
