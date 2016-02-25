@@ -251,11 +251,20 @@ $(function(){
       <?php }
 
       if($cnt==0){
-        echo "
+      	if($this->uri->segment(2) == "done"){
+      		echo "
+        <span style='margin: 100px auto 0px;
+        display: table;
+        font-size: 20px;'>종료된 펀딩이 없습니다.</span>
+        ";
+      	}
+        else{
+        	echo "
         <span style='margin: 100px auto 0px;
         display: table;
         font-size: 20px;'>현재 진행 중인 펀딩이 없습니다.</span>
         ";
+        }
       }?>
 
       <!-- 컨텐츠 반복 끝 -->
