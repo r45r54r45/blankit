@@ -251,6 +251,7 @@ $(function(){
       <?php }
 
       if($cnt==0){
+      	// gallery/done이 비어있을 경우
       	if($this->uri->segment(2) == "done"){
       		echo "
         <span style='margin: 100px auto 0px;
@@ -258,6 +259,7 @@ $(function(){
         font-size: 20px;'>종료된 펀딩이 없습니다.</span>
         ";
       	}
+      	// 그 외가 비어있을 경우
         else{
         	echo "
         <span style='margin: 100px auto 0px;
