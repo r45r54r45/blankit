@@ -92,14 +92,7 @@
   		}
   		break;
   	}
-  	
-  	if($row2 == end($storeChecker){
-  		$redirectGallery = "http://blankit.kr/gallery";
-  		$this->load->helper('url');
-  		redirect($redirectGallery);
-  		break;
-  	}
-  } 
+  }
   
 
   if ($curPage == $nowPage){
