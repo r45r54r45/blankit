@@ -70,7 +70,7 @@ $(function(){
       </div>
       <div class="col-xs-12" style="margin-top:30px; ">
         <span style="margin-top:10px; text-align:center; display:block; font-size: 18px; color:#655453; font-weight:400;">
-          아티스트님의 작품이 업로드 되었습니다.<br>
+          아티스트님의 작품이 무사히 업로드 되었습니다.<br>
           최대한 신속히 확인한 뒤 연락드리겠습니다.<br>
           감사합니다.<br><br><br><br><br>
         </span>
