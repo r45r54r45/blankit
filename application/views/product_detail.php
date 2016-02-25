@@ -89,6 +89,7 @@
   			$redirectGallery = "http://blankit.kr/gallery";
   			$this->load->helper('url');
   			redirect($redirectGallery);
+  			break;
   		}
   		break;
   	}
@@ -97,6 +98,7 @@
   		$redirectGallery = "http://blankit.kr/gallery";
   		$this->load->helper('url');
   		redirect($redirectGallery);
+  		break;
   	}
   } 
   
