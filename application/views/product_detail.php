@@ -218,7 +218,7 @@
   </div>
 </div>
 <div class="col-xs-12" style="margin-top:40px;" id="artist_info">
-  <span style="margin:0 auto; display:table;">작 가 소 개 <?php echo $len;?></span>
+  <span style="margin:0 auto; display:table;">작 가 소 개 </span>
 </div>
 <div class="col-xs-12" style="margin-top:20px;" >
   <span style="margin:0 auto; width:30px; display:table; border-bottom:2px solid #D3D3D3;"></span>
