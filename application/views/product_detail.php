@@ -94,6 +94,11 @@
   	}
   }
   
+  $len = count($storeChecker);
+  ?>
+  <script> echo('<?php echo $len?>'); </script>
+  
+  <?
 
   if ($curPage == $nowPage){
 	  foreach ($contents->result() as $row){
